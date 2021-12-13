@@ -11,7 +11,7 @@
     <!-- css links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="../styles/themes/eighty/mainEighty.css">
+    <link rel="stylesheet" href="../styles/themes/basicStyle/mainBasic.css">
     <title>Typetravel - The future of architecture</title>
     <link rel="icon" href="/images/icons/t-t.svg"></link>
   </head>
@@ -440,14 +440,17 @@
                 <li class="nav-item ps-1">
                     <a class="nav-link active" aria-current="page" href="./documentation.html" data-bs-toggle="modal" data-bs-target="#">Documentation</a>
                 </li>
+                <li class="nav-item dropdown ps-1">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-active-link">
+                  About
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a></li>
+                  <li> <a class="nav-link active" aria-current="page" href="./about-us.html" data-bs-toggle="modal" data-bs-target="#">About Us</a></li>
+                  </ul>
+              </li>
                 <li class="nav-item ps-1">
-                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a>
-                </li>
-                <li class="nav-item ps-1">
-                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#">About</a>
-                </li>
-                <li class="nav-item ps-1">
-                  <a class="nav-link active md-big" id="hide-md-btn" onclick="addClass()">Hide info</a>
+                  <a class="nav-link active md-big" id="hide-md-btn" onclick="addClass(this)">Read Better</a>
                 </li>
                 </ul>
             </div>

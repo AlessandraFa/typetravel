@@ -41,7 +41,6 @@ code{
     text-transform: lowercase;
     font-weight: 300;
     background-color: #83c0cf !important;
-    /* height: 8vh; */
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
@@ -427,6 +426,9 @@ img{
   .issue-female-body .card-header{
     min-height: 25vh;
     }
+    .navbar {
+        height: 8vh;
+    }
 }
 
 @media(min-width: 992px) and (max-width: 1200px){
@@ -435,6 +437,9 @@ img{
   }
   .issue-female-body .card-header{
       min-height: 25vh;
+  }
+  .navbar {
+      height: 8vh;
   }
 }
 

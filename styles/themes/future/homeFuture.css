@@ -67,7 +67,7 @@ code{
     text-transform: lowercase;
     font-weight: 300;
     background-color: #000000 !important;
-    height: 12vh;
+    
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link{

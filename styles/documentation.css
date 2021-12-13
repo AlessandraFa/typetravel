@@ -3,9 +3,6 @@
 @import url("./themes/components/fab.css");
 @import url("./themes/components/dropdown.css");
 
-.navbar{
-    height: 8vh;
-}
 
 .content{
     margin-top: 8vh;
