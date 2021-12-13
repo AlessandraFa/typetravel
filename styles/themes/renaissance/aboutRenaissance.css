@@ -1,0 +1,237 @@
+@import url(/styles/themes/components/fab.css);
+@import url(/styles/themes/components/sizingNavbar.css);
+@import url(/styles/documentation.css);
+
+@font-face {
+    font-family: "Bembo";
+    src: url("/styles/fonts/Bembo.ttf");
+}
+
+/*LINKS, SELECTION, CODE*/
+a{
+    color: rgb(143, 143, 143);
+}
+  
+a:hover{
+    color: #c4c4c4 ;
+}
+
+::selection{
+    color: rgb(240, 240, 240) !important;
+    background: rgb(128, 128, 128) !important;
+}
+
+code{
+    color: grey;
+}
+  
+.btn{
+    font-family: "Bembo", garamond, serif;
+    color: #949494;
+    letter-spacing: 0.5rem;
+}
+
+/*BODY*/
+body{
+    font-family: "Bembo", garamond, serif;
+    text-align: center;
+    overflow: hidden;
+    line-height: 1;
+    color: #474747;
+    background-image: url("/images/Renaissance/grot-first2.png");
+    background-size: cover;
+    overflow: scroll;
+}
+
+/*NAVBAR*/
+.navbar{
+    letter-spacing: 0.1rem;
+    background-color: transparent;
+    background-size: 40vh;
+    background-position: bottom;
+}
+ 
+.navbar-brand{
+  font-size: 4vh;
+  text-transform: uppercase;
+  color: #474747    !important;
+  letter-spacing: 0.3rem;
+}
+
+#capT{
+  background-image: url("/images/icons/t-renaissance.svg");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10vh;
+  padding: 2rem;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-size: 3vh;
+    color: #474747    !important;  
+    margin-bottom: 0 !important;
+    padding: 0.5rem;
+}
+
+.nav-link:hover,
+.navbar-brand:hover{
+    color: rgb(122, 122, 122) !important;
+}
+
+.nav-link.active{
+    background-color: transparent !important;
+    text-shadow: transparent !important;
+    border-color: transparent !important;
+    text-shadow: transparent !important;
+}
+ 
+.dropdown-menu{
+    background-color: #C4C4C4; 
+    border:none;
+}
+
+.dropdown-item{
+    font-size: 3vh;
+}
+  
+.dropdown-item:hover{
+    background-color: rgb(168, 168, 168);
+    color: white;
+}
+
+/*INFO MODAL*/
+.modal-header, .modal-header .modal-title, .modal-footer, .modal-footer .btn{
+    background-color: #F2F2F2 !important;
+    color: #474747;
+    text-transform: uppercase;
+    font-family: "Bembo", garamond, serif;
+    border:none;
+    font-size: 3vh !important;
+}
+.modal-title, .modal-footer .btn{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    padding: 0;
+}
+  
+.modal-footer .btn:hover{
+    color: #c4c4c4;
+}
+  
+.modal-header button{
+    margin: 0 !important;
+}
+.modal-body{
+    text-align: left;
+    font-size: 3vh;
+    margin: 0 3rem 0 3rem;
+}
+
+/*PAGE CONTENT*/
+.about-content{
+    padding: 2rem;
+    text-align: center;
+    font-size: 4vh;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    max-height: 15vh;
+}
+
+h2{
+    font-family: "Bembo", garamond, serif;
+    font-size: 6vh;
+    color: #696969;
+    padding-top: 1rem;
+}
+
+.about-us{
+    max-height: 78vh;
+}
+
+.about-us h3{
+    margin-top: 1rem;
+    font-family: "Bembo", garamond, serif;
+    text-transform: uppercase;
+    font-size: 4vh;
+    color: #929292;
+}
+
+.about-us p{
+    padding: 2rem;
+    text-align: justify;
+    font-size: 3vh;
+    background-color: #C8C8C8;
+}
+
+img{
+    height: 35vh;
+    margin: 2rem;
+}
+
+#edoardo{
+    text-align: center;
+}
+
+#edoardo h3{
+    text-align: right;
+    padding: 0 1rem 0 1rem;
+}
+
+#edoardo p{
+    margin: 2rem 0 2rem 10rem;
+}
+
+#edoardo img{
+    float: right;
+}
+
+#alessandra{
+    text-align: center;
+}
+
+#alessandra img{
+    float: left;
+}
+
+#alessandra h3{
+    text-align: left;
+    padding: 0 1rem 0 1rem;
+}
+
+#alessandra p{
+    margin: 2rem 10rem 2rem 0;
+}
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+  background-color: #c0c0c0 !important;
+  box-shadow: 2px 2px 10px rgba(250,242,230, 0.5), -2px -2px 10px rgba(250,242,230, 0.5);
+}
+
+.sub-button:hover{
+  background-color: #5c5c5c !important;
+}
+
+.btn-lmode, .btn-dmode{
+  display: none;
+}
+
+@media(max-width: 992px){
+    body{
+        background-image: none;
+        background-color: #E9E9E9;
+    }
+    .about-us{
+        height: 200vh !important;
+    }
+    .about-us p{
+        margin: 0 !important;
+        
+    }
+    #navbarNavDropdown{
+        background-color: #E9E9E9;
+    }
+}

@@ -1,0 +1,1113 @@
+@import "/styles/themes/components/dropdown.css";
+@import "/styles/themes/components/sizingNavbar.css";
+@import "/styles/home.css";
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
+@font-face {
+    font-family: secession;
+    src: url("/styles/fonts/secession/Secession.otf");
+}
+
+@font-face {
+    font-family: "golden type";
+    src: url("/styles/fonts/goldentypeitcstd.otf");
+}
+
+/*BODY*/
+body{
+    font-family: "golden type", "della respira", georgia, serif;
+    background-color: #FFFFF5 !important;
+}
+
+/*LINKS, SELECTION, CODE*/
+a{
+    color: #cda34c;
+}
+a:hover{
+    color: #f8dba6;
+}
+
+code{
+    color: rgb(194, 168, 24);
+}
+
+::selection{
+    background-color: #cda34c;
+    color: #fae5be;
+}
+
+/* NAVBAR */
+.navbar{
+    font-family: "secession", "amarante", Georgia, serif;
+    background-color: #FFFFF5;
+    text-transform:uppercase;
+    color:#cda34c;
+}
+
+.nav-active {
+    box-shadow: 5px -1px 12px -5px grey;
+    backdrop-filter: blur(7px);
+    background: transparent;
+}
+
+.nav-active .nav-link{
+    color: #4e432d !important;
+}
+
+.nav-link{
+    color: #cda34c !important;
+}
+
+.navbar-brand{
+    color: #524e4d !important;
+}
+
+.navbar-toggler-icon, .nav-link:hover, .navbar-brand:hover{
+    color: #cda34c !important;
+}
+
+.dropdown-item{
+    color: #524e4d;
+}
+
+.navbar-brand{
+    font-size: 4vh;
+    letter-spacing: 0.3rem;
+    margin-top: 0.2rem;
+    color: #524e4d !important;
+}
+
+.navbar-brand:hover {
+    color: #cda34c !important;
+}
+
+#capT{
+    background-image: url("/images/icons/T-artnouveau.svg");
+    background-size: 5vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;
+}
+
+.dropdown-menu{
+    background-color: #FFFFF5;
+    border: none;
+    padding-top: 0.5em;
+    box-shadow: 1px 1px 4px #f0e1c8;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(255, 234, 166);
+    color: #cda34c;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+
+.modal-header, .modal-footer{
+    background-color: #CF7248 !important;
+    font-family: "secession", "amarante", Georgia, serif;
+    text-transform: uppercase; 
+}
+
+.modal-title, .modal-footer .btn{
+    font-size: 4vh !important;
+    color: #FFFFF5;  
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.modal-header button{
+    margin: 0 !important;
+}
+
+.modal-body p{
+    font-size: 2.2vh !important;
+    padding: 0 2rem 0 2rem !important;
+    text-align: left;
+}
+
+.modal-body{
+    padding: 1rem 3rem 1rem 3rem !important;
+    text-align: left;
+    font-family: "golden type", "della respira", georgia, serif;
+}
+
+/*BUTTONS*/
+.btn{
+    border: none;
+    color: black;
+    font-family: "secession", "amarante", Georgia, serif;
+    text-transform: uppercase;
+    background: transparent;
+    font-size: 5vh;
+}
+
+#second .btn{
+    color: #42423F;
+    opacity: 0.8;
+}
+
+#second .btn:hover{
+    color: #f8edbb;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.btn-third{
+    background-color: rgb(224, 219, 203);
+    color: #352E2B;
+    margin-top: 0rem !important;
+}
+
+.btn-third:hover{
+    color: #b6b1af ;
+    background-color: transparent;
+}
+
+/*FIRST*/
+#first{
+    margin-top: 5rem;
+    background-color: #FFFFF5 !important;
+}
+
+#first h1{
+    padding-top: 12vh !important;
+    font-family: "secession", "Amarante", Georgia, serif;
+    text-transform: uppercase;
+    color: #cfaf6e;
+    font-size: 15vh !important;
+}
+
+#first #travel{
+    color:#b48017;  
+}
+
+#first h2{
+    color: #cfaf6e;
+    font-size: 6vh;
+}
+
+#first-left{
+    background: url("/images/art-nouveau/first-left.png") !important;
+    background-position: center left;
+    background-size: 28vh !important;
+    background-repeat: no-repeat !important;    
+}
+
+#first-right{
+    background: url("/images/art-nouveau/first-right.png") !important;
+    background-position: center right !important;
+    background-size: 27.3vh !important;
+    background-repeat: no-repeat !important;
+
+}
+
+#ttlframe{
+    background: url("/images/art-nouveau/first-center-bg.png") !important;
+    padding-bottom: 6rem;
+    background-size: 120vh !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    color:#957025;
+}
+
+#project-description{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 4vh;
+    background: transparent !important;
+    color: #957025;
+}
+
+.title-text {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 8vh;
+    text-transform: uppercase;
+    font-family: "secession", "amarante", Georgia, serif !important;
+}
+
+#icon{
+    padding: 8vh;
+    background-image: url("/images/icons/start-an.svg");
+    background-size: 14vh;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+#icon:hover{
+    background-image: url("/images/icons/start-an-hov.svg");
+    background-color: transparent !important;
+}
+
+#get-started-btn-1{
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+.get-s, .get-s #get-started-btn{
+    display: none;
+}
+
+/*FURTHER SECTIONS*/
+h2{
+    font-family: "secession", "Amarante", Georgia, serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*SECOND*/
+#second{
+    background:url("/images/art-nouveau/second-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 180vh !important;
+    background-color: #E4BD6F;
+}
+
+#gosecond{
+    background-color: #E4BD6F !important;
+}
+
+#second h2{
+    color: #42423F;
+    padding-top: 3rem;
+    font-size: 12vh;
+}
+
+#site-short-description, #site-short-motivation{
+    padding-left: 12rem;
+    padding-right: 12rem ;
+    color: #535353;
+    font-size: 4vh;
+    background: transparent !important;
+}
+
+/*THIRD*/
+#third, #gothird{
+    background: linear-gradient(rgba(223, 216, 203,0.9)0%, rgba(223, 216, 203,0.9)100%), url("/images/art-nouveau/art-an.png") !important;
+    background-size: 30vh !important;
+    background-position: bottom;
+}
+
+#third h2{
+    background: url("/images/art-nouveau/third-dec.png") !important;
+    font-size: 8vh;
+    padding-bottom: 3rem;
+    padding-top: 2.5rem;
+    background-size: 80vh !important;
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+    color:#DFD8CB;
+}
+
+#card-renaissance .btn-doc:hover{
+    color: #535353;
+}
+
+#card-secession .btn-doc:hover{
+    color: #5a4120;
+}
+
+#card-1980s .btn-doc:hover{
+    color: #2d1c55;
+}
+
+#card-future .btn-doc:hover{
+    color: #818181;
+}
+
+/*FOURTH*/
+#fourth{
+    background: url("/images/art-nouveau/four-bg.png") !important;
+    background-repeat: no-repeat;
+    background-size: 80vh !important;
+    background-position: top center;
+    background-color: #F9D1C7;
+    height: 100vh;
+}
+
+#gofourth{
+    background: url("/images/art-nouveau/four-bg.png") !important;
+    background-color: #F9D1C7 !important;
+    background-size: 70vh !important;
+    background-position: bottom left !important;
+}
+
+#fourth h2{
+    color: #FAD7CF;
+    font-size: 8vh;
+    padding-bottom: 3rem;
+    padding-top: 2.5rem;
+    background-size: 80vh !important;
+    background-position: top center !important;
+    background-image: url("/images/art-nouveau/third-deco.png") !important;    background-repeat: no-repeat;
+    background-position: center bottom !important;
+}
+
+.fadedbox{
+    background-color:rgba(251, 135, 67, 0.7);
+}  
+
+#tt1, #tt2{
+    font-size: 7vh;
+    font-weight: bold !important;
+    background-color: transparent;
+    color: white;
+    margin: 3rem;
+    padding: 1rem !important;
+}
+
+#tt2{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.issue-description{
+    padding-top: 0 !important;
+    font-size: 3vh !important;
+    font-family: "golden type", "della respira", georgia, serif;
+    letter-spacing: 0.05rem;
+    color: white;
+}
+
+.see-article{
+    background-color: transparent;
+    color: rgba(255,255,255,0.8);
+    border: none;
+    font-size: 4vh;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-family: secession;
+}
+
+.see-article:hover{
+    color: rgb(160, 67, 14)
+}
+
+.see-article a{
+    background-color: unset;
+    color: unset;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+footer p, .contacts{
+    font-size: 20pt;
+    padding: 8vh 3vh 8vh 3vh;
+}
+
+footer p{
+    text-align: right;
+}
+
+#footer-right{
+    background-image: url("/images/art-nouveau/footer-right.png");
+    background-size: 25vh;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+#footer-left{
+    background-image: url("/images/art-nouveau/footer-left.png");
+    background-size:25vh;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+#cp{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#tt1,#tt2{
+    padding: 1rem;
+    padding-bottom: 1rem;
+    font-family: "golden type", "della respira", georgia, serif;
+}
+
+#discl{
+    color: #af8634;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+#disclaimer p{
+    font-size: 2vh;
+}
+
+/*FAB CONTAINER*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #cda34c !important;
+}
+
+.sub-button:hover{
+    background-color: #e2cb9c !important;
+}
+
+@media (max-width: 576px){
+    /*NAVBAR*/
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    #navbarNavDropdown{
+        background-color: #FFFFF5 !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        margin-top: 3rem;
+    }
+    #ttlframe{
+        background-image: none !important; 
+    }
+    #first-left{
+        background-size: 105% !important;
+        padding: 0 !important;
+        margin:  0 !important;
+    }
+    #first-right{
+        background-size: 102% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-position: top !important;
+    }
+
+    #first h1{
+        font-size: 14vh !important;
+        margin-top: 0 !important;
+    }
+
+    #first h2{
+        font-size: 8vh;
+    }
+
+    #first p{
+        font-size: 4vh !important;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 5vh !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 140vh !important;
+    }
+
+    #about-proj{
+        margin: 0 !important;
+        padding: 0 3rem 3rem 3rem !important;
+    }
+
+    #site-short-description, #site-short-motivation{
+        padding: 0 !important;
+    }
+
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 5vh !important;
+        margin-top: 0 !important;
+    }
+
+    /*THIRD SECTION*/
+
+    #third h2{
+        font-size: 8vh !important;
+        padding-bottom: 1rem;
+        padding-top: 2.5rem;
+        background-size: 80vh !important;
+        background-position: bottom !important;
+    }
+
+    #third p{
+        font-size: 5vh !important;
+    }
+
+    #themes-text{
+        margin:0;
+    }
+
+    #third .card{
+        margin: 0.5rem 3rem 0.5rem 3rem !important;
+    }
+
+    #themes-card a{
+        font-size: 4vh !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #card-iss1{
+        margin-left: 5rem !important;
+    }
+
+    #card-iss2{
+        margin-left: 5rem !important;
+        margin-right: 0 !important;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    .title-text{
+        padding:0 !important;
+        margin: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4vh !important;
+        }
+    
+    footer li{
+        list-style: none;
+    }
+  
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    /*NAVBAR*/
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        margin-top: 3rem;
+    }
+    #ttlframe{
+        background-image: none !important; 
+    }
+    #first-left{
+        background-size: 120% !important;
+        background-position: top right !important;
+        padding: 0 !important;
+        margin:  0 !important;
+    }
+    #first-right{
+        background-size: 115% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-position: top left !important;
+    }
+
+    #first h1{
+        font-size: 14vh !important;
+        margin-top: 0 !important;
+    }
+
+    #first h2{
+        font-size: 8vh;
+    }
+
+    #first p{
+        font-size: 4vh !important;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 8vh !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 130vh !important;
+    }
+
+    #about-proj{
+        margin: 0 !important;
+        padding: 0 3rem 3rem 3rem !important;
+    }
+
+    #site-short-description, #site-short-motivation{
+        padding: 0 !important;
+    }
+
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 5vh !important;
+        margin-top: 0 !important;
+    }
+
+    /*THIRD SECTION*/
+
+    #third h2{
+        font-size: 8vh !important;
+        padding-bottom: 1.5rem;
+        padding-top: 2.5rem;
+        background-size: 80vh !important;
+        background-position: bottom !important;
+    }
+
+    #third p{
+        font-size: 4vh !important;
+    }
+
+    #themes-text{
+        margin:0;
+    }
+
+    #third .card{
+        margin: 0.5rem 3rem 0.5rem 3rem !important;
+    }
+
+    #themes-card a{
+        font-size: 5vh !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #card-iss1, #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 1rem;
+    }
+
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    .title-text{
+        padding:0 !important;
+        margin: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4vh !important;
+        }
+    
+    footer li{
+        list-style: none;
+    }
+  
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    /*NAVBAR*/
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    /*FIRST SECTION*/
+    #first h1{
+        font-size: 14vh !important;
+        margin-top: 0 !important;
+    }
+
+    #first h2{
+        font-size: 8vh;
+    }
+
+    #first p{
+        font-size: 4vh !important;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 8vh !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 150vh !important;
+    }
+
+    #second h2{
+        margin-top: 2rem !important;
+    }
+
+    #second p{
+        font-size: 3.5vh;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+
+    #about-proj{
+        margin: 0 !important;
+        padding: 1rem 7rem 0 7rem !important;
+    }
+
+    #site-short-description, #site-short-motivation{
+        padding: 0 !important;
+    }
+
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 5vh !important;
+        margin-top: 0 !important;
+    }
+
+    /*THIRD SECTION*/
+
+    #third h2{
+        font-size: 8vh !important;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        background-size: 80vh !important;
+        background-position: bottom !important;
+    }
+
+    #third p{
+        font-size: 3.5vh !important;
+    }
+
+    #themes-text{
+        margin:0;
+    }
+
+    #third .card{
+        margin: 1rem 0rem 1rem 0rem !important;
+    }
+
+    .btn-third{
+        font-size: 5vh !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #fourth h2{
+        font-size: 8vh !important;
+        background-position: center !important;
+    }
+
+    #card-iss1, #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 1rem;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    .title-text{
+        padding:0 !important;
+        margin: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        font-size: 3vh !important;
+        }
+    
+    #footer-left{
+        padding-top: 10vh !important;
+        background-position: center !important;
+    }
+    #footer-right{
+        width: 20%;
+        padding-top: 42vh !important;
+
+    }
+  
+}
+
+@media (max-width: 992px){
+    #first{
+        background: linear-gradient(to bottom, rgba(255,255,245, 0.9)0%, rgba(255,255,245, 0.9)100%), url("/images/art-nouveau/art-an.png");
+        background-size: 30vh;
+        background-position: bottom;
+        }
+    #ttlframe{
+        background-image: none !important; 
+    }
+    #first-left{
+        background-image: none !important;
+    }
+    #first-right{
+        background-image: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    /*FIRST SECTION*/
+    #first{
+        margin-top: 3rem;
+    }
+    #ttlframe{
+        background-size: 100% !important; 
+        width: 70%;
+        background-position: bottom !important;
+    }
+    #first-left{
+        background-size: 25vh !important;
+        background-position: center right !important;
+        padding: 0 !important;
+        margin:  0 !important;
+        width: 15%;
+    }
+    #first-right{
+        background-size: 25vh !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background-position: center left !important;
+        width: 15%;
+    }
+
+    #first h1{
+        font-size: 12vh !important;
+        margin-top: 0rem !important;
+        padding-top: 2rem !important;
+    }
+    #first h2{
+        font-size: 8vh;
+    }
+
+    #first p{
+        font-size: 4vh !important;
+        margin-top: 10vh !important;
+        padding: 0 3rem 0 3rem !important;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 8vh !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 150vh !important;
+    }
+
+    #second h2{
+        margin-top: 2rem !important;
+    }
+
+    #second p{
+        font-size: 3.5vh;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+
+    #about-proj{
+        margin: 0 !important;
+        padding: 1rem 7rem 0 7rem !important;
+    }
+
+    #site-short-description, #site-short-motivation{
+        padding: 0 !important;
+    }
+
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 5vh !important;
+        margin-top: 0 !important;
+    }
+
+    /*THIRD SECTION*/
+
+    #third h2{
+        font-size: 8vh !important;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        background-size: 80vh !important;
+        background-position: bottom !important;
+    }
+
+    #third p{
+        font-size: 3.5vh !important;
+    }
+
+    #themes-text{
+        margin:0;
+    }
+
+    #third .card{
+        margin: 1rem 0rem 1rem 0rem !important;
+    }
+
+    .btn-third{
+        font-size: 5vh !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #fourth h2{
+        font-size: 8vh !important;
+        background-position: center !important;
+    }
+
+    #card-iss1, #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 1rem;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    .title-text{
+        padding:0 !important;
+        margin: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    .fadedbox p{
+        font-size: 3vh !important;
+        padding: 1rem !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        font-size: 3vh !important;
+        }
+    
+    #footer-left{
+        padding-top: 10vh !important;
+        background-position: center !important;
+    }
+    #footer-right{
+        width: 20%;
+        padding-top: 42vh !important;
+
+    }
+  
+}
+
+@media (min-width:1400px){  
+    #ttlframe{
+        background-position: top !important;
+    }    
+}
+
+:root{
+    --time-color: #dfcbb1;
+    --time-transition: ease-in-out 0.5s;
+}

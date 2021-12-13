@@ -1,0 +1,238 @@
+@import url(/styles/themes/components/fab.css);
+@import url(/styles/themes/components/sizingNavbar.css);
+@import url(/styles/documentation.css);
+
+@font-face {
+    font-family: "vcr";
+    src: url("/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
+}
+
+@font-face{
+    font-family: "special";
+    src: url("/styles/fonts/johnny-fever.regular.otf")
+}
+
+/*BODY*/
+body{
+    font-family: vcr;
+    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(129, 129, 129, 0.2)100%), url(/images/1980s/gltch.gif) !important;
+    color: white;
+    background-size: 80vh;
+    text-transform: uppercase;
+    cursor: url("/images/icons/curs.png"), auto !important;
+}
+
+.scrollspy{
+    height: 85vh;
+}
+
+/*LINKS, SELECTION, CODE*/
+a{
+    color: #d47e1c;
+    text-shadow: 4px -4px 10px #91387a,-4px 4px 10px #3d10b9;
+}
+
+a:hover{
+    color: #ff8800;
+}
+
+::selection{
+    color: white;
+    background-color: #91387a;
+}
+
+code{
+    color: #e792d0;
+}
+
+.btn:hover, a:hover, .fab:hover, .sub-button:hover, .fadedbox:hover, button:hover,#info-disclaimer:hover, #info-btn:hover{
+    cursor: url("/images/icons/pointer.png"), pointer !important;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-image: url(/images/1980s/vhs-navb.png);
+    background-size: 12vh;
+    background-position: bottom;
+}
+
+.navbar-brand:hover {
+    color: #ffc290 !important;
+}
+
+.navbar-brand{
+    color: white !important;
+    font-size: 26pt !important;
+    text-transform: uppercase;
+    font-family: vcr, vt323, monospace;
+    margin-left: 1.5rem;
+    text-shadow: 4px -4px 12px #d3d3d3,-4px 4px 12px #bebebe;
+}
+
+#capT{
+    background-image: url(/images/icons/t-1980s.svg);
+    background-size: 5.5vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    padding: 2rem;
+}
+
+.nav-link{
+    line-height: 3vh;
+    font-size: 3vh !important;
+    font-family: vcr, vt323, monospace;
+    color: white !important;
+    text-shadow: 4px -4px 10px #d8d8d8,-4px 4px 10px #bebebe;
+    text-transform: uppercase;
+}
+
+.nav-link.active{
+  background-color: transparent !important;
+  text-shadow: transparent !important;
+  border-color: transparent !important;
+  text-shadow: transparent !important;
+}
+
+.dropdown-menu{
+    background-image: url(/images/1980s/vhs-navb.png);
+    background-size: 15vh;
+    background-position: top;
+    padding-top: 0 !important;
+}
+
+.dropdown-item{
+    color: white;
+    font-family: vcr, vt323, monospace;
+    text-transform: uppercase;
+    font-size: 3vh;
+}
+
+.dropdown-item:hover{
+    color: white;
+    background-color: #372174; 
+}
+
+/*INFO MODAL*/
+.modal-header, .modal-footer{
+    background-image: url(/images/1980s/vhs-navb.png);
+    background-size: 12vh;
+    background-position: bottom;
+    border: none;
+}
+
+.modal-title{
+    color: white;
+    font-size: 3vh;
+    text-transform: uppercase;
+}
+
+.modal-footer .btn{
+    background-color: transparent !important;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3vh;
+    border: none;
+}
+
+.modal-body{
+    background-image: linear-gradient(to bottom, rgba(30, 19, 49, 0.2) 0%, rgba(34, 33, 36, 0.2)100%), url(/images/1980s/gltch.gif);
+    color: white;
+    font-size: 2.2vh;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.modal-body p{
+    font-size: 2.2vh !important;
+    text-align: left;
+    padding: 0;
+}
+
+/*PAGE CONTENT*/
+.about-content{
+    padding: 2rem;
+    text-align: center;
+    font-size: 4vh;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    max-height: 15vh;
+}
+
+h2{
+    font-size: 10vh;
+    font-family: special;
+    -webkit-background-clip: text !important;
+    background-image: url(/images/1980s/vhs-navb.png);
+    background-size: 20vh;
+    -webkit-text-fill-color: transparent;
+    background-position: top;
+}
+
+.about-us{
+    max-height: 78vh;
+    text-shadow: 4px -4px 10px #505050,-4px 4px 10px #575757;
+}
+
+.about-us h3{
+    margin-top: 2rem;
+    font-size: 5vh;
+}
+
+.about-us p{
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 2.2vh;
+    background-image: linear-gradient(rgba(194, 55, 122, 0.8) 40%, rgba(247, 126, 21, 0.8) 50%, rgb(255, 227, 227) 52%,rgba(247, 126, 21, 0.8)55%,  rgba(56, 32, 116, 0.5)65%), url(/images/1980s/gltch.gif);
+}
+
+img{
+    height: 40vh;
+    margin: 1.5rem;
+}
+
+#edoardo{
+    text-align: right;
+    padding-right: 2rem;
+}
+
+#edoardo p{
+    margin-left: 2rem;
+}
+
+#edoardo img{
+    float: right;
+}
+
+#alessandra{
+    text-align: left;
+    padding-left: 2rem;
+}
+
+#alessandra p{
+    margin-right: 2rem;
+}
+
+#alessandra img{
+    float: left;
+}
+
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: rgb(36, 29, 54)  !important;
+    box-shadow: 4px -2px 10px rgba(69, 54, 73, 0.4),-4px 4px 10px rgba(58, 45, 40, 0.4) !important;
+}
+
+.fab-container .fab::before {
+    display: none;
+}
+
+.sub-button:hover{
+    background-color: #DE3E38 !important;
+}
+
+@media (max-width: 992px){
+    #navbarNavDropdown{
+        background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(129, 129, 129, 0.2)100%), url(/images/1980s/gltch.gif) !important;
+    }
+}

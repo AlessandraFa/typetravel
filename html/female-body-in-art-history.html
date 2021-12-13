@@ -1,0 +1,1272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/themes/renaissance/mainRenaissance.css">
+    <title>Typetravel - Female body in art history</title>
+    <link rel="icon" href="/images/icons/t-t.svg"></link>
+    
+  </head>
+  <body>
+    <button class="navigation-responsive-button"  onclick="responsiveNavigation(this.id)" id="prev-article-1" style="left: 30px;">Prev</button>
+    <button class="navigation-responsive-button" onclick="responsiveNavigation(this.id)" id="next-article-3" style="right: 120px;">Next</button>
+    <button class="navigation-responsive-button"  onclick="responsiveNavigation(this.id)" id="prev-article-2" style="left: 30px;">Prev</button>
+    <button class="navigation-responsive-button" onclick="responsiveNavigation(this.id)" id="next-article-2" style="right: 30px;">Next</button>
+   
+    <!-- MODALS -->
+
+        <!-- disclaimer start -->
+        <div class="modal" tabindex="-1" id="disclaimer">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Disclaimer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                <p>
+                    The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modelling and Web Technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor Fabio Vitali.
+                </p>
+                <p>
+                    The documents contained in this web site have been selected for their length and complexity from various websites and magazines. Their publication here is not intended to be an alternative or replace their original locations.You can find the original publications at:
+                    <ul>
+                        <li><a href="https://www.architectmagazine.com/" target="_blank">Architect Magazine</a>: <a href="https://www.architectmagazine.com/design/editorial/the-climate-is-changing-so-must-architecture_o" target="_blank">The Climate Is Changing. So Must Architecture</a></li>
+                        <li><a href="https://www.theguardian.com" trarget="_blank">The Guardian</a>: <a href="https://www.theguardian.com/cities/2019/feb/25/concrete-the-most-destructive-material-on-earth" target="_blank">Concrete: the most destructive material on Earth</a></li>
+                        <li><a href="https://longreads.com/" target="_blank">Longreads</a>: <a href="https://longreads.com/2017/04/03/building-in-the-shadow-of-our-own-destruction/" target="_blank">Building In the Shadow of Our Own Destruction</a></li>
+                        <li><a href="https://medium.com/" target="_blank">Medium</a>: <a href="https://medium.com/@richardkyu/tracking-the-historical-representation-of-the-female-nude-2d1d7fe1d1d" target="_blank">Tracking Historical Representations of the Female Nude</a></li>
+                        <li><a href="https://www.bbc.com/" target="_blank">BBC</a>: <a href="" target="_blank">The fine line between art and pornography</a></li>
+                        <li><a href="artsy.net" target="_blank">Artsy</a>: <a href="" target="_blank">The Taboo History of Women’s Body Hair in Art</a></li>
+                    </ul>
+                </p>
+                <p>
+                    All copyrights and related rights on the content remain with their original owners.
+                    <br>
+                    All copyright on the typographic and layout choices are 2021 © Edoardo Dal Borgo and Alessandra Failla.
+                </p> 
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- disclaimer end -->
+
+   <!-- HEADER START -->
+
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1" id="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand justify-content-lg-start ps-2" href="./index.html"><span id="capT"></span>ypetravel</a>
+              
+          <!-- togglers start -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation" id="hide-md-btn-off">
+            About the articles
+          </button>
+          <!-- togglers end  -->
+          
+          <!-- offcanvas start  -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">About the articles</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+             <!-- accordion start -->
+             <div class="accordion accordion-flush" id="accordionFlushOffCanvas">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="off-flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#off-flush-collapseOne" aria-expanded="false" aria-controls="off-flush-collapseOne">
+                      Tracking Historical Representations of the Female Nude
+                  </button>
+                </h2>
+                <div id="off-flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="off-flush-headingOne" data-bs-parent="#accordionFlushOffCanvas">
+                  <div class="accordion-body">
+                      <!-- nested nav tab start -->
+                      <ul class="nav nav-tabs justify-content-center" id="article-1-tab-offcanvas" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="article-1-people-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-people-offcanvas" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-1-places-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-places-offcanvas" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-1-artworks-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-artworks-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Artworks</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="article-1-events-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-1-events-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content  text-center" id="myTabContent-offcanvas">
+                          <div class="tab-pane fade show active" id="article-1-people-offcanvas" role="tabpanel" aria-labelledby="home-tab"><ul>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Adam and Eve: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Alexander the Great: 2 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Edgar Degas: 6 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Jacques Louis David: 1 <span></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Jean-Auguste Dominique Ingres: 7 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Jean-Léon Gérôme: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Kenneth Clark: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Leonardo da Vinci: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Paul Cézanne: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Praxiteles: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Sandro Botticelli: 2 </span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">TJ Clark: 3 </span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Thomas Couture: 3 </span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Édouard Manet: 5 </span></li>
+                          </ul></div>
+                          <div class="tab-pane fade" id="article-1-places-offcanvas" role="tabpanel" aria-labelledby="profile-tab">
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Africa: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Egypt: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">France: 8 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Greece: 11 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Indochina: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Italy: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Louvre: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Paris: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Rome: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-1-artworks-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Apollo Belvedere: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Birth of Venus: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Canova’s Perseus: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Knidian Aphrodite: 8 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">La Grande Odalisque: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Mattei Athena: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Olympia: 10 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Pompeii Venus: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Bathers: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Decadence of the Romans: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Slave Market: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Tub: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Turkish Bath: 4 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-1-events-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(1, this)" class="events-nav">French Revolution: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="events-nav">Industrial Revolution: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="events-nav">Peace of Lodi: 1 <span ></span></span></li>
+                          </div>
+                        </div>
+                    <!-- nested nav tab start -->
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="off-flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#off-flush-collapseTwo" aria-expanded="false" aria-controls="off-flush-collapseTwo">
+                      The fine line between art and pornography
+                  </button>
+                </h2>
+                <div id="off-flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="off-flush-headingTwo" data-bs-parent="#accordionFlushOffCanvas">
+                  <div class="accordion-body">
+                      <!-- nested nav tab start -->
+                      <ul class="nav nav-tabs justify-content-center" id="article-2-tab-offcanvas" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="article-2-people-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-people-offcanvas" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-2-places-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-places-offcanvas" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-2-artworks-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-artworks-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Artworks</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="article-2-events-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-2-events-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content  text-center" id="myTabContent-offcanvas">
+                          <div class="tab-pane fade show active" id="article-2-people-offcanvas" role="tabpanel" aria-labelledby="home-tab">
+                            <li><span onclick="highlightData(2, this)" class="people-nav">ArtActivistBarbie: 8 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Arthur Hacker: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Benvenuto Cellini: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Deborah de Robertis: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Diego Velázquez: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Eric Gill: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Fra Beecher: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Francisco Goya: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Guerrilla Girls: 4 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Gustav Klimt: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Gustave Courbet: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Hans Maes: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Harvey Weinstein: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Jeffrey Epstein: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">John William Waterhouse: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Mary Beard: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Mary Richardson: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Sarah Williamson: 7 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Sonia Boyce: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Wright Barker: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Édouard Manet: 3 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-2-places-offcanvas" role="tabpanel" aria-labelledby="profile-tab">
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Iowa: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">London’s National Gallery: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Manchester: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Musée d’Orsay: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Paris: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Pompeii: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">UK: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">US: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-2-artworks-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Circe: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Hylas and the Nymphs: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Le Déjeuner sur l’Herbe: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Naked Maja: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Olympia: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Rokeby Venus: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">The Origin of the World: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">The Syrinx: 1 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-2-events-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(2, this)" class="events-nav">Black Lives Matter: 1 <span ></span></span></li>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="off-flush-headingThree">
+                  <button class="accordion-button collapsed" type="button"  data-bs-toggle="collapse" data-bs-target="#off-flush-collapseThree" aria-expanded="false" aria-controls="off-flush-collapseThree">
+                      The Taboo History of Women’s Body Hair in Art
+                  </button>
+                </h2>
+                <div id="off-flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="off-flush-headingThree" data-bs-parent="#accordionFlushOffCanvas">
+                  <div class="accordion-body"><!-- nested nav tab start -->
+                      <ul class="nav nav-tabs justify-content-center" id="article-3-tab-offcanvas" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="article-3-people-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-3-people-offcanvas" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-3-places-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-3-places-offcanvas" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="article-3-artworks-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-3-artworks-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Artworks</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="article-3-events-tab-offcanvas" data-bs-toggle="tab" data-bs-target="#article-3-events-offcanvas" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content  text-center" id="myTabContent">
+                          <div class="tab-pane fade show active" id="article-3-people-offcanvas" role="tabpanel" aria-labelledby="home-tab">
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Alexandre Cabanel: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Alice Macdonald: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Alina Cohen: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Amedeo Modigliani: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Edgar Degas: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Eleanor Antin: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Gustave Courbet: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Jean-Auguste-Dominique Ingres: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Jean-Honoré Fragonard: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Jean-Léon Gérôme: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Jill Burke: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">King Solomon: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Michel Foucault: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Peter Paul Rubens: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Pierre-Auguste Renoir: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Praxiteles: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Sandra Cavallo: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Sandro Botticelli: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Sylvia Sleigh: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Titian: 4 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">William-Adolphe Bouguereau: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="people-nav">Édouard Manet: 2 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-3-places-offcanvas" role="tabpanel" aria-labelledby="profile-tab">
+                            <li><span onclick="highlightData(3, this)" class="places-nav">France: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="places-nav">Greece: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="places-nav">Paris: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="places-nav">United States: 2 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-3-artworks-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">Aphrodite of Knidos: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">Bather Arranging Her Hair: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">Girl with a Dog: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">L’Origine du monde: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">Marble statue of Aphrodite: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">Nude on a Blue Cushion: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">Slave Market: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">The Birth of Venus: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">The Three Grace: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">The Turkish Bath: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">The Woman in the Waves: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">Venus: 6 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="artworks-nav">Venus of Urbino: 3 <span ></span></span></li>
+                          </div>
+                          <div class="tab-pane fade" id="article-3-events-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
+                            <li><span onclick="highlightData(3, this)" class="events-nav">Middle Ages: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(3, this)" class="events-nav">Renaissance: 2 <span ></span></span></li>
+                          </div>
+                        </div>
+                    <!-- nested nav tab start -->
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          
+          <!-- accordion end -->
+          
+            </div>
+          </div>
+          <!-- offcanvas end -->
+
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+              <li class="nav-item ps-2">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown ps-1">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-active-link">
+                  Issues
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./female-body-in-art-history.html">Female Nude Painting throughout Art</a></li>
+                  <li><a class="dropdown-item" href="./the-future-of-architecture.html"  id="nav-active-link">The Future of Architecture</a></li>
+                  </ul>
+              </li>
+                <li class="nav-item dropdown ps-1">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Themes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" onclick="changeTheme(this.id)" href="#" tag="link" id="enable-default">Default</a></li>
+                    <li><a class="dropdown-item" onclick="changeTheme(this.id)" href="#" id="enable-renaissance">Renaissance</a></li>
+                    <li><a class="dropdown-item" onclick="changeTheme(this.id)" href="#" id="enable-secession">Secession</a></li>
+                    <li><a class="dropdown-item" onclick="changeTheme(this.id)" href="#" id="enable-eighty">1980's Style</a></li>
+                    <li><a class="dropdown-item" onclick="changeTheme(this.id)" href="#" id="enable-future">Future</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item ps-1">
+                  <a class="nav-link active" aria-current="page" href="./documentation.html" data-bs-toggle="modal" data-bs-target="#">Documentation</a>
+              </li>
+              <li class="nav-item ps-1">
+                  <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a>
+              </li>
+              <li class="nav-item ps-1">
+                  <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#">About</a>
+              </li>
+              <li class="nav-item ps-1">
+                <a class="nav-link active md-big" id="hide-md-btn" aria-current="page" onclick="addClass()">Hide info</a>
+              </li>
+              </ul>
+          </div>
+      </nav>
+      <!-- navbar end -->
+
+  <!-- HEADER END -->
+    
+    <!-- article grid start  -->
+    <div class="container-fluid  issue-female-body">
+        <div class="row" id="expand-animation">
+
+
+
+  <!-- article 1 end -->
+
+  <!-- article2-->
+  
+  <div class="col-lg-3 col-md-12 p-0" id="article-2">
+    <div class="card">
+      
+      <div class="card-header">
+      <h5 class="card-title p-3" id="title-bigger3">
+        <div class="block-reveal">The fine line between art and <span class="spec">pornography</span></div>
+          </h5>
+        <div class="deco" id="deco3"></div>
+      </div>
+        
+      <div class="accordion accordion-flush" id="accordionArt2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="stayOpen-headingTwo">
+            <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseTwo" aria-expanded="true" aria-controls="stayOpen-collapseTwo">
+              Article information:
+            </button>
+          </h2>
+          <div id="stayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingTwo">
+            <div class="accordion-body">
+                <div class="info">
+                  <p class="byline">By <a href="https://www.elizabethenfield.com/" target="_blank">Lizzie Enfield</a><span class="publicationDate">, 18th September 2020</span></p>
+                  <p class="sourceLine">Source: <a href="https://www.bbc.com/culture/article/20200917-the-fine-line-between-art-and-pornography" target="_blank">BBC Culture</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   <!-- card here -->
+      <div class="card-body overflow-auto">
+        <div class="renaiss-subtitle issue-fem">
+          <div class="renaiss-left" id="rl1"></div>
+            <div class="renaiss-right" id="rr1"></div>
+            <h6 class="card-subtitle p-3">
+              For more than 100 years, activists have drawn attention to the depiction of female nudes in art. Is it time to look at them with fresh eyes, asks Lizzie Enfield.
+            </h6>
+        </div>
+        <div class="imag">
+          <img src="/images/female-body/2-1.jpeg" width="100%">
+        </div>
+        <p>
+          At the time the <span id="mention-1" class="mention event" about="Black Lives Matter">Black Lives Matter</span> campaign in the <span id="mention-1" class="mention place" about="UK">UK</span>  <a href="https://www.bbc.com/culture/article/20200612-black-lives-matter-protests-why-are-statues-so-powerful" target="_blank">was drawing the national spotlight to the statues of slave traders</a>, another activist was highlighting the way women are represented in civic statuary. “Just look at what you are being socialised to accept as normal…” says the activist’s placard, focusing on a monument outside the Trafford Centre in <span id="mention-1" class="mention place" about="Manchester">Manchester</span>. It shows a seated man bathing his feet surrounded by a clutch of fawning semi-naked women. Another sign beside a statue in <span id="mention-1" class="mention place" about="Iowa">Iowa</span>, <span id="mention-1" class="mention place" about="US">US</span> – of a bronze topless woman arching her back and holding her breasts as if to deliberately enhance her cleavage – reads: “<span id="mention-2" class="mention place" about="Iowa">Iowa</span> as a mother figure offering nourishment to her children? Yeah.”
+        </p>
+        <p>
+          The placard bearer is <span id="mention-1" class="mention person" about="ArtActivistBarbie">ArtActivistBarbie</span>, a Barbie doll posed in front of artworks and monuments, and the playful alter ego of <span id="mention-1" class="mention person" about="Sarah Williamson">Sarah Williamson</span>, a senior lecturer at the University of Huddersfield. <span id="mention-2" class="mention person" about="Sarah Williamson">Williamson</span> began the project as way to engage students with feminist ideas, and in particular the way women are portrayed in art. “This way, I can lead people gently into those conversations,” <span id="mention-3" class="mention person" about="Sarah Williamson">Williamson</span> tells BBC Culture. “It’s a form of feminist ventriloquism – my voice, being spoken through a third party with AAB [<span id="mention-2" class="mention person" about="ArtActivistBarbie">ArtActivistBarbie</span>] is the equivalent of a ventriloquist's dummy.”
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/2-2.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          <span id="mention-3" class="mention person" about="ArtActivistBarbie">ArtActivistBarbie</span> poses with a toy tiger in a parody of the 1889 painting <span id="mention-1" class="mention artwork" about="Circe">Circe</span> by <span id="mention-1" class="mention person" about="Wright Barker">Wright Barker</span>, showing a topless woman surrounded by lions (Credit: <span id="mention-4" class="mention person" about="Sarah Williamson">Sarah Williamson</span>/Twitter)
+        </p>
+        <p>
+          <a href="https://twitter.com/BarbieReports/status/1282309331795484677" target="_blank">In a Twitter post</a>, <span id="mention-4" class="mention person" about="ArtActivistBarbie">ArtActivistBarbie</span> imagines the commissioning of the 1889 painting <span id="mention-2" class="mention artwork" about="Circe">Circe</span> by <span id="mention-2" class="mention person" about="Wright Barker">Wright Barker</span>, which shows a topless woman surrounded by lions. “‘I’d like a seductive young beauty, half undressed, confined and with some big game,’ said the patron”, the Twitter post reads. “‘How about <span id="mention-3" class="mention artwork" about="Circe">Circe</span>, say with 5 or 6 tigers?’” said the artist. ‘Everyone will admire your scholarly interest in Greek Mythology.’” With her tongue firmly in her cheek, <span id="mention-5" class="mention person" about="ArtActivistBarbie">ArtActivistBarbie</span> asks if this is the depiction of a classical scene or thinly veiled Victorian porn.
+        </p>
+        <p class="cit">
+          We have to learn to look the past and its faults in the eye – <span id="mention-1" class="mention person" about="Mary Beard">Mary Beard</span>
+        </p>
+        <p>
+          The classics professor <span id="mention-2" class="mention person" about="Mary Beard">Mary Beard</span> asked a similar question in her TV series Shock of the Nude, which aired earlier this year in the <span id="mention-2" class="mention place" about="UK">UK</span>. The programme explored the many ways male artists have tried to justify the existence of naked women in their paintings: reclining nudes are depicted as innocently ‘caught’, half-bathing or somehow sleepily compromised in a state of undress.
+        </p>
+        <p>
+          So is what we are looking at art or pornography?
+        </p>
+        <p>
+        “That is a complicated question and anyone who thinks they know the answer should reflect a bit harder!” Professor <span id="mention-3" class="mention person" about="Mary Beard">Mary Beard</span> tells BBC Culture. “My line is that the boundary between art and pornography is always a treacherous one and the point about the past is that we have to see it both in its own terms and ours. We have to learn to look the past and its faults in the eye.”
+        </p>
+        <h4>A contentious issue</h4>
+        <p>
+          For more than 100 years, feminists have drawn attention to sexist attitudes that exist within the art world. In 1914, the suffragist <span id="mention-1" class="mention person" about="Mary Richardson">Mary Richardson</span> attacked <span id="mention-1" class="mention person" about="Diego Velázquez">Velázquez</span>’s <span id="mention-1" class="mention artwork" about="Rokeby Venus">Rokeby Venus</span> with an axe. The painting portrays Venus looking in the mirror, turned away from the viewer with her bottom at the centre of the canvas. <span id="mention-2" class="mention person" about="Mary Richardson">Mary Richardson</span>  claimed her protest was partly at the way men gaped at the painting, which hangs in <span id="mention-1" class="mention place" about="London’s National Gallery">London’s National Gallery</span> .
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/2-3.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          In 1914 the suffragist <span id="mention-3" class="mention person" about="Mary Richardson">Mary Richardson</span> attacked <span id="mention-2" class="mention person" about="Diego Velázquez">Velázquez</span>’s <span id="mention-2" class="mention artwork" about="Rokeby Venus">Rokeby Venus</span> in protest at its portrayal of the female nude (Credit: Getty Images)
+        </p>
+        <p>
+        “Do women have to be naked to get into the Met Museum?” shouted one billboard poster put up by feminist art activists <span id="mention-1" class="mention person" about="Guerrilla Girls">Guerrilla Girls</span> in the 1980s. At the time it seemed they did – less than 4% of artists in the modern art section of the museum were by women, but 76% of the nudes were female. With smart, cutting messages delivered via large-scale billboard works, the <span id="mention-2" class="mention person" about="Guerrilla Girls">Guerrilla Girls</span> sought to name and shame the art world for its unapologetic disregard for women and other minorities in art.
+        </p>
+        <p class="cit">
+          If you want, compare <span id="mention-1" class="mention person" about="Francisco Goya">Goya</span>’s <span id="mention-1" class="mention artwork" about="Naked Maja">Naked Maja</span> to a Playboy centrefold and tell me the line is not blurred – <span id="mention-1" class="mention person" about="Hans Maes">Hans Maes</span>
+        </p>
+        <p>
+          In 2018, British artist <span id="mention-1" class="mention person" about="Sonia Boyce">Sonia Boyce</span> took a different approach when <a href="https://www.bbc.co.uk/news/entertainment-arts-42904024" target="_blank">she staged a removal</a>, in front of an audience, of <span id="mention-1" class="mention artwork" about="Hylas and the Nymphs">Hylas and the Nymphs</span> by <span id="mention-1" class="mention person" about="John William Waterhouse">John William Waterhouse</span> from <span id="mention-2" class="mention place" about="Manchester">Manchester</span> Art Gallery. The space on the wall, where the painting depicting a clutch of semi-naked young girls luring Hylas into a lily pond had hung, was left empty for a week. “My aim was to draw attention to – and question –  the ways in which museums make decisions about what visitors see, in what context and with what labelling,” <a href="https://www.theguardian.com/artanddesign/2018/mar/19/hylas-nymphs-manchester-art-gallery-sonia-boyce-interview" target="_blank"><span id="mention-2" class="mention person" about="Sonia Boyce">Boyce</span> said after the move provoked a furious backlash</a> with accusations of censorship, political correctness and feminist extremism. “Taking the picture down was about starting a discussion, not provoking a media storm.” It did both. The issue of art and pornography is a contentious one.
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/2-4.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          In the 1980s, feminist art activists <span id="mention-3" class="mention person" about="Guerrilla Girls">Guerrilla Girls</span> famously asked ‘Do women have to be naked to get into the Met Museum?’ (Credit: <span id="mention-4" class="mention person" about="Guerrilla Girls">Guerrilla Girls</span>)
+        </p>
+        
+        <p>
+          “The boundaries have always been blurred,” says <span id="mention-2" class="mention person" about="Hans Maes">Hans Maes</span>, a lecturer in art history at Kent University who has written extensively on the subject. “It’s generally assumed that pornography has two key characteristics: it’s sexually explicit and its aim is to sexually arouse the viewer. Well, throughout history and across cultures you can find great works of art that share those very characteristics. Think of some of the mosaics in <span id="mention-1" class="mention place" about="Pompeii">Pompeii</span>, Kama Sutra sculptures or some of <span id="mention-1" class="mention person" about="Gustav Klimt">Gustav Klimt</span>’s explicit drawings. If you want, compare <span id="mention-2" class="mention person" about="Francisco Goya">Goya</span>’s <span id="mention-2" class="mention artwork" about="Naked Maja">Naked Maja</span> to a Playboy centrefold and tell me the line is not blurred.”
+        </p>
+        <p>
+          In 2014, performance artist <span id="mention-1" class="mention person" about="Deborah de Robertis">Deborah de Robertis</span> sought to make just this point by exposing herself in front of <span id="mention-1" class="mention person" about="Gustave Courbet">Gustave Courbet</span>’s <span id="mention-1" class="mention artwork" about="The Origin of the World">The Origin of the World</span> painting in the <span id="mention-1" class="mention place" about="Musée d’Orsay">Musée d’Orsay</span> in <span id="mention-1" class="mention place" about="Paris">Paris</span> to reproduce the close-up image of a woman’s genitals. She was subsequently arrested for posing naked in front of <span id="mention-1" class="mention person" about="Édouard Manet">Manet</span>’s <span id="mention-1" class="mention artwork" about="Olympia">Olympia</span>, also in the <span id="mention-2" class="mention place" about="Musée d’Orsay">Musée d’Orsay</span>. Her point was to raise the question: why is one representation of the human body defined as art and another as pornography?  
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/2-5.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          <span id="mention-3" class="mention person" about="Francisco Goya">Goya</span>’s <span id="mention-3" class="mention artwork" about="Naked Maja">Naked Maja</span> (above), <span id="mention-2" class="mention person" about="Gustave Courbet">Gustave Courbet</span>’s <span id="mention-2" class="mention artwork" about="The Origin of the World">The Origin of the World</span> and <span id="mention-2" class="mention person" about="Gustav Klimt">Klimt</span>’s explicit drawings are works that some historians and activists think ‘blur lines’ (Credit: Getty Images)
+        </p>
+        <p>
+          In the past, censorship of explicit images was often motivated by conservative and religious values and fears of moral corruption. By contrast, feminists who challenge objectifying sexual imagery want equal rights for women, and they fear the spread of objectifying images is detrimental to that cause. At the time of <span id="mention-3" class="mention person" about="Sonia Boyce">Sonia Boyce</span>’s intervention in <span id="mention-3" class="mention place" about="Manchester">Manchester</span>, a fourth wave of feminism was surging amid the wave of accusations against <span id="mention-1" class="mention person" about="Harvey Weinstein">Harvey Weinstein</span> and <span id="mention-1" class="mention person" about="Jeffrey Epstein">Jeffrey Epstein </span>and others, and there was a surge of anxiety about how to deal with art made under different ethical conditions from our own.
+        </p>
+        <p>
+          You don’t have to look very far to find examples. <span id="mention-1" class="mention person" about="Benvenuto Cellini">Benvenuto Cellini</span> insisted on using young virgins as models and ‘deflowering’ them once he had finished painting them. <a href="https://www.bbc.com/culture/article/20170517-can-you-separate-the-artist-from-the-art" target="_blank"><span id="mention-1" class="mention person" about="Eric Gill">Eric Gill</span> used his own daughters as models</a> and sexually abused them. “We should perhaps distinguish between the context of appreciation and the context of creation,” <span id="mention-3" class="mention person" about="Hans Maes">Hans Maes</span> tells BBC Culture. “If we know that an artist abused women and his abusive attitudes are also manifest in the work, then that does affect the status of the work. The work itself will come to appear seedy and morally problematic, once you become aware.”
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/2-6.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          In 2018, the artist <span id="mention-4" class="mention person" about="Sonia Boyce">Sonia Boyce</span> staged a removal of <span id="mention-2" class="mention person" about="John William Waterhouse">John William Waterhouse</span>’s <span id="mention-2" class="mention artwork" about="Hylas and the Nymphs">Hylas and the Nymphs</span> from <span id="mention-4" class="mention place" about="Manchester">Manchester</span> Art Gallery (Credit: Getty Images)
+        </p>
+        <p>
+        In the recent <span id="mention-2" class="mention person" about="Jeffrey Epstein">Jeffrey Epstein </span> documentary on Netflix, one of the arresting police officers comments on the sheer volume of nudes on display in the sex offender’s mansion. In a gallery, similar nudes might be objects of admiration.
+        </p>
+        <p class="cit">
+        there’s a type of reverence to these institutions with their language of Old Masters and masterpieces which we absorb unconsciously and acceptingly – <span id="mention-5" class="mention person" about="Sarah Williamson">Sarah Williamson</span>
+        </p>
+        <p>
+        “Well it does make you think,” agrees <span id="mention-6" class="mention person" about="Sarah Williamson">Sarah Williamson</span>. “There are many paintings in our public art galleries of young pubescent girls, which make for uncomfortable viewing. <span id="mention-1" class="mention artwork" about="The Syrinx">The Syrinx</span> by <span id="mention-1" class="mention person" about="Arthur Hacker">Arthur Hacker</span> on display in <span id="mention-5" class="mention place" about="Manchester">Manchester</span> Art Gallery for example, shows a young girl, naked, looking vulnerable and scared and it makes me feel very uncomfortable to view it. But there’s a type of reverence to these institutions with their language of Old Masters and masterpieces which we absorb unconsciously and acceptingly.”
+        </p>
+        <h4>‘Naked’ or ‘nude’?</h4>
+        <p>
+          Life drawing from nude models is still the mainstay of a fine art education and the vast majority of models are women; yet in the ‘sanctity’ of the life-drawing room, these women are not naked but ‘nude’, and they don’t strip but ‘disrobe’.
+        </p>
+        <p>
+          “But of course, the male gaze exists in the life-drawing class,” says <span id="mention-4" class="mention person" about="Mary Beard">Mary Beard</span>, who herself posed as part of her investigation in Shock of the Nude. “There are various ways culture tries to remove it and those linguistic devices are used to try to desexualise the encounter. But it’s there.”
+        </p>
+        <p>
+          “Posing virtually was something I had hoped to avoid,” model <span id="mention-1" class="mention person" about="Fra Beecher">Fra Beecher</span> <a href="https://theeverydaymagazine.co.uk/opinion/working-from-home-perspectives-of-a-life-model" target="_blank">wrote in a blog about life modelling online during lockdown</a>, which illustrated her own awareness of the male gaze. “I never allow photographs to be taken of myself when I am modelling. I wondered if it would be possible to reconcile my feelings regarding nude photography with my fear of appearing nude online.” Another life model expressed a blunter concern: that away from the confines of the life-drawing room, participants were free to masturbate rather than draw.
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/2-7.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          Another of <span id="mention-6" class="mention person" about="ArtActivistBarbie">ArtActivistBarbie</span>’s subjects is <span id="mention-2" class="mention person" about="Édouard Manet">Manet</span>’s <span id="mention-1" class="mention artwork" about="Le Déjeuner sur l’Herbe">Le Déjeuner sur l’Herbe</span>, where a female nude is accompanied by two fully-clothed men (Credit: Getty Images)
+        </p>
+        <p>
+          Both women’s concerns show how fine the line between art and pornography is and how tricky trying to negotiate it is. <a href="https://www.thetimes.co.uk/article/mary-beard-lays-bare-a-problem-with-nudes-that-are-soft-porn-for-the-elite-sv8p9f9cz" target="_blank"><span id="mention-5" class="mention person" about="Mary Beard">Mary Beard</span>’s claim in an interview</a> that the nude is always in danger of being <a href="https://www.theguardian.com/artanddesign/shortcuts/2020/jan/28/is-mary-beard-right-to-say-classical-nudes-are-soft-porn-for-the-elite" target="_blank">“soft porn for the elite”</a> was met with abusive messages in the article comments and on Twitter. Like <span id="mention-5" class="mention person" about="Sonia Boyce">Sonia Boyce</span>, she discovered that trying to start a discussion on the subject tends to inspire hostility rather than interest.
+        </p>
+        <p>
+          Which is why <span id="mention-7" class="mention person" about="ArtActivistBarbie">ArtActivistBarbie</span>, subverting a plastic doll widely vilified by feminists for being a gender stereotype, was a stroke of genius on her creator’s part. “The issue is discussion and starting to view things differently,” says <span id="mention-7" class="mention person" about="Sarah Williamson">Sarah Williamson</span>. “AAB provides a fun and playful way of doing this and, in doing so, trying to create a world in which there is more equality for women and where they are not just the subject of the male gaze.”
+        </p>
+        <p>
+          In one of <span id="mention-8" class="mention person" about="ArtActivistBarbie">ArtActivistBarbie</span>’s most commented-on posts, she poses on the floor of a gallery in front of <span id="mention-3" class="mention person" about="Édouard Manet">Manet</span>’s <span id="mention-2" class="mention artwork" about="Le Déjeuner sur l’Herbe">Le Déjeuner sur l’Herbe</span>. In the first picture, Barbie is naked like the woman in the picture and her two male companions are fully clothed. But then the set-up is reversed and Barbie appears in her glad rags while the two men are naked.
+        </p>
+        <p>
+          It’s an interesting juxtaposition and one that certainly makes you think.
+        </p>
+      </div>
+
+
+     <!-- card end  -->
+    </div>
+  </div>
+  <!-- article2 end -->
+  <!-- article1 -->
+  <div class="col-lg-3 col-md-12 p-0" id="article-1">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title p-3 block-effect" id="article-long-title">
+          <div class="block.reveal"> Tracking Historical Representations of the <span id="spec">Female Nude</span></div>
+        </h5>
+        <div class="deco" id="deco1"></div>
+      </div>
+        <div class="accordion accordion-flush" id="accordionArt1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="stayOpen-headingOne">
+              <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseOne" aria-expanded="true" aria-controls="stayOpen-collapseOne">
+                  Articles information:  
+              </button>
+            </h2>
+            <div id="stayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingOne">
+              <div class="accordion-body">
+                  <div class="info">
+                    <p class="byline">By <a href="https://www.architectmagazine.com/author/ned-cramer" target="_blank">Richard K. Yu
+                      </a><span class="publicationDate">,
+                        December 26, 2017</span></p>
+                    <p class="sourceLine">Source: <a href="https://medium.com/@richardkyu/tracking-the-historical-representation-of-the-female-nude-2d1d7fe1d1d" target="_blank">Medium.com</a></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body overflow-auto">
+            <div class="imag">
+              <img src="/images/female-body/1-1.jpeg" width="100%">
+            </div>
+            <p class="imgCaption">
+              The three virgin Goddesses: Hestia, Athena, and Artemis. Drawing credit to the talented artist <a href="https://pixabay.com/users/455992-455992/?tab=latest" target="_blank">455992</a>
+            </p>
+            <p>
+              French painting in the mid-nineteenth century is characterized by the critical transformation from the academic, neoclassical style to more innovative and progressive types. The idealized, nude goddess of the neoclassical tradition was gradually replaced by modern varieties in which avant-garde painters chose the representation of the female nude as a front for their challenge to the accepted standards of the Academy.
+            </p>
+            <p>
+              <span id="mention-1" class="mention artwork" about="Mattei Athena">Mattei Athena</span> at <span id="mention-1" class="mention place" about="Louvre">Louvre</span>, an example of neoclassical tradition in the depiction of women.
+              In French academic art, female nudity was only permissible within the context of a recognizable narrative in an imaginary, mythological or biblical landscape. However, forward-thinking artists portray women in a naturalistic form, engaged in everyday activities, undermining established clichés of femininity and eliminating the voyeurism associated with traditional nudes of the period.
+              By analyzing the evolving relationship between the fine art of the female nude, its reception, and political movements in nineteenth-century <span id="mention-1" class="mention place" about="France">France</span>, we will explore how realist and impressionist representations diverged from the ancient Greek ideal. Painters shifted attention away from the female body as an object of erotic desire and onto artistic concerns of technique and composition. This transformation played an important role in the emergence of modernism and abstraction of the twentieth century.
+            </p>
+            <div class="imag">
+              <img src="/images/female-body/1-2.png" width="100%">
+            </div>
+            <p class="imgCaption">
+              <a href="https://en.wikipedia.org/wiki/Athena" target="_blank">Mattei Athena at Louvre</a>, an example of neoclassical tradition in the depiction of women.
+            </p>
+            <p>
+              Because of the widely accepted values of patriarchy in most societies from the past, women generally had less rights and were seen as inferior to men. Such viewpoints were widely reflected in both the literature and art forms of ancient societies. Therefore, it was reasonable to see that many early depictions of the female form frequently appealed to more obscene senses rather than artistic ones. As women began to receive more political rights and began to be seen as more equal to men within the society, the literature and art works also reflected such trends. In order to understand how female nudity was gradually accepted as art within the nineteenth century in French society, we will first examine the culture and motivations behind female nudity in Greek and, briefly, Italian art (the main cultures that motivated nudist art movements in <span id="mention-2" class="mention place" about="France">France</span>).
+            </p>
+            <p>
+              This history is key for establishing the context behind certain norms surrounding female nudity and contributes to a discussion of the development of the artistic and the obscene in depictions of the female nude. We will focus on the shifting norms regarding art and obscenity in these different societies when processing female nudity in art, and the impact of avant-garde painters in the 19th century and more modern times in broadening the range of acceptable aesthetic emphases and associations of the female form.
+            </p>
+            <p>
+                The role of the female nude form in art is special because its rendering involves a balancing act between art and obscenity. This is the say that once an artist begins a depiction of the nude female form, the handling of that nudity intrinsically thrusts the artist onto a tightrope between artistic and pornographic depiction. Because of this, a set of norms surrounding the “appropriate” depiction of female nudity is often observed in cultures such as those of the French or of ancient <span id="mention-1" class="mention place" about="Greece">Greece</span>. In a sense, these norms are a way to signal to viewers and to improve their confidence that they are viewing an aesthetic, artistic depiction of the female form rather than one aimed simply at gratifying sexual desires or at depicting erotic qualities within that form. As <span id="mention-1" class="mention person" about="Kenneth Clark">Kenneth Clark</span> remarks:
+            </p>
+            <p id="cit-1">
+              "The female nude marks both the internal limit of art and the external limit of obscenity… It is the internal structural link that holds art and obscenity and an entire system of meaning together. And whilst the female nude can behave well, it involves a risk and threatens to destabilize the very foundations of our sense of order."
+            </p>
+            <p>
+                What <span id="mention-2" class="mention person" about="Kenneth Clark">Clark</span> describes here in pairing artistic depiction and the obscene appears to be a gradient between “art” and “non-art”. He deepens the meaning of this metaphor by considering that art consists of the presentation and representation of subjects, while the idea of the obscene derives etymologically from the Latin “scena”. This means that obscenity describes what exists beyond art. In this way, the depiction of the female form is contentious because it holds the potential for artistic depiction, but also holds an equal potential for erotic depiction that would completely subvert artistic purposes. But it is also the existence of such a subject — the female nude — that gives purpose to what art actually is by defining what art is not, and this is what <span id="mention-3" class="mention person" about="Kenneth Clark">Clark</span> means when he describes the female nude as an “internal structural link” that holds art and obscenity in a system of meaning.
+            </p>
+            <p>
+              Primarily, a discussion regarding the historical development of norms surrounding the depiction of female nudity is important to characterizing its eventual prominence as an artistic form. It is essential to understand the history and norms of nudity within Greek art in order to grasp the struggles French progressive artists faced when trying to portray female nudity and how these artists were later able to overcome those struggles — eventually creating a paradigm shift in the acceptance of female nudity as art rather than a portrayal of sexuality.
+            </p>
+            <p>
+              Pre-Greek cultures, usually those near the east, saw nudity as something shameful or degrading. However, the development of Athenian democracy and Western humanism around the fifth century allowed the Greeks to become the first society to first portray and appreciate nudity as an art form. Surprisingly, for the Greeks, nudity as an art form became a means of differentiation between themselves as a noble civilization and other “uncivilized barbarians”, using nudity as a display of power and liberty by inspiring rather than inviting lustful glances.
+            </p>
+            <p>
+              Nudity as a form of power and liberty only applied to nude portrayals of male bodies. In ancient <span id="mention-2" class="mention place" about="Greece">Greece</span>, men competed without clothes in athletic competitions at religious festivals where the human body, masculine nudity, was associated with “triumph, glory, and moral excellence”. Thus, men’s bodies were the norm and standard of perfection, beauty-a symbol of athleticism, completely desexualized. It was only natural to see masculine nudity in paintings because men’s bodies were revealed all the time within society. Consequently, artists did not need to excuse male nudity, portraying males as nude in any action or context, regardless of whether man would have been required to be undressed in reality. In some respect, the naked image of men was worshipped, often displayed in sanctuaries and the form in which man gods and heroes of Greek religion were displayed in.
+            </p>
+            <div class="imag">
+                <img src="/images/female-body/1-3.png" width="100%">
+            </div>
+            <p class="imgCaption">
+              Michaelangelo’s David embodying this masculinity. <a href="https://www.accademia.org/explore-museum/artworks/michelangelos-david/" target="_blank">Picture Credit</a>
+            </p>
+            <p>
+              Incontrast, female nudity was taboo and extremely frowned upon by the Greek culture. By the mid-fourth century BC when <span href="https://en.wikipedia.org/wiki/Praxiteles" id="mention-1" class="mention person" about="Praxiteles">Praxiteles</span> carved the first image of a goddess naked (the <span id="mention-1" class="mention artwork" about="Knidian Aphrodite">Knidian Aphrodite</span>), the sculpture became the center of great controversy due to the fact that even partial nudity was rare in Greek art before the late fifth century BC: the only times female body parts were revealed was when women were victims of violence or represented as prostitutes.
+            </p>
+            <p>
+              Thus, the nude sculpture of Aphrodite needed to be censored. For example, the genitals were not represented, non-existent. Specifically, Greek textual records show that female sexuality was rejected and there was a clear revulsion toward female genitalia when looking at the negative connotations depicted in the text towards menstruation and child birth. Females were even considered as “polluting and dangerous to men”, and there were even taboos associated with touching menstruating women, or women who had recently given birth; even nursing milk was considered as pollution to men if it happened to touch their skin.
+            </p>
+            <div class="imag">
+                <img src="/images/female-body/1-4.png" width="100%">
+            </div>
+            <p class="imgCaption">
+              The Knidian Aphrodite.<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Aphrodite_von_Knidos.jpg/240px-Aphrodite_von_Knidos.jpg" target="_blank">Picture Source</a>
+            </p>
+            <p>
+                Additionally, female genitalia was referred to as “aidoia” or shameful parts. This was because women at the time had a relatively low social rank, only seemed as slightly higher than the status of a slave. Clearly, there was no way the Greek society would have been able to readily accept any form of female nudity as a form of art rather than as something degrading or of sexual nature.
+            </p>
+            <p>
+                In addition to censorship of the female genitalia, Praxiteles also needed some sort of excuse for portraying the Knidian Aphrodite in nude since only men could be portrayed as nude without question. Thus, <span href="https://en.wikipedia.org/wiki/Praxiteles" id="mention-2" class="mention person" about="Praxiteles">Praxiteles</span> created <span id="mention-2" class="mention artwork" about="Knidian Aphrodite">Aphrodite</span> in a pose with her head turned to the side and hand covering the body with props of a water jar and bath towel, to suggest that the goddess just stepped out of her bath and had been caught in a momentary state of complete surprise. Such a depiction creates an image of voyeur, viewing <span id="mention-3" class="mention artwork" about="Knidian Aphrodite">Aphrodite</span>’s nakedness as a forbidden pleasure for viewers. Yet, the creation of such a work of art was possible because women, especially <span id="mention-4" class="mention artwork" about="Knidian Aphrodite">Aphrodite</span>, were still respected in the realm of religion. Because <span id="mention-5" class="mention artwork" about="Knidian Aphrodite">Aphrodite</span> is the Goddess of love whose image was found in many places, she was accepted as a figure of respect to the people of the time, a figure to which families would often give rich offerings to or pay homage.
+            </p>
+            <div class="imag">
+                <img src="/images/female-body/1-5.png" width="100%">
+            </div>
+            <p class="imgCaption">
+              Praxiteles. Picture Source: <a href="https://web.archive.org/web/20070922013216/http://odysseus.culture.gr/h/1/eh151.jsp?obj_id=7126" target="_blank">Archeological Museum of Olympia</a>
+            </p>
+            <p>
+                The creation of the <span id="mention-5" class="mention artwork" about="Knidian Aphrodite">Knidian Aphrodite</span> and other successive nude portrayals of goddesses became the springboard for which endless derivations and replicas of female nudity could be later portrayed. Though females were not commonly depicted as nude in Greek pottery after the birth of the nude <span id="mention-6" class="mention artwork" about="Knidian Aphrodite">Knidian Aphrodite</span>, females were still portrayed as objects or motivations of pleasure for male viewers from time to time. Pottery began including images of females bathing in nude or of other sexual nature. Eventually, such representations on pottery became a bit more commonplace and began to be used as gifts for weddings, expressing luck or wishes in the newly-wed couples’ efforts in reproduction.
+            </p>
+
+            <p>
+              After <span href="https://en.wikipedia.org/wiki/Alexander_the_Great" id="mention-1" class="mention person" about="Alexander the Great">Alexander the Great</span> came into power in <span id="mention-3" class="mention place" about="Greece">Greece</span> and was able to achieve massive conquests during the Hellenistic Period, women were slowly able to gain more power which was reflected within the Greek art of that period. In terms of empowerment, women could now choose who to marry and also receive education. As a result, women were no longer solely represented in art as victims of violence or as prostitutes and female nudity in art was beginning to gain traction. However, the fall of <span id="mention-1" class="mention place" about="Rome">Rome</span> and rise of Christianity in the fourth century decreased the portrayal of nudity in western art due to the change in values toward chastity and celibacy of artists and patrons until around 1300CE. When nudity did appear, it was through the context of religious art such as <span href="https://en.wikipedia.org/wiki/Adam_and_Eve" id="mention-1" class="mention person" about="Adam and Eve">Adam and Eve</span> and/or to portray ideas of shame: Adam and Eve were the first man and woman to discover their nakedness because of sin through which they suffer shame and punishment.
+            </p>
+            <p>
+              Arguably, the lack of Christian influences in <span id="mention-1" class="mention place" about="Italy">Italy</span> coupled with a period of peace through the <span id="mention-1" class="mention event" about="Peace of Lodi">Peace of Lodi</span> from 1454 to 1494, helped create a period in which nude art could once again develop. Significantly, <span id="mention-1" class="mention person" about="Sandro Botticelli">Botticelli</span>’s <span id="mention-1" class="mention artwork" about="Birth of Venus">Birth of Venus</span> in <span id="mention-2" class="mention place" about="Italy">Italy</span> became an important painting which helped spark renewed interest in depicting nude figures and revive classical nudity. <span id="mention-2" class="mention artwork" about="Birth of Venus">Birth of Venus</span> was the first full-scale painting based on a classical theme while portraying the female nude as its principle subject.
+            </p>
+            <div class="imag">
+                <img src="/images/female-body/1-6.png" width="100%">
+            </div>
+            <p class="imgCaption">
+              <span id="mention-3" class="mention artwork" about="Birth of Venus">Birth of Venus</span> by <span id="mention-1" class="mention person" about="Sandro Botticelli">Sandro Botticelli</span>
+            </p>
+            <p>
+              In <span id="mention-3" class="mention artwork" about="Birth of Venus">Birth of Venus</span>, the central goddess of love represents “divine love” and was not created through any religious motivations. Here, Venus appears to be born of sea form and lies on top of the grand scallop shell, revealing everything. The <span id="mention-1" class="mention artwork" about="Pompeii Venus">Pompeii Venus</span> shows no sign of modesty and her posture reflects one that conveys submissiveness by lying down backwards as if in a state of vulnerability, called the reclining nude. The reclining nude position soon becomes a trend that other Italians follow, creating a stark contrast with male nudes, who are more often as active, erect, and aggressive.
+            </p>
+            <p>
+              The <span id="mention-7" class="mention artwork" about="Knidian Aphrodite">Knidian Aphrodite</span> and <span id="mention-4" class="mention artwork" about="Birth of Venus">Birth of Venus</span> play a strong role in the acceptance of nudity in French art. In 19th century, the style supported by the French society was neoclassicism or a revival of a classical art. Similar to how Athenian democracy helped develop nudity as an art form in ancient <span id="mention-4" class="mention place" about="Greece">Greece</span>, the <span id="mention-1" class="mention event" about="French Revolution">French Revolution</span> also helped promulgate the acceptance of nudity — female nudity — within the French society in alignment with the transition of the French government from a monarchy to a democracy. The sculptural nude figure — inseparable from ancient Greek art — was an incredibly popular subject due to prevalence of ancient roman copies and the celebration of these by renaissance artists.
+            </p>
+            <p>
+              Thus, female nude became increasingly popular subject — surpassing its male counterpart in order to depict the ideals of liberty and equality from the <span id="mention-2" class="mention event" about="French Revolution">French Revolution</span>. During this time, French artistic environment was defined by the dual between the modern and the traditional modes and the female nude was perhaps the most contested subject of all. In both antiquity and in the earlier half of the 19th century, female nudity walked a fine line between the beautiful and the obscene, requiring a narrative as justification for its existence just as in the Greek society.
+            </p>
+
+            <p>
+              Initially, the female nudity was portrayed through reference to Greek and Roman mythology in a classical style. In order to challenge the regular norms, these representations consisted of more dramatic poses than their Greek counterparts while removing naked figures from the context of everyday life. Before the late 1800s, though, the study and art of nude models was restricted to the most prestigious academies or studios of established artists. One of the most significant professional art societies behind the art in <span id="mention-3" class="mention place" about="France">France</span> were the Royal Academies of Art in <span id="mention-4" class="mention place" about="France">France</span> established 1768.
+            </p>
+            <p>
+              They ran schools of instruction, held annual or semi-annual exhibitions, and provided venues where artists could display their work and cultivate critical notice. From the late eighteenth century, as dominated by artists like <span id="mention-1" class="mention person" about="Jacques Louis David">Jacques Louis David</span> in <span id="mention-5" class="mention place" about="France">France</span>, such institutions had a virtual monopoly on public taste and official patronage. Academic art, whose standard was ancient classical art, the European tradition, and historical subjects rendered predominantly in painting and sculpture, retained sway through the nineteenth century, and was sustained by its presence at the world’s fairs that proliferated in the West from the 1850s.
+            </p>
+            <p>
+              As the acceptance and esteem for classical culture in art grew increasingly important, so too did the prestige of nude art. The academies of the period directed young artists to develop their skills by drawing the naked form of ancient sculpture as well as live models, and many successful artists continued such exercises long after their student days. Nudes were ubiquitous in the ambitious history paintings of the period as well as sculpture and decorative schemes. Nude figures began to represent “ideal beauty in art”. Proponents of the Neoclassical style made nudes closely based on ancient examples, like <a href="https://upload.wikimedia.org/wikipedia/commons/e/ec/Perseus_Canova_Pio-Clementino_Inv969.jpg" target="_blank"><span id="mention-1" class="mention artwork" about="Canova’s Perseus" >Canova’s Perseus</span></a>, which repeats the pose and body type of the widely admired <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Apollo_of_the_Belvedere.jpg/1200px-Apollo_of_the_Belvedere.jpg" target="_blank"><span id="mention-1" class="mention artwork" about="Apollo Belvedere">Apollo Belvedere</span></a>.
+            </p>
+            <p>
+              Yet, one way artists could portray nudity without relation to religion or classicism would be through orientalism, which is a term used by art historians to describe depictions of other races and cultures. Orientalism depicts Eastern civilizations as unchanging and underdeveloped cultures. One early example of a nude Orient painting that heighted eroticism is <span id="mention-1" class="mention person" about="Jean-Auguste Dominique Ingres">Ingres</span>’ <a href="https://commons.wikimedia.org/wiki/File:Jean_Auguste_Dominique_Ingres,_La_Grande_Odalisque,_1814.jpg" target="_blank"><span id="mention-1" class="mention artwork" about="La Grande Odalisque">La Grande Odalisque</span></a> and <span id="mention-1" class="mention artwork" about="The Turkish Bath">The Turkish Bath</span>.
+            </p>
+            <div class="imag">
+              <img src="/images/female-body/1-7.png" width="100%">
+            </div>
+            <p class="imgCaption">
+              <span id="mention-2" class="mention person" about="Jean-Auguste Dominique Ingres">Jean-Auguste Dominique Ingres</span>, <a href="https://commons.wikimedia.org/wiki/File:Jean_Auguste_Dominique_Ingres,_La_Grande_Odalisque,_1814.jpg" target="_blank"><span  id="mention-2" class="mention artwork" about="La Grande Odalisque">La Grande Odalisque</span></a>, 1814
+            </p>
+            <p>
+              Like the nude depiction of Pompeii Venus in <span id="mention-3" class="mention place" about="Italy">Italy</span>, <span id="mention-3" class="mention person" about="Jean-Auguste Dominique Ingres">Ingres</span>’ painting also portrays the subject as reclining female nude, presenting sexuality more frankly without the traditional trappings of usual Greek nude paintings. Even though the painting is quite explicitly nude, it was inoffensive to the French public because <span id="mention-4" class="mention person" about="Jean-Auguste Dominique Ingres">Ingres</span> transposed the painting to an Orientalist setting and also significantly elongated the subject’s torso in order to depict a more fictional character rather than a real nude woman.
+            </p>
+            <div class="imag">
+                <img src="/images/female-body/1-8.png" width="100%">
+            </div>  
+            <p class="imgCaption">
+              <span id="mention-1" class="mention person" about="Jean-Léon Gérôme">Jean-Léon Gérôme</span>, <a href="http://www.clarkart.edu/Collection/5538"><span id="mention-1" class="mention artwork" about="The Slave Market">The Slave Market</span></a>, 1866
+            </p>
+            <p>
+              <span id="mention-2" class="mention person" about="Jean-Léon Gérôme">Jean-Léon Gérôme</span>’s <span  id="mention-2" class="mention artwork" about="The Slave Market">The Slave Market</span>, 1866</a> also presents an erotic image by portraying the setting of the picture in Islamic <span id="mention-1" class="mention place" about="Egypt">Egypt</span>. In the picture, <span id="mention-3" class="mention person" about="Jean-Léon Gérôme">Gérôme</span> portrays a woman as a commodity for sale, implying European superiority since such treatment of women was forbidden in Western culture. Such examples of Orientalism became so commonplace that such stereotypes began to be accepted as self-evident facts and enforcing the idea that other cultures were uncivilized and barbaric, going back to the notion that culture with nude art are actually superior than those without. Essentially Orientalism was acceptable by the French society at the time because it went along with Napoleon’s conquests and European imperialism at the time, eliminating humanistic values in order to subjugate the subjects or other cultures both physically and within works of art.
+            </p>
+            <p>
+              Near the mid and latter end of the 19th century, portrayal of female nudity become more provocative and not limited to mythological or oriental subjects. One example who came directly from the Academy is <span id="mention-1" class="mention person" about="Thomas Couture">Thomas Couture</span>. As the bourgeoisie began to rise and gain power against absolute monarchy near the mid nineteenth century, <span id="mention-2" class="mention person" about="Thomas Couture">Couture</span> created a his most famous work to reflect such changes in French society in 1847, The Romans of Decadence. The painting became one of the most popular Salon paintings in the entire nineteenth Century.
+            </p>
+            <div class="imag">
+                <img src="/images/female-body/1-9.png" width="100%">
+            </div>
+            <p class="imgCaption">
+              <span id="mention-1" class="mention artwork" about="The Decadence of the Romans">The Decadence of the Romans</span>,  by <span id="mention-3" class="mention person" about="Thomas Couture">Thomas Couture</span>, 1847. Musée d’Orsay
+            </p>
+            <p>
+              The title, which depicts the idea of self-indulgence, actually allows nineteenth century bourgeois viewers to obtain a sense of moral righteousness by relating to a scene in which can be considered a reflection of urban life during the <span id="mention-1" class="mention event" about="Industrial Revolution">Industrial Revolution</span>. While reflecting the ideals and tastes of upper middle class sponsors, the painting shows “impressive power” by “forcefully [placing] the viewer within a scene or event.” Though the characters are clearly participating in an orgy, they are all so attractive and the painting itself composed so much like <span id="mention-1" class="mention person" about="Leonardo da Vinci">Leonardo da Vinci</span>’s Last Supper that the image functions more as a soft-porn piece rather than having any derogatory connotations. Yet, the hypocrisy of trying to display a demoralizing action as more of a work of art brought along many accusations that the Academy itself had become decadent and artificial, resulting in many artists who began to rebel against the Academic standards.
+            </p>
+            <p>
+              Rather than objectifying women, there were also trends of trying to portray female nudity as more of an art form. One notable painter who was able to drastically challenge the Academic standards in the nineteenth century is <span id="mention-1" class="mention person" about="Édouard Manet">Edouard Manet</span>. <span id="mention-1" class="mention person" about="Édouard Manet">Manet</span> painted unaccepted scenes of <span id="mention-1" class="mention place" about="Paris">Paris</span>, “wanting to keep one foot in museums and the other in the modernity of the streets”, enabling him to become a pivotal figure within the avant-garde movement by closing the gap between the traditional Academic art and the real-life of modern Parisans.
+            </p>
+            <p>
+              One example of his paintings is <span id="mention-1" class="mention artwork" about="Olympia">Olympia</span> (1865) in which was such a radical change from the Academic standards that the painting provoked almost universal criticism from society. <span id="mention-2" class="mention artwork" about="Olympia">Olympia</span> depicts a nude woman reclining on her bed with a clothed black servant bringing her flowers on the side in a much clearer and vivid manner than other paintings of the time, somewhat like a real-life snapshot. <span id="mention-1" class="mention person" about="TJ Clark">TJ Clark</span> (a British Art Historian), however, asserts that <span id="mention-3" class="mention artwork" about="Olympia">Olympia</span> refuses “the permissible signs of female sexuality”. For <span id="mention-2" class="mention person" about="TJ Clark">Clark</span>, the nudity depicted in <span id="mention-4" class="mention artwork" about="Olympia">Olympia</span> is a sign of class: <br>
+              <i>
+                By nakedness I mean those signs — that broken, interminable circuit — which say that we are nowhere but in a body, constructed by it, by the way it incorporates the signs of other people. (Nudity, on the other hand, is a set of signs for the belief that the body is ours, a great generality in which we make our own, or leave in art the abstract.)
+              </i>
+            </p>
+            <div class="imag">
+              <img src="/images/female-body/1-10.png" width="100%">
+            </div>
+            <p class="imgCaption">
+              <span id="mention-5" class="mention artwork" about="Olympia">Olympia</span>, <span id="mention-1" class="mention person" about="Édouard Manet">Edouard Manet</span>, 1865
+            </p>.
+            <p>
+              In other words, <span id="mention-3" class="mention person" about="TJ Clark">Clark</span> is stating that the nudity portrayed in <span id="mention-6" class="mention artwork" about="Olympia">Olympia</span> goes beyond the physical representation of a woman’s body and rather embodies the historical, social, and cultural existence of oneself.
+            </p>
+            <p>
+              Moreover, the main motivations behind <span id="mention-7" class="mention artwork" about="Olympia">Olympia</span> do not come from a wish to portray a lower class woman as a prostitute, which was why so many people were against <span id="mention-7" class="mention artwork" about="Olympia">Olympia</span>. Rather, the painting comes from the desire to highlight the savagery that lies in French civilization at the time when the French were had much ambitions of imperial conquest in other countries, mainly <span id="mention-1" class="mention place" about="Africa">Africa</span> and <span id="mention-1" class="mention place" about="Indochina">Indochina</span>.
+            </p>
+            <p>
+              Because <span id="mention-8" class="mention artwork" about="Olympia">Olympia</span> is white and her servant black, <span id="mention-2" class="mention person" about="Édouard Manet">Manet</span> arguably wanted to portray the inequities of race, gender, and class inherent within the European culture. In a way, the painting shows the hypocrisy behind Western Europe’s acceptance of Orientalism, possibly angering most of the French by revealing their own inhumanity that was only associated with eastern cultures. Thus, Manet became a symbol of freedom, depicting modern society as it is without conforming to societal standards. This sparked a group of young artists in the 1860s to follow <span id="mention-3" class="mention person" about="Édouard Manet">Manet</span>’s approach, concentrating on the political and social dimensions of society through art.
+            </p>
+            <p>
+              Further, considering how prostitution was processed by the societies of Ancient <span id="mention-5" class="mention place" about="Greece">Greece</span> and <span id="mention-6" class="mention place" about="France">France</span> can elucidate a contrast between the types of norms surrounding the role of the nude female form in painting. Prostitution and the use of the female form for explicitly erotic and gratifying purposes arguably represented the major motivators behind the depiction of the female form in paintings of female prostitutes or entertainers on vases known as “hetaira” in Ancient <span id="mention-6" class="mention place" about="Greece">Greece</span>.
+            </p>
+            <p>
+              The mode of depicting female nudity during the archaic period of Greek history constituted that of the obscene. The role of the female form depicted on these vases as primarily erotic or obscene is supported by the salacious contexts with which these vases were often associated, by their frequency, and by their cheap construction in terra cotta medium. In addition, the idea that these vases were frequently incorporated into the activities of the Symposium, an area with restricted access to male patrons only and that involved drinking seems to support this idea of the obscenity of these depictions since eroticism would serve to enhance the celebratory atmosphere of the Symposium.
+            </p>
+
+            <p>
+              However, it is interesting to note that there appears to be a shift from this primarily obscene use of the female nude to a more artistic use during the Classical period. This shift appears motivated by a declining demand for vases depicting hetaira from Greek women who instead sought out vases for their household. Because of the nature of this demand, the normalization of the depiction of the female nude — that is the non-sexual depiction of the female nude — proceeded in vases depicting nude women in more ordinary everyday situations: bathing, bridal baths, or dressing. The placement of female statues in important monumental and public locations also is indicative of such a shift.
+            </p>
+            <p>
+              In comparison, the changing norms surrounding the depiction of female nude in French society follow a similar trend towards greater public acceptance of the female nude as a mode of art rather than obscenity, especially with regards to the association of the female nude with prostitution. While the society of ancient <span id="mention-7" class="mention place" about="Greece">Greece</span> saw a change in the main usage of the female nude form from the obscene (the hetaira on the vases) to the artistic coincident with a greater demand by women to see artistic depictions of themselves in the household, the change that occurred in French society concerned the exact norms that dictated whether a depiction of the female nude should be considered obscene or artistic. The transitions regarding the artistic merit or breadth of the female nude form parallel each other in the sense that male-dominated contexts initially determine the norms surrounding the depiction of female nudity. In <span id="mention-8" class="mention place" about="Greece">Greece</span>, the usage of the female nude as obscene worked to enhance the celebratory and drunken atmosphere of the exclusively male Symposium.
+            </p>
+            <p>
+              In <span id="mention-7" class="mention place" about="France">France</span>, a male-dominated Academy saw the establishment of certain acceptable standards and norms to be followed in artistic depictions of the female nude form. Stringent observation to these standards were initially important for artists intending to depict the female nude form in their work because the formal presentation of these paintings and the success of these artists were dependent on their being featured in salons. These salons would allow for the enforcement of those Academy norms. One such central norm held by the Academy was their rejection of elements of female nudity that could invoke images of prostitution or sexual commodification. For instance, the salient point of controversy of <span id="mention-9" class="mention artwork" about="Olympia">Manet’s Olympia</span> arises from how it invokes such associations of sexual commodification through its depiction: “Manet’s treatment of the pictorial conventions of the female nude and his handling of the painted surface transgressed the expectations of Salon critics in the 1860s, who read the image in terms of dirt and disease, of working-class identity and blatantly commodified sex”. As in ancient <span id="mention-9" class="mention place" about="Greece">Greece</span>, a shift in the economics of art in <span id="mention-8" class="mention place" about="France">France</span> towards a freer market allowed for artists such as Manet who rejected Academy norms and traditional technique in the depictions of the female nude to flourish and become more prominent.
+            </p>
+            <p>
+              Likewise, this redefinition of norms surrounding the artistic depiction of the female nude also manifests in the theme of bathing. As mentioned before, the historical depiction of women bathing on vases in the Classical period of Greek history marks the beginning of one of the ways in which female nudity became normalized in comparison to the earlier depictions of hetaira on the vases of the archaic period.
+            </p>
+            <p>
+              Here, the shift in norms changed as a function of the subject of the portrayal of female nudity and its associations. In the later French society, the norms dictating proper artistic expression of female nudity became more nuanced through the establishment of Academy standards, perhaps artificially. During this period, the technique and the content of the art itself (positioning of the women, their beauty, etc.) became more important for signaling norms surrounding the artistic depiction of the female nude in comparison context of the women (hetaira vs. everyday context). This shows how the French norms could distinguish paintings depicting women bathing as obscene or artistic despite both paintings capturing the female nude in the same context.
+            </p>
+            <p>
+              To see the impact of these norms, consider how differently the French public and the Academy received paintings such as <span id="mention-5" class="mention person" about="Jean-Auguste Dominique Ingres">Ingres</span>’ <span id="mention-2" class="mention artwork" about="The Turkish Bath">The Turkish Bath</span> in comparison to <span id="mention-1" class="mention person" about="Edgar Degas">Degas</span>’ <span id="mention-1" class="mention artwork" about="The Tub">The Tub</span> or <span id="mention-1" class="mention person" about="Paul Cézanne">Cézanne</span>’s <span id="mention-1" class="mention artwork" about="The Bathers">The Bathers</span>. In creating <span id="mention-4" class="mention artwork" about="The Turkish Bath">The Turkish Bath</span>, <span id="mention-6" class="mention person" about="Jean-Auguste Dominique Ingres">Ingres</span> observed a number of norms surrounding the depiction of the female nude form: observance of a classical style, the use of an Oriental context to create a sense of cultural or societal distance, and ideal renderings and sensible positioning of women.
+            </p>
+            <div class="imag">
+                <img src="/images/female-body/1-11.png" width="100%">
+            </div>
+            <p class="imgCaption"><span id="mention-7" class="mention person" about="Jean-Auguste Dominique Ingres">Jean-Auguste Dominique Ingres</span>
+              (French, <span id="mention-5" class="mention artwork" about="The Turkish Bath">The Turkish Bath</span>, 1862) Oil on canvas
+            </p>.
+            <p>
+              In contrast, <span id="mention-2" class="mention person" about="Edgar Degas">Degas</span>’ The Tub violates all of those norms as it captures a woman from the back in an unfavorable crouching position. In this case, the position of the woman and the viewer appear to create a voyeuristic relationship, which would be considered distasteful based on that circumstance. The form of art is also not classical or idealized but instead rough and sanded, embodying an Impressionist feeling.
+            </p>
+            <p>
+              Finally, <span id="mention-3" class="mention person" about="Edgar Degas">Degas</span> critically fails to divert the subject — the nude woman — to a more distant, oriental context. Given the above discussion on the importance of orientalism in relation to a history of European imperialism and the subjugation and doctrines of inferiority regarding other cultures, <span id="mention-4" class="mention person" about="Edgar Degas">Degas</span>’ lack of declaring an oriental context to the painting further served to enhance the perceived impropriety of his depiction of the female nude.
+            </p>
+            <div class="imag">
+                <img src="/images/female-body/1-12.png" width="100%">
+            </div>
+            <p class="imgCaption">
+              <span id="mention-4" class="mention person" about="Edgar Degas">Edgar Degas</span> <span id="mention-2" class="mention artwork" about="The Tub">The Tub</span> (1886)
+            </p>
+            <p>
+              <span id="mention-2" class="mention person" about="Paul Cézanne"> Cézanne</span>’s piece The Bathers breaks similar norms to <span id="mention-5" class="mention person" about="Edgar Degas">Degas</span>’ <span id="mention-3" class="mention artwork" about="The Tub">The Tub</span> in its lack of classicism. However, a unique aspect of <span id="mention-2" class="mention artwork" about="The Bathers">The Bathers</span> appears in its abstract quality: the women have no distinct features and their proportions appear distorted to match the dynamic of the trees in the environment. In any case, the appearance and success of painters such as Degas and <span id="mention-3" class="mention person" about="Paul Cézanne"> Cézanne</span> and their depictions of the female nude in violation of the prescribed norms of the Academy helped usher in a greater breadth to the accepted artistic norms relating to the depiction of the female nude.
+            </p>
+            <p>
+              Ultimately, the motivations and acceptance behind nudist works of arts in society are clearly influenced by increased political freedom. In the case of nudist female paintings, political freedom does not necessarily mean freedom for the country, but rather more political and social freedom compared to men — increased equality. In the case of <span id="mention-10" class="mention place" about="Greece">Greece</span>, the formation of Athenian democracy helped spur the creation of nudity as a form of art, but only those related to masculinity. Because women were still looked down upon, any art forms portraying female nudity were associated with victimization or prostitution. However, as women began to gain more rights during the reign of <span href="https://en.wikipedia.org/wiki/Alexander_the_Great" id="mention-2" class="mention person" about="Alexander the Great">Alexander the Great</span>, nudity in Greek vases became more commonplace and a symbol for well-wishes in a couples’ pursuit of reproduction. In the case of <span id="mention-4" class="mention place" about="Italy">Italy</span> as well, the period of peace and freedom allowed the nudist art form to become stimulated once again through the Birth of Venus which was created without any religious intentions.
+            </p>
+            <p>
+              Eventually, both nude art forms in <span id="mention-11" class="mention place" about="Greece">Greece</span> and <span id="mention-4" class="mention place" about="Italy">Italy</span> helped allow French Neo-classic painters to portray nude women in the early nineteenth century, as long as there was some sort of excuse such as religious or oriental. As France began to also obtain more freedom from the government, painters were able to express more promiscuity in their paintings and represent more realistic depictions of regular women. The commonplace of such paintings helped the nude portrayals of females become much more accepted, allowing the creation of more avant-garde painters such as those of the Impressionist and post-Impressionist movements who were able to more freely depict the inequalities of society. When looking at the acceptance of female nudist paintings as a whole, the freedom that came with power for women coupled with increasing acceptance of realist depictions of women in painting helped female nudism become a form of expressing ideals and messages rather than a form of sexuality.
+            </p>
+        </div>
+    </div>
+  </div>
+<!-- article3 -->
+
+<div class="col-lg-3 col-md-12 p-0" id="article-3">
+    <div class="card"  >
+      <div class="card-header">
+        <h5 class="card-title p-3" id="title-bigger3">
+          <div class="block-reveal">The Taboo History of Women’s Body Hair in <span class="spec">Art</span></div>
+        </h5>
+      <div class="deco" id="deco3"></div>
+      </div>
+        <div class="accordion accordion-flush" id="accordionArt3">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="stayOpen-headingThree">
+              <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseThree" aria-expanded="true" aria-controls="stayOpen-collapseThree">
+                Article information:
+              </button>
+            </h2>
+            <div id="stayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingThree">
+              <div class="accordion-body">
+                  <div class="info">
+                      <p class="byline">By <a href="https://muckrack.com/julia-fiore" target="_blank">Julia Fiore</a><span class="publicationDate">, mag 17, 2019 5:29pm</span></p>
+                      <p class="sourceLine">Source: <a href="https://www.artsy.net/article/artsy-editorial-taboo-history-womens-body-hair-art" target="_blank">Artsy</a></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+   <!-- card here -->
+
+    <div class="card-body overflow-auto">
+      <div class="renaiss-subtitle issue-fem">
+        <div class="renaiss-left" id="rl2"></div>
+        <div class="renaiss-right" id="rr2"></div>
+        <h6 class="card-subtitle p-3">
+          Women think a lot about their body hair—and how to get rid of it. Judging by the multi-billion-dollar success of the global hair removal market, female body hair is still a taboo, one that has dominated Western culture for eons.
+        </h6>
+      </div>
+      <div class="imag">
+        <img src="/images/female-body/3-1.jpeg" width="100%">
+      </div>
+      <p class="imgCaption"><a href="https://www.artsy.net/artist/titian" target="_blank"><span id="mention-1" class="mention person" about="Titian">Titian</span></a></br>
+        <a href="https://www.artsy.net/artwork/titian-venus-of-urbino-1" target="_blank"><span id="mention-1" class="mention artwork" about="Venus of Urbino">Venus of Urbino</span></a>, 1538</br>
+          Uffizi Gallery, Florence
+      </p>
+        <p>
+          Last year, the women’s shaving start-up Billie broke with a century of tradition with an ad campaign featuring women shaving hairy legs, an apparently radical departure from the women dragging razors over perfectly smooth, airbrushed ones in Gillette’s long-running Venus commercials.
+        </p>
+        <div class="imag">
+            <img src="/images/female-body/3-2.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          <span id="mention-1" class="mention artwork" about="Marble statue of Aphrodite">Marble statue of Aphrodite</span>, 1st or 2nd century C.E. Courtesy of the Metropolitan Museum of Art.
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/3-3.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          <a href="https://www.artsy.net/artist/sandro-botticelli" target="_blank"><span id="mention-1" class="mention person" about="Sandro Botticelli">Sandro Botticelli</span></a></br>
+          <a href="https://www.artsy.net/artwork/sandro-botticelli-venus"><span id="mention-1" class="mention artwork" about="Venus">Venus</span></a>, 1490s </br>
+          <a href="https://www.artsy.net/v_and_a" target="_blank">"Botticelli Reimagined" at Victoria & Albert Museum, London</a>
+        </p>
+        <p>
+          The media’s adulations seemed to announce that a new era of openness was upon us. As art historian <a href="Jill Burke wrote" target="_blank"><span id="mention-1" class="mention person" about="Jill Burke">Jill Burke </span>wrote</a>, “Research into women’s personal grooming habits is, in many ways the study of systems of inequality…a woman’s body is imperfect unless it is somehow modified.”
+        </p>
+        <p>
+          More recently, female body hair has gained a political resonance as many women today forego shaving as a feminist or fashion statement. Feminist artists such as <a href="https://www.artsy.net/artist/sylvia-sleigh" target="_blank"><span id="mention-1" class="mention person" about="Sylvia Sleigh">Sylvia Sleigh</span></a> chose to engage with the body in paintings that strove for honesty. Her 1968 portrait of artist <a href="https://www.artsy.net/artist/eleanor-antin" target="_blank"><span id="mention-1" class="mention person" about="Eleanor Antin">Eleanor Antin </span></a>shows her reclining, odalisque-style, on a couch, unperturbed by her prominent patch of dark pubic hair.
+        </p>
+        <p>
+          Still, archaic ideas around body hair remain hard to break. The <a href="https://www.artsy.net/article/artsy-editorial-how-art-has-shaped-female-beauty-ideals-history" target="_blank">feminine beauty standard</a> of “the hairless ideal” has been molded and reiterated by male artists since ancient times. Female body hair was considered barbaric, uncivilized, or low-class in Greek culture. Recipes to remove hair—from plucking to shaving to sugar waxing—have existed all over the world for thousands of years.
+        </p>  
+        <div class="imag">
+          <img src="/images/female-body/3-4.jpeg" width="100%">
+        </div>
+        <p class="imgCaption"><a href="https://www.artsy.net/artist/sylvia-sleigh" target="_blank"><span id="mention-2" class="mention person" about="Sylvia Sleigh">Sylvia Sleigh</span></a></br>
+          <a href="https://www.artsy.net/artwork/sylvia-sleigh-eleanor-antin" target="_blank"><span id="mention-2" class="mention person" about="Eleanor Antin">Eleanor Antin </span></a>, 1968</br>
+          <a href="https://www.artsy.net/freymond-guth-fine-arts-ltd" target="_blank">Freymond-Guth Fine Arts Ltd.</a>
+        </p>
+        <p>
+          Historian <span id="mention-1" class="mention person" about="Alice Macdonald">Alice Macdonald </span>observes that in <a href="https://www.artsy.net/gene/greek-art-and-architecture" target="_blank">Greek art</a>, the “smooth marble bodies” of their sculptures, “whether hairless because of artistic censure or because they reflected the social custom of depilation—have over the centuries structured the cultural imagination in such a way as to make the glabrous female body an entrenched and irresistible feminine aesthetic.” By contrast, male nudes from the same period have hairless chests, but unlike their female counterparts, sport stylized pubic hair.
+        </p>
+        <p>
+          <a href="https://www.artsy.net/artist/praxiteles" target="_blank"><span id="mention-1" class="mention person" about="Praxiteles">Praxiteles</span></a>’s fourth-century sculpture of a female nude, called the <span id="mention-1" class="mention artwork" about="Aphrodite of Knidos">Aphrodite of Knidos</span>, is often considered the origin for some of the most persistent tropes in art and culture about women’s sexuality. The marble goddess places her right hand over her pudendum, chastely covering it while at the same time pointing to her sex. Aphrodite’s sensual pose came to be known as the <span id="mention-2" class="mention artwork" about="Venus">Venus</span> pudica, and has been endlessly riffed on for centuries. When <a href="https://www.artsy.net/gene/classical-figure" target="_blank">Classical</a> ideals and an interest in the human body were revived in Europe during the <a href="https://www.artsy.net/gene/renaissance" target="_blank"><span id="mention-1" class="mention event" about="Renaissance">Renaissance</span></a>, artists returned to the hairless <span id="mention-3" class="mention artwork" about="Venus">Venus</span>.
+        </p>
+        <p>
+          In <a href="https://www.artsy.net/artist/titian" target="_blank"><span id="mention-2" class="mention person" about="Titian">Titian</span></a>’s  <span id="mention-2" class="mention artwork" about="Venus of Urbino">Venus of Urbino</span> (1538), a beautiful nude woman lies supine on a divan with disheveled sheets. Her hand lightly hovers over her smooth pubic region. <span id="mention-2" class="mention person" about="Alice Macdonald">Alice Macdonald </span> explains, “The marble-like texture of her nude body—so reminiscent of ancient sculptures—suggests that her body is hairless and that the darkness that can be seen between her legs is shadow rather than body hair.”
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/3-5.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          The Three Graces, Roman copy of the Imperial Era (2nd century C.E.?) after a Hellenistic original. Image via Wikimedia Commons.
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/3-6.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          <a href="https://www.artsy.net/artist/peter-paul-rubens" target="_blank"><span id="mention-1" class="mention person" about="Peter Paul Rubens">Peter Paul Rubens</span></a></br>
+          <a href="https://www.artsy.net/artwork/peter-paul-rubens-the-three-grace" target="_blank"><span id="mention-1" class="mention person" about="Peter Paul Rubens"><span id="mention-1" class="mention artwork" about="The Three Grace">The Three Grace, 1635</span></a></br>
+          <a href="https://www.artsy.net/museo-nacional-del-prado" target="_blank">Museo Nacional del Prado</a>
+        </p>
+        <p>
+          <span id="mention-4" class="mention artwork" about="Venus">Venus</span>’s sexuality and missing pubic hair is further invoked by the sleeping dog curled at her feet. This furry addition reflects another long-held belief about the correlation between women’s body hair and eroticism. In ancient  <span id="mention-1" class="mention place" about="Greece">Greece</span>, the <span id="mention-1" class="mention event" about="Middle Ages">Middle Ages</span>, and the <span id="mention-2" class="mention event" about="Renaissance">Renaissance</span>, hirsute women were often considered wild or sinful and thought to possess an untameable sex drive.
+        </p>
+        <p>
+          In one narrative about the <span id="mention-1" class="mention person" about="Queen of Sheba">Queen of Sheba</span>, amply represented in art from Europe, Africa, and the Middle East, <span id="mention-1" class="mention person" about="King Solomon">King Solomon</span> forces his exotic visitor to shave her legs before he beds her. The detail about her hairy legs, <span id="mention-1" class="mention person" about="Alina Cohen">Alina Cohen </span> <a href="https://www.artsy.net/article/artsy-editorial-queen-sheba-connects-art-three-major-religions" target="_blank">wrote for Artsy</a>, “portrays her as an animal—a heathen—to be subdued, feminized, and converted.” In the Medieval Christian artistic tradition, the image of a woman <a href="https://blogs.bl.uk/digitisedmanuscripts/2017/04/hairy-mary.html" target="_blank">completely covered by her long hair</a> is usually the repentant prostitute Mary of Egypt.
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/3-7.jpeg" width="100%">
+        </div>
+        <p class="imgCaption">
+          <span id="mention-1" class="mention person" about="Jean-Honoré Fragonard">Jean-Honoré Fragonard</span>, <span id="mention-1" class="mention artwork" about="Girl with a Dog">Girl with a Dog</span>, 1770. Image via Wikimedia Commons.
+        </p>
+        <p>
+          Were the real women of the day as suspicious of their body hair? Historian <span id="mention-1" class="mention person" about="Sandra Cavallo">Sandra Cavallo</span> has noted that in the 16th century there was an “explosion in treatments for facial appearance,” evidenced by the many “books of secrets” left behind; they share DIY cosmetic advice on how to remove hair from every part of the body (all while keeping the hair on one’s head luscious and thick!).
+        </p>
+        <p>
+          In the 18th and early 19th centuries, especially in <span id="mention-1" class="mention place" about="France">France</span>, <a href="https://www.artsy.net/gene/neoclassicism" target="_blank">Neoclassicism</a> “revived” the ideals of the Greco-Roman tradition. The French bred a culture with a <a href="https://www.artsy.net/article/artsy-editorial-valentines-day-rococo-era-lesson-setting-mood" target="_blank">heightened sense of eroticism</a>. Artists like <a href="https://www.artsy.net/artist/jean-honore-fragonard" target="_blank"><span id="mention-2" class="mention person" about="Jean-Honoré Fragonard">Jean-Honoré Fragonard</span></a>played with euphemism in his works, but didn’t stray far from the tropes that had been defining women’s sexuality for hundreds of years. In his painting <span id="mention-2" class="mention artwork" about="Girl with a Dog">Girl with a Dog</span> (ca. 1770), <span id="mention-3" class="mention person" about="Jean-Honoré Fragonard">Fragonard</span> mischievously displaces the female subject’s sex with a little dog over her exposed genitals; her pet’s tail stands in for her pubic hair.
+        </p>
+        <p>
+          In this increasingly modern era, <span id="mention-1" class="mention person" about="Michel Foucault">Michel Foucault</span> argues in Discipline and Punish (1975), there was an “emergence of unprecedented discipline directed against the body” in the second half of the 18th century. Cosmetics, dieting, and depilation, became de rigueur, self-governing practices that continue to regulate women’s lives today.
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/3-8.jpeg" width="100%">
+        </div>
+        <p class="imgCaption"><a href="https://www.artsy.net/artist/alexandre-cabanel" target="_blank"><span id="mention-1" class="mention person" about="Alexandre Cabanel">Alexandre Cabanel</span></a></br>
+          <a href="https://www.artsy.net/artwork/alexandre-cabanel-the-birth-of-venus" target="_blank">span id="mention-1" class="mention artwork" about="The Birth of Venus">The Birth of Venus</span></a>, 1863</br>
+          <a href="https://www.artsy.net/orsay" target="_blank">Musée d'Orsay</a>,<span id="mention-1" class="mention place" about="Paris">Paris</span>
+        </p>
+        <p>
+          Two kinds of artists emerged in Europe and the <span id="mention-1" class="mention place" about="United States">United States</span> in the latter half of the 19th century: those who would continue the staid conventions of the state-sanctioned Academies and those who would fight to break their rules. Salon-approved paintings by artists like <a href="https://www.artsy.net/artist/william-adolphe-bouguereau" target="_blank"><span id="mention-1" class="mention person" about="William-Adolphe Bouguereau">William-Adolphe Bouguereau</span></a> and <a href="https://www.artsy.net/artist/alexandre-cabanel" target="_blank"><span id="mention-2" class="mention person" about="Alexandre Cabanel">Alexandre Cabanel</span></a> are sickly sweet and ridiculously idealized. Perhaps unsurprisingly, both artists took on the <span id="mention-5" class="mention artwork" about="Venus">Venus</span> theme in their work. <span id="mention-2" class="mention person" about="William-Adolphe Bouguereau">Bouguereau</span>’s <span id="mention-2" class="mention artwork" about="The Birth of Venus">The Birth of Venus</span> (1879) almost parodies <a href="https://www.artsy.net/artist/sandro-botticelli" target="_blank"><span id="mention-2" class="mention person" about="Sandro Botticelli">Sandro Botticelli</span></a>’s famous version. Venus stands on a clam shell jutting out from the sea but instead of chastely covering her pudendum, she here throws her hands over her head—all the better to view her hairless, sexless genitals.
+        </p>
+        <p>
+          Artists from the same period who engaged with the fashionable but problematic trend of <a href="https://www.artsy.net/gene/orientalism" target="_blank">Orientalism</a>, like <a href="https://www.artsy.net/artist/jean-auguste-dominique-ingres" target="_blank"><span id="mention-1" class="mention person" about="Jean-Auguste-Dominique Ingres">Jean-Auguste-Dominique Ingres</span></a> and <a href="https://www.artsy.net/artist/jean-leon-gerome" target="_blank"><span id="mention-1" class="mention person" about="Jean-Léon Gérôme">Jean-Léon Gérôme</span></a>, applied Western beauty ideals of hairlessness to their exoticizing pictures of Middle Eastern and North African women. They delighted in the opportunity to portray these figures as literal sex objects—nude in the bathhouse of a harem (<span id="mention-1" class="mention artwork" about="The Turkish Bath">The Turkish Bath</span>, 1862) or on the auction block as a sex slave (<span id="mention-1" class="mention artwork" about="Slave Market">Slave Market</span>, 1866). Even though they are not couched in Classical allegory, these women were still refused their body hair.
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/3-9.jpeg" width="100%">
+        </div>
+        <p class="imgCaption"><a href="https://www.artsy.net/artist/gustave-courbet" target="_blank"><span id="mention-1" class="mention person" about="Gustave Courbet">Gustave Courbet</span></a></br>
+          <a href="https://www.artsy.net/artwork/gustave-courbet-the-woman-in-the-waves" target="_blank"><span id="mention-1" class="mention artwork" about="The Woman in the Waves">The Woman in the Waves</span></a>, 1863</br>
+          <a href="https://www.artsy.net/the-national-gallery-london" target="_blank">"Inventing Impressionism" at the National Gallery, London (2015)</a>
+        </p>
+        <div class="imag">
+          <img src="/images/female-body/3-10.jpeg" width="100%">
+        </div>
+        <p class="imgCaption"><a href="https://www.artsy.net/artist/pierre-auguste-renoir" target="_blank"><span id="mention-1" class="mention person" about="Pierre-Auguste Renoir">Pierre-Auguste Renoir</span></a></br>
+          <a href="https://www.artsy.net/artwork/pierre-auguste-renoir-bather-arranging-her-hair" target="_blank"><span id="mention-1" class="mention artwork" about="Bather Arranging Her Hair">Bather Arranging Her Hair</span></a>, 1893 </br>
+          <a href="https://www.artsy.net/ngadc" target="_blank">National Gallery of Art, Washington D.C.</a></br>
+          Permanent collection
+        </p>
+        <p>
+          Contrast these paintings with works by avant-gardists like <a href="https://www.artsy.net/artist/edouard-manet" target="_blank"><span id="mention-1" class="mention person" about="Édouard Manet">Édouard Manet</span></a>, <a href="https://www.artsy.net/artist/gustave-courbet" target="_blank"><span id="mention-2" class="mention person" about="Gustave Courbet">Gustave Courbet</span></a>, and <a href="https://www.artsy.net/artist/edgar-degas" target="_blank"><span id="mention-1" class="mention person" about="Edgar Degas">Edgar Degas</span></a>, artists preoccupied with capturing modern life, especially the public specter of prostitution. <span id="mention-2" class="mention person" about="Édouard Manet">Édouard Manet</span>’s Olympia (1863) famously upends the Venus pudica pose of <span id="mention-2" class="mention person" about="Praxiteles">Praxiteles</span> and <span id="mention-3" class="mention person" about="Titian">Titian</span> with a sex worker who openly acknowledges the transactional nature of her trade with the viewer.
+        </p>
+        <p>
+          By the late 19th century and early 20th, the idea of women’s body hair as a sign of wild sexuality became more illicit. In an ironic twist, artists began to include women’s pubic or underarm hair in their works to emphasize their sexuality. Underarm hair was not seen in public, so it was especially erotic in art. <a href="https://www.artsy.net/artist/gustave-courbet" target="_blank"><span id="mention-3" class="mention person" about="Gustave Courbet">Courbet</span></a>’s <span id="mention-1" class="mention artwork" about="L’Origine du monde">L’Origine du monde</span> (1866) is the ultimate pro-body hair statement but it’s his <span id="mention-2" class="mention artwork" about="The Woman in the Waves">The Woman in the Waves</span> (1863) that offers a less aggressive, more sensual view of unexpected hair. A <span id="mention-6" class="mention artwork" about="Venus">Venus</span>-like nymph relaxes in a pool of water, her arms lazily perched on her head—a pose that serves the dual purpose of lifting her perky breasts and exposing her hairy underarms.
+        </p>  
+        <div class="imag">
+          <img src="/images/female-body/3-11.jpeg" width="100%">
+        </div>
+        <p class="imgCaption"><a href="https://www.artsy.net/artist/amedeo-modigliani" target="_blank"><span id="mention-1" class="mention person" about="Amedeo Modigliani">Amedeo Modigliani</span></a>
+          <a href="https://www.artsy.net/artwork/amedeo-modigliani-nude-on-a-blue-cushion" target="_blank"><span id="mention-1" class="mention artwork" about="Nude on a Blue Cushion">Nude on a Blue Cushion</span></a>, 1917</br>
+          <a href="https://www.artsy.net/ngadc" target="_blank">National Gallery of Art, Washington D.C.</a></br>
+          Permanent collection
+        </p>
+        <p>
+          At the same time, certain modern artists clung to the sanitized version of women’s sexuality that demanded they be clean shaven even as society opened up around them. <a href="https://www.artsy.net/artist/pierre-auguste-renoir" target="_blank"><span id="mention-2" class="mention person" about="Pierre-Auguste Renoir">Pierre-Auguste Renoir</span></a> is perhaps the biggest offender of this view of female nudity. His <span id="mention-1" class="mention artwork" about="Bather Arranging Her Hair">Bather Arranging Her Hair</span> (1893) is essentially the same painting as <span id="mention-4" class="mention person" about="Titian">Titian</span>’s <span id="mention-2" class="mention artwork" about="Venus of Urbino">Venus of Urbino</span> Rising from the Sea (ca. 1520), made hundreds of years earlier.
+        </p>
+        <p>
+          Overall, these changes in modern art were reflected by the consideration of women’s body hair in popular culture. In response to the rise of sleeveless dresses at the turn of the century, Gillette released the Milady Décolleté, the first razor marketed to women, in the <span id="mention-2" class="mention place" about="United States">United States</span> in 1915. The same year, Harper’s Bazaar ran a scandalous shaving ad in their May issue; a model in a sleeveless dress throws up her hands. Lo and behold, no armpit hair.
+        </p>
+        <p>
+          In our current century, more and more women—and men—wax, thread, shave, or laser themselves bare. No matter how women choose to present their hair, the uncomfortable fact is, we have it. Our society and our beauty ideals might have followed a very different course if artists had been more open and faithful to the true perfection of the female form, body hair and all.
+        </p>
+      </div>
+
+     <!-- card end  -->
+    </div>
+  </div>
+
+  <!-- article3 end -->
+
+  <!-- metadata viewer start -->
+ 
+  <div id="metadata" class="col-md-3 d-none d-md-block p-0 m-0 overflow-auto">
+    <div class="card" id="metadata-style">
+      <h5 class="card-title p-3">About the articles</h5>
+      <div class="card-body overflow-auto p-0">
+
+        <!-- accordion start -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  The fine line between art and pornography
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  <!-- nested nav tab start -->
+                  <ul class="nav nav-tabs justify-content-center" id="article-2-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="article-2-people-tab" data-bs-toggle="tab" data-bs-target="#article-2-people" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-2-places-tab" data-bs-toggle="tab" data-bs-target="#article-2-places" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-2-artworks-tab" data-bs-toggle="tab" data-bs-target="#article-2-artworks" type="button" role="tab" aria-controls="contact" aria-selected="false">Artworks</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="article-2-events-tab" data-bs-toggle="tab" data-bs-target="#article-2-events" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content  text-center" id="myTabContent">
+                      <div class="tab-pane fade show active" id="article-2-people" role="tabpanel" aria-labelledby="home-tab">
+                        <li><span onclick="highlightData(2, this)" class="people-nav">ArtActivistBarbie: 8 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Arthur Hacker: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Benvenuto Cellini: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Deborah de Robertis: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Diego Velázquez: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Eric Gill: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Fra Beecher: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Francisco Goya: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Guerrilla Girls: 4 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Gustav Klimt: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Gustave Courbet: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Hans Maes: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Harvey Weinstein: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Jeffrey Epstein: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">John William Waterhouse: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Mary Beard: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Mary Richardson: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Sarah Williamson: 7 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Sonia Boyce: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Wright Barker: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Édouard Manet: 3 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-places" role="tabpanel" aria-labelledby="profile-tab">
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Iowa: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">London’s National Gallery: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Manchester: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Musée d’Orsay: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Paris: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Pompeii: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">UK: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">US: 1 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-artworks" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Circe: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Hylas and the Nymphs: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Le Déjeuner sur l’Herbe: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Naked Maja: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Olympia: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Rokeby Venus: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">The Origin of the World: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">The Syrinx: 1 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-events" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(2, this)" class="events-nav">Black Lives Matter: 1 <span ></span></span></li>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Tracking Historical Representations of the Female Nude
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  <!-- nested nav tab start -->
+                  <ul class="nav nav-tabs justify-content-center" id="article-1-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="article-1-people-tab" data-bs-toggle="tab" data-bs-target="#article-1-people" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-1-places-tab" data-bs-toggle="tab" data-bs-target="#article-1-places" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-1-artworks-tab" data-bs-toggle="tab" data-bs-target="#article-1-artworks" type="button" role="tab" aria-controls="contact" aria-selected="false">Artworks</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="article-1-events-tab" data-bs-toggle="tab" data-bs-target="#article-1-events" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content  text-center" id="myTabContent">
+                      <div class="tab-pane fade show active" id="article-1-people" role="tabpanel" aria-labelledby="home-tab"><ul>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Adam and Eve: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Alexander the Great: 2 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Edgar Degas: 6 <span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Jacques Louis David: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Jean-Auguste Dominique Ingres: 7 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Jean-Léon Gérôme: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Kenneth Clark: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Leonardo da Vinci: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Paul Cézanne: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Praxiteles: 2 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Sandro Botticelli: 2 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">TJ Clark: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Thomas Couture: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Édouard Manet: 5 <span></span></span></li>
+                      </ul></div>
+                      <div class="tab-pane fade" id="article-1-places" role="tabpanel" aria-labelledby="profile-tab">
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Africa: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Egypt: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">France: 8 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Greece: 11 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Indochina: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Italy: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Louvre: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Paris: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Rome: 1 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-1-artworks" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Apollo Belvedere: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Birth of Venus: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Canova’s Perseus: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Knidian Aphrodite: 8 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">La Grande Odalisque: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Mattei Athena: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Olympia: 10 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Pompeii Venus: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Bathers: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Decadence of the Romans: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Slave Market: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Tub: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Turkish Bath: 4 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-1-events" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(1, this)" class="events-nav">French Revolution: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="events-nav">Industrial Revolution: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="events-nav">Peace of Lodi: 1 <span ></span></span></li>
+                      </div>
+                    </div>
+                <!-- nested nav tab start -->
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button"  data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  The Taboo History of Women’s Body Hair in Art
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"><!-- nested nav tab start -->
+                  <ul class="nav nav-tabs justify-content-center" id="article-3-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="article-3-people-tab" data-bs-toggle="tab" data-bs-target="#article-3-people" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-3-places-tab" data-bs-toggle="tab" data-bs-target="#article-3-places" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-3-artworks-tab" data-bs-toggle="tab" data-bs-target="#article-3-artworks" type="button" role="tab" aria-controls="contact" aria-selected="false">Artworks</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="article-3-events-tab" data-bs-toggle="tab" data-bs-target="#article-3-events" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content  text-center" id="myTabContent">
+                      <div class="tab-pane fade show active" id="article-3-people" role="tabpanel" aria-labelledby="home-tab">
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Alexandre Cabanel: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Alice Macdonald: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Alina Cohen: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Amedeo Modigliani: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Edgar Degas: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Eleanor Antin: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Gustave Courbet: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Jean-Auguste-Dominique Ingres: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Jean-Honoré Fragonard: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Jean-Léon Gérôme: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Jill Burke: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">King Solomon: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Michel Foucault: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Peter Paul Rubens: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Pierre-Auguste Renoir: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Praxiteles: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Sandra Cavallo: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Sandro Botticelli: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Sylvia Sleigh: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Titian: 4 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">William-Adolphe Bouguereau: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="people-nav">Édouard Manet: 2 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-3-places" role="tabpanel" aria-labelledby="profile-tab">
+                        <li><span onclick="highlightData(3, this)" class="places-nav">France: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="places-nav">Greece: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="places-nav">Paris: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="places-nav">United States: 2 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-3-artworks" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">Aphrodite of Knidos: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">Bather Arranging Her Hair: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">Girl with a Dog: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">L’Origine du monde: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">Marble statue of Aphrodite: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">Nude on a Blue Cushion: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">Slave Market: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">The Birth of Venus: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">The Three Grace: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">The Turkish Bath: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">The Woman in the Waves: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">Venus: 6 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="artworks-nav">Venus of Urbino: 3 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-3-events" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(3, this)" class="events-nav">Middle Ages: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(3, this)" class="events-nav">Renaissance: 2 <span ></span></span></li>
+                      </div>
+                    </div>
+                <!-- nested nav tab start -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      <!-- accordion end -->
+      <a  onclick="changeModeFuture(this.id)" href="#" id="enable-futurelight" data-bs-toggle="tooltip" data-placement="top" title="Support our mission. Use light mode only if really necessary.">
+        <button type="button" class="btn btn-dmode"> </button>
+      </a>
+      <a  onclick="changeModeFuture(this.id)" href="#" id="enable-futuredark">
+          <button type="button" class="btn btn-lmode"></button>
+      </a>
+    </div>
+  <a  onclick="" href="#" id="greenweb">
+    <button type="button" class="btn btn-green"></button>
+  </a>
+  <div id="img-md"></div>
+  
+</div>
+</div>
+
+
+  <!-- Metadata viewer end -->
+
+        </div>
+    </div>
+    <div class="fab-container">
+      <div class="fab shadow">
+        <div class="fab-content">
+          <span class="material-icons"></span>
+        </div>
+      </div>
+      <div class="sub-button shadow" data-bs-toggle="popover" title="Renaissance" data-content="Renaissance" onclick="changeTheme(this.id)" href="#" id="enable-renaissance">
+        <a href="google.com" target="_blank">
+          <span class="material-icons"></span>
+        </a>
+      </div>
+      <div class="sub-button shadow" data-bs-toggle="popover" title="Secession" data-content="Secession" onclick="changeTheme(this.id)" href="#" id="enable-secession">
+        <a href="google.com" target="_blank">
+          <span class="material-icons"></span>
+        </a>
+      </div>
+      <div class="sub-button shadow"  data-bs-toggle="popover" title="1980s" data-content="1980s" onclick="changeTheme(this.id)" href="#" id="enable-eighty">
+        <a href="google.com" target="_blank">
+          <span class="material-icons"></span>
+        </a>
+      </div>
+      <div class="sub-button shadow"  data-bs-toggle="popover" title="Future" data-content="Future" onclick="changeTheme(this.id)" href="#" id="enable-future">
+        <a href="google.com" target="_blank">
+          <span class="material-icons"></span>
+        </a>
+      </div>
+      <div class="sub-button shadow"  data-bs-toggle="popover" title="Default" data-content="Default" onclick="changeTheme(this.id)" href="#" tag="link" id="enable-default">
+          <a href="google.com" target="_blank">
+            <span class="material-icons"></span>
+          </a>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/female-body-script.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

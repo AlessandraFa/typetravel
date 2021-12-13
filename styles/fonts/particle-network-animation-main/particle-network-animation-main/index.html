@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Particle Network (Mouse Interactive)</title>
+	<style>
+		html, body {
+			margin: 0;
+			text-align: center;
+		}
+
+		canvas {
+			border: 1px solid rgb(211, 211, 211);
+			margin: auto;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		p {
+			font-family: system-ui;
+		}
+	</style>
+</head>
+<body>
+	<canvas>Your browser does not support the HTML5 Canvas API.</canvas>
+	<p>Click anywhere to change theme. Press "r" on your keyboard to enable/disable automatic theme change.</p>
+	<script src="main.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			canvasInit();
+		});
+	</script>
+</body>
+</html>

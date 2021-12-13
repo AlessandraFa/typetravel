@@ -1,0 +1,230 @@
+@import url(/styles/themes/components/fab.css);
+@import url(/styles/themes/components/sizingNavbar.css);
+@import url(/styles/documentation.css);
+
+@font-face {
+    font-family: future;
+    src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
+}
+@font-face {
+    font-family: f1;
+    src: url("/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
+}
+@font-face {
+    font-family: f1bold;
+    src: url("/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: intro;
+    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: f1, monospace;
+}
+
+
+/*LINKS, SELECTION, CODE*/
+::selection{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+a{
+    color:rgb(73, 73, 73);
+}
+
+a:hover{
+    color:rgb(181, 186, 192);
+}
+
+code{
+    color: rgb(61, 61, 61);
+    text-shadow: none;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-color:white !important;
+    height: 10vh;
+}
+
+.navbar-brand{
+    font-family: intro, monospace;
+    color: black !important; 
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 3.5vh;
+}
+
+#capT{
+    background-image: url(/images/icons/T-future-light.svg);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    padding: 2rem;  
+}
+
+.navbar-brand:hover{
+    color: rgb(153, 153, 153) !important;
+}
+
+.nav-link{
+    font-family: future, monospace;
+    letter-spacing: 0.1em;
+    color: black !important; 
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: rgb(153, 153, 153) !important;
+}
+
+.dropdown-menu{
+    background-color: white;
+}
+
+.dropdown-item{
+    background-color:white;
+    color: black;
+    font-family: intro, monospace;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.dropdown-item:hover{
+    color: white;
+    background-color: black;
+}
+
+
+.modal-dialog{
+    max-width: 120vh;
+    border: 1px solid black;
+    font-family: "intro", monospace;
+    color: black;
+}
+
+.modal-content, .modal-content button{
+    background-color: white;
+}
+
+.modal-content, button:hover{
+    background-color: rgb(46, 46, 46) !important;
+}
+
+.modal-body p{
+    font-size: 2.2vh !important;
+    text-align: left;
+    padding: 0;
+    color: black;
+}
+
+/*DOCUMENTATION*/
+#menu-card .navbar-brand, #menu-card .nav-link{
+    text-transform: uppercase;
+}
+#main-background{
+    z-index: 1000;
+}
+
+#menu-card .navbar-brand{
+    font-size: 4vh !important;
+    padding-top: 2rem;
+    letter-spacing: 0.1rem;
+    width: inherit;
+}
+#menu-card .navbar{
+    background-color: white !important;
+}
+#menu-card .nav-link{
+    margin-right: 1rem;
+    font-family: intro, monospace;
+}
+#main-background p{
+    font-size: 2.5vh !important;
+}
+h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    font-family: intro, monospace;
+    font-weight: bold;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background-color: transparent;
+}
+h3{
+    font-size: 4vh;
+}
+
+h5{
+    font-size: 3vh;
+}
+#info-btn{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 2.5vh;
+    opacity: 0.6;
+}
+#info-btn:hover{
+    opacity: 1;
+}
+
+#info-disclaimer .modal-content{
+    background-color: white;
+}
+
+.modal-footer .btn{
+    background-color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn-lmode{
+    background-image: url(/images/Future/darkmode.png) !important;
+    background-size: 10vh;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh !important;
+    width: 10vh !important;
+    border: none;
+    box-shadow: none !important;
+    border-color: white !important;
+    position: fixed !important;
+    left: 3vh !important;
+    bottom: 3vh !important;
+}
+
+.btn-lmode:hover{
+    background-image: url(/images/Future/darkmode1.png) !important;
+    background-size: 10vh;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    width: 10vh;
+    box-shadow: none !important;
+    border-color: white !important;
+}
+
+.btn-lmode:focus{
+    box-shadow: none !important;
+    border-color: white !important;
+    background-color: white !important;
+}
+
+.btn-dmode{
+    display: none;
+}
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: black  !important;
+}
+
+.fab-container .fab::before {
+    display: none;
+}

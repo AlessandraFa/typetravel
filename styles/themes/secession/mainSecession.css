@@ -1,0 +1,603 @@
+@import "/styles/themes/components/dropdown.css";
+@import "/styles/themes/components/sizingNavbar.css";
+@import url("/styles/themes/components/fab.css");
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
+@font-face {
+    font-family: "secession";
+    src: url(/styles/fonts/secession/Secession.otf);
+}
+
+@font-face {
+    font-family: "golden type";
+    src: url(/styles/fonts/goldentypeitcstd.otf);
+}
+
+/*BODY*/
+body{
+    overflow: hidden;
+    background-color: #FAF2E6 !important;
+}
+
+
+#enable-futurelight{
+    display: none;
+}
+
+#enable-futuredark{
+    display: none;
+}
+
+/*LINKS, SELECTION, CODE*/
+a{
+    color: #CF7248;
+}
+
+a:hover{
+    color: #f1aa88;
+}
+
+code{
+    color: #3d3d3d;
+}
+
+::selection{
+    background-color: #c7bfbf;
+    color: #CF7248;
+}
+
+/* NAVBAR */
+.navbar{
+    font-family: "secession", "amarante", Georgia, serif;
+    background-color: #3D3D3D !important;
+    text-transform:uppercase;
+}
+
+.nav-link{
+    color: #FAF2E6 !important;
+    padding-left: 3vh !important;
+}
+
+.nav-link:hover{
+    color: #CF7248 !important;;
+}
+
+.navbar-brand{
+    font-size: 4vh;
+    letter-spacing: 0.3rem;
+    margin-top: 0.2rem;
+    color: #f8e0c0 !important;
+}
+
+.navbar-brand:hover {
+    color: #cda34c !important;
+}
+
+#capT{
+    background-image: url("/images/icons/T-artnouveau.svg");
+    background-size: 5vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;
+}
+
+#hide-md-btn, #hide-md-btn-off{
+    background-color: #CF7248 !important;
+    color: #FAF2E6 !important;
+    border: 2px solid white;
+    text-transform: uppercase;
+    border-radius: 0%;
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+    margin: 0;
+    line-height: unset;
+}
+
+#hide-md-btn:hover{
+    color: #e3cd9f !important;
+    background-color: #3D3D3D !important;
+}
+
+.dropdown-menu{
+    background-color: #3d3d3d;
+    border:none;
+    padding-top: 0.5em;
+}
+
+.dropdown-item:hover{
+    background-color: #CF7248;
+    color: #FAF2E6;
+}
+
+.dropdown-item{
+    color:#f8dba6 ;
+}
+
+/*DISCLAIMER*/
+.modal-header, .modal-footer{
+    background-color: #CF7248 !important;
+    font-family: "secession", "amarante", Georgia, serif;
+    text-transform: uppercase; 
+}
+
+.modal-title, .modal-footer .btn{
+    font-size: 4vh !important;
+    color: #FFFFF5;  
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+}
+
+.modal-header button{
+    margin: 0 !important;
+}
+
+.modal-body p{
+    font-size: 2.2vh !important;
+    padding: 0 2rem 0 2rem !important;
+    text-align: left;
+}
+
+.modal-body{
+    padding: 1rem 3rem 1rem 3rem !important;
+    text-align: left;
+    font-family: "golden type", "della respira", georgia, serif;
+}
+
+/*ARTICLES CARDS*/
+.card{
+    font-family: "golden type", "della respira", georgia, serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 92vh;
+    border-radius: 0%;
+    word-wrap: break-word;
+    border: 1px solid #f7eedf !important;
+    background-clip: border-box;
+    background-color: #f8f3ea;
+}
+
+.card-header{
+    min-height: auto;
+    background-color: #FAF2E6 !important;
+    border-bottom: none;
+}
+
+.card-title{
+    font-family: "secession", "Amarante", Georgia, serif;
+    font-size: 4.7vh;
+    line-height: 4.5vh;
+    text-transform: uppercase;
+    text-align: center;
+    color: #3D3D3D;  
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 0 !important;
+    margin-bottom: 0;
+}
+
+#title-bigger{
+    padding-left: 0 !important;
+    padding-right: 0!important;
+}
+
+.all-articles .larger:hover #article-long-title{
+    font-size: 5vh !important;
+}
+
+.deco{
+    background-image: url("/images/art-nouveau/under-title.png");
+    background-size: 35vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+}
+
+.card-body{   
+    background: linear-gradient(to bottom, rgba(250,242,230, 0.9)0%, rgba(250,242,230, 0.9)100%), url("/images/art-nouveau/art-an.png");
+    background-position: left top;
+    text-align: justify;
+    background-size: 70%;
+    color:#3d3d3d;
+    font-size: 2.5vh;
+    line-height: 1;
+}
+
+.card-body p{
+    text-indent: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-body p:first-of-type,
+.card-body p:nth-of-type(2){
+    text-indent: unset;
+}
+.card-body p:first-of-type{
+    margin-bottom: 1rem;
+}
+
+.card-body p:nth-of-type(2):first-letter{
+    font-size: 340%;
+    line-height: 110%;
+    float: left;
+    margin-bottom: -1rem;
+    padding-right: 0.6rem;
+}
+
+.issue-female-body #article-2 .card-body p:first-of-type:first-letter{
+    font-size: 350%;
+    line-height: 110%;
+    float: left;
+    margin-bottom: -2rem;
+    padding-right: 0.6rem;
+}
+
+.issue-female-body #article-2  .card-body p:nth-of-type(2):first-letter{
+    font-size: 100%;
+    line-height: 100%;
+    float: unset;
+    padding: unset;
+}
+
+
+.card-body h4{
+    font-style: bold;
+    text-transform: uppercase;
+    font-family: "secession", "Amarante", Georgia, serif;
+    color: #CF7248;
+}
+
+.card-subtitle{
+    font-size: 2.3vh;
+    line-height: 1;
+    font-weight: bold;
+    color: #CF7248;
+}
+
+.infoButton{
+    padding: 1vh;
+    border:none !important;
+    color: #3d3d3d;
+}
+
+.info{
+    font-size: 2vh;
+    line-height: 1;
+    text-align: center;
+    color: #3d3d3d !important;
+}
+
+.accordion-item{
+    border: 1px solid #f7eedf;
+    background-color: transparent;
+}
+
+.accordion-body{
+    font-family: "golden type", "della respira", georgia, serif;
+    background: rgba(250,242,230);
+    border:none;
+}
+
+.imgCaption{
+    font-size: 2vh;
+    line-height: 1.2;
+    background-color: rgba(207, 114, 72, 0.2);
+    padding: 1rem;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f7eedf;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #d8d3cb;
+    border-radius: 10px;
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b3afa7;
+}
+  
+/*IMAGES*/
+img{
+    border: 0.5vh solid #3D3D3D;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+}
+
+/* METADATA*/
+#metadata-style{
+    background-image: url("/images/art-nouveau/metadata-bg.png");
+    background-size:100%;
+    height: 92vh;
+    background-position: bottom center;
+    background-repeat: no-repeat;    
+}
+#metadata-style .card-body{
+    background: none;
+}
+
+#metadata-style h5{
+    background: #CF7248;
+    margin: 0rem;
+    margin-bottom: 0;
+    font-size: 5vh;
+    color: #FAF2E6;
+    padding-bottom: 1rem !important;
+}
+
+#metadata-style .accordion-body{
+    background: rgba(250,242,230, 0.8) !important;
+}
+
+.accordion-button{
+    text-transform: uppercase;
+    color: #303030;
+    background-color: rgba(250,242,230,0.5);
+    font-size: 2.2vh !important;
+}
+
+.accordion-button:hover{
+    background-color: #f3eadf;
+}
+
+.accordion-button:focus{
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #f3eadf;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    color: #CF7248;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);
+    color: #a06911;
+}
+
+#metadata .nav-link{
+    color: #3D3D3D !important;
+}
+
+#metadata .nav-link:hover, #metadata .nav-link.active{
+    color: #3D3D3D !important;
+    background-color: #CF7248;
+}
+
+#metadata .tab-content li:hover{
+    color: #3d3d3d;
+    background-color: #CF7248 !important;
+}
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #3D3D3D !important;
+    box-shadow: 2px 2px 10px rgba(250,242,230, 0.5), -2px -2px 10px rgba(250,242,230, 0.5);
+}
+  
+.fab-container .fab::before {
+    display: none;
+}
+  
+.sub-button:hover{
+    background-color: #CF7248 !important;
+}
+  
+.fab-container{
+    bottom: 4vh;
+    right: 4vh;
+}
+  
+.fab-container:hover {
+    height: 100%;
+}
+
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-12vh);
+}
+
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-22vh);
+}
+
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-32vh);
+}
+
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-42vh);
+}
+  
+.fab-container .sub-button{
+    height: 8vh;
+    width: 8vh;
+    right: 1vh;
+    background-size: 6vh;
+}
+  
+.fab-container .fab{
+    height: 10vh;
+    width: 10vh;   
+}
+  
+.fab-content{
+    background-size: 6vh;
+}
+  
+.sub-button::content{
+    background-size: 3vh !important;
+}
+
+/*RESPONSIVE BUTTON*/
+.navigation-responsive-button {
+    position: fixed; 
+    bottom: 3vh; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    text-transform: uppercase;
+    background-color: #CF7248; 
+    color: black; 
+    cursor: pointer; 
+    padding: 0.7rem; 
+    border-radius: 10px; 
+    font-size: 2.5vh; 
+    font-family: "secession", "amarante", Georgia, serif;
+    letter-spacing: 0.2em;
+}
+
+.navigation-responsive-button:hover{
+    background-color: #3d3d3d; 
+    color: #ecd2a7;
+} 
+
+/*EXPAND COLUMN - READING MODE*/
+
+body,
+.all-articles:hover .larger .card-header, 
+.all-articles:hover .larger .card-body, 
+.all-articles:hover .larger .subtitle,
+.all-articles:hover .larger .infoButton,
+.all-articles:hover .larger .info,
+.all-articles:hover .larger .accordion-item,
+.all-articles:hover .larger .accordion-header,
+.all-articles:hover .larger ::-webkit-scrollbar-track,
+.all-articles:hover .larger .accordion-body{
+    background: #e7b08e !important;
+}
+
+.all-articles .larger:hover .card-header, 
+.all-articles .larger:hover .card-body, 
+.all-articles .larger:hover .infoButton,
+.all-articles .larger:hover .info,
+.all-articles .larger:hover .accordion-item,
+.all-articles .larger:hover .accordion-header,
+.all-articles .larger:hover ::-webkit-scrollbar-track,
+.all-articles .larger:hover .accordion-body{
+    background: unset !important;
+}
+
+.all-articles:hover .larger {
+    opacity: 0.2;
+}
+
+.all-articles .larger:hover {
+    opacity: 1;
+}
+
+.all-articles .larger:hover .card-body, 
+.all-articles .larger:hover .card-subtitle{
+    font-size: 3vh;
+}
+
+.all-articles .larger:hover .info,
+.all-articles .larger:hover .imgCaption{
+    font-size: 2.5vh;
+}
+
+.issue-female-body .all-articles:hover .larger img{
+    height: 500px;
+    width: auto;
+}
+
+.issue-female-body .all-articles:hover .larger .imag{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    justify-content:center;
+}
+
+/* questo lo avevo fatto io per il comportamento responsive dei bottoni che compaiono */ 
+@media only screen and (min-width: 992px) {
+    .navigation-responsive-button {
+        display: none;
+    }
+}
+  
+@media only screen and (max-width: 992px) {
+    .card {
+        height: 100vh;
+    }
+    #next-article-3, #prev-article-1, #prev-article-2 {
+        display: none;
+    }
+    #next-article-2 {
+        display: block;
+    }
+}
+
+@media (min-width: 1400px){
+    .card-header{
+        min-height: 28vh;
+    }
+    .card-title{
+        padding: 1rem 1rem 0 1rem !important;
+    }
+    #article-2 .card-title{
+        padding: 1rem 0 0 0 !important;
+    }
+    .col-lg-4 .card-header{
+        min-height: 24vh;
+        padding: 1rem 0 0 0 !important;
+    }
+    .col-lg-4 .d-future{
+        letter-spacing: -0.1rem;;
+    }
+
+    .nav-link{
+        font-size: 3vh !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px){
+    .card-title{
+        font-size: 4vh;
+    }
+    .col-lg-4 .card-title{
+        font-size: 5vh;
+    }
+}
+
+@media (max-width: 992px){
+    .deco{
+        background-size: 45vh;
+    }
+    .card-title{
+        font-size: 6vh;
+        line-height: 1;
+    }
+    .imag{
+        padding: 1rem 2rem 0 2rem;
+    }
+    img{
+        border-image: none;
+    }
+    .imgCaption{
+        font-size:2.2vh;
+        line-height: 1.5;
+    }
+    .card-body, .card-subtitle{
+        font-size: 2.5vh;
+    }
+}
+
+
+/* IMPORT bootstrap scss*/
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

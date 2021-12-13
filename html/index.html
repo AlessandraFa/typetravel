@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/themes/basicStyle/homeBasic.css">    
+    <title>Typetravel - Home</title>
+    <link rel="icon" href="/images/icon.svg"></link>
+    <link rel="icon" href="/images/icons/t-t.svg"></link>
+  </head>
+  <body>
+
+    <!-- MODALS -->
+
+        <!-- disclaimer start -->
+        <div class="modal" tabindex="-1" id="disclaimer">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Disclaimer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                <p>
+                    The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modelling and Web Technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor Fabio Vitali.
+                </p>
+                <p>
+                    The documents contained in this web site have been selected for their length and complexity from various websites and magazines. Their publication here is not intended to be an alternative or replace their original locations.You can find the original publications at:
+                </p>
+                  <ul>
+                      <li><a href="https://www.architectmagazine.com/" target="_blank">Architect Magazine</a>: <a href="https://www.architectmagazine.com/design/editorial/the-climate-is-changing-so-must-architecture_o" target="_blank">The Climate Is Changing. So Must Architecture</a></li>
+                      <li><a href="https://www.theguardian.com" trarget="_blank">The Guardian</a>: <a href="https://www.theguardian.com/cities/2019/feb/25/concrete-the-most-destructive-material-on-earth" target="_blank">Concrete: the most destructive material on Earth</a></li>
+                      <li><a href="https://longreads.com/" target="_blank">Longreads</a>: <a href="https://longreads.com/2017/04/03/building-in-the-shadow-of-our-own-destruction/" target="_blank">Building In the Shadow of Our Own Destruction</a></li>
+                      <li><a href="https://medium.com/" target="_blank">Medium</a>: <a href="https://medium.com/@richardkyu/tracking-the-historical-representation-of-the-female-nude-2d1d7fe1d1d" target="_blank">Tracking Historical Representations of the Female Nude</a></li>
+                      <li><a href="https://www.bbc.com/" target="_blank">BBC</a>: <a href="" target="_blank">The fine line between art and pornography</a></li>
+                      <li><a href="artsy.net" target="_blank">Artsy</a>: <a href="" target="_blank">The Taboo History of Women’s Body Hair in Art</a></li>
+                  </ul>
+                <p>
+                    All copyrights and related rights on the content remain with their original owners.
+                    <br>
+                    All copyright on the typographic and layout choices are 2021 © Edoardo Dal Borgo and Alessandra Failla.
+                </p> 
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- disclaimer end -->
+
+    <!-- HEADER -->
+
+         <!-- navbar start -->
+         <nav class="navbar navbar-expand-lg navbar-light p-2 nav-fixed fixed-top" id="navbar">
+            <div class="container-fluid">
+            <a class="navbar-brand justify-content-lg-start ps-2 " href="./index.html"><span id="capT"></span>ypetravel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="./index.html" id="nav-active-link">Home</a>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Issues
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./female-body-in-art-history.html">Female Nude Painting throughout Art</a></li>
+                    <li><a class="dropdown-item" href="./the-future-of-architecture.html">The Future of Architecture</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ps-2">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Themes
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" tag="link" id="enable-default">Default</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-renaissance" style="font-size: 4vh;">Renaissance</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-secession">Secession</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">1980's Style</a></li>
+                    <li><a class="dropdown-item" onclick="changeThemeHome(this.id)" href="#" id="enable-future">Future</a></li>
+                  </ul>
+              </li>
+                <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="./documentation.html" data-bs-toggle="modal" data-bs-target="#" >Documentation</a>
+                </li>
+                <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#disclaimer">Disclaimer</a>
+                </li>
+                <li class="nav-item ps-2">
+                    <a class="nav-link active" aria-current="page" href="./about-us.html" data-bs-toggle="modal" data-bs-target="#">About</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+    <div class="container-fluid" id="first">
+        <!-- start first row -->
+        <div class="row">
+          <div class="col-2" id="first-left"></div>
+            <div class="col-8" id="ttlframe">
+                <h1 id="main-title">
+                    <span id="str-dynamic-title">Type</span><span id="travel">travel</span>
+                </h1>
+                <h2 >Read with style.</h2>
+                <div id="first-text">
+                  <div class="renaiss-left" id="rl1"></div>
+                  <div class="renaiss-right" id="rr1"></div>
+                    <p id="project-description">On Typetravel, you decide what to read and how to read it. Select your article, choose your style and start time travelling with us!
+                    </p>
+                </div>
+                <div class="d-grid gap-2 d-flex justify-content-center basic-btn">
+                  <a id="get-started-btn-1" href="#gosecond" data-bs-toggle="tooltip" data-placement="top" title="GET STARTED"><span id="icon"></span></a>  
+                </div>
+            </div>
+            <div class="col-2" id="first-right"></div>
+        </div>
+    </div>
+        <!-- end first row -->
+        <div id="gosecond">    
+        </div>
+        <div class="container-fluid" id="second">
+            <div class="row">
+               
+            <div class="col-12" id="renaiss-div">
+              <h2>What is Typetravel?</h2>
+              <div id="about-proj">
+                <div class="renaiss-left" id="rl1"></div>
+                <div class="renaiss-right" id="rr1"></div>
+                <p id="site-short-description"><b>Typetravel</b> allows to read while travelling in time through four historical typographical and layout styles that span over <b>five hundred years</b>. Each theme draws inspiration from original sources, carefully selected and reelaborated to offer users an excellent reading experience.
+                </p>
+                <p id="site-short-motivation">This website was developed for the course <b>Information Modeling and Web Technology</b>, which is part of the Digital Humanities and Digital Knowledge degree at the University of Bologna.</p>
+                </div>
+                <div class="d-grid gap-2 d-flex justify-content-center sec-buttons">
+                  <a id="play-1980s" href="#gothird"></a>
+                  <a class="btn  btn-outline-info btn-lg justify-content-center" id="btn-themes"  href="#gothird">See the themes</a>
+                  <a id="rec-1980s" href="#gofourth"></a>
+                  <a class="btn btn-outline-info btn-lg justify-content-center" id="btn-issues" href="#gofourth">See the issues</a>
+              </div>
+            </div>
+            
+            </div>
+            
+        </div>
+
+        <div id="gothird">
+        </div>        
+        <div class="container-fluid" id="third">
+            <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <div id="renaiss-bg">
+                <h2>Themes</h2>
+                <div>
+                  <p id="themes-text">Select one of the styles below to change the homepage design, or click on the buttons to discover more about them in our documentation. If you want to keep it simple, you can always go back to our <a onclick="changeThemeHome(this.id)" href="#" tag="link" id="enable-default">Basic Style</a>.</p>
+                </div>
+                <div id="cards">
+                  <div class="row" id="themes-card">
+                    <div class="col-md-6">
+                      <div id="card-renaissance" class="card text-center">
+                        <button onclick="changeThemeHome(this.id)" href="#" id="enable-renaissance">
+                        <div class="card-body">
+                          <a href="#" class="btn btn-primary">Renaissance</a><br>
+                          <img src="/images/icons/ren-white.png" ><br>
+                          <a href="./documentation.html#before-ren" class="btn btn-primary btn-doc">See Renaissance documentation</a>
+                        </div>
+                      </button>
+                      </div>
+                      </div>
+                      <div class="col-md-6">
+                      <div id="text-renaissance">
+                        <p class="c-right">Dive into the heart of 16th century with our <b>Renaissance</b> style. Discover the harmonious style and the renaissance-inspired typeface <i>Bembo</i>, created in 1496 by the <i>Aldine Press</i>, the printing office founded by Aldo Manutio in 1494 in Venice.</br> 1540s italian grotesque illustrations frame the text to recreate the structure of Renaissance printed books.</p>
+                      </div>
+                      </div>
+                  </div>
+                <div class="row" id="themes-card">
+                <div class="col-md-6">
+                  <div id="text-an">
+                    <p class="c-left">Ever wondered how your life would have been if you'd lived in the elegant 1900s-Wien? Since you cannot relive the inspiring years of the viennese Secession side by side with Gustav Klimt and Max Kurzweil, we brought the viennese Secession to you. Discover the style inspired by their magazine <i>Ver Sacrum</i>, published between 1898 and 1903 and featuring contributions of great artists as Egon Schiele, Kolo Moser, Joseph Maria Olbrich.</p>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div id="card-secession" class="card text-center">
+                      <button onclick="changeThemeHome(this.id)" href="#" id="enable-secession">
+                      <div class="card-body">
+                        <a href="#" class="btn btn-primary">Secession</a><br>
+                        <img src="/images/icons/anouv-white.png"><br>
+                        <a href="./documentation.html#before-sec" class="btn btn-primary btn-doc">See Secession documentation</a>
+                      </div>
+                    </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="themes-card">
+                  <div class="col-md-6">
+                  <div id="card-1980s" class="card text-center">
+                    <button onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">
+                    <div class="card-body">
+                      <a href="#" class="btn btn-primary">1980s design</a><br>
+                      <img src="/images/icons/tv-card.png"><br>
+                      <a href="./documentation.html#before-1980s" class="btn btn-primary btn-doc">See 1980s documentation</a>
+                    </div>
+                  </button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div id="text-1980s">
+                    <p class="c-right">Feel a bit nostalgic? Are you tired of watching videos on youtube, do you miss the dear old VHS? Select our 1980s style if you would like to get back to those neon years. You will find huge text, gradients, contrasting colors, glitching screens and, of course, neon grids.</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="row" id="themes-card">
+                  <div class="col-md-6">
+                    <div id="text-future">
+                      <p class="c-left">Why living in the present if you can choose to see the future. Minimal. Sustainable. Black. White. Yet, great.</p>
+                    </div>
+                  </div>
+                <div class="col-md-6">
+                  <div id="card-future" class="card text-center">
+                    <button onclick="changeThemeHome(this.id)" href="#" id="enable-future">
+                    <div class="card-body">
+                      <a href="#" class="btn btn-primary">Future</a><br>
+                      <img src="/images/icons/future.png"><br>
+                      <a href="./documentation.html#before-future" class="btn btn-primary btn-doc">See future documentation</a>
+                    </div>
+                  </button>
+                  </div>
+                </div>
+                </div>
+              </div>
+                  <div class="d-grid gap-2 d-flex justify-content-center">
+                    <a class="btn btn-outline-info btn-lg justify-content-center btn-third" href="./documentation.html">See full documentation</a>
+                    <a class="btn btn-outline-info btn-lg justify-content-center btn-third" href="#gofourth">See the issues</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-1"></div>
+            </div>
+        </div>
+        
+        <!-- start fourth container -->
+        <div id="gofourth">
+        </div>
+        <div class="container-fluid"id="fourth">
+          <div id="renaiss-bg">
+            <div class="row">
+                <h2>Issues</h2>
+            </div>
+            <div class="row">
+              <p id="issue-text">Some text about the issues "Dive into reading interesting articles - do it your style!"</p>
+          </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card text-center issue" id="card-iss1">
+                  <div class="card-body">
+                      <div class="fadedbox">
+                        <div class="title-text" id="tt1">The Future of Architecture</div>
+                        <p class="card-txt issue-description"><span>"Architecture and environment: building and preserving architecture in the light of climate change."</span></p>
+                        <button class="see-article"><a href="./the-future-of-architecture.html"><span>See the articles</span></a></button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="col-md-6">
+                    <div class="card text-center issue" id="card-iss2">
+                      <div class="card-body">
+                        <div class="fadedbox">
+                          <div class="title-text" id="tt2">Female nude painting throughout Art</div>
+                          <p class="card-txt issue-description"><span> "Learn about the different trends and perspectives on the representation of the female body throughout the centuries."</span></p>
+                          <button class="see-article"><a href="./female-body-in-art-history.html"><span>See the articles</span></a></button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div> 
+          </div>
+
+          </div>
+          <!-- end fourth container -->
+        
+          <!-- footer -->
+          <footer>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3" id="footer-left"></div>
+                <div class="col-md-3 info-footer">
+                  <p>This website is a project developed by Edoardo Dal Borgo and Alessandra Failla for the 2020/2021 course <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2020/454464">Information Modeling and Web Technologies</a> held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio Vitali</a></p>
+                </div>
+                <div class="col-md-3 contacts">
+                  <h4>Contacts</h4>
+                    <a href="mailto: edoardo.dalborgo@gmail.com">edoardo.dalborgo@gmail.com</a>
+                    <a href="mailto: alessandra.failla2@studio.unibo.it">alessandra.failla@hotmail.it</a>
+                </div>
+                <div class="col-md-3" id="footer-right"></div>
+              </div>
+                
+              <div class="row">
+                <p id="cp">© 2021 Copyright: Edoardo Dal Borgo, Alessandra Failla</p>
+                  <p id="discl"><a data-bs-toggle="modal" data-bs-target="#disclaimer">Learn more</a></p>
+              </div>
+              <a name="bottom" id="bottom"></a>
+              <!--fab-->
+              <div class="fab-container">
+                <div class="fab shadow">
+                  <div class="fab-content">
+                    <span class="material-icons"></span>
+                  </div>
+                </div>
+                <div class="sub-button shadow" data-toggle="popover" title="Renaissance" data-content="Renaissance" onclick="changeThemeHome(this.id)" href="#" id="enable-renaissance">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow" data-toggle="popover" title="Secession" data-content="Secession" onclick="changeThemeHome(this.id)" href="#" id="enable-secession">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow"  data-toggle="popover" title="1980s" data-content="1980s" onclick="changeThemeHome(this.id)" href="#" id="enable-eighty">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow"  data-toggle="popover" title="Future" data-content="Future" onclick="changeThemeHome(this.id)" href="#" id="enable-future">
+                  <a>
+                    <span class="material-icons"></span>
+                  </a>
+                </div>
+                <div class="sub-button shadow"  data-toggle="popover" title="Default" data-content="Default" onclick="changeThemeHome(this.id)" href="#" tag="link" id="enable-default">
+                    <a>
+                      <span class="material-icons"></span>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </footer>
+
+    <!-- SCRIPTS -->
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script>
+          var strDynamicTitle = document.querySelector("#str-dynamic-title"),
+          strings = ["Type", "Time"],
+          currentWord = 1;
+          
+          window.setInterval(() => {
+            currentWord++;
+            if(currentWord >= strings.length) {
+              currentWord=0
+              strDynamicTitle.textContent = strings[currentWord];
+              strDynamicTitle.style.color = "unset";
+              strDynamicTitle.style.textShadow= "unset";
+            } else {
+              strDynamicTitle.textContent = strings[currentWord];
+              strDynamicTitle.style.color= "var(--time-color)";
+              strDynamicTitle.style.transition= "var(--time-transition)";
+              strDynamicTitle.style.textShadow= "var(--time-shadow)";
+            }
+          }, 2000);
+          </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="../js/index.js"></script>
+  </body>
+</html>

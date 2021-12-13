@@ -1,0 +1,95 @@
+
+
+a.navbar-brand {
+    font-weight: 600;
+}
+
+li.nav-item, a.nav-link {
+    font-size: 1.5rem;
+    word-spacing: 0.5px;
+}
+
+#hide-md-btn{
+    position: absolute !important;
+    right: 1vh !important;
+}
+
+.hideme{
+    display: none !important;
+}
+
+.modal-dialog{
+    max-width: 100vh;
+}
+
+.people-nav, .places-nav, .events-nav, .artworks-nav {
+    cursor:pointer;
+}
+
+@media(min-width: 992px){
+    .navbar{
+        height: 8vh;
+    }
+  }
+  
+.all-articles .larger{
+    width: 33.33%;
+}
+
+.all-articles{
+    margin:0;
+}
+
+.all-articles:hover .larger{
+    width: 15%;
+}
+
+.all-articles:hover .larger .card-title{
+    font-size: 3vh;
+}
+
+.all-articles .larger{
+    transition: all 250ms ease-in-out;
+}
+
+.all-articles .larger:hover{
+    width: 70%;
+    transition: all 250ms ease-in-out;
+}
+
+.all-articles .larger:hover .card-title{
+    font-size: 5vh;
+}
+
+.all-articles .larger:hover .card-header{
+    min-height: auto !important;
+}
+
+.md-big{
+    cursor: pointer;
+}
+
+@media (max-width: 992px){
+.all-articles .larger, .all-articles:hover .larger{
+        width: 100%;
+    }
+}
+
+#article-long-title{
+    font-size: 3.5vh;
+}
+
+
+.all-articles:hover .larger #article-long-title{
+    font-size: 3vh;
+}
+
+#metadata .tab-content li{
+    list-style: none;
+    text-align: left;
+    margin: 0.5rem;
+}
+
+#metadata .tab-content ul{
+    padding: 1rem;
+}

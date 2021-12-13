@@ -1,0 +1,246 @@
+@import url("./themes/components/scrollbar.css");
+@import url("./themes/components/sizingNavbar.css");
+@import url("./themes/components/fab.css");
+@import url("./themes/components/dropdown.css");
+
+.navbar{
+    height: 8vh;
+}
+
+.content{
+    margin-top: 8vh;
+    height: 40vh !important;
+}
+
+#menu-card .navbar{
+    height: unset !important;
+}
+
+.scrollspy {
+    height: 87vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+:focus-visible{
+    outline: none;
+}
+
+hr {
+    margin-right: 1.5rem;
+    border-top: 3px solid rgb(110, 110, 110);
+}
+
+#to-top-button {
+  
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: red; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+}
+
+#info-disclaimer{
+    text-align: center;
+}
+
+#info-btn{
+    cursor: pointer;
+    text-align: center;
+}
+  
+.fab-container .fab::before {
+    display: none;
+}
+
+.fab-container{
+    bottom: 4vh;
+    right: 4vh;
+}
+  
+.fab-container:hover {
+    height: 100%;
+}
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-12vh);
+}
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-22vh);
+}
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-32vh);
+}
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-42vh);
+}
+
+.fab-container .sub-button{
+    height: 8vh;
+    width: 8vh;
+    right: 1vh;
+    background-size: 6vh;
+}
+
+.fab-container .fab{
+    height: 10vh;
+    width: 10vh;   
+}
+
+.fab-content{
+    background-size: 6vh;
+}
+
+.sub-button::content{
+    background-size: 3vh !important;
+}
+
+.content #text-start{
+    height: 92vh;
+}
+
+body{
+     margin-top: 8vh;
+}
+
+#menu-card .navbar-brand{
+    font-size: 4vh !important;
+}
+
+h5{
+    font-size: 5vh !important;
+}
+
+.img-div{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+img{
+    max-height: 250px;
+}
+
+.img-txt{
+    padding-top: 0.5rem;
+    text-align: center !important;
+}
+
+#item-2-1{
+    font-family: Bembo;
+    padding-top: 1rem;
+    font-size: 5vh; 
+    letter-spacing: 0.5rem; 
+}
+
+#item-2-2{
+    font-family: "secession", "Amarante", Georgia, serif;
+    font-size: 4.5vh;
+    text-transform: uppercase;
+}
+
+#item-2-3{
+    font-family: vcr, monospace;
+}
+
+#item-2-4{
+    font-family: "intro", future, f1, monospace;
+}
+
+.try-style{
+    text-decoration: none;
+    font-size: 2.5vh;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 1vh;
+}
+
+.try-style#enable-renaissance{
+    background-color: transparent;
+    transition: all 0.5s ease;
+    font-family: "Bembo", garamond, serif;
+}
+
+.try-style#enable-renaissance:hover{
+    -webkit-background-clip: text !important;
+    background-image: linear-gradient(rgba(0,0,0,0.1)0%,rgba(0,0,0,0.1)100%),url(/images/Renaissance/nav-decor.png);
+    background-size: 20vh;
+    -webkit-text-fill-color: transparent;
+    background-position: bottom;
+}
+
+.try-style#enable-secession{
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-family: "secession", "amarante", Georgia, serif;
+    font-size: 3vh;
+}
+
+.try-style#enable-secession:hover{
+    -webkit-background-clip: text !important;
+    background-image: url(/images/art-nouveau/four-bg.png);
+    background-size: 40vh;
+    -webkit-text-fill-color: transparent;
+    background-position: bottom;
+}
+
+.try-style#enable-eighty{
+    background-color: transparent;
+    transition: all 0.5s ease;
+    font-family: "Bembo", garamond, serif;
+}
+
+.try-style#enable-eighty:hover{
+    -webkit-background-clip: text !important;
+    background-image: url(/images/1980s/vhs-nav.png);
+    background-size: 2vh;
+    -webkit-text-fill-color: transparent;
+    background-position: bottom;
+}
+
+.try-style#enable-future{
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.try-style#enable-future h5:hover{
+    color: black;
+}
+
+.color-renaissance .color-square{
+    padding: 6rem; 
+    width: 6rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.color-renaissance p{
+    padding-left: 1rem;
+}
+
+.color-secession .color-square{
+    width: 6rem;
+    padding: 6rem; 
+    margin: 0;
+}
+.color-secession p, .color-secession .color-square:first-of-type{
+    margin-left:5rem;
+}
+
+@media (max-width: 1200px){
+    #menu-card .navbar-brand{
+        font-size: 3vh !important;
+    }
+}
+

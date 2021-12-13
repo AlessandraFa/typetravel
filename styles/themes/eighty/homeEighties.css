@@ -1,0 +1,1363 @@
+@import "/styles/themes/components/dropdown.css";
+@import "/styles/themes/components/sizingNavbar.css";
+@import "/styles/home.css";
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@font-face {
+    font-family: "vcr";
+    src: url("/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
+}
+
+@font-face{
+    font-family: "special";
+    src: url("/styles/fonts/johnny-fever.regular.otf")
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%), url(/images/1980s/gltch.gif) !important;
+    font-family: vcr, vt323, monospace;
+    cursor: url("/images/icons/curs.png"), auto !important;
+}
+
+.btn:hover, a:hover, .fab:hover, .sub-button:hover, .fadedbox:hover, button:hover{
+    cursor: url("/images/icons/pointer.png"), auto !important;
+}
+
+/*LINKS, SELECTION, CODE*/
+a{
+    color: #cc4aab;
+}
+
+a:hover{
+    color: #DE3E38;
+}
+
+code{
+    color: #C789D6;
+}
+
+::selection{
+    background-color: blue;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar{
+    background: transparent;
+    text-transform: uppercase ;
+}
+
+.navbar-brand:hover {
+    color: #ffc290 !important;
+}
+
+.navbar-brand{
+    color: white !important;
+    font-size: 26pt !important;
+    text-transform: uppercase;
+    font-family: vcr, vt323, monospace;
+    margin-left: 1.5rem;
+    text-shadow: 4px -4px 12px #d3d3d3,-4px 4px 12px #bebebe;
+}
+
+#capT{
+    background-image: url(/images/icons/t-1980s.svg);
+    background-size: 5.5vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    padding: 2rem;
+}
+
+.nav-link{
+    padding: 0 1rem 0 1rem !important;
+    line-height: 9vh;
+    font-size: 10vh;
+    font-family: vcr, vt323, monospace;
+    color: white !important;
+    text-shadow: 4px -4px 10px #d8d8d8,-4px 4px 10px #bebebe;
+}
+
+.nav-active {
+    box-shadow: 5px -1px 12px -5px grey;
+    backdrop-filter: blur(4px);
+    background: transparent;
+}
+
+.nav-link.active{
+  background-color: transparent !important;
+  text-shadow: transparent !important;
+  border-color: transparent !important;
+  text-shadow: transparent !important;
+}
+
+.dropdown-menu{
+    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%),  url(/images/1980s/gltch.gif) !important;
+}
+
+.nav-link .active .dropdown-menu{
+    backdrop-filter: blur(4px) !important;
+}
+
+.dropdown-item{
+    color: white !important;
+    font-family: vcr, vt323, monospace;
+}
+
+.dropdown-item:hover{
+    color: white;
+    background-color: #372174; 
+}
+
+.modal-header, .modal-footer{
+    background-image: url(/images/1980s/vhs-navb.png);
+    background-size: 12vh;
+    background-position: bottom;
+    border: none;
+}
+
+.modal-title{
+    color: white;
+    font-size: 3vh;
+    text-transform: uppercase;
+}
+
+.modal-footer .btn{
+    background-color: transparent !important;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3vh;
+    border: none;
+}
+
+.modal-body{
+    background-image: linear-gradient(to bottom, rgba(30, 19, 49, 0.2) 0%, rgba(34, 33, 36, 0.2)100%), url(/images/1980s/gltch.gif);
+    color: white;
+    font-size: 2.2vh;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.modal-body p{
+    font-size: 2.2vh !important;
+    text-align: left;
+    padding: 0;
+}
+
+/*FIRST*/
+#first ::selection{
+    background-color: #cc4aab;
+}
+
+#icon{
+    padding: 10vh;
+    background-image: url("/images/icons/start-80.svg");
+    background-size: 16vh;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center !important;
+    text-decoration: none !important;
+
+}
+
+#icon:hover{
+    background-image: url("/images/icons/start-80-hov.svg");
+    background-color: transparent !important;
+}
+
+#get-started-btn-1{
+    padding-top: 6rem;
+}
+
+#first{
+    background: url(/images/1980s/gltch.gif) !important;
+    text-transform: uppercase;
+    margin-bottom: 0 !important;
+}
+
+#first h1{
+    font-family: arial, helvetica, "vcr", monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22vh;
+    color: #ffffff;
+    padding-top: 10rem;
+    text-shadow: 2px -2px 10px #959495,
+    -2px 2px 10px #ff6d33;
+}
+
+#ttlframe{
+    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%), url(/images/1980s/grid2.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+#first #travel{
+    font-family: "special";
+    font-size: 22vh;
+    -webkit-background-clip: text !important;
+    background-image: url(/images/1980s/vhs-navb.png);
+    background-size: 20vh;
+    -webkit-text-fill-color: transparent;
+    background-position: bottom;
+    text-shadow: none;
+}
+
+#first h2{
+    color: #B24978;
+    font-family: "vcr";
+    text-align: center;
+    font-size: 6vh;
+    text-shadow: 2px -2px 10px #7a2e66,
+    -2px 2px 10px #804617;
+    padding-top: 1rem;
+    padding-bottom: 0 !important ;
+}
+
+#first p{
+    color: white;
+    text-shadow: 4px -4px 10px #505050,-4px 4px 10px #575757;
+    opacity: 0.9;
+    font-size: 4vh;
+    padding: 0 12rem 0 12rem;
+}
+
+/*SECOND*/
+#second{
+    background-image:linear-gradient(to bottom, rgba(23, 30, 116, 1) 0%,rgba(23,30,116,0.9) 30%, rgba(20,29,122,0.8)80%, rgba(26, 12, 71, 0.8)100%),url(/images/1980s/b1.gif);
+    background-size: 50vh;
+    background-position: center;
+}
+
+#gosecond{
+    background-image: linear-gradient(to bottom, rgb(36, 29, 54) 0%, rgb(29, 23, 93) 50%, rgba(23, 30, 116, 1) 100%),url(/images/1980s/b1.gif);
+    background-size: 50vh;
+    background-position: top;
+    height: 15vh;
+}
+
+#second h2{
+    color: white;
+    text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+    padding-left: 7rem;
+    padding-top: 4vh;
+    text-transform: uppercase;
+    font-size: 7vh;
+}
+
+#second p{
+    color: white;
+    text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+#site-short-description{
+    padding-top: 6rem;
+}
+
+#btn-themes, #btn-issues{
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 5vh;
+    margin-top: 2.7rem !important;
+    text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+}
+
+#btn-themes:hover, #btn-issues:hover{
+    background: transparent;
+    border: none;
+    border-radius: 0%;
+    text-shadow: 4px -2px 20px #97b1fa,-4px 4px 10px #8792fa;
+
+}
+
+#play-1980s, #rec-1980s{
+    height: 11vh;
+    width: 10vh;
+    background-size: 8vh;
+    background-repeat: no-repeat;
+    margin-top: 3rem !important;
+}
+
+#play-1980s:hover, #rec-1980s:hover{
+    opacity: 0.8;
+}
+
+
+#play-1980s{
+    background-image: url(/images/1980s/play.png);
+}
+
+#rec-1980s{
+    background-image: url(/images/1980s/rec.png);
+}
+
+/*THIRD*/
+#third{
+    background-image:linear-gradient(to bottom, rgba(26, 12, 71, 0.8) 0%, rgba(26, 12, 71, 0.8) 20%, rgba(18, 18, 105, 0.5) 80%, rgba(8, 8, 54, 0.8) 100%),url(/images/1980s/b1.gif);
+    background-size: 50vh;
+    background-position: bottom center;
+}
+
+#gothird{
+    background-image: linear-gradient(to bottom, rgba(26, 12, 71, 0.8) 0%, rgba(26, 12, 71, 0.8) 50%, rgba(26, 12, 71, 0.8) 90%, rgba(26, 12, 71, 0.8) 100%), url(/images/1980s/b1.gif);
+    background-size: 50;
+    height: 15vh;
+    background-position: top center;
+}
+
+#third h2{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 7vh;
+    padding-top: 2.5vh;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+}
+
+#third h2::after{
+    background-image: url(/images/1980s/play.png) !important;
+    height: auto;
+    width: 40px;
+    background-size: 8vh;
+    background-repeat: no-repeat;
+}
+
+#themes-text{
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#third p{
+    color: white;
+    text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+}
+
+#third #themes-card p{
+    height: 100% !important;
+}
+
+#third .card{
+    background-color: transparent;
+}
+
+#third .card a{
+    color: white !important;
+    text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+}
+
+#third .card a:hover{
+    text-shadow: 4px -2px 10px #ccb6ff,-4px 4px 10px #ffffff;
+}
+
+#card-secession img{
+    display: none;
+}
+
+#card-secession .card-body{
+    background-image: url(/images/icons/anouv-w.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh !important;
+}
+
+#card-secession .btn-doc{
+    margin-top:  35vh !important;
+}
+
+#text-renaissance, #text-1980s{
+    height: 100%;
+    margin-right: 0rem;
+    padding-right: 4rem !important;
+}
+
+#text-an, #text-future{
+    height: 100%;
+    margin-left: 0rem;
+    padding-left: 4rem;
+}
+
+.btn-third{
+    color: white;
+    border-radius: 0;
+    text-transform: uppercase;
+    border: 2px solid white;
+    font-size: 5vh;
+    text-shadow: 4px -2px 10px #4e5f90,-4px 4px 10px #5761bb;
+}
+
+.btn-third:hover{
+    color:white;
+    text-shadow: 4px -2px 20px #fafcff,-4px 4px 10px #8792fa; 
+}
+
+/*FOURTH*/
+#fourth{
+    background-image:linear-gradient(to bottom, rgba(15, 3, 31, 0.8) 0%, rgba(15, 3, 31, 0.8)80%, rgba(9, 3, 17, 1) 100%),url(/images/1980s/b1.gif);
+}
+
+#gofourth{
+    background-image:linear-gradient(to bottom, rgba(8, 8, 54, 0.8) 0%, rgba(15, 3, 31, 0.8) 100%),url(/images/1980s/b1.gif);
+}
+
+#fourth h2{
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 7vh;
+    padding-left: 7rem;
+    padding-top: 2.5vh;
+    text-transform: uppercase;
+    color: white;   
+    text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+}
+
+#fourth .card{
+    text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+    box-shadow: 4px -2px 30px #2b1e4b,-4px 4px 30px #443270;;
+}
+
+#issue-text{
+    color: white;
+    text-align: left;
+    padding: 0 7rem 0 7rem;
+    text-transform: uppercase;
+    text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+}
+
+#card-iss1{
+    margin-left: 7rem !important;
+}
+
+#card-iss2{
+    margin-right: 7rem !important;
+}
+
+.fadedbox{
+    background-color:rgba(222, 62, 56, 0.7);
+    height: inherit !important;
+}  
+
+#tt1, #tt2{
+    font-size: 5vh;
+    font-weight: bold !important;
+    background-color: transparent;
+    color: white;
+    margin: 3rem;
+    margin-bottom: 0;
+    padding: 1rem !important;
+    text-transform: uppercase;
+}
+
+#tt2{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.issue-description{
+    padding-top: 0 !important;
+    font-size: 3vh !important;
+    letter-spacing: 0.05rem;
+    color: white;
+}
+
+.see-article{
+    background-color: transparent;
+    color: rgba(255,255,255,0.8);
+    border: none;
+    font-size: 4vh;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.see-article:hover{
+    color: rgb(27, 27, 27)
+}
+
+.see-article a{
+    background-color: unset;
+    color: unset;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+footer{
+    background-image:linear-gradient(to bottom, rgba(9, 3, 17, 1) 0%, rgba(15, 3, 31, 1)50%,rgb(70, 19, 17) 80%, rgba(129, 28, 25, 0.9) 95%, rgba(222, 62, 56, 1) 100%);
+}
+
+footer p{
+    font-size: 3vh;
+}
+
+.info-footer, .contacts, footer a{
+    color: white !important;
+    margin-top: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height:auto;
+    text-transform: uppercase;
+    text-decoration-style: dotted;
+    font-size: 3vh;
+}
+
+footer a:hover{
+    color: #DE3E38 !important;
+}
+
+footer h4{
+    padding-top: 2rem;
+}
+
+footer a{
+    color: rgb(123, 123, 123);
+}
+
+#footer-left{
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 32vh;
+}
+
+#footer-right{
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 32vh;
+}
+
+#cp{
+    color: white;
+}
+
+#discl{
+    color: white;
+    padding-bottom: 2rem;
+}
+
+#discl:hover{
+    color:red;
+}
+
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 22px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #DE3E38;
+    border: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border: 2px solid black;
+    background-position: center;
+    background-size: 2vh;
+}
+
+::-webkit-scrollbar-button {
+    border: 1px solid rgb(10, 10, 10);
+    height: 3.5vh;
+    width: 2.5vh;
+    display:block;
+}
+
+::-webkit-scrollbar-button:vertical:increment:start,
+::-webkit-scrollbar-button:horizontal:increment:start,
+::-webkit-scrollbar-button:vertical:decrement:end{
+    display:none;
+}
+
+::-webkit-scrollbar-button:vertical:increment{
+    background-image: url(/images/1980s/scroll-down.png);
+    background-size: 2.8vh;  
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+::-webkit-scrollbar-button:vertical:increment:active{
+    background-image: url(/images/1980s/down-click.png);
+}
+
+::-webkit-scrollbar-button:vertical:decrement{
+    background-image: url(/images/1980s/scroll-up.png);
+    background-size: 2.8vh;  
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:active{
+    background-image: url(/images/1980s/up-click.png);
+}
+
+/*FAB CONTAINER*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: rgb(36, 29, 54)  !important;
+    box-shadow: 4px -2px 10px rgba(69, 54, 73, 0.4),-4px 4px 10px rgba(58, 45, 40, 0.4) !important;
+}
+
+.fab-container .fab::before {
+    display: none;
+}
+
+@media (max-width: 576px){
+    /*NAVBAR*/
+    .navbar{
+        height: auto !important;
+        background-size: 20vh;
+    }
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    #navbarNavDropdown{
+        background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%),  url(/images/1980s/gltch.gif) !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        margin-top: 1rem;
+    }
+
+    #first h1{
+        font-size: 10vh !important;
+        margin-top: 0 !important;
+        padding-top: 5rem;
+    }
+
+    #travel{
+        font-size: 10vh !important;
+    }
+
+    #first h2{
+        font-size: 6vh;
+        padding-top: 0;
+    }
+
+    #first p{
+        font-size: 3.5vh !important;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 6vh !important;
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 160vh !important;
+        background-size:400vh !important;
+        background-size: 30vh !important;
+    }
+
+    #second p{
+        text-align: justify;
+    }
+
+    #about-proj{
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    #site-short-description, #site-short-motivation{
+        padding: 0 !important;
+        font-size: 3vh !important;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 4vh !important;
+        margin: 0 !important;
+        padding: 2rem !important;
+    }
+
+    #play-1980s, #rec-1980s{
+        display: none;
+    }
+
+    /*THIRD SECTION*/
+    #gothird{
+        background-size: 100vh;
+        background-repeat: repeat !important;
+        background-position: top left;
+    }
+    #third{
+        background-size: 100vh ;
+        background-repeat: repeat !important;
+        background-position: top left;
+    }
+
+    #third p{
+        font-size: 3vh !important;
+        color: white;
+        padding: 1rem;
+        text-align: justify;
+    }
+    
+    #themes-text{
+        margin:0;
+    }
+
+    #third .card{
+        margin: 1rem 0 1rem 0 !important;
+        height: 100%;
+    }
+
+    #third img{
+        width: 70%;
+        height: 70% !important;
+    }
+
+    #text-renaissance, #text-an, #text-1980s, #text-future{
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 3vh;
+    }
+
+    #themes-card a{
+        font-size: 3vh !important;
+    }
+
+    #third a{
+        font-size: 3vh !important;
+    }
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #fourth p{
+        font-size: 3vh;
+        text-align: justify;
+        padding: 3rem !important;
+    }
+
+    #card-iss1, #card-iss2{
+        margin-top: 0.5rem auto 0.5rem auto !important;
+        margin: 0 !important;
+    }
+    
+    #tt1{
+        font-size: 3vh !important;
+    }
+    
+    #tt2{
+        font-size: 3vh !important;
+    }
+
+    #card-iss2 .fadedbox{
+        background-color: rgba(179, 179, 179, 0.6);
+    }    
+
+    .title-text{
+        padding:0 !important;
+        margin: 0 !important;
+        font-size: 3vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 3vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    /*FOOTER*/
+    footer, #footer-left, #footer-right, .info-footer, .contacts, .cp, #discl{
+        background-color: black !important;
+        background-image: none !important;
+        color: white;
+    }
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        margin: 0.5rem !important;
+        font-size: 2vh !important;
+        }
+    
+    footer li{
+        list-style: none;
+    }
+  
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    /*NAVBAR*/
+    #navbarNavDropdown{
+        background: rgba(78, 78, 78, 0.8) !important;
+    }
+    .navbar{
+        height: auto !important;
+        background-size: 20vh;
+    }
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    p{
+        text-align: center !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        margin-top: 1rem;
+    }
+
+    #first h1{
+        font-size: 14vh !important;
+        margin-top: 0 !important;
+        padding-top: 3rem;
+    }
+
+    #travel{
+        font-size: 15vh !important;
+    }
+
+    #first h2{
+        font-size: 7vh;
+        padding-top: 0;
+    }
+
+    #first p{
+        font-size: 4vh !important;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 7vh !important;
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 160vh !important;
+        background-size:400vh !important;
+    }
+
+    #about-proj{
+        margin: 0 !important;
+        padding: 0 3rem 0rem 3rem !important;
+    }
+
+    #site-short-description, #site-short-motivation{
+        padding: 0 !important;
+        font-size: 3.5vh !important;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 4vh !important;
+        margin: 0 !important;
+        padding: 2rem !important;
+    }
+
+    #play-1980s, #rec-1980s{
+        display: none;
+    }
+
+    /*THIRD SECTION*/
+    #gothird{
+        background-size: 100vh;
+        background-repeat: repeat !important;
+        background-position: top left;
+    }
+    #third{
+        background-size: 100vh ;
+        background-repeat: repeat !important;
+        background-position: top left;
+    }
+
+    .c-left{
+        text-align: right !important;
+    }
+
+    .c-right{
+        text-align: left !important;
+    }
+
+    #third p{
+        font-size: 3vh !important;
+        color: white;
+        padding: 1rem !important;
+        text-align: justify !important;
+    }
+
+    #text-renaissance, #text-an, #text-1980s, #text-future{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #themes-text{
+        margin:0;
+    }
+
+    #third .card{
+        margin: 0.5rem 3rem 0.5rem 3rem !important;
+        height: 100%;
+    }
+
+    #themes-card a{
+        font-size: 4vh !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #issue-text{
+        font-size: 3vh;
+    }
+
+    #card-iss1, #card-iss2{
+        margin: 0.5rem auto 0.5rem auto !important;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    #card-iss2 .fadedbox{
+        background-color: rgba(179, 179, 179, 0.6);
+    }
+
+    .title-text{
+        padding:0 !important;
+        margin: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 3vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    /*FOOTER*/
+    footer, #footer-left, #footer-right, .info-footer, .contacts, .cp, #discl{
+        background-color: black !important;
+        background-image: none !important;
+        color: white;
+    }
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        margin: 0.5rem !important;
+        font-size: 2.5vh !important;
+        }
+    
+    footer li{
+        list-style: none;
+    }
+  
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    /*NAVBAR*/
+    #navbarNavDropdown{
+        background: rgba(78, 78, 78, 0.9) !important;
+    }
+    .navbar{
+        height: auto !important;
+        background-size: 20vh;
+    }
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        margin-top: 4rem;
+    }
+
+    #first h1{
+        font-size: 14vh !important;
+        margin-top: 0 !important;
+        padding-top: 3rem;
+    }
+
+    #travel{
+        font-size: 15vh !important;
+    }
+
+    #first h2{
+        font-size: 7vh;
+        padding-top: 0;
+    }
+
+    #first p{
+        font-size: 4vh !important;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 8vh !important;
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 160vh !important;
+        background-size:400vh !important;
+    }
+
+    #about-proj{
+        margin: 0 !important;
+        padding: 0 4rem 0rem 4rem !important;
+    }
+
+    #second p{
+        font-size: 4vh;
+    }
+
+    #site-short-description, #site-short-motivation{
+        padding: 0 !important;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 5vh !important;
+        margin: 0 !important;
+        margin-top: 1rem !important;
+        padding: 0 !important;
+    }
+
+    #play-1980s, #rec-1980s{
+        margin-top: 1rem !important;
+    }
+
+    /*THIRD SECTION*/
+    #gothird{
+        background-size: 100vh;
+        background-repeat: repeat !important;
+        background-position: top left;
+    }
+    #third{
+        background-size: 100vh ;
+        background-repeat: repeat !important;
+        background-position: top left;
+    }
+
+    #third p{
+        font-size: 3vh !important;
+        color: white;
+        margin: 0 0 0.5rem 0 !important;
+        padding: 1rem !important;
+    }
+
+    .c-left{
+        text-align: right !important;
+    }
+
+    .c-right{
+        text-align: left !important;
+    }
+
+    #themes-text{
+        margin:0;
+    }
+
+    #third .card{
+        margin: 0 !important;
+        height: 100% !important;
+    }
+
+    #themes-card a{
+        font-size: 4vh !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #card-iss1, #card-iss2{
+        margin: 0.5rem auto 0.5rem auto !important;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    #card-iss2 .fadedbox{
+        background-color: rgba(179, 179, 179, 0.6);
+    }
+
+    .title-text{
+        padding:0 !important;
+        margin: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 2.5vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 3vh !important;
+    }
+
+    /*FOOTER*/
+    footer, #footer-left, #footer-right, .info-footer, .contacts, .cp, #discl{
+        background-color: black !important;
+        background-image: none !important;
+        color: white;
+    }
+    .info-footer{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        margin: 0.5rem !important;
+        font-size: 2vh !important;
+        }
+    
+    footer li{
+        list-style: none;
+    }
+  
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    /*NAVBAR*/
+    .navbar{
+        height: auto !important;
+        background-size: 20vh;
+    }
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+    .nav-link{
+        padding-left: 0 !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        margin-top: 4rem;
+    }
+
+    #first h1{
+        font-size: 14vh !important;
+        margin-top: 0 !important;
+        padding-top: 3rem;
+    }
+
+    #travel{
+        font-size: 15vh !important;
+    }
+
+    #first h2{
+        font-size: 6vh;
+        padding-top: 0;
+    }
+
+    #first p{
+        font-size: 4vh !important;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 8vh !important;
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 160vh !important;
+        background-size:400vh !important;
+    }
+
+    #about-proj{
+        margin: 0 !important;
+        padding: 0 4rem 0rem 4rem !important;
+    }
+
+    #second p{
+        font-size: 4vh;
+    }
+
+    #site-short-description, #site-short-motivation{
+        padding: 0 !important;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 5vh !important;
+        margin: 0 !important;
+        margin-top: 1rem !important;
+        padding: 0 !important;
+    }
+
+    #play-1980s, #rec-1980s{
+        margin-top: 1rem !important;
+    }
+
+    /*THIRD SECTION*/
+    #gothird{
+        background-size: 100vh;
+        background-repeat: repeat !important;
+        background-position: top left;
+    }
+    #third{
+        background-size: 100vh ;
+        background-repeat: repeat !important;
+        background-position: top left;
+    }
+
+    #third p{
+        font-size: 3vh !important;
+        color: white;
+        margin: 0 0 0.5rem 0 !important;
+        padding: 1rem !important;
+    }
+
+    #themes-text{
+        margin:0;
+    }
+
+    #third .card{
+        margin: 0 !important;
+        height: 100% !important;
+    }
+
+    #themes-card a{
+        font-size: 4vh !important;
+    }
+
+    .c-left{
+        text-align: right !important;
+    }
+
+    .c-right{
+        text-align: left !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #card-iss1, #card-iss2{
+        margin: 0.5rem auto 0.5rem auto !important;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    #card-iss2 .fadedbox{
+        background-color: rgba(179, 179, 179, 0.6);
+    }
+    
+
+    .title-text{
+        padding:0 !important;
+        margin: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+    footer, #footer-left, #footer-right, .info-footer, .contacts, .cp, #discl{
+        background-color: black !important;
+        background-image: none !important;
+        color: white;
+    }
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        font-size: 2vh !important;
+        }
+    .info-footer{
+        margin: 0 !important;
+    }
+  
+}
+
+
+:root{
+    --time-shadow: 2px -2px 1px #ffffff,
+    -4px 4px 20px #7d69b8;
+    --time-color: transparent;
+    --time-transition: ease-in-out 0.5s;
+}

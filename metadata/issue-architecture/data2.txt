@@ -1,0 +1,94 @@
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Burj Khalifa: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Colosseum: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Empire State Building: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Hoover Dam: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Itaipu: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Minhocão: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Pantheon: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Olympc Bird's Nest stadium: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Three Gorges Dam: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">TransAmazonia: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="buildings-nav">Tricorn Centre: 1 <span ></span></span></li>
+
+<li><span onclick="highlightData(1, this)" class="organizations-nav">China National Building Material: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Chinese government: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Japanese government: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Kajima: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Kumagai: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Liberal Democratic Party: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Liberal Democratic party: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">National Bureau of Statistics: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">National Museum of the Republic: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Obayashi: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Shimizu: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Shinkansen: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Taisei: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Takenaka: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Transparency International: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="organizations-nav">Yakuza: 1 <span ></span></span></li>
+
+<li><span onclick="highlightData(1, this)" class="people-nav">Alex Kerr: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Atsushi Fujita: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Dilma Rousseff: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Franklin Delano Roosevelt: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Joseph Aspdin: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Kakuei Tanaka: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Le Corbusier: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Norobu Takeshita: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Oscar Niemeyer: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Owen Luder: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Paulo Maluf: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Prince Charles: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Tadao Ando: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Tadashi Ono: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Xi Jinping: 3 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Yakushiro Nakasone: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="people-nav">Yu Kongjian: 3 <span ></span></span></li>
+
+<li><span onclick="highlightData(1, this)" class="places-nav">Africa: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Albert Hall: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Amazon rainforest: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Beijing: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Brasilia: 3 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Brazil: 4 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">California: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">China: 7 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Dubai: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Ecuador: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">England: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Europe: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Fukushima: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Greece: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Houston: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Hyde Park: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Ishinomaki: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Iwate: 7 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Japan: 9 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Kamaishi: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Kazakhstan: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Kitakami: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Kukasabe: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Leeds: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Luliang: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Maracanã: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">New Orleans: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Osaka: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Pakistan: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Paraguay: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Parana: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Peru: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Portland: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Rome: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">South America: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">South Korea: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Sri Lanka: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">São Paulo: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Three Gorges Dam: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Tohoku: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Tokyo: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">United Kingdom: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">United States: 8 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Virgin Islands: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Yamada: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Yangtze: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)" class="places-nav">Yangtze River: 1 <span ></span></span></li>

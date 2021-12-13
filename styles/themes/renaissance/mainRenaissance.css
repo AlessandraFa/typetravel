@@ -1,0 +1,1045 @@
+@import url("/styles/themes/components/dropdown.css");
+@import url("/styles/themes/components/sizingNavbar.css");
+@import url("/styles/themes/components/fab.css");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+
+@font-face {
+  font-family: "Bembo";
+  src: url("/styles/fonts/Bembo.ttf");
+}
+
+@font-face {
+    font-family: "Bembo-italic";
+    src: url("/styles/fonts/BemboStd-SemiboldItalic.otf");
+}
+
+/*LINKS, SELECTION, CODE*/
+a{
+    color: #8f8f8f;
+}
+
+a:hover{
+    color: #c4c4c4 ;
+}
+
+::selection{
+    color: #f0f0f0 !important;
+    background: #8f8f8f !important;
+}
+
+code{
+    color: grey;
+}
+
+/*BODY*/
+body{
+    font-family: "Bembo", garamond, serif;
+    text-align: center;
+    overflow: hidden;
+    line-height: 1;
+    background-color:#F2F2F2;
+}
+
+
+#enable-futurelight{
+    display: none;
+}
+
+#enable-futuredark{
+    display: none;
+}
+
+/*NAVBAR*/
+.navbar{
+    letter-spacing: 0.1rem;
+    background-color: #c0c0c0 !important;
+    background-image: url("/images/Renaissance/nav-decor.png");
+    background-size: 40vh;
+    background-position: bottom;
+    height: 8vh;
+}
+
+.navbar-brand{
+    font-size: 4vh;
+    text-transform: uppercase;
+    color: #474747    !important;
+    letter-spacing: 0.3rem;
+}
+
+#capT{
+    background-image: url("/images/icons/t-renaissance.svg");
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    padding: 2rem;
+}
+
+.dropdown-menu{
+    background-color: #C4C4C4; 
+    border:none;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(168, 168, 168);
+    color: white;
+}
+
+.navbar-nav{
+    margin-left: 1rem;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-size: 3vh;
+    color: #474747    !important;  
+    margin-bottom: 0 !important;
+    padding: 0.5rem;
+}
+
+.nav-link:hover,
+.navbar-brand:hover{
+    color: rgb(122, 122, 122) !important;
+}
+
+.nav-link.active{
+    background-color: transparent !important;
+    text-shadow: transparent !important;
+    border-color: transparent !important;
+    text-shadow: transparent !important;
+}
+
+#metadata-style .nav-link{
+    text-shadow: none !important;
+}
+
+#hide-md-btn{
+    background-color: #e2e2e2 !important;
+    color: #797979 !important;
+    font-size: 2.5vh;
+}
+
+#hide-md-btn:hover{
+    background-color: #cecece !important;
+    color: white !important;
+}
+
+#metadata .nav-link:hover, #metadata .nav-link.active{
+    color: #DEDEDE !important;
+    background-color: #8f8f8f !important;
+}
+
+#metadata .tab-content li:hover{
+    color: #DEDEDE;
+    background-color: #8f8f8f !important;
+}
+
+/*DISCLAIMER*/
+.modal-header, .modal-header .modal-title, .modal-footer, .modal-footer .btn{
+    background-color: #F2F2F2 !important;
+    color: #474747;
+    text-transform: uppercase;
+    font-family: "Bembo", garamond, serif;
+    border:none;
+    font-size: 3vh !important;
+}
+
+.modal-title, .modal-footer .btn{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-footer .btn:hover{
+    color: #c4c4c4;
+}
+
+.modal-header button{
+    margin: 0 !important;
+}
+
+.modal-body{
+    text-align: left;
+    font-size: 3vh;
+    margin: 0 3rem 0 3rem;
+}
+
+/*CARDS*/
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 92vh;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 0.25rem;
+}
+
+.card-header{
+    border-bottom: none;
+    background-color:#F2F2F2;
+    padding: 0.2vh;
+    min-height: 30vh;
+}
+
+.col-lg-4 .card-header{
+    min-height: 30vh;
+}
+
+.card-title{
+    font-family: "Bembo", garamond, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size:5vh;
+    font-weight: 900;
+    line-height: 1;
+    padding: 2rem 0.4rem 2rem 0.4rem  !important;
+    text-align: center;
+    margin-bottom: 0;
+    color: #424242;
+}
+
+.col-lg-4 .card-title{
+    letter-spacing: 0.6rem;
+}
+
+.card-title::first-line{
+    font-size: 6vh;
+    letter-spacing: 0.2rem;
+}
+
+.col-lg-4 .card-title::first-line{
+    font-size: 6vh;
+    letter-spacing: 0.4rem;
+}
+
+.spec{
+    font-size: 4vh;
+    letter-spacing: 0.3rem;
+}
+
+.col-lg-4 .spec{
+    letter-spacing: 0.6rem;
+}
+
+.d-future{
+    letter-spacing: 0.1vh !important;
+}
+
+.col-lg-4 .d-future{
+    letter-spacing: unset !important;
+}
+
+.title-big{
+    font-size: 5vh !important;
+    line-height: 1 !important;
+    padding: 2rem!important;
+}
+
+#article-long-title{
+    font-size: 4.5vh;
+}
+
+.card-subtitle{
+    text-align: justify;
+    font-size: 2.6vh;
+    padding: 0 !important;
+    margin-top: 0.5rem !important;
+}
+
+.card-subtitle::first-line{
+    text-transform: uppercase;
+    font-size: 2.6vh;
+}
+
+.col-lg-4 .card-subtitle{
+    font-size: 2.5vh;
+    letter-spacing: 0.1rem;
+}
+
+.info{
+    font-style: italic;
+    font-size: 2vh;
+    line-height: 2vh;
+    text-align: center !important;
+}
+
+.card h4{
+    text-transform: uppercase;
+    font-size: 3vh;
+}
+
+.card-body{
+    overflow-y: auto;
+    color: #424242;
+    background-image: url("/images/Renaissance/bg-body.png");
+    background-size: 100%;
+    background-position: top;
+    font-size: 2.8vh;
+    letter-spacing: -0.01rem;
+    padding: 1.5rem 2rem 3rem 2rem;
+}
+
+.card-body p:nth-of-type(2):first-line{
+    text-transform: uppercase;
+}
+
+.issue-female-body #article-2 .card-body p:first-of-type:first-line{
+    text-transform: uppercase;
+}
+
+
+/*DECORATED INITIALS ARCHITECTURE ISSUE*/
+.issue-architecture #article-1 .card-body p:nth-of-type(2):first-letter{
+    font-size: 0;
+    background-image: url("/images/Renaissance/initials/initial-c.webp");
+    padding: 6.5vh;
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    line-height: 80%;
+    float: left;
+}
+
+.issue-architecture #article-2 .card-body p:nth-of-type(2):first-letter{
+    font-size: 0;
+    background-image: url("/images/Renaissance/initials/initial-i.webp");
+    padding: 6.5vh;
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    line-height: 80%;
+    float: left;
+}
+
+.issue-architecture #article-3 .card-body p:nth-of-type(2):first-letter{
+    font-size: 0;
+    background-image: url("/images/Renaissance/initials/initial-i.webp");
+    padding: 6.5vh;
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    line-height: 80%;
+    float: left;
+}
+
+/*DECORATED INITIALS FEMALE BODY ISSUE*/
+.issue-female-body #article-2 .card-body p:first-of-type:first-letter{
+    font-size: 0;
+    background-image: url("/images/Renaissance/initials/initial-a.webp");
+    padding: 6.5vh;
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    line-height: 80%;
+    float: left;
+}
+
+.issue-female-body #article-1 .card-body p:nth-of-type(2):first-letter{
+    font-size: 0;
+    background-image: url("/images/Renaissance/initials/initial-f.webp");
+    padding: 6.5vh;
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    line-height: 80%;
+    float: left;
+}
+
+.issue-female-body #article-3 .card-body p:nth-of-type(2):first-letter{
+    font-size: 0;
+    background-image: url("/images/Renaissance/initials/initial-l.webp");
+    padding: 6.5vh;
+    background-size: 12vh;
+    background-repeat: no-repeat;
+    line-height: 80%;
+    float: left;
+}
+
+.card-body p{
+    text-align: justify;
+}
+
+.accordion-body{
+    background-image: url("/images/Renaissance/bg-body.png");
+    background-size: 100%;
+    background-position: bottom;
+    text-align: justify !important;
+    background-color: #F2F2F2;
+}
+
+.col-lg-4 .info{
+    font-size:2.5vh;
+}
+
+.info p{
+    margin: 0.5rem;
+}
+
+.infoButton{
+    padding-top:0.1em !important;
+    padding-bottom: 0.1em !important;
+    border-bottom: 1px solid rgb(216, 216, 216) !important;
+    font-size: 2.2vh !important;
+    font-weight: 700;
+    opacity: 0.6;
+    text-align: center !important;
+    background-color:#F2F2F2;
+    font-family: "Bembo", garamond, serif;
+}
+
+.accordion-header [aria-expanded="true"]{
+    color: #474747;
+}
+
+.accordion-button:focus{
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) !important;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #F2F2F2;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+  
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);
+    color: #474747;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar{
+    width:10px;
+    border-left:1px solid #E6ECF8; 
+    background-color: rgb(230, 230, 230);
+  }
+::-webkit-scrollbar-thumb{
+    background-color:#c4c4c4;
+    border-radius: 0.5em;
+  }
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #dddddd;
+}
+
+/*IMAGES*/
+img{
+    width: 80%;
+    border: 1px solid grey;
+    margin: 0.3em;
+}
+
+.imag{
+    background: linear-gradient(rgba(242,242,242,0.2)0%,rgba(242,242,242,0.2) 100%),url("/images/Renaissance/rsdec.png");
+    background-size: 100%;
+    background-position: center bottom;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5em;
+    height: inherit;
+    background-repeat: no-repeat;
+    text-align:center;
+}
+
+.imgCaption{
+    font-family: "Bembo-italic", "Bembo", garamond, serif;
+    font-size: 2.5vh;
+    color: #707070;
+}
+
+/*RESPONSIVE BUTTON*/
+.navigation-responsive-button{
+    position: fixed; 
+    bottom: 3vh; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #c0c0c0; 
+    color: rgb(243, 243, 243); 
+    text-transform: uppercase;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+/*SHAPING SUBTITLE AS TRIANGLE*/
+#rl1,
+#rr1 {
+    width: 45%;
+    height: 25vh;
+}
+
+.col-lg-4 #rl1, .col-lg-4 #rr1{
+    width: 45%;
+    height: 20vh;
+}
+
+#rl2,
+#rr2 {
+    width: 45%;
+    height: 32vh;
+}
+
+.col-lg-4 #rl2, .col-lg-4 #rr2{
+    width: 45%;
+    height: 25vh; 
+}
+
+#rl3,
+#rr3 {
+    width: 45%;
+    height: 28vh;
+}
+
+.col-lg-4 #rl3, .col-lg-4 #rr3{
+    width: 45%;
+    height: 22vh;
+}
+
+.renaiss-left{
+    -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+    shape-outside: polygon(0 0, 100% 100%, 0 100%);
+    float: left;
+    -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.renaiss-right{
+    -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+    shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+    float: right;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.issue-fem #rl1, .issue-fem #rr1{
+    width: 45%;
+    height: 32vh; 
+}
+
+.issue-fem #rl2, .issue-fem #rr2{
+    width: 45%;
+    height: 40vh; 
+}
+
+/*METADATA*/
+#metadata-style .accordion-body{
+    background-color: rgba(255, 255, 255, 0.3);
+    background-image: none;
+}
+
+.accordion-button{
+    font-size: 3vh;
+    background-color: transparent;
+    color: #474747;
+}
+
+.accordion-item{
+    background-color: rgb(255, 255, 255, 0.2) !important;
+}
+
+.accordion-item:hover{
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+#metadata-style{
+    background-image:  url("/images/Renaissance/md-bg.png");
+    background-color: #DEDEDE;
+    background-size: 95%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    border-radius: 0 !important;
+}
+
+#metadata-style .card-body{
+    background-image: none;
+}
+
+#metadata-style .card-title{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 40%,  rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.2) 100%) ;
+    padding: 3rem 0.2rem 1rem 0.2rem!important;
+    font-size: 5vh !important;
+    letter-spacing: 0.7rem !important;
+    color: #707070;
+}
+
+#metadata-style .card-title::first-line{
+    font-size: 6h;
+    color: #888888;
+}
+
+
+/*EXPAND COLUMN - READING MODE*/
+body, 
+.all-articles:hover .larger .card-header, 
+.all-articles:hover .larger .card-body, 
+.all-articles:hover .larger .subtitle,
+.all-articles:hover .larger .infoButton,
+.all-articles:hover .larger .info,
+.all-articles:hover .larger .accordion-item,
+.all-articles:hover .larger .accordion-header,
+.all-articles:hover .larger ::-webkit-scrollbar-track,
+.all-articles:hover .larger .accordion-body{
+    background: #C0C0C0;
+}
+
+.all-articles .larger:hover .card-header, 
+.all-articles .larger:hover .card-body, 
+.all-articles .larger:hover .infoButton,
+.all-articles .larger:hover .info,
+.all-articles .larger:hover .accordion-item,
+.all-articles .larger:hover .accordion-header,
+.all-articles .larger:hover ::-webkit-scrollbar-track,
+.all-articles .larger:hover .accordion-body{
+    background: unset;
+}
+
+.all-articles:hover .larger {
+    opacity: 0.2;
+}
+
+.all-articles .larger:hover {
+    opacity: 1;
+}
+
+  /* questo lo avevo fatto io per il comportamento responsive dei bottoni che compaiono */ 
+@media only screen and (min-width: 992px) {
+    .navigation-responsive-button {
+        display: none;
+    }
+}
+  
+@media only screen and (max-width: 992px) {
+    #next-article-3, #prev-article-1, #prev-article-2 {
+        display: none;
+    }
+    #next-article-2 {
+        display: block;
+    }
+    #rr1,
+    #rl1 {
+        width: 0%;
+        height: 0px;
+    }
+
+    #rr2,
+    #rl2 {
+        width: 0%;
+        height: 0px;
+    }
+
+    #rr3,
+    #rl3 {
+        width: 0%;
+        height: 0px;
+    }
+    .issue-fem #rl1, .issue-fem #rr1{
+        width: 45%;
+        height: 38vh; 
+    }
+    
+    .issue-fem #rl2, .issue-fem #rr2{
+        width: 45%;
+        height: 40vh; 
+    }
+    button{
+        font-size: 4vh !important;
+    }
+}
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #a8a8a8 !important;
+}
+
+.fab-container .fab::before {
+    display: none;
+}
+
+.sub-button:hover{
+    background-color: #bebebe !important;
+}
+
+.fab-container{
+    bottom: 4vh;
+    right: 4vh;
+}
+
+.fab-container:hover {
+    height: 100%;
+}
+
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-12vh);
+}
+
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-22vh);
+}
+
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-32vh);
+}
+
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-42vh);
+}
+
+.fab-container .sub-button{
+    height: 8vh;
+    width: 8vh;
+    right: 1vh;
+    background-size: 6vh;
+}
+
+.fab-container .fab{
+    height: 10vh;
+    width: 10vh;   
+}
+
+.fab-content{
+    background-size: 6vh;
+}
+
+.sub-button::content{
+    background-size: 3vh !important;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 1200px) and (max-width: 1400px){
+  .card-header{
+      border-bottom: none;
+      background-color:#F2F2F2;
+      padding: 0.2vh;
+      min-height: 28vh;
+  }
+
+  .card-body{
+      font-size: 2.5vh;
+  }
+
+  .col-lg-4 .card-header{
+      min-height: 26vh;
+  }
+
+  .card-title{
+    font-family: "Bembo", garamond, serif;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      font-size:4vh;
+      font-weight: 900;
+      line-height: 1;
+      padding: 2rem 0.4rem 2rem 0.4rem  !important;
+      text-align: center;
+      margin-bottom: 0;
+      color: #424242;
+  }
+
+  .col-lg-4 .card-title{
+      letter-spacing: 0.6rem;
+      font-size: 4vh !important;
+  }
+
+  .card-title::first-line{
+      font-size: 5vh;
+      letter-spacing: 0.2rem;
+  }
+
+  .col-lg-4 
+  .card-title::first-line{
+      font-size: 5vh;
+      letter-spacing: 0.4rem;
+  }
+
+  .spec{
+      font-size: 3vh;
+      letter-spacing: 0.3rem;
+  }
+
+  .col-lg-4 .spec{
+      letter-spacing: 0.6rem;
+  }
+
+  .d-future{
+      letter-spacing: 0.1vh !important;
+  }
+
+  .col-lg-4 .d-future{
+      letter-spacing: unset !important;
+  }
+
+  .title-big{
+      font-size: 5vh !important;
+      line-height: 1 !important;
+      padding: 2rem!important;
+  }
+
+  .card-subtitle{
+      font-size: 2.2vh;
+      padding: 0 !important;
+      margin-top: 0.5rem !important;
+  }
+
+  .card-subtitle::first-line{
+      text-transform: uppercase;
+      font-size: 2.2vh;
+  }
+
+  .col-lg-4 .card-subtitle{
+      font-size: 2.5vh;
+      letter-spacing: 0.1rem;
+  }
+
+  /*SHAPING SUBTITLE AS TRIANGLE*/
+  #rl1,
+  #rr1 {
+      width: 45%;
+      height: 22vh;
+  }
+
+  .col-lg-4 #rl1, .col-lg-4 #rr1{
+      width: 45%;
+      height: 22vh;
+  }
+
+  #rl2,
+  #rr2 {
+      width: 45%;
+      height: 25vh;
+  }
+
+  .col-lg-4 #rl2, .col-lg-4 #rr2{
+      width: 45%;
+      height: 28vh; 
+  }
+
+  #rl3,
+  #rr3 {
+      width: 45%;
+      height: 22vh;
+  }
+
+  .col-lg-4 #rl3, .col-lg-4 #rr3{
+      width: 45%;
+      height: 26vh;
+  }
+  .issue-fem #rl1, .issue-fem #rr1{
+    width: 45%;
+    height: 32vh; 
+}
+
+.issue-fem #rl2, .issue-fem #rr2{
+    width: 45%;
+    height: 40vh; 
+}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .nav-link{
+      padding-left: 0 !important;
+      font-size: 2.5vh;
+  }
+  .card-header{
+      min-height: 27vh;
+  }
+
+  .card-body{
+      font-size: 2.5vh;
+  }
+
+  .col-lg-4 .card-header{
+      min-height: 26vh;
+  }
+
+  .card-title{
+      letter-spacing: 0.3rem;
+      font-size:4vh;
+  }
+
+  .col-lg-4 .card-title{
+      letter-spacing: 0.5rem;
+      font-size: 3.5vh !important;
+  }
+
+  .card-title::first-line{
+      font-size: 4.5vh;
+      letter-spacing: 0.2rem;
+  }
+
+  .col-lg-4 
+  .card-title::first-line{
+      font-size: 5vh;
+      letter-spacing: 0.4rem;
+  }
+
+  .spec{
+      font-size: 3vh;
+      letter-spacing: 0.3rem;
+  }
+
+  .col-lg-4 .spec{
+      letter-spacing: 0.6rem;
+  }
+
+  .d-future{
+      letter-spacing: 0.1vh !important;
+  }
+
+  .col-lg-4 .d-future{
+      letter-spacing: unset !important;
+  }
+  
+  .card-subtitle{
+      font-size: 2.2vh;
+      padding: 0 !important;
+      margin-top: 0.5rem !important;
+  }
+
+  .card-subtitle::first-line{
+      text-transform: uppercase;
+      font-size: 2.2vh;
+  }
+
+  .col-lg-4 .card-subtitle{
+      font-size: 2.5vh;
+      letter-spacing: 0.1rem;
+  }
+
+  /*SHAPING SUBTITLE AS TRIANGLE*/
+  #rl1,
+  #rr1 {
+      width: 45%;
+      height: 24vh;
+  }
+
+  .col-lg-4 #rl1, .col-lg-4 #rr1{
+      width: 45%;
+      height: 22vh;
+  }
+
+  #rl2,
+  #rr2 {
+      width: 42%;
+      height: 28vh;
+  }
+
+  .col-lg-4 #rl2, .col-lg-4 #rr2{
+      width: 42%;
+      height: 30vh; 
+  }
+
+  #rl3,
+  #rr3 {
+      width: 45%;
+      height: 24vh;
+  }
+
+  .col-lg-4 #rl3, .col-lg-4 #rr3{
+      width: 42%;
+      height: 26vh;
+  }
+
+  #metadata-style .card-title{
+      font-size: 3.5vh !important;
+  }
+  .issue-fem #rl1, .issue-fem #rr1{
+    width: 45%;
+    height: 32vh; 
+}
+
+.issue-fem #rl2, .issue-fem #rr2{
+    width: 45%;
+    height: 40vh; 
+}
+}
+
+@media (max-width: 992px){
+  .card-title{
+      font-size: 6vh !important;
+      padding: 2rem 8rem 0 8rem!important;
+  }
+
+  .card-header{
+      min-height: auto !important;
+  }
+
+  .card-title::first-line{
+      font-size: 7vh !important;
+  }
+
+  h4{
+      font-size: 5vh !important;
+      padding-top: 3rem;
+  }
+
+  .spec{
+      font-size: 6vh;
+  }
+
+  .info{
+      font-size: 3vh;
+      line-height: 1;
+  }
+
+  .infoButton{
+      font-size: 3vh !important;
+  }
+
+  .card-body p{
+      font-size: 4vh !important;
+      padding: 0 4rem 0 4rem;
+  }
+
+  .card-subtitle{
+      font-size: 4vh;
+      padding: 3rem 10rem 3rem 10rem!important;
+      text-align: center;
+  }
+
+  .card-subtitle::first-line{
+      font-size: unset;
+  }
+
+  .card-body{
+      background-size: 80vh;
+  }
+  
+  .accordion-body{
+      background-size: 80vh;
+  }
+}
+
+@media (max-width: 768px){
+  .card-title{
+      font-size: 6vh !important;
+      padding: 1rem 4rem 1rem 4rem!important;
+  }
+}
+
+.all-articles .larger:hover .spec{
+    font-size: 5vh !important;
+}
+.all-articles .larger:hover #article-long-title{
+    font-size: 5vh;
+}
+
+.all-articles .larger:hover .issue-fem #rl1,
+.all-articles .larger:hover .issue-fem #rr1,
+.all-articles .larger:hover .issue-fem #rl2,
+.all-articles .larger:hover .issue-fem #rr2{
+    height: 10vh;
+    width: 20%;
+}
+
+.issue-female-body .all-articles:hover .larger img{
+    height: 500px;
+    width: auto;
+}
+
+.issue-female-body .all-articles:hover .larger .imag{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    justify-content:center;
+}

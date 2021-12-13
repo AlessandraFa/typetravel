@@ -1,0 +1,542 @@
+@import url("/styles/themes/components/fab.css");
+@import url("/styles/themes/components/dropdown.css");
+@import url("/styles/themes/components/sizingNavbar.css");
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+
+@font-face {
+    font-family: future;
+    src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
+}
+@font-face {
+    font-family: f1;
+    src: url("/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
+}
+@font-face {
+    font-family: f1bold;
+    src: url("/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: intro;
+    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+}
+
+.btn-lmode{
+    display: none;
+}
+
+body{
+    background-color: black;
+}
+
+/*LINKS, SELECTION, CODE*/
+::selection{
+    background-color: #333333;
+}
+
+a{
+    color:#C2C2C2;
+}
+
+a:hover{
+    color:#FFFFFF;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.7);
+}
+
+code{
+    color: #606D7A;
+    text-shadow: none;
+}
+
+/*BUTTONS*/
+
+.btn-dmode{
+    background-image: url(/images/Future/lightmode.png) !important;
+    background-size: 10vh;
+    background-color: black!important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh !important;
+    width: 10vh !important;
+    border: none;
+    box-shadow: none !important;
+    border-color: black!important;
+}
+.btn-dmode:hover{
+    background-image: url(/images/Future/lightmode1.png) !important;
+    background-size: 10vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    width: 10vh;
+    box-shadow: none !important;
+    border-color: black !important;
+}
+
+.btn-dmode:focus{
+    box-shadow: none !important;
+    border-color: black!important;
+    background-color: black !important;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-color:black !important;
+    height: 10vh;
+}
+
+.navbar-brand{
+    font-family: intro, monospace !important;
+    color: #FFFFFF !important; 
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 3.5vh;
+    text-transform: uppercase;
+}
+
+#capT{
+    background-image: url(/images/icons/T-future-dark.svg);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    padding: 2rem;  
+}
+
+.navbar-brand:hover{
+    text-shadow: 1px 1px 3px #FFFFFF;
+}
+
+.nav-link{
+    font-family: future, monospace;
+    letter-spacing: 0.1em;
+    color: #FFFFFF !important; 
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    text-shadow: 1px 1px 3px #FFFFFF;
+}
+
+.nav-tabs .nav-link.active {
+    color: #000000 !important;
+    background-color: #FFFFFF;
+}
+
+.dropdown-menu{
+    background-color: black;
+    border: 1px solid white;
+    border-top:none;
+    border-right: none;
+}
+
+.dropdown-item{
+    background-color:rgb(0, 0, 0);
+    color: #D3D3D3;
+    font-family: intro, monospace;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.dropdown-item:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.modal-dialog{
+    max-width: 120vh;
+    border: 1px solid white;
+    font-family: "intro", monospace;
+    color: white;
+}
+
+.modal-content{
+    background-color: black;
+}
+
+.modal-content button{
+    background-color: black;
+}
+
+.modal-content button:hover{
+    background-color: #2E2E2E !important;
+}
+
+.modal-body p{
+    font-size: 2.2vh !important;
+    text-align: left;
+    padding: 0;
+    color: white;
+}
+.modal-body{
+    text-align: left;
+    font-family: "intro", monospace;
+}
+
+/*CARDS*/
+.card-title{
+    font-family: "intro", monospace;
+    text-transform: uppercase;
+    font-size: 4vh !important;
+    line-height: 1;
+    color: #fff;
+    padding: 0.5rem !important;
+    text-align: left;
+    letter-spacing: 0.2vh !important;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.card-subtitle{
+    font-size: 2.5vh;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.d-future{
+    letter-spacing: -0.1em;
+}
+
+.card-header{
+    background-color:black ;
+    min-height: 25vh !important;
+    background-size: 120%;
+    background-position: bottom;
+    border: none;
+}
+
+.col-lg-4 .card-header{
+    min-height: 18vh !important;
+}
+
+.card{
+    background-position: top;
+    background-size: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 90vh;
+    word-wrap: break-word;
+    background-clip: border-box;
+    overflow: auto;
+    border: transparent!important;
+    border-radius: 0 !important;
+    font-family: f1, monospace;
+    font-size: 14pt;
+    line-height: 16pt;
+    letter-spacing: 0.2pt;
+    color:#fff;      
+}
+
+.card-body{
+    background-position: bottom;
+    background-color: black;
+}
+
+h4{
+    color:black;
+    font-family: f1bold, monospace;
+    text-transform: uppercase;
+}
+
+.infoButton{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.info{
+    text-shadow: none;
+    font-size: 2vh;
+    line-height: 1;
+    letter-spacing: normal;
+    color: white;
+}
+
+.accordion-body{
+    background-color: black;
+    text-align: left;
+}
+
+.accordion-item{
+    background-color: black;
+}
+
+.accordion-button{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background-color: black !important;
+}
+
+.accordion-button:hover{
+    text-shadow: 1px 1px 3px white;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar{
+    width:2vh;
+    background-color: #1D1D1D;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border: 1px solid white;
+}
+
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: #C2C2C2;
+}
+
+/*IMAGES*/
+.imag{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:auto;
+    overflow: hidden;
+}
+
+img{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    transition: ease-in-out .2s;
+    z-index:2;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) !important;
+}
+
+img:hover{
+    border-radius:0;
+    width: auto;
+    height: 250px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+    filter:unset !important;
+}
+
+img:before{
+    width:100%;
+}
+
+.imgCaption{
+    font-size: 10pt;
+    color: #B8B8B8;
+    text-align: justify;
+}
+.issue-female-body .all-articles:hover .larger img:hover{
+    height: auto;
+    width: 400px;
+}
+
+.issue-female-body .all-articles:hover .larger img:hover{
+    height: auto !important;
+    width: 400px;
+}
+
+/*METADATA*/
+#metadata-style{
+    text-align: center;
+    background-color: black;
+    overflow-x: hidden !important;
+}
+
+#metadata-style .card-title{
+    padding: 1em !important;
+    font-size: 24pt;
+    text-align: center;
+}
+
+.accordion-button{
+    background-color: white;
+    border: none !important;
+    font-family: future, monospace;
+}
+
+.accordion-item{
+    border: none !important;
+}
+
+.accordion-item:not(.collapsed){
+    border: none !important;
+}
+
+.accordion-header [aria-expanded="true"]{
+  color: white;
+}
+
+.accordion-button:focus{
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button:not(.collapsed){
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+#metadata .tab-content li:hover{
+    color: black;
+    background-color: white !important;
+}
+
+/*ANIMATIONS*/
+.navigation-responsive-button {
+    position: fixed; 
+    bottom: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #8DCEEC; 
+    color: black; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: black !important;
+}
+
+.fab-container .fab::before {
+    display: none;
+}
+
+.sub-button:hover{
+    background-color: #272727 !important;
+}
+  
+.fab-container{
+    bottom: 4vh;
+    right: 4vh;
+}
+  
+.fab-container:hover {
+    height: 100%;
+}
+
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-12vh);
+}
+
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-22vh);
+}
+
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-32vh);
+}
+
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-42vh);
+}
+  
+.fab-container .sub-button{
+    height: 8vh;
+    width: 8vh;
+    right: 1vh;
+    background-size: 6vh;
+}
+  
+.fab-container .fab{
+    height: 10vh;
+    width: 10vh;   
+}
+  
+.fab-content{
+    background-size: 6vh;
+}
+  
+.sub-button::content{
+    background-size: 3vh !important;
+}
+  
+#hide-md-btn-off{
+      font-family: future;
+      text-transform: uppercase;
+      color: white;
+}
+
+/*EXPAND COLUMN - READING MODE*/
+.all-articles:hover .larger {
+    opacity: 0.1;
+}
+
+.all-articles .larger:hover {
+    opacity: 1;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 1400px){
+    .card-title{
+        font-size: 26pt;
+        line-height: 26pt;
+    }
+
+    .d-future{
+        letter-spacing: 0px;
+    }
+    .accordion-button{
+        font-size: 14pt;
+    }
+    .btn-dmode{
+        height: 12vh;
+        width: 12vh;
+        background-size: 12vh;
+        margin-top: 5vh;
+    }
+    .btn-dmode:hover{
+        height: 12vh;
+        width: 12vh;
+        background-size: 12vh;
+        
+    }
+}
+
+@media(max-width: 992px){
+    .card-title{
+        font-size: 4.5vh !important;
+    }
+    .card-header{
+        min-height: auto !important;
+    }
+    .card{
+        height: auto !important;
+    }
+}
+
+/* questo lo avevo fatto io per il comportamento responsive dei bottoni che compaiono */ 
+@media only screen and (min-width: 992px) {
+    .navigation-responsive-button {
+      display: none;
+    }
+}
+  
+@media only screen and (max-width: 992px) {
+    .card {
+        height: 80vh;
+    }
+    #next-article-3, #prev-article-1, #prev-article-2 {
+        display: none;
+    }
+    #next-article-2 {
+        display: block;
+    }
+    #metadata-style .card-title{
+        padding: 1em !important;
+        font-size: 30pt;
+    }
+}  
+
+
+/* IMPORT bootstrap scss*/
+@import "../node_modules/bootstrap/scss/bootstrap.scss"; 

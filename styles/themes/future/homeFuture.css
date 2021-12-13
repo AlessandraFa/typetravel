@@ -1,0 +1,449 @@
+@import "/styles/themes/components/dropdown.css";
+@import "/styles/home.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+
+@font-face {
+    font-family: future;
+    src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
+}
+@font-face {
+    font-family: f1;
+    src: url("/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
+}
+@font-face {
+    font-family: f1bold;
+    src: url("/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: intro;
+    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+}
+
+
+body{
+    font-family: "intro", future, f1, monospace;
+    background-color: black;
+    color: white;
+}
+
+h2{
+    font-family: "intro", future, f1, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 8vh;
+}
+
+/*LINKS, SELECTION, CODE*/
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: white;
+    text-shadow: 3px 3px 15px rgb(255, 255, 255);
+}
+
+::selection{
+    background-color: #333333;
+    color: white;
+}
+
+code{
+    color:rgb(73, 73, 73);
+}
+
+.btn:hover{
+    background-color: transparent !important;
+    color:#ffffff !important;
+    text-shadow: 3px 3px 15px rgb(255, 255, 255) !important;
+}
+  
+/*NAVBAR*/
+.navbar{
+    font-family: "intro", future, f1, monospace;    
+    text-transform: lowercase;
+    font-weight: 300;
+    background-color: #000000 !important;
+    height: 12vh;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link{
+    color: rgb(255, 255, 255);
+    font-size: 18pt;
+}
+
+.navbar-brand{
+    font-family: intro, monospace !important;
+    color: #fff !important; 
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 3.5vh;
+    text-transform: uppercase;
+}
+
+#capT{
+    background-image: url(/images/icons/T-future-dark.svg);
+    background-size: 5vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    padding: 2rem;  
+}
+
+.navbar-brand:hover{
+    text-shadow: 1px 1px 3px rgba(255,255,255) !important;
+}
+
+.nav-link{
+    color: white !important;
+    font-size: 3vh !important;
+    font-weight: bold;
+    padding-left: 1rem !important;
+}
+
+.nav-link:hover{
+    text-shadow: 2px 2px 10px rgb(255,255,255) !important;
+}
+
+.navbar-brand{
+    color: white !important;
+    font-size: 4vh;
+    text-shadow: 2px 2px 10px rgb(255,255,255) !important;
+}
+
+.dropdown-menu{
+    background-color: #000000;
+}
+.dropdown-item{
+    color: white !important;
+}
+
+.dropdown-item:hover{
+    color: #ffffff !important;
+    background-color: #1b1b1b;
+}
+
+.spType{
+    display: inline-block;
+}
+
+#ttlType{
+    direction: rtl;
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+  }
+
+.modal-dialog{
+    max-width: 120vh;
+    border: 1px solid white;
+}
+
+.modal-content{
+    background-color: black;
+}
+
+.modal-content button{
+    background-color: black;
+}
+
+.modal-content button:hover{
+    background-color: rgb(46, 46, 46) !important;
+}
+
+.modal-body p{
+    font-size: 2.2vh !important;
+    text-align: left;
+    padding: 0;
+}
+.modal-body{
+    text-align: left;
+}
+
+/*FIRST*/
+h1{
+    padding-top: 20vh !important;
+    font-family: "intro", future, f1, monospace;
+}
+
+#first{
+    background-color: black !important;
+}
+
+#first h2{
+    font-size: 6vh;
+}
+
+#ttlframe{
+    width: 100% !important;
+    padding: 0 4rem 0 4rem;
+}
+
+#first-left, #first-right{
+    width: 0% !important;
+    padding: 0;
+    margin: 0;
+}
+
+#project-description{
+    color: #ffffff;
+    font-size: 20pt;
+    padding-top: 2vh;
+}
+#icon{
+    padding: 10vh;
+    background-image: url("/images/icons/start-future.svg");
+    background-size: 16vh;
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center !important;
+    text-decoration: none !important;
+
+}
+
+#icon:hover{
+    background-image: url("/images/icons/start-future-hov.svg");
+    background-color: transparent !important;
+}
+
+#get-started-btn-1{
+    padding-top: 6rem;
+}
+
+
+/*SECOND*/
+#second{
+    background-color: #000000;
+}
+
+#about-proj{
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+#btn-themes{
+    background-color: #000000;
+    font-family: "intro", future, f1, monospace;
+    color: white;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5vh !important;
+    margin: 2rem !important;
+}
+
+#btn-issues{
+    background-color: #000000;
+    font-family: "intro", future, f1, monospace;
+    color: white;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5vh !important;
+    margin: 2rem !important;
+}
+
+#gosecond{
+    background-color: #000000 !important;
+}
+
+/*THIRD*/
+#third{
+    background-color: rgb(0, 0, 0);
+}
+
+#third h2{
+    margin-top: 0;
+}
+
+#third .card{
+    border: none;
+    background: none !important;
+}
+
+#card-secession img{
+    display: none;}
+
+#card-secession .card-body{
+    background-image: url(/images/icons/anouv-w.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh !important;
+}
+
+#card-secession a{
+    color: white !important;
+}
+
+#card-secession .btn-doc{
+    margin-top:  35vh !important;
+    color: white;
+}
+
+#gothird{
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.btn-third{
+    background-color: #000000;
+    font-family: "intro", future, f1, monospace;    
+    color: white;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+}
+
+.btn-third:hover{
+    text-shadow: 3px 3px 15px rgb(255, 255, 255) !important;
+}
+
+/*FOURTH*/
+#fourth{
+    background-color: #000000;
+}
+
+#fourth .card{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) !important;
+}
+
+#fourth .card:hover{
+    filter:unset !important;
+}
+
+#gofourth{
+    background-color: #000000 !important;
+}
+
+#tt1, #tt2{
+    font-size: 5vh;
+    font-weight: bold !important;
+    background-color: black;
+    color: white;
+    margin: 3rem;
+    padding: 1rem !important;
+}
+
+#tt2{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.issue:hover .fadedbox {
+    background-color:rgba(179, 179, 179, 0.2);
+}
+
+.issue-description{
+    font-size: 3vh !important;
+    font-family: f1;
+    letter-spacing: 0.05rem;
+}
+
+.see-article{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 3vh;
+    margin-top: 2rem;
+}
+
+.see-article:hover{
+    background-color: rgb(78, 78, 78);
+}
+
+.see-article a{
+    background-color: unset;
+    color: unset;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #000000;
+    padding-bottom: 5rem;
+    padding-top: 4rem;
+
+}
+footer p, 
+.contacts{
+    font-size: 3vh;
+    padding-left: 2rem;
+
+}
+
+footer p{
+    text-align: right;
+    padding-bottom: 3rem;
+}
+
+#cp{
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+#discl:hover{
+    color: rgb(185, 185, 185);
+    cursor: pointer;
+}
+
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #000000 !important;
+}
+
+.fab-content:hover{
+    box-shadow: 1px 1px 10px rgb(80, 80, 80) !important;
+}
+
+
+.navbar-toggler-icon{
+    background-color: rgba(255,255,255,0.5);
+    padding: 1.5rem;
+}
+
+@media(max-width: 576px){
+    #navbarNavDropdown{
+        background-color: black !important;
+    }
+    .navbar-toggler-icon{
+        background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    #third p{
+        font-size: 3.5vh !important;
+    }
+    .navbar-toggler-icon{
+        background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+}
+
+@media (max-width: 1200px){
+    .dropdown-item, .dropdown-menu{
+        background-color: black !important;
+    }
+}
+
+
+:root{
+    --time-color: black;
+    --time-transition: ease-in-out 0.6s;
+    --time-shadow: 2px -2px 12px #ffffff,
+    -4px 4px 12px #ffffff,
+    4px 4px 12px #ffffff,
+    -4px -4px 12px #ffffff;
+}

@@ -1,0 +1,159 @@
+@import url("/styles/themes/components/dropdown.css");
+@import url("/styles/themes/components/sizingNavbar.css");
+@import url("/styles/themes/components/fab.css");
+@import url("/styles/documentation.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Roboto+Mono&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+/*BODY*/
+body{
+    font-family: "cousine", Courier, monospace;
+}
+
+/*LINKS, SELECTION, CODE*/
+a {
+    color: #0096b1;
+}
+  
+a:hover {
+    color: #ccf5ff !important;
+}
+
+::selection{
+    background-color: #83c0cf;
+    color: white;
+}
+  
+code{
+    color:rgb(17, 120, 138);
+}
+  
+/*NAVBAR*/
+.navbar{
+    font-family: "cousine", Courier, monospace;
+    text-transform: lowercase;
+    font-weight: 300;
+    background-color: #83c0cf !important;
+}
+  
+.navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
+    color: black !important;
+    font-size: 3vh;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #83c0cf !important;
+}
+
+.navbar-brand{
+    font-family: "montserrat", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 3vh !important;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+}
+  
+#capT{
+    background-image: url(/images/icons/T-future-light.svg);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    padding: 2rem;
+}
+
+#it1, #it2{
+    background-color: #83c0cf !important;
+}
+
+.dropdown-menu{
+    background-color: #83c0cf;
+}
+  
+.dropdown-item:hover{
+    color: #2d6f80!important;
+    background-color: #ccf5ff;
+}
+
+.modal-header, .discl-basic .modal-footer{
+    background-color: #83c0cf;
+}
+.modal-title{
+    color: black !important;
+}
+
+.modal-footer .btn{
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+/*PAGE CONTENT*/
+.about-content{
+    padding: 2rem;
+    text-align: center;
+    font-size: 4vh;
+    text-transform: uppercase;
+    background-color: #a8ddeb;
+    letter-spacing: 0.5rem;
+    max-height: 15vh;
+}
+
+h2{
+    font-size: 6vh;
+}
+
+.about-us{
+    min-height: 77vh !important;
+}
+
+.about-us h3{
+    margin-top: 2rem;
+}
+
+.about-us p{
+    padding: 2rem;
+}
+
+img{
+    height: 40vh;
+    margin: 1.5rem;
+}
+
+#edoardo{
+    background-color: #c6e8ee;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+#edoardo img{
+    float: right;
+}
+
+#alessandra{
+    background-color: #daecf0;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+#alessandra img{ 
+    float: left;
+}
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #a8ddeb !important;
+}
+  
+.fab-container .fab::before {
+    display: none;
+}
+  
+.sub-button:hover{
+    background-color: #c6e8ee !important;
+}
+
+.btn-lmode, .btn-dmode{
+    display: none;
+}

@@ -1,0 +1,1282 @@
+@import "/styles/themes/components/dropdown.css";
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
+
+@font-face {
+    font-family: intro;
+    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+}
+
+@font-face {
+    font-family: "vcr";
+    src: url("/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
+}
+
+@font-face{
+    font-family: "special";
+    src: url("/styles/fonts/johnny-fever.regular.otf")
+}
+
+@font-face {
+    font-family: "secession";
+    src: url("/styles/fonts/secession/Secession.otf");
+}
+
+@font-face {
+    font-family: "Bembo";
+    src: url("/styles/fonts/Bembo.ttf")
+}
+
+/*BODY*/
+body{
+    overflow-x: hidden !important;
+}
+
+/*NAVBAR*/
+.navbar{
+    height: 8vh;
+}
+
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link{
+    padding-left: 2em;
+    font-size: 3.5vh;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+}
+
+.navbar-collapse {
+    background-color: transparent !important;
+}
+
+#capT{
+    background-size: 4.5vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;  
+    margin-left: 0 !important;
+}
+
+.dropdown-item{
+    font-size: 3.5vh;
+}
+
+/*BUTTONS*/
+.btn {
+    margin: 0 !important;
+    border: none;
+}
+
+.btn-check:active+.btn-outline-info, .btn-check:checked+.btn-outline-info, .btn-outline-info.active, .btn-outline-info.dropdown-toggle.show, .btn-outline-info:active, .btn-outline-info:active::after, .btn-outline-info:hover, .btn-outline-info, .btn-check:focus+.btn-primary, .btn-primary:focus{
+    border-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/*FIRST*/
+#first {
+    height: 100vh !important;
+}
+
+#first h1 {
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 10rem;
+}
+
+#site-short-description {
+    margin-top: 0vh;
+}
+
+/*FURTHER SECTIONS*/
+#second, #third, #fourth {
+    min-height: 100vh;
+}
+
+p {
+    padding-top: 3vh;
+    text-align:  center;
+    font-size:   2rem;
+}
+
+/*SECOND*/
+
+#gosecond{
+    height: 8vh; 
+}
+
+
+/*THIRD*/
+#gothird{
+    height: 8vh;
+}
+
+#third{
+    height: auto;
+    min-height: 100vh;;}
+
+#third button, #third button:hover{
+    background: transparent !important;
+    font-family: inherit !important;
+    text-transform: unset !important;
+    border: none !important;
+    color: unset !important;
+}
+
+.btn-third{
+    margin: 2rem !important;
+}
+
+/*THEMES CARDS*/ 
+#cards .row{
+    --bs-gutter-x: 0;
+}
+
+#third .card{
+    height: 100%;
+    border-radius: 0;
+}
+
+#third img{
+    height: 30vh;
+}
+
+#third .btn{
+    background-color: transparent;
+}
+
+#themes-card p{
+    font-size: 3vh;
+}
+
+.c-left{
+    margin-left: 4rem !important;
+    padding-right: 2rem;
+    text-align: right;
+}
+
+.c-right{
+    margin-right: 4rem !important;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+#card-renaissance, #card-1980s{
+    margin-left: 4rem;
+} 
+
+#card-secession, #card-future{
+    margin-right: 4rem;
+}
+
+.card .btn{
+    text-transform: uppercase;
+}
+
+#card-1980s{
+    background-image:url(/images/1980s/grid-c.png);
+    background-size: 100vh;
+    background-position: bottom center;
+    color: white;
+    font-family: "vcr";
+    border: 4px solid #754c9b;
+    border-radius: 2%;
+}
+
+#card-1980s .btn{
+    color: white;
+    font-family: "vcr";
+    font-size: 4vh;
+}
+
+#card-1980s .btn:hover{
+    color: #754c9b;
+    background-color: transparent;
+}
+
+#card-1980s .btn-doc{
+    border-radius: 0;
+    font-size: 4vh !important;
+}
+
+#card-future{
+    background-color: black;
+    color: white;
+    font-family: "intro";
+    border: 4px solid #fff;
+    border-radius: 2%;
+}
+
+#card-future .btn{
+    color: white;
+    font-family: "intro";
+
+}
+
+#card-future .btn:hover{
+    color: rgb(165, 165, 165);
+    background-color: transparent;
+}
+
+/*CARD COLORS*/
+#third .card{
+    border: none;
+}
+
+#c-right{
+    margin-left: 2rem;
+}
+
+#c-left{
+    margin-right: 2rem;
+}
+
+#card-renaissance{
+    background-color: #b6b6b6;
+    background-image: none;
+}
+
+#card-renaissance:hover{
+    background-color: #9b9b9b;
+}
+
+#card-renaissance .btn{
+    font-family: "Bembo";
+    color: #eeeeee;
+    letter-spacing: 0.2rem;
+    font-size: 5vh;
+}
+
+#card-renaissance .btn:hover{
+    color: #d8d8d8;    
+}
+
+#card-secession{
+    background-color: #b39e6f;
+    background-image: none;
+}
+
+#card-secession:hover{
+    background-color: #978049;
+}
+
+
+#card-secession .btn{
+    font-family: "secession";
+    color: #e9d8b7;
+    font-size: 5vh;
+    letter-spacing: 0.5rem;
+}
+
+#card-secession .btn:hover{
+    color: #eed8a5;
+    background-color: transparent;
+    font-family: "secession";
+}
+
+#card-1980s{
+    background-color: #9e74c5;
+    background-image: none;   
+}
+
+#card-1980s:hover{
+    background-color: #754c9b;
+}
+
+#card-future{
+    background-color: #3b3b3b;
+}
+
+#card-future .btn{
+    font-size: 5vh;
+}
+
+#card-future:hover{
+    background-color: #1b1b1b;
+}
+
+.btn-doc{
+    font-size: 4vh;
+}
+
+/*FOURTH*/
+#gofourth{
+    padding-bottom: 10vh; 
+}
+
+#fourth .card-body{
+    padding: 0;
+    height: auto;
+}
+
+.card-txt{
+    font-size: 2vh;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.issue {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    max-width: 100vh !important;
+    height: 60vh !important;
+    border-radius: 0;
+    margin: 0;
+    margin-top: 2em;
+    border: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+}
+
+#card-iss1{
+    background-image: url(/images/examples/arch-issue.png);
+    background-size: cover;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#card-iss2{
+    background-image: url(/images/examples/fem-issue.png);
+    margin-right: 2rem;
+    background-size: cover;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.issue .fadedbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #000;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    height: inherit;
+    cursor: auto;
+}
+
+.issue:hover .fadedbox {
+    opacity: 1;
+}
+
+.issue-description {
+    height: auto;
+    width: auto;
+    border: none;
+    color:#000000;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 0.5em;
+    background-color: transparent;
+}
+
+/*FOOTER*/
+
+#discl{
+    text-align: center !important;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+/*FAB*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+.fab-container:hover {
+    height: 100%;
+}
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-14vh);
+}
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-28vh);
+}
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-42vh);
+}
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-56vh);
+}
+.fab-container:hover .sub-button:nth-child(6) {
+    bottom: 1vh;
+    transform: translateX(-12vh);
+}
+
+.fab-container .fab {
+    position: relative;
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+    z-index: 2;
+}
+.fab-container .fab::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 6vh;
+    width: 6vh;
+    background-color: inherit;
+    border-radius: 0 0 10px 0;
+    z-index: -1;
+}
+.fab-container .fab .fab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.fab-container .sub-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    height: 12vh;
+    width: 12vh;
+    background-color: #4ba2ff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.fab-container .sub-button:hover {
+    cursor: pointer;
+}
+.fab-container .sub-button .material-icons {
+    color: white;
+    padding-top: 6px;
+}
+
+.fab-content{
+    background-image: url(/images/icons/fb-white.png);
+    background-size: 8vh;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+
+.sub-button:nth-child(2){
+    background: url(/images/icons/ren-white.png);
+    background-size: 8vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(3){
+    background: url(/images/icons/anouv-w.png);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(4){
+    background: url(/images/icons/tv-card.png);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(5){
+    background: url(/images/icons/future.png);
+    background-size: 7vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fab-container #enable-future:hover{
+    background: url(/images/Future/g25.gif) !important;
+    background-size: 10vh !important;
+}
+
+.sub-button:nth-child(6){
+    background: url(/images/icons/default-icon.png);
+    background-size: 5vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 6vh;
+    color: white;
+    text-decoration: none !important;
+    height: 8vh !important;
+    width: 8vh !important;
+    right: 3vh !important;
+}
+
+.fab-container:hover .sub-button:nth-child(6):hover{
+    background-color: #83c0cf !important;
+}
+
+@media (max-width: 1200px){
+    #third .col-8{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 576px){
+    /*NAVBAR*/
+    #navbarNavDropdown{
+        background: rgba(255, 255, 255, 0.3) !important;
+    }
+    .navbar{
+        height: 2rem;
+    }
+
+    #capT{
+        height: 4vh !important;
+        background-position: bottom !important;
+        padding: 0.5rem 1rem 0.5rem 1rem !important;
+    }
+
+    .navbar-toggler-icon{
+        height: 6vh;
+        width:6vh;
+        background-size: 7vh;
+    }
+
+    .dropdown-menu, .dropdown-item{
+        background: rgba(255, 255, 255, 0.3) !important;
+    }
+    /*FIRST SECTION*/
+    #first{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #first h1{
+        font-size: 8vh !important;
+        margin-top: 2rem !important;
+    }
+    #first h2{
+        font-size: 6vh;
+    }
+
+    #project-description{
+        font-size: 3vh !important;
+    }
+
+    #get-started-btn, #get-started-btn:active, #get-started-btn:visited{
+        background: transparent;
+        margin-top: 2rem !important;
+        font-size: 5vh;
+        padding-top: 0;
+    }
+
+    #get-started-btn:hover{
+        background-color: transparent;
+        color: rgb(185, 185, 185);
+    }    
+
+    #first p{
+        padding: 0 !important;
+        margin: 0 1rem 0 1rem !important;
+    }
+
+    #first-text{
+        margin: 0 !important;
+    }
+
+    /*SECOND SECTION*/
+
+    #second{
+        padding-top: 1rem !important;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #second h2, #third h2, #fourth h2{
+        font-size: 5vh !important;
+    }
+
+    #second p{
+        font-size: 5vh;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none;
+        font-size: 3vh !important;
+        margin-top: 3rem !important;
+    }
+
+    /*THIRD SECTION*/
+    #third{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #third p{
+        font-size: 5vh !important;
+    }
+
+    #themes-text{
+        margin: 0 !important;
+    }
+
+    #third .card{
+        height: auto !important;
+        border-radius: 0;
+        margin: 0.5rem 3rem 0.5rem 3rem !important;
+    }
+
+    .c-right, .c-left{
+        text-align: center;
+        padding: 0 !important;
+        margin: 1rem 0 1rem 0!important;
+    }
+
+    #third img{
+        height: 35vh !important;
+    }
+    
+    .btn-third{
+        margin-top: 1rem !important;
+        font-size: 2.5vh;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .issue{
+        max-height: auto;
+        width: auto;
+    }
+
+    .fadedbox{
+        padding: 1rem !important;
+    }
+
+    #card-iss1, #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .title-text{
+        padding:0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        font-size: 5vh !important;
+        line-height: 1 !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center !important;
+        padding: 1rem;
+        font-size: 4vh !important;
+        }
+    
+    footer li{
+        list-style: none;
+    }
+    
+    /*FAB*/
+    .fab-container .fab::before {
+        height: 25px;
+        width: 25px;
+    }
+    .fab-container .fab{
+        height: 50px;
+        width: 50px;
+    }
+
+    .fab-container .sub-button{
+        height: 40px;
+        width: 40px;
+        bottom: 0;
+        right: 6px;
+    }
+    .fab-container:hover {
+        height: 100%;
+    }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 768px){
+    /*NAVBAR*/
+    .navbar{
+        height: 3rem;
+    }
+
+    #capT{
+        height: 4vh !important;
+        background-position: bottom !important;
+        padding: 0.5rem 1rem 0.5rem 1rem !important;
+    }
+
+    .navbar-toggler-icon{
+        height: 6vh;
+        width:6vh;
+        background-size: 7vh;
+    }
+
+    .dropdown-menu, .dropdown-item{
+        background: rgba(255, 255, 255, 0.3) !important;
+    }
+    /*FIRST SECTION*/
+    #first{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #first h1{
+        font-size: 12vh !important;
+        margin-top: 0rem !important;
+    }
+    #first h2{
+        font-size: 5.5vh;
+    }
+
+    #project-description{
+        font-size: 4vh !important;
+    }
+
+    #get-started-btn, #get-started-btn:active, #get-started-btn:visited{
+        background: transparent;
+        margin-top: 1rem !important;
+        font-size: 5vh;
+        padding-top: 0;
+    }
+
+    #get-started-btn:hover{
+        background-color: transparent;
+        color: rgb(185, 185, 185);
+    }    
+
+    #first p{
+        font-size: 4vh;
+        padding: 0 !important;
+        margin: 0 1rem 0 1rem !important;
+    }
+
+    #first-text{
+        margin: 0 !important;
+    }
+
+    /*SECOND SECTION*/
+
+    #second{
+        padding-top: 1rem !important;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #second h2, #third h2, #fourth h2{
+        font-size: 8vh !important;
+    }
+
+    #second p{
+        font-size: 4vh;
+        padding: 0 2rem 0 2rem;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none;
+        font-size: 3vh !important;
+        margin: 0 0 1rem 0 !important;
+    }
+
+    /*THIRD SECTION*/
+    #third{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #third p{
+        font-size: 4vh !important;
+    }
+
+    #themes-text{
+        margin: 0 !important;
+    }
+
+    #third .card{
+        height: auto !important;
+        border-radius: 0;
+        margin: 0.5rem 3rem 0.5rem 3rem !important;
+    }
+
+    .c-right, .c-left{
+        text-align: center;
+        padding: 0 !important;
+        margin: 1rem 0 1rem 0!important;
+    }
+
+    #third img{
+        height: 35vh !important;
+    }
+    
+    .btn-third{
+        margin-top: 1rem !important;
+        font-size: 4vh !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .issue{
+        max-height: auto;
+        width: auto;
+    }
+
+    .fadedbox{
+        padding: 1rem !important;
+    }
+
+    #card-iss1, #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .title-text{
+        padding:0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center !important;
+        padding: 1rem !important;
+        margin: 0 !important;
+        font-size: 4vh !important;
+        }
+    
+    footer li{
+        list-style: none;
+    }
+    #navbarNavDropdown{
+        background: rgba(255, 255, 255, 0.3) !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    /*NAVBAR*/
+    .navbar{
+        height: 3rem;
+    }
+
+    #capT{
+        height: 4vh !important;
+        background-position: bottom !important;
+        padding: 0.5rem 1rem 0.5rem 1rem !important;
+    }
+
+    .navbar-toggler-icon{
+        height: 6vh;
+        width:6vh;
+        background-size: 7vh;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #first h1{
+        font-size: 12vh !important;
+        margin-top: 0rem !important;
+    }
+    #first h2{
+        font-size: 5.5vh;
+    }
+
+    #project-description{
+        font-size: 4vh !important;
+    }
+
+    #get-started-btn, #get-started-btn:active, #get-started-btn:visited{
+        background: transparent;
+        margin-top: 1rem !important;
+        font-size: 5vh;
+        padding-top: 0;
+    }
+
+    #get-started-btn:hover{
+        background-color: transparent;
+        color: rgb(185, 185, 185);
+    }    
+
+    #first p{
+        font-size: 4vh;
+        padding: 0 !important;
+        margin: 0 1rem 0 1rem !important;
+    }
+
+    #first-text{
+        margin: 0 !important;
+    }
+
+    /*SECOND SECTION*/
+
+    #second{
+        padding-top: 1rem !important;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    #second h2, #third h2, #fourth h2{
+        font-size: 8vh !important;
+    }
+
+    #second p{
+        font-size: 3vh;
+        padding: 0 2rem 0 2rem;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none;
+        font-size: 3vh !important;
+        margin: 0 0 1rem 0 !important;
+    }
+
+    /*THIRD SECTION*/
+    #third{
+        height: auto;
+    }
+
+    #third p{
+        font-size: 3vh !important;
+        padding-top: 1rem !important;
+    }
+
+    #themes-text{
+        margin: 0 !important;
+    }
+
+    #third .card{
+        height: auto !important;
+        border-radius: 0;
+        margin: 0.5rem 1rem 0.5rem 1rem !important;
+    }
+
+    #third .card .btn{
+        font-size: 3vh;
+    }
+
+    #card-1980s a{
+        font-size: 5vh !important;
+    }
+
+    .c-right, .c-left{
+        padding: 0 !important;
+        margin: 0!important;
+    }
+
+    #third img{
+        height: 20vh !important;
+    }
+    
+    .btn-third{
+        margin-top: 1rem !important;
+        margin-bottom: 2rem !important;
+        font-size: 4vh !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: auto;
+        width: auto;
+    }
+
+    .fadedbox{
+        padding: 1rem !important;
+    }
+
+    #card-iss1, #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .title-text{
+        padding:0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center !important;
+        padding: 1rem 0 0 0 !important;
+        margin: 0 !important;
+        font-size: 3vh !important;
+        }
+    
+    footer .contacts{
+        text-align: left !important;
+        margin-left: 1rem !important;
+    }
+
+    footer li{
+        list-style: none;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+    /*NAVBAR*/
+    .navbar{
+        height: 3rem;
+    }
+
+    #capT{
+        height: 4vh !important;
+        background-position: bottom !important;
+        padding: 0.5rem 1rem 0.5rem 1rem !important;
+    }
+
+    .nav-link{
+        padding-left: 1rem;
+        font-size: 3vh;
+    }
+
+    .navbar-toggler-icon{
+        height: 6vh;
+        width:6vh;
+        background-size: 7vh;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    #first h1{
+        font-size: 12vh !important;
+        margin-top: 0rem !important;
+    }
+    #first h2{
+        font-size: 5.5vh;
+    }
+
+    #project-description{
+        font-size: 4vh !important;
+    }
+
+    #get-started-btn, #get-started-btn:active, #get-started-btn:visited{
+        background: transparent;
+        margin-top: 1rem !important;
+        font-size: 5vh;
+        padding-top: 0;
+    }
+
+    #get-started-btn:hover{
+        background-color: transparent;
+        color: rgb(185, 185, 185);
+    }    
+
+    #first p{
+        font-size: 4vh;
+        padding: 0 !important;
+        margin: 0 1rem 0 1rem !important;
+    }
+
+    #first-text{
+        margin: 0 !important;
+    }
+
+    /*SECOND SECTION*/
+
+    #second{
+        padding-top: 1rem !important;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    #second h2, #third h2, #fourth h2{
+        font-size: 8vh !important;
+    }
+
+    #second p{
+        font-size: 3vh;
+        padding: 0 2rem 0 2rem;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none;
+        font-size: 3vh !important;
+        margin: 0 0 1rem 0 !important;
+    }
+
+    /*THIRD SECTION*/
+    #third{
+        height: auto;
+    }
+
+    #third p{
+        font-size: 3vh !important;
+        padding-top: 1rem !important;
+    }
+
+    #themes-text{
+        margin: 0 !important;
+    }
+
+    #third .card{
+        height: auto !important;
+        border-radius: 0;
+        margin: 0.5rem 1rem 0.5rem 1rem !important;
+    }
+
+    #third .card .btn{
+        font-size: 3vh;
+    }
+
+    #card-secession a, #card-1980s a{
+        font-size: 5vh !important;
+    }
+
+    .c-right, .c-left{
+        padding: 0 !important;
+        margin: 0!important;
+    }
+
+    #third img{
+        height: 20vh !important;
+    }
+    
+    .btn-third{
+        margin-top: 1rem !important;
+        margin-bottom: 2rem !important;
+        font-size: 4vh !important;
+    }
+
+    /*FOURTH SECTION*/
+
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: auto;
+        width: auto;
+    }
+
+    .fadedbox{
+        padding: 1rem !important;
+    }
+
+    #card-iss1, #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .title-text{
+        padding:0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center !important;
+        padding: 1rem 0 0 0 !important;
+        margin: 0 !important;
+        font-size: 3vh !important;
+        }
+    
+    footer .contacts{
+        text-align: left !important;
+        margin-left: 1rem !important;
+    }
+
+    footer li{
+        list-style: none;
+    }
+}
+
+
+#str-dynamic-title{
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+

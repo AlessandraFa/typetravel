@@ -1,0 +1,1206 @@
+@import "/styles/themes/components/dropdown.css";
+@import "/styles/themes/components/sizingNavbar.css";
+@import "/styles/home.css";
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+English+SC&display=swap');
+
+@font-face {
+    font-family: "Bembo";
+    src: url("/styles/fonts/Bembo.ttf");
+}
+
+@font-face {
+    font-family: "Bembo-italic";
+    src: url("/styles/fonts/BemboStd-SemiboldItalic.otf");
+}
+
+/*LINKS, SELECTION, CODE*/
+a{
+    color: rgb(143, 143, 143);
+  }
+  
+a:hover{
+    color: #c4c4c4 ;
+}
+
+::selection{
+    color: rgb(240, 240, 240) !important;
+    background: rgb(128, 128, 128) !important;
+}
+
+code{
+    color: grey;
+}
+
+body{
+    font-family: "Bembo", garamond, serif;
+    background-color: #E9E9E9 !important;
+}
+
+p{
+    font-family: "Bembo", garamond, serif;
+    color: #696969;
+    line-height: 1;
+}
+
+.btn{
+    font-family: "Bembo", garamond, serif;
+    color: #949494;
+    letter-spacing: 0.5rem;
+}
+
+h2{
+    font-family: Bembo;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 7vh;
+    color: #666666;
+    letter-spacing: 0.5rem;
+}
+
+/*NAVBAR*/
+.navbar{
+    letter-spacing: 0.1em;
+    background-size: 100%;
+    background-color: rgba(233,233,233,0.5);
+    height: 10vh;
+}
+
+
+.navbar-brand{
+    font-size: 4vh;
+    text-transform: uppercase;
+    color: #474747    !important;
+    letter-spacing: 0.3rem;
+}
+
+#capT{
+    background-image: url("/images/icons/t-renaissance.svg");
+    background-size: 5vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    padding: 2rem;
+}
+
+.nav-active {
+    box-shadow: 5px -1px 12px -5px grey;
+    backdrop-filter: blur(1px);
+    background: transparent !important;
+}
+
+.dropdown-menu{
+    background-color: #C4C4C4; 
+    border:none;
+}
+
+.dropdown-item:hover{
+    background-color: rgb(168, 168, 168);
+    color: white;
+}
+
+.nav-link{
+    line-height: 18pt;
+    color: #474747    !important;   
+    padding-left: 0.5em !important;
+    text-transform: uppercase;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+    color: rgb(192, 192, 192) !important;
+}
+
+/*DISCLAIMER*/
+.modal-header, .modal-header .modal-title, .modal-footer, .modal-footer .btn{
+    background-color: #F2F2F2 !important;
+    color: #474747 !important;
+    text-transform: uppercase;
+    font-family: "Bembo", garamond, serif;
+    border:none;
+    font-size: 3vh !important;
+}
+
+.modal-title, .modal-footer .btn{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3vh;
+    text-align: center !important;
+}
+
+.modal-footer button{
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+
+.modal-footer .btn:hover{
+    color: #c4c4c4;
+}
+
+.modal-header button{
+    margin: 0 !important;
+}
+
+.modal-body{
+    font-family: "Bembo", garamond, serif;
+    text-align: left;
+    margin: 0 3rem 0 3rem;
+    line-height: 1;
+    font-size: 3vh;
+    padding: 0;
+}
+
+.modal-body p{
+    font-size: 3vh;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 1!important;
+}
+
+/*FIRST*/
+#first{
+    background-image: url("/images/Renaissance/grot-first2.png");
+    background-size: 100%;
+    background-repeat: no-repeat !important;
+    background-position: center bottom !important;
+}
+
+#first h1{
+    font-family: Bembo;
+    color: #696969;
+    margin-top: 4rem;
+    font-size: 10vh;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+#travel{
+    color: #929292 !important;
+}
+
+#first h2{
+    font-family: Bembo;
+    text-align: center;
+    font-size: 4vh;
+    padding-top: 1rem;
+    color: #949494; 
+    letter-spacing: 0.5rem; 
+}
+
+#first p{
+    font-size: 4.2vh;
+    line-height: 1;
+    color: #696969;
+    hyphens: auto;
+    margin: 0 6rem 0 6rem;
+    font-family: "Bembo", garamond, serif;
+    height: 50vh !important;
+}
+
+#first-text{
+    margin: 0 10rem 0 10rem;
+}
+
+.renaiss-left{
+    -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+    shape-outside: polygon(0 0, 100% 100%, 0 100%);
+    float: left;
+    -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+  
+.renaiss-right{
+    -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+    shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+    float: right;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+#first #rl1,
+#first #rr1 {
+    width: 50%;
+    height: 30vh;
+}
+
+#icon{
+    padding: 8vh;
+    background-image: url("/images/icons/start-ren.svg");
+    background-size: 14vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+#icon:hover{
+    background-image: url("/images/icons/start-ren-hov.svg");
+    background-color: transparent !important;
+}
+
+#get-started-btn-1{
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+.get-s, .get-s #get-started-btn{
+    display: none;
+}
+
+#get-started-btn-1{
+    background: url("/images/Renaissance/btn-first.png");
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 22vh;
+    position: absolute;
+    top: 64vh;
+    margin-top: 10vh !important;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    font-size: 4.5vh;
+}
+
+/*SECOND*/
+#second{
+    background-color: #E9E9E9 !important;
+    background-image: url("/images/Renaissance/second.png") ;
+    background-size: 100%;
+    background-position: bottom;
+    padding-top: 4rem;
+}
+
+#about-proj{
+    font-family: "Bembo", garamond, serif;
+    text-align: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 4vh;
+    line-height: 6vh;
+}
+
+#second #rl1, #second #rr1{
+    height:45vh;
+    width: 50%;
+}
+
+#renaiss-div{
+    position: relative;
+}
+
+.sec-buttons{
+    height: 24vh;
+    position: absolute;
+    top: 60vh;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+#btn-themes{
+    background-image: url("/images/Renaissance/b1.png");
+    color: #949494;
+    text-transform: uppercase;
+    background-size: 40vh !important;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-left: 10rem;
+    font-size: 4vh;
+}
+
+#btn-issues{
+    background-image: url("/images/Renaissance/b2.png");
+    color: #949494;    text-transform: uppercase;
+    background-size: 40vh !important;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-right: 10rem;
+    font-size: 4vh;
+}
+
+#second .btn:hover{
+    background-color: transparent !important;
+    color: rgb(185, 185, 185);
+}
+
+/*THIRD*/
+#third{
+    background-color: #E9E9E9 !important;
+    background-image: url("/images/Renaissance/frth.png") ;
+    background-size: 80vh !important;
+    background-position: left top;
+    margin-top: 2rem;
+}
+
+#renaiss-bg{
+    background-color: #e9e9e9 !important;
+}
+
+#themes-text{
+    margin: 0 10rem 0 10rem;
+}
+
+#third h2{
+    background-color: rgba(233,233,233,0.3) !important;
+}
+
+#cards{
+    margin: 5vh 6vh 4vh 6vh;
+}
+
+.btn-third{
+    background-color: rgba(233,233,233,0.5) !important;
+    margin-top: 0rem !important;
+    border-radius: 0;
+    color: #949494;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 4vh !important;
+}
+
+.btn:hover{
+    background-color: transparent !important;
+    color: rgb(185, 185, 185);
+}
+
+#themes-card{
+    margin:0;
+    padding:0;
+    --bs-gutter-x: 0;
+}
+
+.c-left{
+    margin: 2rem 2rem 0 4rem;
+    padding-left: 4rem;
+}
+
+.c-right{
+    margin: 2rem 4rem 0 4rem;
+}
+
+#card-renaissance .btn-doc:hover{
+    color: #535353;
+}
+
+#card-secession .btn-doc:hover{
+    color: #5a4120;
+}
+
+#card-1980s .btn-doc:hover{
+    color: #2d1c55;
+}
+
+#card-future .btn-doc:hover{
+    color: #818181;
+}
+
+
+/*FOURTH*/
+#fourth{
+    background-color: #E9E9E9 !important;
+    background-image: url("/images/Renaissance/dec.png");
+    background-size: 30vh;
+    background-position: left top;
+    padding-top: 4rem;
+}
+
+#fourth #renaiss-bg{
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+}
+
+#fourth h2{
+    background-color: rgba(233,233,233,0.2) !important;
+}
+
+#gofourth{
+    background-color: #E9E9E9 !important;
+}
+
+#card-iss1 .fadedbox, #card-iss2 .fadedbox{
+    background-color:rgba(179, 179, 179, 0.8);
+}  
+
+#tt1, #tt2{
+    font-size: 5vh;
+    color: #333333;
+    margin: 2rem;
+    padding: 1rem;
+    padding-top: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+#tt2{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.issue {
+    max-width: 80vh !important;
+    height: 60vh !important;
+    border-radius: 0;
+    margin: 0;
+}
+
+#card-iss1{
+    margin-left: 8rem !important;
+}
+
+#card-iss2{
+    margin-right: 8rem !important;
+}
+
+.issue-description{
+    font-size: 3vh !important;
+    margin-top: 0 !important;
+    color: #444444;
+}
+
+.see-article{
+    background-color: #e4e4e4;
+    color: #444444;
+    border: none;
+    font-size: 3vh;
+    margin-top: 2rem;
+    padding: 1rem;
+    line-height: 1;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.see-article:hover{
+    background-color: #d1d1d1;
+    color: rgb(122, 122, 122);
+}
+
+.see-article a{
+    background-color: unset;
+    color: unset;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #E9E9E9;
+}
+
+footer p, .contacts{
+    font-size: 3vh;
+    padding: 2vh;
+    padding-top: 4rem;
+}
+
+footer p{
+    text-align: right;
+    padding-left: 5vh;
+    padding-top: 4rem;
+}
+
+#cp{
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+#discl{
+    text-align: center !important;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+#discl:hover{
+    color: rgb(185, 185, 185);
+}
+
+#footer-left{
+    background-image: url("/images/Renaissance/dec.png");
+    background-size: 30vh;
+    background-position: left bottom;
+}
+
+#footer-right{
+    background-image: url("/images/Renaissance/dec.png");
+    background-size: 30vh;
+    background-position: left bottom;
+}
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #a8a8a8 !important;
+}
+
+.sub-button:hover{
+    background-color: #bebebe !important;
+}
+
+@media (max-width: 576px){
+    /*NAVBAR*/
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    #navbarNavDropdown{
+        background-color: rgb(233,233,233) !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        background-size: 180vh;
+    }
+
+    #first h2{
+        font-size: 6vh;
+    }
+
+    #first h1{
+        font-size: 10vh;
+        letter-spacing: 0.7rem;
+    }
+
+    #first #rl1,
+    #first #rr1{
+        width: 30%;
+        height: 50vh !important;
+    }
+
+    #first p{
+        font-size: 5vh !important;
+    }
+
+    #first #rl1,
+    #first #rr1{
+        width: 50%;
+        height: 40vh;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 5vh !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+    }
+
+    #about-proj{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    #second #rl1,
+    #second #rr1{
+        width: 0%;
+        height: 0vh !important;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 3vh !important;
+        margin-top: 0 !important;
+    }
+
+    /*THIRD SECTION*/
+    #third{
+        background-size: 170vh;
+    }
+
+    #third h2{
+        padding-top: 1rem;
+    }
+
+    #third p{
+        font-size: 5vh !important;
+    }
+    
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #card-iss1{
+        margin-left: 5rem !important;
+    }
+
+    #card-iss2{
+        margin-left: 5rem !important;
+        margin-right: 0 !important;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    #card-iss2 .fadedbox{
+        background-color: rgba(179, 179, 179, 0.6);
+    }
+
+    .title-text{
+        padding:0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4vh !important;
+    }
+    #footer-left{
+        width: 22.5%;
+    }  
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    /*NAVBAR*/
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        background-size: 180vh;
+    }
+    #first h1{
+        font-size: 10vh !important;
+        padding-top: 3rem !important;
+    }
+    #first h2{
+        font-size: 5vh;
+        padding-top: 0;
+    }
+
+    #first h1{
+        font-size: 10vh;
+        letter-spacing: 0.7rem;
+    }
+
+    #first #rl1,
+    #first #rr1{
+        width: 30%;
+        height: 50vh !important;
+    }
+
+    #first p{
+        font-size: 5vh !important;
+    }
+
+    #first #rl1,
+    #first #rr1{
+        width: 50%;
+        height: 40vh;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 5vh !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 180vh;
+        background-position: top !important;
+    }
+
+    #second p{
+        font-size: 5vh !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #about-proj{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    #second #rl1,
+    #second #rr1{
+        width: 20%;
+        height: 45vh !important;
+    }
+
+    .sec-buttons{
+        position: static;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 3vh !important;
+        margin-top: 0 !important;
+    }
+
+    /*THIRD SECTION*/
+    #third{
+        background-size: 170vh;
+    }
+
+    #third h2{
+        padding-top: 3rem !important;
+    }
+
+    #third p{
+        font-size: 5vh !important;
+    }
+    
+    #fourth{
+        height: auto;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #card-iss1{
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+    }
+
+    #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    #card-iss2 .fadedbox{
+        background-color: rgba(179, 179, 179, 0.6);
+    }
+
+    .title-text{
+        padding:0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4vh !important;
+        }
+    #footer-left{
+        width: 22.5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    /*NAVBAR*/
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        background-size: 180vh;
+    }
+    #first h1{
+        font-size: 10vh !important;
+        padding-top: 4rem !important;
+    }
+    #first h2{
+        font-size: 5vh;
+        padding-top: 0;
+    }  
+
+    #first h1{
+        font-size: 10vh;
+        letter-spacing: 0.7rem;
+    }
+
+    #first p{
+        font-size: 5vh !important;
+    }
+
+    #first #rl1,
+    #first #rr1{
+        width: 50%;
+        height: 40vh;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 6.5vh !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 180vh;
+        background-position: top !important;
+    }
+
+    #second h2{
+        margin-top: 3rem !important;
+    }
+
+    #second p{
+        font-size: 4.5vh !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #about-proj{
+        margin: 1rem 6rem 0 6rem;
+    }
+
+    #second #rl1,
+    #second #rr1{
+        width: 40%;
+        height: 45vh !important;
+    }
+
+    .sec-buttons{
+        position: static;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-top: 8rem !important;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 4vh !important;
+        margin-top: 0 !important;
+    }
+
+    /*THIRD SECTION*/
+    #third{
+        background-size: 170vh;
+    }
+
+    #third h2{
+        padding-top: 3rem !important;
+    }
+
+    #themes-text{
+        padding: 0 2rem 0 2rem !important;
+    }
+
+    #third p{
+        font-size: 4vh !important;
+    }
+    
+    /*FOURTH SECTION*/
+    #fourth{
+        height: auto;
+    }
+
+    #cards{
+        margin: 0 !important;
+    }
+
+    #third .btn{
+        letter-spacing: 0 !important;
+    }
+
+    #third #card-secession .btn{
+        font-size: 4vh !important;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #card-iss1{
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+    }
+
+    #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    #card-iss2 .fadedbox{
+        background-color: rgba(179, 179, 179, 0.6);
+    }
+
+    .title-text{
+        padding:0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4vh !important;
+        }
+
+    #footer-left{
+        width: 22.5%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    /*NAVBAR*/
+    .navbar-brand{
+        font-size: 5vh !important;
+    }
+
+    /*FIRST SECTION*/
+    #first{
+        background-size: 180vh;
+    }
+
+    #first h1{
+        font-size: 10vh !important;
+        padding-top: 6rem !important;
+    }
+
+    #first h2{
+        font-size: 5vh;
+        padding-top: 0;
+    }
+
+    #first h1{
+        font-size: 10vh;
+        letter-spacing: 0.7rem;
+    }
+
+    #first #rl1,
+    #first #rr1{
+        width: 30%;
+        height: 50vh !important;
+    }
+
+    #first p{
+        font-size: 5vh !important;
+    }
+
+    #first #rl1,
+    #first #rr1{
+        width: 50%;
+        height: 40vh;
+    }
+
+    /*SECOND SECTION*/
+    #second h2, #third h2, #fourth h2{
+        font-size: 6.5vh !important;
+    }
+
+    #second{
+        padding-top: 2rem;
+        background-size: 180vh;
+        background-position: top !important;
+    }
+
+    #second h2{
+        margin-top: 3rem !important;
+    }
+
+    #second p{
+        font-size: 4.5vh !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #about-proj{
+        margin: 1rem 6rem 0 6rem;
+    }
+
+    #second #rl1,
+    #second #rr1{
+        width: 40%;
+        height: 45vh !important;
+    }
+
+    .sec-buttons{
+        position: static;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-top: 8rem !important;
+    }
+
+    #btn-themes, #btn-issues{
+        background: none !important;
+        font-size: 4vh !important;
+        margin-top: 0 !important;
+    }
+
+    /*THIRD SECTION*/
+    #third{
+        background-size: 170vh;
+    }
+
+    #third h2{
+        padding-top: 3rem !important;
+    }
+
+    #themes-text{
+        padding: 2rem 4rem 2rem 4rem !important;
+    }
+
+    #third p{
+        font-size: 4vh !important;
+    }
+
+    .c-right{
+        margin: 1rem 6rem 2rem 0 !important;
+    }
+
+    .c-left{
+        margin: 1rem 0 2rem 6rem!important;
+    }
+
+    #third .card{
+        width: 70vh;
+        margin: auto !important;
+    }
+
+    .btn-third{
+        margin-top: 2rem !important;
+        font-size: 4.5vh !important;
+    }
+    
+    /*FOURTH SECTION*/
+    #fourth{
+        height: auto;
+    }
+
+    #cards{
+        margin: 0 !important;
+    }
+
+    #third .btn{
+        letter-spacing: 0 !important;
+    }
+
+    #third #card-secession.btn{
+        font-size: 4vh !important;
+    }
+
+    .issue{
+        max-height: 200vh;
+        width: auto;
+    }
+
+    #card-iss1{
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+    }
+
+    #card-iss2{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+    #tt1{
+        font-size: 3vh;
+    }
+    
+    #tt2{
+        font-size: 2.8vh;
+    }
+
+    #card-iss2 .fadedbox{
+        background-color: rgba(179, 179, 179, 0.6);
+    }
+
+    .title-text{
+        padding:0 !important;
+        font-size: 5vh !important;
+    }
+
+    .issue-description{
+        margin: 0 !important;
+        padding-bottom: 0 !important;
+        font-size: 4vh !important;
+    }
+
+    .see-article{
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 5vh !important;
+    }
+
+    /*FOOTER*/
+    footer p, .contacts, #discl, #cp{
+        text-align: center;
+        padding: 1rem;
+        font-size: 4vh !important;
+        }  
+    #footer-left{
+        width: 22.5%;
+    }
+    
+}
+
+:root{
+    --time-color: #cbcbcb;
+    --time-transition: ease-in-out 0.5s;
+}

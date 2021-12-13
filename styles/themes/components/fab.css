@@ -1,0 +1,142 @@
+
+/*FAB*/
+.fab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+.fab-container:hover {
+    height: 100%;
+}
+.fab-container:hover .sub-button:nth-child(2) {
+    transform: translateY(-14vh);
+}
+.fab-container:hover .sub-button:nth-child(3) {
+    transform: translateY(-28vh);
+}
+.fab-container:hover .sub-button:nth-child(4) {
+    transform: translateY(-42vh);
+}
+.fab-container:hover .sub-button:nth-child(5) {
+    transform: translateY(-56vh);
+}
+
+.fab-container:hover .sub-button:nth-child(6) {
+    bottom: 1vh;
+    transform: translateX(-10vh);
+}
+
+.fab-container .fab {
+    position: relative;
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+    z-index: 2;
+}
+.fab-container .fab::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 6vh;
+    width: 6vh;
+    background-color: inherit;
+    border-radius: 0 0 10px 0;
+    z-index: -1;
+}
+.fab-container .fab .fab-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.fab-container .sub-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    height: 12vh;
+    width: 12vh;
+    background-color: #4ba2ff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.fab-container .sub-button:hover {
+    cursor: pointer;
+}
+.fab-container .sub-button .material-icons {
+    color: white;
+    padding-top: 6px;
+}
+
+.fab-content{
+    background-image: url(/images/icons/fb-white.png);
+    background-size: 8vh;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+}
+
+.sub-button:nth-child(2){
+    background: url(/images/icons/ren-white.png);
+    background-size: 8vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(3){
+    background: url(/images/icons/anouv-w.png);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(4){
+    background: url(/images/icons/tv-card.png);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sub-button:nth-child(5){
+    background: url(/images/icons/future.png);
+    background-size: 7vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fab-container #enable-future:hover{
+    background: url(/images/Future/g25.gif) !important;
+    background-size: 10vh !important;
+}
+
+.fab-content:hover{
+    box-shadow: 1px 1px 10px rgb(80, 80, 80) !important;
+}
+
+.sub-button:nth-child(6){
+    background: url(/images/icons/default-icon.png);
+    background-size: 5vh !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 6vh;
+    color: white;
+    text-decoration: none !important;
+    height: 6vh !important;
+    width: 6vh !important;
+    right: 2vh !important;
+}
+
+.fab-container:hover .sub-button:nth-child(6):hover{
+    background-color: #83c0cf !important;
+}
+

@@ -1,0 +1,250 @@
+@import url(/styles/themes/components/fab.css);
+@import url(/styles/themes/components/sizingNavbar.css);
+@import url(/styles/documentation.css);
+
+@font-face {
+    font-family: future;
+    src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
+}
+@font-face {
+    font-family: f1;
+    src: url("/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
+}
+@font-face {
+    font-family: f1bold;
+    src: url("/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: intro;
+    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: f1, monospace;
+}
+
+button{
+    color: white;
+}
+
+button:nth-of-type(4):hover{
+    text-shadow: 2px 2px 8px rgba(255,255,255,0.7),2px -2px 8px rgba(255,255,255,0.7);
+}
+
+/*LINKS, SELECTION, CODE*/
+::selection{
+    background-color: rgb(51, 51, 51);
+}
+
+a{
+    color:rgb(194, 194, 194);
+}
+
+a:hover{
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.7);
+}
+
+code{
+    color: rgb(96, 109, 122);
+    text-shadow: none;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-color:black;
+    height: 10vh;
+}
+
+.navbar-brand{
+    font-family: intro, monospace !important;
+    color: #fff !important; 
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 3.5vh;
+    text-transform: uppercase;
+}
+
+#capT{
+    background-image: url(/images/icons/T-future-dark.svg);
+    background-size: 5vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    padding: 2rem;  
+}
+
+.navbar-brand:hover{
+    text-shadow: 1px 1px 3px rgba(255,255,255);
+}
+
+.nav-link{
+    font-family: future, monospace;
+    letter-spacing: 0.1em;
+    color: #fff !important; 
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    text-shadow: 1px 1px 3px rgba(255,255,255);
+}
+
+.dropdown-menu{
+    background-color: black;
+    border: 1px solid white;
+    border-top:none;
+    border-right: none;
+}
+
+.dropdown-item{
+    background-color:rgb(0, 0, 0);
+    color: rgb(211, 211, 211);
+    font-family: intro, monospace;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.dropdown-item:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+
+.modal-dialog{
+    max-width: 120vh;
+    border: 1px solid white;
+    font-family: "intro", monospace;
+    color: white;
+}
+
+.modal-content{
+    background-color: black;
+}
+
+.modal-content button{
+    background-color: black;
+}
+
+.modal-content button:hover{
+    background-color: rgb(46, 46, 46) !important;
+}
+
+.modal-body p{
+    font-size: 2.2vh !important;
+    text-align: left;
+    padding: 0;
+    color: white;
+}
+
+/*DOCUMENTATION*/
+#menu-card .navbar-brand, #menu-card .nav-link{
+    text-transform: uppercase;
+}
+#main-background{
+    z-index: 1000;
+}
+
+#menu-card .navbar-brand{
+    font-size: 4vh !important;
+    padding-top: 2rem;
+    letter-spacing: 0.1rem;
+    width: inherit;
+}
+#menu-card .navbar{
+    background-color: black !important;
+}
+#menu-card .nav-link{
+    margin-right: 1rem;
+    font-family: intro, monospace;
+}
+#main-background p{
+    font-size: 2.5vh !important;
+}
+h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    font-family: intro, monospace;
+    font-weight: bold;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: transparent;
+}
+h3{
+    font-size: 4vh;
+}
+
+h5{
+    font-size: 3vh;
+}
+#info-btn{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 2.5vh;
+    opacity: 0.6;
+}
+#info-btn:hover{
+    opacity: 1;
+}
+
+#info-disclaimer .modal-content{
+    background-color: black;
+}
+
+.modal-footer .btn{
+    background-color: black;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn-dmode{
+    background-image: url(/images/Future/lightmode.png) !important;
+    background-size: 10vh;
+    background-color: rgb(0, 0, 0) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px !important;
+    width: 100px !important;
+    border: none;
+    box-shadow: none !important;
+    border-color: rgb(0, 0, 0) !important;
+    position: fixed !important;
+    left: 30vh !important;
+    bottom: 3vh !important;
+}
+
+.btn-dmode:hover{
+    background-image: url(/images/Future/lightmode1.png) !important;
+    background-size: 10vh;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    width: 10vh;
+    box-shadow: none !important;
+    border-color: rgb(0, 0, 0) !important;
+}
+
+.btn-dmode:focus{
+    box-shadow: none !important;
+    border-color: rgb(0, 0, 0) !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.btn-lmode{
+    display: none;
+}
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: rgb(0, 0, 0)  !important;
+}
+
+.fab-container .fab::before {
+    display: none;
+}
+
+.sub-button:hover{
+    background-color: #272727 !important;
+}

@@ -1,0 +1,230 @@
+@import url(/styles/themes/components/fab.css);
+@import url(/styles/themes/components/sizingNavbar.css);
+@import url(/styles/documentation.css);
+
+@font-face {
+    font-family: "Bembo";
+    src: url("/styles/fonts/Bembo.ttf");
+  }
+  
+@font-face {
+    font-family: "Bembo-italic";
+    src: url("/styles/fonts/BemboStd-SemiboldItalic.otf");
+}
+
+/*LINKS, SELECTION, CODE*/
+a{
+    color: rgb(143, 143, 143);
+  }
+  
+a:hover{
+    color: #c4c4c4 ;
+}
+
+::selection{
+    color: rgb(240, 240, 240) !important;
+    background: rgb(128, 128, 128) !important;
+}
+
+code{
+    color: grey;
+}
+  
+.btn{
+    font-family: "Bembo" garamond, serif;
+    color: #949494;
+    letter-spacing: 0.5rem;
+}
+
+/*BODY*/
+body{
+    font-family: "Bembo", garamond, serif;
+    text-align: center;
+    overflow: hidden;
+    line-height: 1;
+    color: #474747;
+}
+
+button{
+    color: #474747;
+}
+
+/*NAVBAR*/
+.navbar{
+    letter-spacing: 0.1rem;
+    background-color: #c0c0c0 !important;
+    background-image: url("/images/Renaissance/nav-decor.png");
+    background-size: 40vh;
+    background-position: bottom;
+}
+ 
+.navbar-brand{
+  font-size: 4vh;
+  text-transform: uppercase;
+  color: #474747    !important;
+  letter-spacing: 0.3rem;
+}
+
+#capT{
+  background-image: url("/images/icons/t-renaissance.svg");
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10vh;
+  padding: 2rem;
+}
+ 
+.dropdown-menu{
+    background-color: #C4C4C4; 
+    border:none;
+}
+  
+.dropdown-item:hover{
+    background-color: rgb(168, 168, 168);
+    color: white;
+}
+  
+#metadata .nav-link{
+    text-shadow: none !important;
+}
+  
+.nav-link{
+    text-transform: uppercase;
+    font-size: 3vh;
+    color: #474747    !important;  
+    margin-bottom: 0 !important;
+    padding: 0.5rem;
+}
+
+.nav-link:hover,
+.navbar-brand:hover{
+    color: rgb(122, 122, 122) !important;
+}
+
+.nav-link.active{
+    background-color: transparent !important;
+    text-shadow: transparent !important;
+    border-color: transparent !important;
+    text-shadow: transparent !important;
+}
+
+.dropdown-item{
+    font-size: 3vh;
+}
+
+.modal-header, .modal-header .modal-title, .modal-footer, .modal-footer .btn{
+    background-color: #F2F2F2 !important;
+    color: #474747;
+    text-transform: uppercase;
+    font-family: "Bembo", garamond, serif;
+    border:none;
+    font-size: 3vh !important;
+  }
+  .modal-title, .modal-footer .btn{
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    padding: 0;
+  }
+  
+  .modal-footer .btn:hover{
+    color: #c4c4c4;
+  }
+  
+  .modal-header button{
+    margin: 0 !important;
+  }
+  .modal-body{
+    text-align: left;
+    font-size: 3vh;
+    margin: 0 3rem 0 3rem;
+  }
+
+/*SCROLLSPY*/
+#navbar-documentation{
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+.content #text-start{
+    background-image:  url("/images/Renaissance/md-bg.png");
+    background-color: #DEDEDE;
+    background-size: 55vh;
+    background-position: top left;
+    background-repeat: no-repeat;
+    border-radius: 0 !important;
+}
+
+h3{
+    font-size: 5vh;
+    text-transform: uppercase;
+}
+h5{
+    font-size: 3.5vh;
+    text-transform: uppercase;
+}
+
+#navbar-documentation{
+
+    text-align: left;
+}
+
+#navbar-documentation .nav-link{
+    background-color: rgba(222,222,222,0.7) !important;
+    font-size: 3vh;
+    margin-right: 2vh;
+}
+#navbar-documentation .nav-link:hover{
+    background-color: rgba(206, 206, 206, 0.9) !important;
+    color: black !important;
+}
+#main-background{
+    background-image: linear-gradient(rgba(122,122,122,0.2)0%, rgba(122,122,122,0.2)100%), url("/images/Renaissance/main-bg.png");
+    background-size:100vh;
+    background-position: top;
+}
+#main-background p{
+    line-height: 1;
+    font-size: 3vh;
+    text-align: justify;
+}
+#info-btn{
+    font-size: 3vh;
+    text-transform: uppercase;
+    color: rgb(167, 167, 167);
+}
+#info-btn:hover{
+    color: #747474;
+}
+#info-disclaimer{
+    font-size: 2.5vh;
+}
+#info-disclaimer h4, h5{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3vh;
+    text-align: center !important;
+}
+.modal-footer button{
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+
+/*FAB*/
+.fab-content, .fab-shadow, .sub-button, .fab{
+    background-color: #c0c0c0 !important;
+    box-shadow: 2px 2px 10px rgba(250,242,230, 0.5), -2px -2px 10px rgba(250,242,230, 0.5);
+}
+
+.sub-button:hover{
+    background-color: #5c5c5c !important;
+}
+
+
+.btn-lmode, .btn-dmode{
+    display: none;
+}
+
+.sections li{
+    list-style: none !important;
+}

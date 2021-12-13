@@ -1,0 +1,28 @@
+<li><span onclick="highlightData(1, this)">Apollo Belvedere: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Birth of Venus: 5 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Canova’s Perseus: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Knidian Aphrodite: 8 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">La Grande Odalisque: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Mattei Athena: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Olympia: 10 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Pompeii Venus: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">The Bathers: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">The Decadence of the Romans: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">The Slave Market: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">The Tub: 3 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">The Turkish Bath: 4 <span ></span></span></li>
+
+<li><span onclick="highlightData(1, this)">French Revolution: 2 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Industrial Revolution: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Peace of Lodi: 1 <span ></span></span></li>
+
+
+<li><span onclick="highlightData(1, this)">Africa: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Egypt: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">France: 8 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Greece: 11 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Indochina: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Italy: 5 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Louvre: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Paris: 1 <span ></span></span></li>
+<li><span onclick="highlightData(1, this)">Rome: 1 <span ></span></span></li>

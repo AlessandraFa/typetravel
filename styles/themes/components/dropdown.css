@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Roboto+Mono&family=Roboto:wght@100;300;400&display=swap');
+
+@font-face {
+    font-family: intro;
+    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+}
+
+@font-face {
+    font-family: "vcr";
+    src: url("/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
+}
+
+@font-face {
+    font-family: secession;
+    src: url("/styles/fonts/secession/Secession.otf");
+}
+
+@font-face {
+    font-family: "Bembo";
+    src: url("/styles/fonts/Bembo.ttf")
+  }
+
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+  .dropdown-menu{
+    padding-bottom: 0;
+    min-width: 200px;
+    border-radius: 0;
+    border: none;
+  }
+
+  .dropdown-menu.show[data-bs-popper]{
+    left: inherit;
+    margin-top: inherit;
+  }
+
+  @media (min-width: 1400px){
+  .dropdown-menu{
+    padding-top: 1em;
+    min-width: 250px;
+  }
+  .dropdown-item{
+    font-size: 16pt;
+  }
+}
+.dropdown-item{
+    font-size: 15pt;
+}
+
+.fab-container #enable-eighty:hover, .dropdown-menu #enable-eighty:hover{
+    font-family: "vcr", monospace;
+    text-transform: uppercase;
+    background-image: url(/images/1980s/vhs-navb.png);
+    background-size: 8vh;
+    background-position: bottom;
+    color: white  !important;
+    text-shadow: none !important;
+    font-weight: normal;
+    background-repeat: repeat;
+}
+
+.fab-container #enable-secession:hover, .dropdown-menu #enable-secession:hover{
+    font-family: "secession", Verdana;
+    text-transform: uppercase;
+    background-image: url(/images/art-nouveau/fourth-bg.png);
+    background-position: right bottom;
+    background-size: 40vh;
+    color: black !important;
+    text-shadow: none !important;
+    font-weight: normal;
+}
+
+.fab-container #enable-future:hover, .dropdown-menu #enable-future:hover{
+    font-family: "intro";
+    text-transform: uppercase;
+    background-color: black !important;
+    color: white !important;
+    font-weight: bold;
+    text-shadow: none !important;
+    font-weight: normal;
+}
+
+.fab-container #enable-default:hover, .dropdown-menu #enable-default:hover{
+    font-family: "cousine", "Thaoma", sans-serif;
+    font-weight: bold;
+    background-color: #83c0cf;
+    color: white !important;
+    text-transform: capitalize;
+    text-shadow: none !important;
+    font-weight: normal;
+}
+.fab-container #enable-renaissance:hover, .dropdown-menu #enable-renaissance:hover{
+    font-family: "Bembo", "IM Fell English SC", garamond, serif;
+    background-image:  url(/images/Renaissance/md-bg.png);
+    background-position: top left;
+    background-size: 20vh;
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 15pt;
+    text-shadow: none !important;
+    font-weight: normal;
+    background-repeat: repeat;
+}
