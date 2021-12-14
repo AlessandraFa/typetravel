@@ -71,18 +71,18 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation" id="hide-md-btn-off">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#metadata" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation" id="hide-md-btn-off">
               About the articles
             </button>
             <!-- togglers end  -->
             
             <!-- offcanvas start  -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-end overflow-auto" tabindex="-1" id="metadata" aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
                 <h5 id="offcanvasRightLabel">About the articles</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div class="offcanvas-body">
+              <div class="offcanvas-body" id="metadata-style">
                <!-- accordion start -->
                <div class="accordion accordion-flush" id="accordionFlushOffCanvas">
                 <div class="accordion-item">
@@ -117,6 +117,7 @@
                               <li><span onclick="highlightData(1, this)" class="people-nav">Greg Abbot: 1 <span ></span></span></li>
                               <li><span onclick="highlightData(1, this)" class="people-nav">Jennifer González-Colón: 1 <span ></span></span></li>
                               <li><span onclick="highlightData(1, this)" class="people-nav">Rex Tillerson: 1 <span ></span></span></li>
+                              <li><span onclick="highlightData(1, this)" class="places-nav">Eric Schneiderman: 1 <span ></span></span></li>
                             </ul>
                             </div>
                             <div class="tab-pane fade" id="article-1-places-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
@@ -130,7 +131,6 @@
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Citibank: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Colorado: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Connecticut: 1 <span ></span></span></li>
-                                <li><span onclick="highlightData(1, this)" class="places-nav">Eric Schneiderman: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Florida: 2 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Greenland: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Houston: 3 <span ></span></span></li>
@@ -141,14 +141,13 @@
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Los Angeles: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Louisiana: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Miami: 2 <span ></span></span></li>
-                                <li><span onclick="highlightData(1, this)" class="places-nav">Miami Beach: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Missouri: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Nevada: 2 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">New Jersey: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">New York: 3 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">North America: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Oklahoma: 1 <span ></span></span></li>
-                                <li><span onclick="highlightData(1, this)" class="places-nav">Paris: 4 <span ></span></span></li>
+                                <li><span onclick="highlightData(1, this)" class="places-nav">Paris: 5 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Puerto Rico: 3 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">San Francisco: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Seattle: 1 <span ></span></span></li>
@@ -178,7 +177,6 @@
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Defense Department: 1 <span ></span></span></li>
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">ExxonMobil: 2 <span ></span></span></li>
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Goldman Sachs: 1 <span ></span></span></li>
-                                  <li><span onclick="highlightData(1, this)" class="organizations-nav">Miami: 1 <span ></span></span></li>
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Miller Hull Partnership: 1 <span ></span></span></li>
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Rocky Mountain Institute: 1 <span ></span></span></li>
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Science Advances: 1 <span ></span></span></li>
@@ -609,7 +607,7 @@
                 <h4>A New Hope</h4>
                 <p>Despite the fact that, as of last year, 97 percent of <a href="http://iopscience.iop.org/article/10.1088/1748-9326/11/4/048002" target="_blank">climatologists agree</a> that climate change is occurring-and, yes, occurring as a result of human activity-almost 90 percent of Americans are <a href="http://climatecommunication.yale.edu/wp-content/uploads/2017/07/Climate-Change-American-Mind-May-2017.pdf" target="_blank">unaware</a> [PDF] of the consensus. Fortunately, science and reason are regaining some lost ground, despite the fossil fuel industry’s efforts to the contrary. According to Gallup, half of Americans now consider themselves <a href="http://www.gallup.com/poll/207119/half-concerned-global-warming-believers.aspx" target="_blank">“concerned believers”</a> in climate change. Though the number may seem confoundingly low, it’s actually at a <a href="http://www.gallup.com/poll/206030/global-warming-concern-three-decade-high.aspx" target="_blank">30-year high</a>, up from 37 percent in 2015.</p>
 
-                <p>Despite major reverses at the federal level, American universities, corporations, and state and municipal governments are <a href="https://www.theguardian.com/commentisfree/2017/aug/29/if-donald-trump-wont-tackle-climate-change-then-chicago-will" target="_blank">stepping up</a> and embracing the <span id="mention-5" class="mention place" about="Miami">Paris</span> goals. When considered outside the politically loaded frame of climate change, some green issues prove <a href="http://www.pewinternet.org/2016/10/04/the-politics-of-climate" target="_blank">wildly popular</a>. Nearly 90 percent of Americans favor expanding <span id="mention-11" class="mention place" about="United States">U.S.</span> solar-energy capacity, and 83 percent support wind capacity.</p>
+                <p>Despite major reverses at the federal level, American universities, corporations, and state and municipal governments are <a href="https://www.theguardian.com/commentisfree/2017/aug/29/if-donald-trump-wont-tackle-climate-change-then-chicago-will" target="_blank">stepping up</a> and embracing the <span id="mention-5" class="mention place" about="Paris">Paris</span> goals. When considered outside the politically loaded frame of climate change, some green issues prove <a href="http://www.pewinternet.org/2016/10/04/the-politics-of-climate" target="_blank">wildly popular</a>. Nearly 90 percent of Americans favor expanding <span id="mention-11" class="mention place" about="United States">U.S.</span> solar-energy capacity, and 83 percent support wind capacity.</p>
 
                 <p>Good old-fashioned economics are helping as well: Last year, for the first time, solar became the <a href="https://www.bloomberg.com/news/articles/2016-12-15/world-energy-hits-a-turning-point-solar-that-s-cheaper-than-wind" target="_blank">cheapest source</a> of electricity. That’s great news, though there’s a lot of market share left to grab. Currently, about 65 percent of the <a href="https://www.eia.gov/tools/faqs/faq.php?id=427&t=3" target="_blank">electricity</a> used in the <span id="mention-12" class="mention place" about="United States">U.S.</span> comes from fossil fuels, and 15 percent from renewables; the remaining 20 percent comes from nuclear power plants.</p>
 
@@ -620,7 +618,7 @@
                 </div>
                 <p class="imgCaption">STR/AFP/Getty Images - Increasingly heavy precipitation is a highly visible outcome of climate change. Hurricane Harvey dumped more than 49 inches of rain on East <span id="mention-3" class="mention place" about="Texas">Texas</span> in August, and downpours last month triggered floods in <span id="mention-1" class="mention place" about="Tuscany">Tuscany</span> and the Italian city of <span id="mention-1" class="mention place" about="Livorno">Livorno</span> (pictured), killing at least six people. If we don’t reduce CO2 emissions, by 2100 the <a href="http://iopscience.iop.org/article/10.1088/1748-9326/aa6cb3/pdf" target="_blank">frequency</a> [PDF] of local 100-year floods could increase 3,467-fold.</p>
 
-                <p>Transformation is already beginning to occur at the regional, state, and local levels. Individual projects such as <span id="mention-1" class="mention organization" about="ZGF">ZGF</span> Architects’ <a href="https://www.architectmagazine.com/manufacturer/rocky-mountain-institute" target="_blank"><span id="mention-1" class="mention organization" about="Rocky Mountain Institute">Rocky Mountain Institute</span></a> headquarters in <span id="mention-1" class="mention place" about="Basalt">Basalt</span>, <span id="mention-1" class="mention place" about="Colorado">Colo.</span>, and the <span id="mention-1" class="mention organization" about="Miller Hull Partnership">Miller Hull Partnership</span>’s <span id="mention-1" class="mention organization" about="Bullit Center">Bullitt Center</span> in <span id="mention-1" class="mention place" about="Seattle">Seattle</span> demonstrate just how remarkably efficient buildings can be. (For insights into net-zero building, <a href="http://www.architectmagazine.com/practice/what-it-takes-to-go-net-zero_o" target="_blank">check this story out</a>.) On the resilience front, <a href="http://www.bbc.com/future/story/20170403-miamis-fight-against-sea-level-rise" target="_blank"><span id="mention-1" class="mention place" about="Miami Beach">Miami Beach</span></a>, <span id="mention-2" class="mention place" about="Florida">Fla.</span>, contending with the rising Atlantic, is spending $400 million to $500 million to install pumps and raise sea walls, sidewalks, and roads. With water levels having plummeted in the massive <span id="mention-1" class="mention place" about="Lake Mead">Lake Mead</span> reservoir during the 2011–17 drought, the  <span id="mention-1" class="mention organization" about="Southern Nevada Water Authority">Southern <span id="mention-2" class="mention place" about="Nevada">Nevada</span> Water Authority</span> is spending nearly $1.5 billion on a new, lower intake tunnel to ensure that the <a href="https://www.cbsnews.com/news/las-vegas-uncaps-lake-meads-third-straw-for-water-supply" target="_blank"><span id="mention-1" class="mention place" about="Las Vegas">Las Vegas</span></a> metro area’s 2 million residents don’t go thirsty. And the <a href="http://www.architectmagazine.com/design/rebuild-by-designs-enduring-legacy_o" target="_blank">Rebuild by Design</a> program is leveraging the skills of architects and planners to strengthen the coastlines of <span id="mention-1" class="mention place" about="Connecticut">Connecticut</span>, <span id="mention-3" class="mention place" about="New York">New York</span>, and <span id="mention-1" class="mention place" about="New Jersey">New Jersey</span> in the wake of Hurricane Sandy. A similar initiative, <a href="http://www.resilientbayarea.org/" target="_blank">Resilient by Design</a>, is underway in the <span id="mention-1" class="mention place" about="San Francisco">San Francisco</span> Bay area.</p>
+                <p>Transformation is already beginning to occur at the regional, state, and local levels. Individual projects such as <span id="mention-1" class="mention organization" about="ZGF">ZGF</span> Architects’ <a href="https://www.architectmagazine.com/manufacturer/rocky-mountain-institute" target="_blank"><span id="mention-1" class="mention organization" about="Rocky Mountain Institute">Rocky Mountain Institute</span></a> headquarters in <span id="mention-1" class="mention place" about="Basalt">Basalt</span>, <span id="mention-1" class="mention place" about="Colorado">Colo.</span>, and the <span id="mention-1" class="mention organization" about="Miller Hull Partnership">Miller Hull Partnership</span>’s <span id="mention-1" class="mention organization" about="Bullit Center">Bullitt Center</span> in <span id="mention-1" class="mention place" about="Seattle">Seattle</span> demonstrate just how remarkably efficient buildings can be. (For insights into net-zero building, <a href="http://www.architectmagazine.com/practice/what-it-takes-to-go-net-zero_o" target="_blank">check this story out</a>.) On the resilience front, <a href="http://www.bbc.com/future/story/20170403-miamis-fight-against-sea-level-rise" target="_blank"><span id="mention-1" class="mention place" about="Miami">Miami Beach</span></a>, <span id="mention-2" class="mention place" about="Florida">Fla.</span>, contending with the rising Atlantic, is spending $400 million to $500 million to install pumps and raise sea walls, sidewalks, and roads. With water levels having plummeted in the massive <span id="mention-1" class="mention place" about="Lake Mead">Lake Mead</span> reservoir during the 2011–17 drought, the  <span id="mention-1" class="mention organization" about="Southern Nevada Water Authority">Southern <span id="mention-2" class="mention place" about="Nevada">Nevada</span> Water Authority</span> is spending nearly $1.5 billion on a new, lower intake tunnel to ensure that the <a href="https://www.cbsnews.com/news/las-vegas-uncaps-lake-meads-third-straw-for-water-supply" target="_blank"><span id="mention-1" class="mention place" about="Las Vegas">Las Vegas</span></a> metro area’s 2 million residents don’t go thirsty. And the <a href="http://www.architectmagazine.com/design/rebuild-by-designs-enduring-legacy_o" target="_blank">Rebuild by Design</a> program is leveraging the skills of architects and planners to strengthen the coastlines of <span id="mention-1" class="mention place" about="Connecticut">Connecticut</span>, <span id="mention-3" class="mention place" about="New York">New York</span>, and <span id="mention-1" class="mention place" about="New Jersey">New Jersey</span> in the wake of Hurricane Sandy. A similar initiative, <a href="http://www.resilientbayarea.org/" target="_blank">Resilient by Design</a>, is underway in the <span id="mention-1" class="mention place" about="San Francisco">San Francisco</span> Bay area.</p>
 
                 <p>Without too much imaginative effort, one can see such efforts coalescing into a heroic nationwide enterprise, like the all-encompassing <a href="https://newrepublic.com/article/135684/declare-war-climate-change-mobilize-wwii" target="_blank">mobilization</a> of the <span id="mention-14" class="mention place" about="United States">U.S.</span> economy at the start of World War II. Except this time the threat doesn’t come from overseas. It’s all around us: our dangerous way of living and building in the world. Rethinking the design, construction, operation, and dismantling of buildings in order to mitigate climate change and increase resilience toward its effects is the most important, and exciting, undertaking that architects of this era will likely experience in their careers. Architecture must change with the climate, and change now, in order for humanity to survive, and hopefully thrive.</p>
               </div>
@@ -630,7 +628,7 @@
 
 
           <!-- article-2 -->
-          <div class="col-lg-3 col-md-12 d-none d-lg-block p-0" id="article-2">
+          <div class="col-lg-3 col-md-12 p-0" id="article-2">
             <div class="card">
               <div class="card-header">
                 <h5 class="card-title p-3 block-effect"  id="title-bigger2">
@@ -824,7 +822,7 @@
           <!-- article 2 end -->
 
           <!-- article 3 -->
-          <div class="col-lg-3 col-sm-12 d-none d-lg-block p-0" id="article-3">
+          <div class="col-lg-3 col-md-12 p-0" id="article-3">
             <div class="card"  >
               
               <div class="card-header">
@@ -941,7 +939,7 @@
           </div>
 
          <!-- METADATA VIEWER START -->
-         <div id="metadata" class="col-md-3 d-none d-md-block p-0 m-0 overflow-auto">
+         <div id="metadata" class="col-md-3 d-none d-lg-block p-0 m-0 overflow-auto">
           <div class="card" id="metadata-style">
             <h5 class="card-title p-3">About the articles</h5>
             <div class="card-body overflow-auto p-0">
@@ -981,6 +979,7 @@
                                 <li><span onclick="highlightData(1, this)" class="people-nav">Greg Abbot: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="people-nav">Jennifer González-Colón: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="people-nav">Rex Tillerson: 1 <span ></span></span></li>
+                                <li><span onclick="highlightData(1, this)" class="places-nav">Eric Schneiderman: 1 <span ></span></span></li>
                               </ul>
                             </div>
                             <div class="tab-pane fade" id="article-1-places" role="tabpanel" aria-labelledby="profile-tab">
@@ -994,7 +993,7 @@
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Citibank: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Colorado: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Connecticut: 1 <span ></span></span></li>
-                                <li><span onclick="highlightData(1, this)" class="places-nav">Eric Schneiderman: 1 <span ></span></span></li>
+                                
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Florida: 2 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Greenland: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Houston: 3 <span ></span></span></li>
@@ -1005,7 +1004,7 @@
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Los Angeles: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Louisiana: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Miami: 2 <span ></span></span></li>
-                                <li><span onclick="highlightData(1, this)" class="places-nav">Miami Beach: 1 <span ></span></span></li>
+                        
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Missouri: 1 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">Nevada: 2 <span ></span></span></li>
                                 <li><span onclick="highlightData(1, this)" class="places-nav">New Jersey: 1 <span ></span></span></li>
@@ -1042,7 +1041,7 @@
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Defense Department: 1 <span ></span></span></li>
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">ExxonMobil: 2 <span ></span></span></li>
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Goldman Sachs: 1 <span ></span></span></li>
-                                  <li><span onclick="highlightData(1, this)" class="organizations-nav">Miami: 1 <span ></span></span></li>
+                                 
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Miller Hull Partnership: 1 <span ></span></span></li>
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Rocky Mountain Institute: 1 <span ></span></span></li>
                                   <li><span onclick="highlightData(1, this)" class="organizations-nav">Science Advances: 1 <span ></span></span></li>

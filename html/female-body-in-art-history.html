@@ -68,18 +68,18 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation" id="hide-md-btn-off">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#metadata" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation" id="hide-md-btn-off">
             About the articles
           </button>
           <!-- togglers end  -->
           
           <!-- offcanvas start  -->
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas offcanvas-end overflow-auto" tabindex="-1" id="metadata" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
               <h5 id="offcanvasRightLabel">About the articles</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body" id="metadata-style">
              <!-- accordion start -->
              <div class="accordion accordion-flush" id="accordionFlushOffCanvas">
               <div class="accordion-item">
@@ -968,7 +968,7 @@
 
   <!-- metadata viewer start -->
  
-  <div id="metadata" class="col-md-3 d-none d-md-block p-0 m-0 overflow-auto">
+  <div id="metadata" class="col-md-3 d-none d-lg-block p-0 m-0 overflow-auto">
     <div class="card" id="metadata-style">
       <h5 class="card-title p-3">About the articles</h5>
       <div class="card-body overflow-auto p-0">
