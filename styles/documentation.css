@@ -13,6 +13,18 @@
     height: unset !important;
 }
 
+.nav-pills{
+    max-width: inherit !important;
+}
+
+#menu-card .nav-link{
+    font-size: 2.5vh;
+}
+
+li .nav-item, a.nav-link{
+    font-size: 2.5vh;
+}
+
 .scrollspy {
     height: 87vh;
     overflow-y: scroll;
@@ -128,6 +140,7 @@ h5{
 
 img{
     max-height: 250px;
+    max-width: 100vh;
 }
 
 .img-txt{
@@ -172,6 +185,7 @@ img{
 
 .try-style#enable-renaissance:hover{
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     background-image: linear-gradient(rgba(0,0,0,0.1)0%,rgba(0,0,0,0.1)100%),url(/images/Renaissance/nav-decor.png);
     background-size: 20vh;
     -webkit-text-fill-color: transparent;
@@ -187,6 +201,7 @@ img{
 
 .try-style#enable-secession:hover{
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     background-image: url(/images/art-nouveau/four-bg.png);
     background-size: 40vh;
     -webkit-text-fill-color: transparent;
@@ -201,6 +216,7 @@ img{
 
 .try-style#enable-eighty:hover{
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     background-image: url(/images/1980s/vhs-nav.png);
     background-size: 2vh;
     -webkit-text-fill-color: transparent;
@@ -234,6 +250,17 @@ img{
 .color-secession p, .color-secession .color-square:first-of-type{
     margin-left:5rem;
 }
+
+.color-80 .color-square{
+    width: 4rem;
+    padding: 6rem; 
+    margin: 0;
+}
+.color-80 p, .color-80 .color-square:first-of-type{
+    margin-left: 2rem;
+}
+
+
 
 @media (max-width: 1200px){
     #menu-card .navbar-brand{

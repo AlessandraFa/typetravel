@@ -1,20 +1,17 @@
 @import "/styles/themes/components/dropdown.css";
 @import "/styles/home.css";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
 
 @font-face {
     font-family: future;
     src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
 }
-@font-face {
-    font-family: f1;
-    src: url("/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
-}
+
 @font-face {
     font-family: f1bold;
     src: url("/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
 }
+
 @font-face {
     font-family: intro;
     src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
@@ -22,13 +19,13 @@
 
 
 body{
-    font-family: "intro", future, f1, monospace;
+    font-family: "intro", "future", "Josefin Sans", monospace;
     background-color: black;
     color: white;
 }
 
 h2{
-    font-family: "intro", future, f1, monospace;
+    font-family: "intro", "future", "Josefin Sans", monospace;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -63,7 +60,7 @@ code{
   
 /*NAVBAR*/
 .navbar{
-    font-family: "intro", future, f1, monospace;    
+    font-family: "intro", "future", "Josefin Sans", monospace;    
     text-transform: lowercase;
     font-weight: 300;
     background-color: #000000 !important;
@@ -169,7 +166,7 @@ code{
 /*FIRST*/
 h1{
     padding-top: 20vh !important;
-    font-family: "intro", future, f1, monospace;
+    font-family: "intro", "future", "Josefin Sans", monospace;
 }
 
 #first{
@@ -229,7 +226,7 @@ h1{
 
 #btn-themes{
     background-color: #000000;
-    font-family: "intro", future, f1, monospace;
+    font-family: "intro", "future", "Josefin Sans", monospace;
     color: white;
     border-radius: 0;
     border: none;
@@ -242,7 +239,7 @@ h1{
 
 #btn-issues{
     background-color: #000000;
-    font-family: "intro", future, f1, monospace;
+    font-family: "intro", "future", "Josefin Sans", monospace;
     color: white;
     border-radius: 0;
     border: none;
@@ -296,7 +293,7 @@ h1{
 
 .btn-third{
     background-color: #000000;
-    font-family: "intro", future, f1, monospace;    
+    font-family: "intro", "future", "Josefin Sans", monospace;    
     color: white;
     border-radius: 0;
     border: none;
@@ -346,7 +343,7 @@ h1{
 
 .issue-description{
     font-size: 3vh !important;
-    font-family: f1;
+    font-family: "Josefin Sans", "future", monospace;
     letter-spacing: 0.05rem;
 }
 

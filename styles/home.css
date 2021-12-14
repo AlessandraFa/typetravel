@@ -66,7 +66,7 @@ body{
 }
 
 .dropdown-item{
-    font-size: 3.5vh;
+    font-size: 3vh;
 }
 
 /*BUTTONS*/
@@ -707,18 +707,15 @@ p {
     }
     
     /*FAB*/
-    .fab-container .fab::before {
-        height: 25px;
-        width: 25px;
-    }
+
     .fab-container .fab{
-        height: 50px;
-        width: 50px;
+        height: 12vh;
+        width: 12vh;
     }
 
     .fab-container .sub-button{
-        height: 40px;
-        width: 40px;
+        height: 10vh;
+        width: 10vh;
         bottom: 0;
         right: 6px;
     }
@@ -976,6 +973,10 @@ p {
     #second p{
         font-size: 3vh;
         padding: 0 2rem 0 2rem;
+    }
+
+    #about-proj p{
+        font-size: 3vh;
     }
 
     #btn-themes, #btn-issues{

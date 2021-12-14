@@ -1,16 +1,13 @@
 @import url("/styles/themes/components/fab.css");
 @import url("/styles/themes/components/dropdown.css");
 @import url("/styles/themes/components/sizingNavbar.css");
-@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
 
 @font-face {
     font-family: future;
     src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
 }
-@font-face {
-    font-family: f1;
-    src: url("/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
-}
+
 @font-face {
     font-family: f1bold;
     src: url("/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
@@ -86,7 +83,7 @@ code{
 }
 
 .navbar-brand{
-    font-family: intro, monospace !important;
+    font-family: "intro", monospace !important;
     color: #FFFFFF !important; 
     font-weight: bold;
     letter-spacing: 0.2em;
@@ -108,7 +105,7 @@ code{
 }
 
 .nav-link{
-    font-family: future, monospace;
+    font-family: "future", monospace;
     letter-spacing: 0.1em;
     color: #FFFFFF !important; 
     font-weight: bold;
@@ -133,7 +130,7 @@ code{
 .dropdown-item{
     background-color:rgb(0, 0, 0);
     color: #D3D3D3;
-    font-family: intro, monospace;
+    font-family: "intro", monospace;
     font-weight: bold;
     letter-spacing: 0.1em;
 }
@@ -189,7 +186,7 @@ code{
 
 .card-subtitle{
     font-size: 2.5vh;
-    font-weight: bold;
+    font-weight: 300;
     letter-spacing: 0.1em;
 }
 
@@ -216,17 +213,18 @@ code{
     display: flex;
     flex-direction: column;
     min-width: 0;
-    height: 90vh;
+    height: 92vh;
     word-wrap: break-word;
     background-clip: border-box;
     overflow: auto;
     border: transparent!important;
     border-radius: 0 !important;
-    font-family: f1, monospace;
-    font-size: 14pt;
-    line-height: 16pt;
-    letter-spacing: 0.2pt;
+    font-family: "Josefin Sans", monospace;
+    font-size: 2.5vh;
+    line-height: 1.25;
+    letter-spacing: 0.1rem;
     color:#fff;      
+    font-weight: 200;
 }
 
 .card-body{
@@ -236,7 +234,7 @@ code{
 
 h4{
     color:black;
-    font-family: f1bold, monospace;
+    font-family: "f1bold", monospace;
     text-transform: uppercase;
 }
 
@@ -357,7 +355,7 @@ img:before{
 .accordion-button{
     background-color: white;
     border: none !important;
-    font-family: future, monospace;
+    font-family: "future", monospace;
 }
 
 .accordion-item{
@@ -461,7 +459,7 @@ img:before{
 }
   
 #hide-md-btn-off{
-      font-family: future;
+      font-family: "future", "monospace";
       text-transform: uppercase;
       color: white;
 }

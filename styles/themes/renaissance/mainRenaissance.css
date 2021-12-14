@@ -86,12 +86,12 @@ body{
 }
 
 .navbar-nav{
-    margin-left: 1rem;
+    margin-left: -8rem;
 }
 
 .nav-link{
     text-transform: uppercase;
-    font-size: 3vh;
+    font-size: 2.6vh !important;
     color: #474747    !important;  
     margin-bottom: 0 !important;
     padding: 0.5rem;
@@ -244,7 +244,7 @@ body{
 
 .card-subtitle{
     text-align: justify;
-    font-size: 2.6vh;
+    font-size: 2.35vh;
     padding: 0 !important;
     margin-top: 0.5rem !important;
 }
@@ -463,8 +463,8 @@ img{
 /*SHAPING SUBTITLE AS TRIANGLE*/
 #rl1,
 #rr1 {
-    width: 45%;
-    height: 25vh;
+    width: 45% !important;
+    height: 25vh !important;
 }
 
 .col-lg-4 #rl1, .col-lg-4 #rr1{
@@ -474,8 +474,8 @@ img{
 
 #rl2,
 #rr2 {
-    width: 45%;
-    height: 32vh;
+    width: 45% !important;
+    height: 32vh !important;
 }
 
 .col-lg-4 #rl2, .col-lg-4 #rr2{
@@ -703,6 +703,7 @@ body,
     background-size: 3vh !important;
 }
 
+
 /*MEDIA QUERIES*/
 @media (min-width: 1200px) and (max-width: 1400px){
   .card-header{
@@ -791,8 +792,8 @@ body,
   /*SHAPING SUBTITLE AS TRIANGLE*/
   #rl1,
   #rr1 {
-      width: 45%;
-      height: 22vh;
+      width: 45% !important;
+      height: 28vh !important;
   }
 
   .col-lg-4 #rl1, .col-lg-4 #rr1{

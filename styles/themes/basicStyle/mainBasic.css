@@ -45,12 +45,7 @@ code{
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
     color: black;
-    font-size: 14pt;
-}
-
-.navbar-dark .navbar-brand{
-    color: black;
-    font-size: 16pt;
+    font-size: 2.3vh;
 }
 
 .navbar-brand{

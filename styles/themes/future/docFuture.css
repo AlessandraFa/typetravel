@@ -1,6 +1,7 @@
-@import url(/styles/themes/components/fab.css);
-@import url(/styles/themes/components/sizingNavbar.css);
-@import url(/styles/documentation.css);
+@import url("/styles/themes/components/fab.css");
+@import url("/styles/themes/components/sizingNavbar.css");
+@import url("/styles/documentation.css");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
 
 @font-face {
     font-family: future;
@@ -22,7 +23,7 @@
 body{
     background-color: black;
     color: white;
-    font-family: f1, monospace;
+    font-family: "Josefin Sans", monospace;
 }
 
 button{
@@ -160,6 +161,9 @@ code{
 }
 #main-background p{
     font-size: 2.5vh !important;
+    font-weight: 200;
+    line-height: 1.25;
+    letter-spacing: 0.1rem;
 }
 h2,h3,h4,h5,h6{
     text-transform: uppercase;
@@ -234,6 +238,45 @@ h5{
 .btn-lmode{
     display: none;
 }
+
+#logo-docu{
+    padding: 5vh;
+    height: 12vh;
+    background-image: url("/images/icons/T-future-dark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#metadata-docu{
+    height: 500px;
+    width: 500px;
+    background-image: url("/images/Documentation/metadata-docu-futdark.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#large-docu{
+    height: 500px;
+    width: 800px;
+    background-image: url("/images/Documentation/large-future.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fab-docu{
+    height: 400px;
+    width: 180px;
+    background-image: url("/images/Documentation/fab-futdark.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 20vh;
+}
+
 
 /*FAB*/
 .fab-content, .fab-shadow, .sub-button, .fab{

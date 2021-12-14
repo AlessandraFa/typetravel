@@ -1,15 +1,11 @@
-@import url(/styles/themes/components/fab.css);
-@import url(/styles/themes/components/sizingNavbar.css);
-@import url(/styles/documentation.css);
+@import url("/styles/themes/components/fab.css");
+@import url("/styles/themes/components/sizingNavbar.css");
+@import url("/styles/documentation.css");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
 
 @font-face {
     font-family: future;
     src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
-}
-
-@font-face {
-    font-family: f1;
-    src: url("/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
 }
 
 @font-face {
@@ -21,7 +17,7 @@
 body{
     background-color: black;
     color: white;
-    font-family: f1, monospace;
+    font-family: "Josefin Sans", monospace;
 }
 
 /*LINKS, SELECTION, CODE*/

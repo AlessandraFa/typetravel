@@ -220,6 +220,44 @@ h5{
     text-transform: uppercase;
 }
 
+#logo-docu{
+    padding: 5vh;
+    height: 12vh;
+    background-image: url("/images/icons/t-1980s.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#metadata-docu{
+    height: 500px;
+    width: 500px;
+    background-image: url("/images/Documentation/metadata-docu-1980s.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#large-docu{
+    height: 500px;
+    width: 800px;
+    background-image: url("/images/Documentation/large-1980s.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#fab-docu{
+    height: 400px;
+    width: 180px;
+    background-image: url("/images/Documentation/fab-1980s.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 20vh;
+}
 
 /*FAB*/
 .fab-content, .fab-shadow, .sub-button, .fab{

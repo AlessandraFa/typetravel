@@ -142,6 +142,7 @@ code{
     text-transform: uppercase;
     color: white !important;
     font-weight: 500;
+    font-size: 16vh;
 }
 
 #first #travel{
@@ -203,6 +204,10 @@ code{
 
 #about-proj{
     padding: 0 5rem 0 5rem;
+}
+
+#about-proj p{
+    font-size: 3.5vh;
 }
 
 #btn-themes{
@@ -481,4 +486,10 @@ footer p{
 :root{
     --time-color: black;
     --time-transition: ease-in-out 0.3s;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    #about-proj p{
+        font-size: 3vh;
+    }
 }

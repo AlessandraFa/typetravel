@@ -1,20 +1,18 @@
 @import "/styles/themes/components/dropdown.css";
 @import "/styles/themes/components/sizingNavbar.css";
 @import url("/styles/themes/components/fab.css");
-@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
 
 @font-face {
     font-family: future;
     src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
 }
-@font-face {
-    font-family: f1;
-    src: url("/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
-}
+
 @font-face {
     font-family: f1bold;
     src: url("/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
 }
+
 @font-face {
     font-family: intro;
     src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
@@ -93,13 +91,12 @@ code{
 }
 
 #capT{
-    background-image: url(/images/icon.png);
-    background-size: 7.5vh;
+    background-image: url(/images/icons/T-future-light.svg);
+    background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center;
     height: 10vh;
-    padding: 2.3rem;  
-    font-size:35pt;
+    padding: 2rem;  
 }
 
 .nav-link{
@@ -179,8 +176,8 @@ code{
 }
 
 .card-subtitle{
-    font-size: 14pt;
-    font-weight: bold;
+    font-size: 2.5vh;
+    font-weight: 400;
     letter-spacing: 0.1em;
 }
 
@@ -207,18 +204,18 @@ code{
     display: flex;
     flex-direction: column;
     min-width: 0;
-    height: 90vh;
+    height: 92vh;
     word-wrap: break-word;
     background-clip: border-box;
     overflow: auto;
     border: transparent!important;
     border-radius: 0 !important;
-    background-color: rgb(255, 255, 255);
-    font-family: f1, monospace;
-    font-size: 14pt;
-    line-height: 16pt;
-    letter-spacing: 0.2pt;
-    color:black;
+    font-family: "Josefin Sans", monospace;
+    font-size: 2.5vh;
+    line-height: 1.25;
+    letter-spacing: 0.1rem;
+    color: black; 
+    font-weight: 300; 
 }
 
 .card-body{
@@ -227,8 +224,8 @@ code{
 }
 
 h4{
-    color:rgb(0, 0, 0);
-    font-family: f1bold, monospace;
+    color:black;
+    font-family: "f1bold", monospace;
     text-transform: uppercase;
 }
 

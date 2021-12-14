@@ -35,17 +35,17 @@ code{
     background-color: #83c0cf !important;
 }
   
-.navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
+    color: black;
+    font-size: 2.3vh;
+}
+
+li .nav-item, a.nav-link{
     color: black !important;
-    font-size: 3vh;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: #83c0cf !important;
-}
-
-#it1, #it2{
-    background-color: #83c0cf !important;
+    background-color: transparent;
 }
 
 .dropdown-menu{
@@ -92,6 +92,7 @@ code{
     height: unset !important;
     margin-top: 1rem;
     background-color: #a8ddeb !important;
+    font-size: 3vh;
 }
 
 #menu-card .navbar-brand,h1,h2,h3,h4,h5,h6{
@@ -101,8 +102,10 @@ code{
     color: #83c0cf;
     letter-spacing: 0;
 }
+
 #menu-card .nav-link{
-    color: rgba(0,0,0,0.5)
+    color: rgba(0,0,0,0.5);
+    max-width: inherit;
 }
 #menu-card .navbar-brand{
     color: black;
@@ -124,8 +127,46 @@ h5{
     height: 85vh !important;
 }
 
-.nav-link{
+#menu-card .nav-link{
     text-transform: uppercase !important;
+}
+
+#logo-docu{
+    padding: 5vh;
+    height: 12vh;
+    background-image: url("/images/icons/T-basic.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#metadata-docu{
+    height: 500px;
+    width: 500px;
+    background-image: url("/images/Documentation/metadata-docu.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#large-docu{
+    height: 500px;
+    max-width: 800px;
+    background-image: url("/images/Documentation/large-basic.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fab-docu{
+    height: 400px;
+    width: 180px;
+    background-image: url("/images/Documentation/fab-basic.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 20vh;
 }
 
 /*FAB*/
