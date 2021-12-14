@@ -140,7 +140,7 @@ h5{
 
 img{
     max-height: 250px;
-    max-width: 100vh;
+    max-width: 100vh !important;
 }
 
 .img-txt{
