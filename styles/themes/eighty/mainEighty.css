@@ -316,6 +316,7 @@ h4{
     background-color: #CD3C37;
     border: 2px solid black;
 }
+
 ::-webkit-scrollbar:horizontal{
     display: none;
 }
