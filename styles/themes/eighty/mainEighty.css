@@ -128,6 +128,14 @@ code{
     border: 2px inset white !important;
 }
 
+#hide-md-btn-off{
+    text-transform: uppercase !important;
+}
+
+#hide-md-btn-off:hover{
+    color: white;
+}
+
 #hide-md-btn:hover{
     background-color: #5e4b9a !important;
 }

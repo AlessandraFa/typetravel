@@ -30,6 +30,7 @@ code{
 }
   
 /*NAVBAR*/
+/*NAVBAR*/
 .navbar{
     font-family: "cousine", Courier, monospace;
     text-transform: lowercase;
@@ -37,34 +38,17 @@ code{
     background-color: #83c0cf !important;
 }
   
-.navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link{
+    color: black;
+    font-size: 2.3vh;
+}
+
+li .nav-item, a.nav-link{
     color: black !important;
-    font-size: 3vh;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: #83c0cf !important;
-}
-
-.navbar-brand{
-    font-family: "montserrat", Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 3vh !important;
-    letter-spacing: 0.4rem;
-    font-weight: bold;
-}
-  
-#capT{
-    background-image: url(/images/icons/T-future-light.svg);
-    background-size: 5vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 10vh;
-    padding: 2rem;
-}
-
-#it1, #it2{
-    background-color: #83c0cf !important;
+    background-color: transparent;
 }
 
 .dropdown-menu{
@@ -77,16 +61,32 @@ code{
 }
 
 .modal-header, .discl-basic .modal-footer{
-    background-color: #83c0cf;
+  background-color: #83c0cf;
 }
 .modal-title{
-    color: black !important;
+  color: black !important;
 }
 
 .modal-footer .btn{
-    background-color: transparent;
-    border: none;
-    color: black;
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+.navbar-brand{
+  font-family: "montserrat", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 3vh !important;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+}
+
+#capT{
+  background-image: url(/images/icons/T-future-light.svg);
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10vh;
+  padding: 2rem;
 }
 
 /*PAGE CONTENT*/

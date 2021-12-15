@@ -55,7 +55,7 @@ code{
     color: white !important;
     font-size: 26pt !important;
     text-transform: uppercase;
-    font-family: vcr, vt323, monospace;
+    font-family: "vcr", "vt323", monospace;
     margin-left: 1.5rem;
     text-shadow: 4px -4px 12px #d3d3d3,-4px 4px 12px #bebebe;
 }
@@ -73,7 +73,7 @@ code{
     padding: 0 1rem 0 1rem !important;
     line-height: 9vh;
     font-size: 10vh;
-    font-family: vcr, vt323, monospace;
+    font-family: "vcr", "vt323", monospace;
     color: white !important;
     text-shadow: 4px -4px 10px #d8d8d8,-4px 4px 10px #bebebe;
 }
@@ -101,7 +101,7 @@ code{
 
 .dropdown-item{
     color: white !important;
-    font-family: vcr, vt323, monospace;
+    font-family: "vcr", "vt323", monospace;
 }
 
 .dropdown-item:hover{
@@ -204,6 +204,7 @@ code{
     font-family: "special";
     font-size: 22vh;
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     background-image: url(/images/1980s/vhs-navb.png);
     background-size: 20vh;
     -webkit-text-fill-color: transparent;
@@ -213,7 +214,7 @@ code{
 
 #first h2{
     color: #B24978;
-    font-family: "vcr";
+    font-family: "vcr", "vt323", monospace;
     text-align: center;
     font-size: 6vh;
     text-shadow: 2px -2px 10px #7a2e66,
@@ -343,6 +344,7 @@ code{
 #themes-text{
     text-align: left;
     text-transform: uppercase;
+    font-size: 3.5vh;
 }
 
 #third p{
@@ -439,6 +441,7 @@ code{
     padding: 0 7rem 0 7rem;
     text-transform: uppercase;
     text-shadow: 4px -2px 10px #97b1fa,-4px 4px 10px #8792fa;
+    font-size: 3.5vh;
 }
 
 #card-iss1{
@@ -461,7 +464,7 @@ code{
     color: white;
     margin: 3rem;
     margin-bottom: 0;
-    padding: 1rem !important;
+    padding: 0.5rem !important;
     text-transform: uppercase;
 }
 
@@ -469,6 +472,7 @@ code{
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 0 !important;
+    margin-top: 1rem !important;
 }
 
 .issue-description{
@@ -483,7 +487,7 @@ code{
     color: rgba(255,255,255,0.8);
     border: none;
     font-size: 4vh;
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-transform: uppercase;
 }
 
@@ -502,8 +506,13 @@ footer{
     background-image:linear-gradient(to bottom, rgba(9, 3, 17, 1) 0%, rgba(15, 3, 31, 1)50%,rgb(70, 19, 17) 80%, rgba(129, 28, 25, 0.9) 95%, rgba(222, 62, 56, 1) 100%);
 }
 
-footer p{
-    font-size: 3vh;
+
+#footer-left, #footer-right{
+    width: 10% !important;
+}
+
+.info-footer, .contacts{
+    width: 40% !important;
 }
 
 .info-footer, .contacts, footer a{
@@ -514,6 +523,9 @@ footer p{
     height:auto;
     text-transform: uppercase;
     text-decoration-style: dotted;
+}
+
+.info-footer p, .contacts p, footer a{
     font-size: 3vh;
 }
 
@@ -625,10 +637,6 @@ footer a{
     }
     .navbar-brand{
         font-size: 5vh !important;
-    }
-
-    #navbarNavDropdown{
-        background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%),  url(/images/1980s/gltch.gif) !important;
     }
 
     /*FIRST SECTION*/
@@ -751,7 +759,7 @@ footer a{
         width: auto;
     }
 
-    #fourth p{
+    #issue-text{
         font-size: 3vh;
         text-align: justify;
         padding: 3rem !important;
@@ -1184,6 +1192,11 @@ footer a{
   
 }
 
+@media (max-width: 992px){
+    .navbar, #navbarNavDropdown{
+        background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%),  url(/images/1980s/gltch.gif) !important;
+    }
+}
 @media (min-width: 992px) and (max-width: 1200px){
     /*NAVBAR*/
     .navbar{
@@ -1336,14 +1349,15 @@ footer a{
 
     .issue-description{
         margin: 0 !important;
-        padding-bottom: 0 !important;
-        font-size: 4vh !important;
+        padding-bottom: 0.5rem !important;
+        font-size: 3vh !important;
     }
 
     .see-article{
-        margin: 0 !important;
-        padding: 0 !important;
         font-size: 5vh !important;
+        position: absolute;
+        left: 12vh;
+        bottom: 5vh;
     }
 
     /*FOOTER*/

@@ -501,6 +501,9 @@ body,
 .all-articles .larger:hover .accordion-item{
     background-color: white;
 }
+.all-articles .larger:hover ::-webkit-scrollbar-track{
+    background-color: rgb(230, 230, 230);
+}
 
 .all-articles .larger:hover .infoButton{
     background-color: white !important;
@@ -549,6 +552,18 @@ body,
     .card-header{
         min-height: auto !important;
     }
+    .all-articles .larger:hover .card-header{
+        min-height: 18vh !important;
+    }
+    body, 
+    .all-articles:hover .larger .card-header, 
+    .all-articles:hover .larger .card-body, 
+    .all-articles:hover .larger .subtitle,
+    .all-articles:hover .larger .accordion-body,
+    .all-articles:hover .larger ::-webkit-scrollbar-track,
+    .all-articles:hover .larger .accordion-header{
+    background-color: white;
+}
 }
 
   /* questo lo avevo fatto io per il comportamento responsive dei bottoni che compaiono */ 

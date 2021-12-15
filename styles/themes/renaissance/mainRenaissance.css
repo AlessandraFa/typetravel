@@ -1071,10 +1071,6 @@ body,
     font-size: 3.5vh;
 }
 
-.card-body p{
-    padding: 1rem;
-}
-
 .all-articles .larger:hover .issue-fem #rl1,
 .all-articles .larger:hover .issue-fem #rr1,
 .all-articles .larger:hover .issue-fem #rl2,

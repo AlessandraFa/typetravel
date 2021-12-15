@@ -73,7 +73,7 @@
     font-weight: normal;
 }
 
-.fab-container #enable-future:hover, .dropdown-menu #enable-future:hover{
+.dropdown-menu #enable-future:hover{
     font-family: "intro";
     text-transform: uppercase;
     background-color: black !important;

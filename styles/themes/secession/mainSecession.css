@@ -636,7 +636,3 @@ body,
     font-size: 6vh;
 }
 }
-
-
-/* IMPORT bootstrap scss*/
-@import "../node_modules/bootstrap/scss/bootstrap.scss";

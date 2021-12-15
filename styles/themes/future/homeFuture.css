@@ -87,7 +87,6 @@ code{
     background-repeat: no-repeat;
     background-position: center;
     height: 10vh;
-    padding: 2rem;  
 }
 
 .navbar-brand:hover{
@@ -328,7 +327,7 @@ h1{
 }
 
 #tt1, #tt2{
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: bold !important;
     background-color: black;
     color: white;
@@ -356,7 +355,7 @@ h1{
     color: white;
     border: none;
     font-size: 3vh;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .see-article:hover{
@@ -376,16 +375,25 @@ footer{
     padding-top: 4rem;
 
 }
-footer p, 
-.contacts{
-    font-size: 3vh;
-    padding-left: 2rem;
 
-}
 
 footer p{
     text-align: right;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+
+footer p, .contacts, #discl, #cp{
+    font-size: 2vh !important;
+    padding-left: 2rem;
+}
+
+
+#footer-left, #footer-right{
+    width: 10% !important;
+}
+
+.info-footer, .contacts{
+    width: 40% !important;
 }
 
 #cp{
@@ -423,6 +431,40 @@ footer p{
     .navbar-toggler-icon{
         background-color: rgba(255, 255, 255, 0.2) !important;
     }
+    #first h1{
+        padding-top: 15vh !important;
+        font-size: 8vh !important;
+    }
+    #first h2{
+        font-size: 5vh !important;
+    }
+    #about-proj{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #second .btn{
+        font-size: 3vh !important;
+    }
+
+    #about-proj p{
+
+        font-size: 3vh !important; 
+    }
+    .see-article{
+        left: 40vh !important;
+    }
+    #third p{
+        font-size: 3vh !important;
+    }    
+    #third .card-body .btn{
+        font-size: 3vh !important;
+    }
+
+    #issue-text{
+        font-size: 3vh;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 992px){
     #third p{
@@ -431,11 +473,26 @@ footer p{
     .navbar-toggler-icon{
         background-color: rgba(255, 255, 255, 0.2) !important;
     }
+    #tt1,#tt2{
+        margin: 0 !important;
+    }
 }
 
 @media (max-width: 1200px){
     .dropdown-item, .dropdown-menu{
         background-color: black !important;
+    }
+    .title-text, .see-article{
+        font-size: 3vh !important;
+    }
+    .see-article{
+        position: absolute !important;
+        left: 20vh !important;
+        right: 20vh !important;
+        bottom: 3vh !important;
+    }
+    #tt1,#tt2{
+        margin-bottom: 0 !important;
     }
 }
 

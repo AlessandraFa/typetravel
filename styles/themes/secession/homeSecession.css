@@ -223,8 +223,8 @@ code{
 }
 
 #project-description{
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     font-size: 4vh;
     background: transparent !important;
     color: #957025;
@@ -265,7 +265,7 @@ code{
 
 /*FURTHER SECTIONS*/
 h2{
-    font-family: "secession", "Amarante", Georgia, serif;
+    font-family: "secession", "amarante",Georgia, serif;
     text-transform: uppercase;
     text-align: center;
 }
@@ -363,8 +363,8 @@ h2{
     background-position: center bottom !important;
 }
 
-#fourth p{
-    padding: 2rem 12rem 2rem 12rem !important;
+#issue-text{
+    padding: 0 12rem 0 12rem !important;
 }
 
 .fadedbox{
@@ -376,22 +376,27 @@ h2{
     font-weight: bold !important;
     background-color: transparent;
     color: white;
-    margin: 3rem;
+    margin: 2rem 1rem 0 1rem;
     padding: 1rem !important;
 }
 
 #tt2{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
     margin-bottom: 0 !important;
 }
 
 .issue-description{
     padding-top: 0 !important;
-    font-size: 3vh !important;
+    font-size: 3.5vh !important;
+    line-height: 1.25;
     font-family: "golden type", "della respira", georgia, serif;
     letter-spacing: 0.05rem;
     color: white;
+}
+
+.issue{
+    margin-top: 0 !important;
 }
 
 .see-article{
@@ -401,7 +406,7 @@ h2{
     font-size: 4vh;
     margin-top: 2rem;
     text-transform: uppercase;
-    font-family: secession;
+    font-family: "secession", "amarante", georgia, serif;
 }
 
 .see-article:hover{
@@ -416,7 +421,8 @@ h2{
 
 /*FOOTER*/
 footer p, .contacts{
-    font-size: 20pt;
+    font-size: 3.5vh;
+    line-height: 1.25;
     padding: 8vh 3vh 8vh 3vh;
 }
 
@@ -478,10 +484,6 @@ footer p{
     /*NAVBAR*/
     .navbar-brand{
         font-size: 5vh !important;
-    }
-
-    #navbarNavDropdown{
-        background-color: #FFFFF5 !important;
     }
 
     /*FIRST SECTION*/
@@ -740,7 +742,6 @@ footer p{
         margin-top: 0 !important;
         margin-bottom: 1rem;
     }
-
     
     #tt1{
         font-size: 3vh;
@@ -763,7 +764,7 @@ footer p{
     }
 
     .see-article{
-        margin: 0 !important;
+        margin: 4rem 0 0 0 !important;
         padding: 0 !important;
         font-size: 5vh !important;
     }
@@ -918,8 +919,8 @@ footer p{
 
     .issue-description{
         margin: 0 !important;
-        padding-bottom: 0 !important;
-        font-size: 4vh !important;
+        padding-bottom: 1rem !important;
+        font-size: 3vh !important;
     }
 
     .see-article{
@@ -949,6 +950,9 @@ footer p{
 }
 
 @media (max-width: 992px){
+    #navbarNavDropdown{
+        background-color: #FFFFF5 !important;
+    }
     #first{
         background: linear-gradient(to bottom, rgba(255,255,245, 0.9)0%, rgba(255,255,245, 0.9)100%), url("/images/art-nouveau/art-an.png");
         background-size: 30vh;

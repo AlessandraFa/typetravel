@@ -386,6 +386,7 @@ p {
     background-color: transparent;
 }
 
+
 /*FOOTER*/
 
 #discl{
@@ -461,7 +462,6 @@ p {
     right: 0;
     height: 12vh;
     width: 12vh;
-    background-color: #4ba2ff;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -469,7 +469,6 @@ p {
     cursor: pointer;
 }
 .fab-container .sub-button .material-icons {
-    color: white;
     padding-top: 6px;
 }
 
@@ -510,7 +509,7 @@ p {
 
 .fab-container #enable-future:hover{
     background: url(/images/Future/g25.gif) !important;
-    background-size: 10vh !important;
+    background-size: 12vh !important;
 }
 
 .sub-button:nth-child(6){
@@ -519,7 +518,6 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     font-size: 6vh;
-    color: white;
     text-decoration: none !important;
     height: 8vh !important;
     width: 8vh !important;
@@ -538,16 +536,12 @@ p {
 
 @media (max-width: 576px){
     /*NAVBAR*/
-    #navbarNavDropdown{
-        background: rgba(255, 255, 255, 0.3) !important;
-    }
     .navbar{
         height: 2rem;
     }
 
     #capT{
         height: 4vh !important;
-        padding: 0.5rem 1rem 0.5rem 1rem !important;
     }
 
     .navbar-toggler-icon{
@@ -556,9 +550,6 @@ p {
         background-size: 7vh;
     }
 
-    .dropdown-menu, .dropdown-item{
-        background: rgba(255, 255, 255, 0.3) !important;
-    }
     /*FIRST SECTION*/
     #first{
         height: auto;
@@ -627,7 +618,7 @@ p {
     }
 
     #third p{
-        font-size: 5vh !important;
+        font-size: 3vh !important;
     }
 
     #themes-text{
@@ -727,13 +718,10 @@ p {
 
 @media (min-width: 576px) and (max-width: 768px){
     /*NAVBAR*/
-    .navbar{
-        height: 3rem;
-    }
 
     #capT{
         height: 4vh !important;
-        padding: 0rem 1rem 0.5rem 1rem !important;
+        padding: 0rem 2rem 0.5rem 2rem !important;
     }
 
 
@@ -749,9 +737,6 @@ p {
         background-size: 7vh;
     }
 
-    .dropdown-menu, .dropdown-item{
-        background: rgba(255, 255, 255, 0.3) !important;
-    }
     /*FIRST SECTION*/
     #first{
         height: auto;
@@ -783,7 +768,6 @@ p {
     }    
 
     #first p{
-        font-size: 4vh;
         padding: 0 !important;
         margin: 0 1rem 0 1rem !important;
     }
@@ -900,9 +884,6 @@ p {
     footer li{
         list-style: none;
     }
-    #navbarNavDropdown{
-        background: rgba(255, 255, 255, 0.3) !important;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 992px){
@@ -910,13 +891,6 @@ p {
     .navbar{
         height: 3rem;
     }
-
-    #capT{
-        height: 4vh !important;
-
-        padding: 0.5rem 1rem 0.5rem 1rem !important;
-    }
-
     .navbar-toggler-icon{
         height: 6vh;
         width:6vh;
@@ -964,7 +938,6 @@ p {
     }
 
     /*SECOND SECTION*/
-
     #second{
         padding-top: 1rem !important;
         min-height: 100vh;

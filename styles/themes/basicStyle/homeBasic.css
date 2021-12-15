@@ -395,7 +395,7 @@ code{
     opacity: 0;
     width: auto;
     height: inherit;
-    padding: 130px 20px;
+    padding: 3rem;
     font-size: 5vh;
 }
 
@@ -433,6 +433,7 @@ code{
     background-color: black;
     border: none;
     padding: 0 2rem 1rem 2rem !important;
+    margin-top: 1rem;
 }
 
 .see-article a{
@@ -460,10 +461,17 @@ footer{
     background-color: #457682 !important;
 }  
 
-footer p, 
-.contacts{
-    font-size: 14pt;
-    padding: 10vh;
+footer p, .contacts, #discl, #cp{
+    font-size: 2.5vh !important;
+    padding: 3rem 0 0 0 !important;
+}
+
+#footer-left, #footer-right{
+    width: 10% !important;
+}
+
+.info-footer, .contacts{
+    width: 40% !important;
 }
 
 footer p{
@@ -488,8 +496,54 @@ footer p{
     --time-transition: ease-in-out 0.3s;
 }
 
+@media (max-width: 768px){
+    .btn-third{
+        font-size: 3vh !important;
+        margin-left: 1rem !important;
+    }
+    .btn-third:first-child{
+        margin-left: 1rem !important;
+        padding-top: 1rem;
+    }
+}
+
+
+@media (max-width: 992px){
+    /*NAVBAR*/
+    .navbar .collapse{
+        background: #83c0cf !important;
+        border: 2px solid #578b99;
+        border-top: none;
+    }
+    #first h1{
+        font-size: 8vh !important;
+    }
+    #first #travel{
+        margin-left: -0.5rem !important;
+    }
+    #first h2{
+        font-size: 3.5vh;
+    }
+    #project-description{
+        font-size: 3.5vh !important;
+    }
+}
+
+
 @media (min-width: 768px) and (max-width: 992px){
     #about-proj p{
         font-size: 3vh;
+    }
+    .issue-description{
+        font-size: 2.5vh !important;
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .issue-description{
+        font-size: 2.5vh !important;
+        padding-bottom: 0.5rem !important;
     }
 }

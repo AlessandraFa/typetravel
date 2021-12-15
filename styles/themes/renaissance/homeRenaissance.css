@@ -49,7 +49,7 @@ p{
 }
 
 h2{
-    font-family: Bembo;
+    font-family: "Bembo", garamond, serif;
     text-align: center;
     text-transform: uppercase;
     font-size: 7vh;
@@ -165,7 +165,7 @@ h2{
 }
 
 #first h1{
-    font-family: Bembo;
+    font-family: "Bembo", garamond, serif;
     color: #696969;
     margin-top: 4rem;
     font-size: 10vh;
@@ -178,7 +178,7 @@ h2{
 }
 
 #first h2{
-    font-family: Bembo;
+    font-family: "Bembo", garamond, serif;
     text-align: center;
     font-size: 4vh;
     padding-top: 1rem;
@@ -412,9 +412,9 @@ h2{
     padding-top: 4rem;
 }
 
-#fourth p{
+#issue-text{
     font-size: 3.5vh;
-    padding: 2rem
+    padding: 2rem 3rem 0 3rem;
 }
 
 #fourth #renaiss-bg{
@@ -475,11 +475,10 @@ h2{
     color: #444444;
     border: none;
     font-size: 3vh;
-    margin-top: 2rem;
-    padding: 1rem;
-    line-height: 1;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+    bottom: 2vh !important;
+    padding: 1rem
 }
 
 .see-article:hover{
@@ -552,10 +551,6 @@ footer p{
     /*NAVBAR*/
     .navbar-brand{
         font-size: 5vh !important;
-    }
-
-    #navbarNavDropdown{
-        background-color: rgb(233,233,233) !important;
     }
 
     /*FIRST SECTION*/
@@ -671,7 +666,7 @@ footer p{
         width: auto;
     }
 
-    #fourth p{
+    #issue-text{
         font-size: 3vh;
         padding: 2rem;
     }
@@ -710,9 +705,11 @@ footer p{
     }
 
     .see-article{
-        margin: 0 !important;
         padding: 1rem !important;
         font-size: 2vh !important;
+        position: absolute !important;
+        left: 15vh !important;
+        bottom: 2vh !important;
     }
 
     /*FOOTER*/
@@ -849,7 +846,7 @@ footer p{
         width: auto;
     }
 
-    #fourth p{
+    #issue-text{
         font-size: 3.5vh;
         padding: 2rem;
     }
@@ -885,15 +882,17 @@ footer p{
 
     .issue-description{
         margin: 0 !important;
-        padding: 0 !important;
+        padding: 1rem 0 0 0!important;
         font-size: 4vh !important;
     }
 
     .see-article{
-        margin: 0 !important;
         padding: 0.5rem!important;
         margin-top: 1rem !important;
         font-size: 4vh !important;
+        position: absolute !important;
+        left: 15vh !important;
+        bottom: 2vh !important;
     }
 
     /*FOOTER*/
@@ -1011,7 +1010,7 @@ footer p{
         height: auto;
     }
 
-    #fourth p{
+    #issue-text{
         font-size: 3.5vh;
         padding: 1rem 4rem 1rem 4rem;
     }
@@ -1068,9 +1067,11 @@ footer p{
     }
 
     .see-article{
-        margin: 0 !important;
-        padding: 1rem !important;
+        padding: 0.5rem !important;
         font-size: 3.5vh !important;
+        position: absolute !important;
+        left: 4rem !important;
+        bottom: 2vh !important;
     }
 
     /*FOOTER*/
@@ -1082,6 +1083,20 @@ footer p{
 
     #footer-left{
         width: 22.5%;
+    }
+}
+
+
+@media (max-width: 992px){
+    /*NAVBAR*/
+    .navbar{
+        background: #E9E9E9 !important;
+    }
+
+    #navbarNavDropdown{
+        border: 2px solid #949494;
+        border-top: none;
+        margin: 0;
     }
 }
 
@@ -1233,7 +1248,7 @@ footer p{
         width: auto;
     }
 
-    #fourth p{
+    #issue-text{
         font-size: 3.5vh;
         padding: 1rem 5rem 1rem 5rem;
     }
@@ -1278,6 +1293,9 @@ footer p{
         margin: 2rem 0 0 0 !important;
         padding: 1rem !important;
         font-size: 3vh !important;
+        position: absolute !important;
+        left: 18vh !important;
+        bottom: 2vh !important;
     }
 
     /*FOOTER*/
