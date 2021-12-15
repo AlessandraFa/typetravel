@@ -25,7 +25,7 @@ a{
     color: #cda34c;
 }
 a:hover{
-    color: #f8dba6;
+    color: #f8dba6 !important;
 }
 
 code{
