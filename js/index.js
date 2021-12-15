@@ -355,15 +355,15 @@ function eightyPrev() {
 }
 
 
-// const navbar = document.querySelector('.nav-fixed');
-// const collapseNav = document.querySelector(".navbar-collapse");
-// window.onscroll = () => {
-//     if (window.scrollY > 30) {
-//         navbar.classList.add('nav-active');
-//     } else {
-//         navbar.classList.remove('nav-active');
-//     }
-// };
+const navbar = document.querySelector('.nav-fixed');
+const collapseNav = document.querySelector(".navbar-collapse");
+window.onscroll = () => {
+     if (window.scrollY > 30) {
+         navbar.classList.add('nav-active');
+     } else {
+         navbar.classList.remove('nav-active');
+     }
+ };
 
 
 function addClass(element) {

@@ -61,7 +61,7 @@ body{
     background-size: 4.5vh !important;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 2rem;  
+    padding: 4vh;  
     margin-left: 0 !important;
 }
 
@@ -547,7 +547,6 @@ p {
 
     #capT{
         height: 4vh !important;
-        background-position: bottom !important;
         padding: 0.5rem 1rem 0.5rem 1rem !important;
     }
 
@@ -734,8 +733,14 @@ p {
 
     #capT{
         height: 4vh !important;
-        background-position: bottom !important;
-        padding: 0.5rem 1rem 0.5rem 1rem !important;
+        padding: 0rem 1rem 0.5rem 1rem !important;
+    }
+
+
+    #third #cards p{
+        padding: 1rem 1rem 0 1rem !important;
+        line-height: 1.25;
+        font-size: 3vh !important;
     }
 
     .navbar-toggler-icon{
@@ -908,7 +913,7 @@ p {
 
     #capT{
         height: 4vh !important;
-        background-position: bottom !important;
+
         padding: 0.5rem 1rem 0.5rem 1rem !important;
     }
 
@@ -1093,7 +1098,6 @@ p {
 
     #capT{
         height: 4vh !important;
-        background-position: bottom !important;
         padding: 0.5rem 1rem 0.5rem 1rem !important;
     }
 

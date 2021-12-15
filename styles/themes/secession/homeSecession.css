@@ -19,6 +19,7 @@ body{
     background-color: #FFFFF5 !important;
 }
 
+
 /*LINKS, SELECTION, CODE*/
 a{
     color: #cda34c;
@@ -172,6 +173,10 @@ code{
     background-color: #FFFFF5 !important;
 }
 
+#first .row{
+    height: 100%;
+}
+
 #first h1{
     padding-top: 12vh !important;
     font-family: "secession", "Amarante", Georgia, serif;
@@ -194,14 +199,16 @@ code{
     background-position: center left;
     background-size: 28vh !important;
     background-repeat: no-repeat !important;    
+    width: 15%;
+
 }
 
 #first-right{
     background: url("/images/art-nouveau/first-right.png") !important;
-    background-position: center right !important;
+    background-position: top right !important;
     background-size: 27.3vh !important;
     background-repeat: no-repeat !important;
-
+    width: 15%;
 }
 
 #ttlframe{
@@ -211,6 +218,8 @@ code{
     background-repeat: no-repeat !important;
     background-position: center !important;
     color:#957025;
+    width: 70%;
+
 }
 
 #project-description{
@@ -284,8 +293,12 @@ h2{
     padding-left: 12rem;
     padding-right: 12rem ;
     color: #535353;
-    font-size: 4vh;
+    font-size: 3.5vh;
     background: transparent !important;
+}
+
+#site-short-description{
+    margin-bottom: 0 !important;
 }
 
 /*THIRD*/
@@ -350,6 +363,10 @@ h2{
     background-position: center bottom !important;
 }
 
+#fourth p{
+    padding: 2rem 12rem 2rem 12rem !important;
+}
+
 .fadedbox{
     background-color:rgba(251, 135, 67, 0.7);
 }  
@@ -403,6 +420,10 @@ footer p, .contacts{
     padding: 8vh 3vh 8vh 3vh;
 }
 
+footer{
+    padding: 3rem;
+}
+
 footer p{
     text-align: right;
 }
@@ -411,14 +432,14 @@ footer p{
     background-image: url("/images/art-nouveau/footer-right.png");
     background-size: 25vh;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right center;
 }
 
 #footer-left{
     background-image: url("/images/art-nouveau/footer-left.png");
     background-size:25vh;
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: left center;
 }
 
 #cp{
@@ -613,6 +634,10 @@ footer p{
         font-size: 5vh !important;
     }
 
+    .navbar{
+        height: unset;
+    }
+
     /*FIRST SECTION*/
     #first{
         margin-top: 3rem;
@@ -784,7 +809,8 @@ footer p{
 
     #second{
         padding-top: 2rem;
-        background-size: 150vh !important;
+        background-image: none;
+        background-color: #E4BD6F;
     }
 
     #second h2{
@@ -824,7 +850,8 @@ footer p{
     }
 
     #third p{
-        font-size: 3.5vh !important;
+        font-size: 3vh !important;
+        line-height: 1.25;
     }
 
     #themes-text{
@@ -839,6 +866,12 @@ footer p{
         font-size: 5vh !important;
     }
 
+    #third #cards p{
+        padding: 1rem 1rem 0 1rem !important;
+        line-height: 1.25;
+        font-size: 3vh !important;
+    }
+
     /*FOURTH SECTION*/
 
     #fourth{
@@ -848,6 +881,13 @@ footer p{
     .issue{
         max-height: 200vh;
         width: auto;
+    }
+
+    #issue-text{
+        font-size: 3vh;
+        line-height: 1.25;
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
     }
 
     #fourth h2{
@@ -893,7 +933,7 @@ footer p{
     footer p, .contacts, #discl, #cp{
         text-align: center;
         padding: 1rem;
-        font-size: 3vh !important;
+        font-size: 2.5vh !important;
         }
     
     #footer-left{
@@ -933,7 +973,7 @@ footer p{
     #ttlframe{
         background-size: 100% !important; 
         width: 70%;
-        background-position: bottom !important;
+        background-position: center !important;
     }
     #first-left{
         background-size: 25vh !important;
@@ -953,7 +993,7 @@ footer p{
     #first h1{
         font-size: 12vh !important;
         margin-top: 0rem !important;
-        padding-top: 2rem !important;
+        padding-top: 6rem !important;
     }
     #first h2{
         font-size: 8vh;
@@ -961,7 +1001,7 @@ footer p{
 
     #first p{
         font-size: 4vh !important;
-        margin-top: 10vh !important;
+        margin-top: 5vh !important;
         padding: 0 3rem 0 3rem !important;
     }
 
@@ -1027,6 +1067,13 @@ footer p{
         font-size: 5vh !important;
     }
 
+
+    #third #cards p{
+        padding: 1rem 1rem 0 1rem !important;
+        line-height: 1.25;
+        font-size: 3vh !important;
+    }
+
     /*FOURTH SECTION*/
 
     #fourth{
@@ -1041,6 +1088,10 @@ footer p{
     #fourth h2{
         font-size: 8vh !important;
         background-position: center !important;
+    }
+
+    #issue-text{
+        padding: 4rem;
     }
 
     #card-iss1, #card-iss2{

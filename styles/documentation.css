@@ -138,6 +138,10 @@ h5{
     text-align: center;
 }
 
+.img-div p{
+    padding-top: 0.5rem !important;
+}
+
 img{
     max-height: 250px;
     max-width: 100vh !important;
@@ -146,6 +150,10 @@ img{
 .img-txt{
     padding-top: 0.5rem;
     text-align: center !important;
+}
+
+.img-row p{
+    padding-top: 0.5rem;
 }
 
 #item-2-1{

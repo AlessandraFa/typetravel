@@ -16,17 +16,8 @@
 
 /*BODY*/
 body{
-    overflow: hidden;
     background-color: #FAF2E6 !important;
-}
-
-
-#enable-futurelight{
-    display: none;
-}
-
-#enable-futuredark{
-    display: none;
+    overflow: hidden;
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -45,6 +36,15 @@ code{
 ::selection{
     background-color: #c7bfbf;
     color: #CF7248;
+}
+
+/*DEACTIVATE FUTURE BUTTONS*/
+#enable-futurelight{
+    display: none;
+}
+
+#enable-futuredark{
+    display: none;
 }
 
 /* NAVBAR */
@@ -305,7 +305,6 @@ code{
     border-radius: 10px;
 }
   
-
 ::-webkit-scrollbar-thumb:hover {
     background: #b3afa7;
 }
@@ -325,6 +324,7 @@ img{
     background-position: bottom center;
     background-repeat: no-repeat;    
 }
+
 #metadata-style .card-body{
     background: none;
 }
@@ -382,6 +382,26 @@ img{
 #metadata .tab-content li:hover{
     color: #3d3d3d;
     background-color: #CF7248 !important;
+}
+
+.offcanvas#metadata{
+    background-color: #f8f3ea;
+}
+
+.offcanvas-body{
+    padding: 1rem 0 0 0 !important;
+}
+
+.offcanvas-header{
+    background-color: #3d3d3d;
+}
+
+.offcanvas .offcanvas-header h5{
+    font-size: 5vh;
+    color: #CF7248;
+}
+.offcanvas .accordion-button{
+    font-size: 2.5vh !important;
 }
 
 /*FAB*/
@@ -481,15 +501,28 @@ body,
     background: #e7b08e !important;
 }
 
-.all-articles .larger:hover .card-header, 
-.all-articles .larger:hover .card-body, 
+
 .all-articles .larger:hover .infoButton,
 .all-articles .larger:hover .info,
 .all-articles .larger:hover .accordion-item,
+.all-articles .larger:hover .card-header,
 .all-articles .larger:hover .accordion-header,
+.all-articles .larger:hover .card-body,
 .all-articles .larger:hover ::-webkit-scrollbar-track,
 .all-articles .larger:hover .accordion-body{
     background: unset !important;
+}
+
+.all-articles .larger:hover .card-header,
+.all-articles .larger:hover .card-header:hover{
+    background-color: #FAF2E6;
+} 
+
+.all-articles .larger:hover .card-body,
+.all-articles .larger:hover .card-body:hover{
+    background: linear-gradient(to bottom, rgba(250,242,230, 0.9)0%, rgba(250,242,230, 0.9)100%), url("/images/art-nouveau/art-an.png") !important;
+    background-position: left top !important;
+    background-size: 70% !important;
 }
 
 .all-articles:hover .larger {
@@ -503,11 +536,6 @@ body,
 .all-articles .larger:hover .card-body, 
 .all-articles .larger:hover .card-subtitle{
     font-size: 3vh;
-}
-
-.all-articles .larger:hover .info,
-.all-articles .larger:hover .imgCaption{
-    font-size: 2.5vh;
 }
 
 .issue-female-body .all-articles:hover .larger img{
@@ -596,6 +624,17 @@ body,
     .card-body, .card-subtitle{
         font-size: 2.5vh;
     }
+    .all-articles .larger:hover .card-body, 
+    .all-articles .larger:hover .card-subtitle{
+        font-size: 2.5vh;
+    }
+    .all-articles .larger:hover .accordion-item,
+    .all-articles .larger:hover .accordion-item:hover{
+        font-size: 3vh;
+    }
+    .all-articles:hover .larger .card-title {
+    font-size: 6vh;
+}
 }
 
 

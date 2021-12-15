@@ -137,15 +137,19 @@ code{
 .btn{
     border: none;
     color: black;
-    font-family: "secession", "amarante", Georgia, serif;
+    font-family: "secession", Georgia, serif;
     text-transform: uppercase;
     background: transparent;
     font-size: 5vh;
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: secession;
+    font-family: "secession", Georgia, serif;
     text-transform: uppercase;
+}
+
+h6{
+    font-size: 4vh;
 }
 
 /*SIDE MENU*/

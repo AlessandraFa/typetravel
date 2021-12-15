@@ -17,12 +17,10 @@
     src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
 }
 
-.btn-lmode{
-    display: none;
-}
-
+/*BODY*/
 body{
     background-color: black;
+    overflow: hidden;
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -76,10 +74,13 @@ code{
     background-color: black !important;
 }
 
+.btn-lmode{
+    display: none;
+}
+
 /*NAVBAR*/
 .navbar{
-    background-color:black !important;
-    
+    background-color:black !important; 
 }
 
 .navbar-brand{
@@ -274,6 +275,10 @@ h4{
 }
 
 /*SCROLLBAR*/
+::-webkit-scrollbar:horizontal{
+    display: none;
+}
+
 ::-webkit-scrollbar{
     width:2vh;
     background-color: #1D1D1D;
@@ -385,7 +390,17 @@ img:before{
     background-color: white !important;
 }
 
-/*ANIMATIONS*/
+#metadata .offcanvas-header{
+    background-color: black;
+    color: white;
+    font-family: "intro", "monospace";
+}
+
+.offcanvas-header h5{
+    font-size: 4vh !important;
+}
+
+/*RESPONSIVE BUTTONS*/
 .navigation-responsive-button {
     position: fixed; 
     bottom: 20px; 
@@ -459,7 +474,7 @@ img:before{
 }
   
 #hide-md-btn-off{
-      font-family: "future", "monospace";
+      font-family: "intro", "future", "monospace";
       text-transform: uppercase;
       color: white;
 }
@@ -507,9 +522,13 @@ img:before{
     .card-header{
         min-height: auto !important;
     }
-    .card{
-        height: auto !important;
+    .all-articles .larger:hover .card-header{
+        min-height: 18vh !important;
     }
+    .card-header{
+        padding-top: 2rem;
+    }
+    
 }
 
 /* questo lo avevo fatto io per il comportamento responsive dei bottoni che compaiono */ 
@@ -521,7 +540,7 @@ img:before{
   
 @media only screen and (max-width: 992px) {
     .card {
-        height: 80vh;
+        height: 100vh;
     }
     #next-article-3, #prev-article-1, #prev-article-2 {
         display: none;
@@ -534,7 +553,3 @@ img:before{
         font-size: 30pt;
     }
 }  
-
-
-/* IMPORT bootstrap scss*/
-@import "../node_modules/bootstrap/scss/bootstrap.scss"; 

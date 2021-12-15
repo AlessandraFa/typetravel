@@ -16,19 +16,10 @@
 /*BODY*/
 body {
     height: 100%;
-    overflow: hidden;
     font-family: "vcr", "vt323", monospace;
     cursor: url("/images/icons/curs.png"), auto !important;
     background:linear-gradient(to bottom, rgb(129, 129, 129,0.3) 0%, rgba(85, 85, 85, 0.3)30%), url(/images/1980s/gltch.gif);
-}
-
-
-#enable-futurelight{
-    display: none;
-}
-
-#enable-futuredark{
-    display: none;
+    overflow: hidden;
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -52,6 +43,15 @@ code{
 
 .btn:hover, a:hover, .fab:hover, .sub-button:hover, .fadedbox:hover, button:hover{
     cursor: url("/images/icons/pointer.png"), auto !important;
+}
+
+/*DEACTIVATE FUTURE BUTTONS*/
+#enable-futurelight{
+    display: none;
+}
+
+#enable-futuredark{
+    display: none;
 }
 
 /*NAVBAR*/
@@ -210,6 +210,7 @@ code{
     padding-left: 0 !important;
     padding-right: 0 !important;
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     background-image: url(/images/1980s/vhs-navb.png);
     background-size: 8vh;
     -webkit-text-fill-color: transparent;
@@ -228,13 +229,19 @@ code{
     padding-right: 0 !important;
 }
 
+.issue-female-body #article-1 .card-header{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 #article-long-title{
-    font-size: 5vh;
+    font-size: 4.7vh
 }
 
 #spec{
     font-family: "special";
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     background-image: url(/images/1980s/vhs-navb.png);
     background-size: 8vh;
     -webkit-text-fill-color: transparent;
@@ -249,7 +256,7 @@ code{
 
 .info{
     font-size: 1.8vh !important;
-    line-height: 1 !important;
+    line-height: 1.2 !important;
     text-align: center;
     color: white;
     text-transform: uppercase;
@@ -289,6 +296,7 @@ code{
 
 .card-body{
     overflow-y: auto;
+    overflow-x: hidden !important;
     font-size: 2.5vh;
     text-shadow: 4px -4px 10px #505050,-4px 4px 10px #575757;
 }
@@ -307,6 +315,9 @@ h4{
 ::-webkit-scrollbar-track {
     background-color: #CD3C37;
     border: 2px solid black;
+}
+::-webkit-scrollbar:horizontal{
+    display: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -394,6 +405,7 @@ img{
     font-size: 9vh;
     line-height: 1 !important;
     -webkit-background-clip: text !important;
+    background-clip: text !important;
     background-image: url(/images/1980s/vhs-nav.png);
     background-size: 8vh;
     -webkit-text-fill-color: transparent;
@@ -443,7 +455,6 @@ img{
     height: 20vh;
 }
 
-
 #metadata .nav-link{
     background:linear-gradient(to bottom, rgb(129, 129, 129,0.3) 0%, rgba(85, 85, 85, 0.3)30%), url(/images/1980s/gltch.gif);
 }
@@ -457,6 +468,16 @@ img{
     background-color: #CD3C37 !important;
 }
 
+.offcanvas#metadata{
+    background-image: linear-gradient(rgba(85, 85, 85, 0.3)0%,rgba(85, 85, 85, 0.3) 100%), url(/images/1980s/gltch.gif)!important;
+}
+
+.offcanvas .offcanvas-header h5{
+    text-transform: uppercase;
+    font-size: 4vh;
+    color: white;
+    text-shadow: 4px -4px 10px #505050,-4px 4px 10px #575757;
+}
 
 /*RESPONSIVE BUTTON*/
 .navigation-responsive-button {
@@ -581,6 +602,21 @@ img{
         font-size: 8vh;
         line-height: 1;
     }
+    .all-articles .larger:hover .card-body, 
+    .all-articles .larger:hover .card-subtitle,
+    .all-articles .larger:hover .accordion-item,
+    .all-articles .larger:hover .accordion-item:hover{
+        font-size: 3vh;
+    }
+
+    .all-articles .larger:hover .card-header,
+    .all-articles .larger:hover .card-header:hover{
+        min-height: 25vh !important;
+    }
+
+    .all-articles:hover .larger .card-title {
+    font-size: 6vh;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
@@ -613,8 +649,13 @@ img{
     }
     .col-lg-4 .spec{
         font-size: 6vh;
+    }       
+    #article-long-title{
+        font-size: 3.5vh;
     }
-    
+    #article-long-title #spec{
+        font-size: 5vh;
+    }
 }
 
 @media (min-width: 1400px){

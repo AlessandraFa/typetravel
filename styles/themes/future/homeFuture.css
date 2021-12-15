@@ -224,6 +224,10 @@ h1{
     margin: 0rem 5rem 0rem 5rem;
 }
 
+#about-proj p{
+    font-size: 3.5vh;
+}
+
 #btn-themes{
     background-color: #000000;
     font-family: "intro", "future", "Josefin Sans", monospace;

@@ -4,17 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
 
+
+/*BODY*/
 body{
   font-family: "cousine", Courier, monospace;
-}
-
-
-#enable-futurelight{
-    display: none;
-}
-
-#enable-futuredark{
-    display: none;
+  overflow: hidden;
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -28,11 +22,20 @@ a:hover {
 
 ::selection{
     background-color: #83c0cf;
-    color: white;
+    color: black
 }
 
 code{
     color:rgb(17, 120, 138);
+}
+
+/*DEACTIVATE FUTURE BUTTONS*/
+#enable-futurelight{
+    display: none;
+}
+
+#enable-futuredark{
+    display: none;
 }
 
 /*NAVBAR*/
@@ -130,7 +133,11 @@ code{
     font-size: 4.5vh;
 }
 
+.d-future{
+    letter-spacing: 0rem;
+}
 
+/*EXPAND COLUMNS - READING MODE*/
 body, 
 .all-articles:hover .larger .card-header, 
 .all-articles:hover .larger .card-body, 
@@ -165,12 +172,9 @@ body,
 .all-articles .larger:hover {
     opacity: 1;
 }
+/*end reading mode specifics*/
 
-.d-future{
-    letter-spacing: 0rem;
-}
-
-.card-subtitle {
+.card-subtitle{
     font-weight: bold;
     background-color: #ccf5ff;
     margin-bottom: 1em;
@@ -178,11 +182,6 @@ body,
     text-align: center;
     letter-spacing: 0.1em;
     color: black;
-}
-
-::selection{
-
-    color: black
 }
 
 .infoButton{
@@ -196,7 +195,7 @@ body,
     text-align: center;
 }
 
-.info {
+.info{
     color: black;
     opacity: 0.7;
     font-family: "cousine", Courier, monospace;
@@ -229,6 +228,8 @@ h4{
     color: #83c0cf;
 }
 
+
+/*ARTICLES IMAGES*/
 .imgCaption{
     font-size: 9pt;
     font-style: italic;
@@ -291,6 +292,14 @@ img{
     background-color: #83c0cf !important;
 }
 
+#metadata .offcanvas-header{
+    background-color: #83c0cf !important;
+}
+
+#metadata .offcanvas-body{
+    padding: 0;
+}
+
 /*RESPONSIVE BUTTON*/
 .navigation-responsive-button {
     position: fixed; 
@@ -309,6 +318,10 @@ img{
 /*SCROLLBAR*/
 ::-webkit-scrollbar {
     width: 10px;
+}
+
+::-webkit-scrollbar:horizontal{
+    display: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -383,6 +396,26 @@ img{
     background-size: 3vh !important;
 }
 
+/*IMAGES IN LARGER COLUMNS*/
+.issue-female-body .all-articles:hover .larger img{
+    height: 500px;
+    width: auto;
+}
+
+.issue-female-body .all-articles:hover .larger .info{
+    font-size: 2vh;
+}
+
+.issue-female-body .all-articles:hover .larger .imag{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    justify-content:center;
+}
+
+
 /* questo lo avevo fatto io per il comportamento responsive dei bottoni che compaiono */ 
 @media only screen and (min-width: 992px) {
   .navigation-responsive-button {
@@ -390,6 +423,8 @@ img{
   }
 }
 
+
+/*MEDIA QUERIES*/
 @media only screen and (max-width: 992px) {
   .card {
       height: 100vh;
@@ -420,10 +455,10 @@ img{
   }
   .issue-female-body .card-header{
     min-height: 25vh;
-    }
-    .navbar {
-        height: 8vh;
-    }
+  }
+  .navbar {
+      height: 8vh;
+  }
 }
 
 @media(min-width: 992px) and (max-width: 1200px){
@@ -442,22 +477,4 @@ img{
   .card-title{
       font-size: 5vh;
   }
-}
-
-.issue-female-body .all-articles:hover .larger img{
-    height: 500px;
-    width: auto;
-}
-
-.issue-female-body .all-articles:hover .larger .info{
-    font-size: 2vh;
-}
-
-.issue-female-body .all-articles:hover .larger .imag{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    justify-content:center;
 }

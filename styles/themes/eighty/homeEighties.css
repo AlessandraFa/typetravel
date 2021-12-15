@@ -149,6 +149,10 @@ code{
     background-color: #cc4aab;
 }
 
+#first p{
+    margin-bottom: 0 !important;
+}
+
 #icon{
     padding: 10vh;
     background-image: url("/images/icons/start-80.svg");

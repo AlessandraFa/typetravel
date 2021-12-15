@@ -3,7 +3,6 @@
 @import url("/styles/themes/components/fab.css");
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-
 @font-face {
   font-family: "Bembo";
   src: url("/styles/fonts/Bembo.ttf");
@@ -36,12 +35,12 @@ code{
 body{
     font-family: "Bembo", garamond, serif;
     text-align: center;
-    overflow: hidden;
     line-height: 1;
     background-color:#F2F2F2;
+    overflow: hidden;
 }
 
-
+/*DEACTIVATE FUTURE BUTTONS*/
 #enable-futurelight{
     display: none;
 }
@@ -222,6 +221,7 @@ body{
 
 .col-lg-4 .spec{
     letter-spacing: 0.6rem;
+    font-size: 5vh;
 }
 
 .d-future{
@@ -289,7 +289,6 @@ body{
 .issue-female-body #article-2 .card-body p:first-of-type:first-line{
     text-transform: uppercase;
 }
-
 
 /*DECORATED INITIALS ARCHITECTURE ISSUE*/
 .issue-architecture #article-1 .card-body p:nth-of-type(2):first-letter{
@@ -420,6 +419,10 @@ body{
     background-color: #dddddd;
 }
 
+::-webkit-scrollbar:horizontal{
+    display: none;
+}
+
 /*IMAGES*/
 img{
     width: 80%;
@@ -511,16 +514,16 @@ img{
 }
 
 .issue-fem #rl1, .issue-fem #rr1{
-    width: 45%;
-    height: 32vh; 
+    width: 45% !important;
+    height: 28vh !important; 
 }
 
 .issue-fem #rl2, .issue-fem #rr2{
-    width: 45%;
-    height: 40vh; 
+    width: 45% !important;
+    height: 37vh !important; 
 }
 
-/*METADATA*/
+/*METADATA VIEWER*/
 #metadata-style .accordion-body{
     background-color: rgba(255, 255, 255, 0.3);
     background-image: none;
@@ -549,6 +552,24 @@ img{
     border-radius: 0 !important;
 }
 
+.offcanvas#metadata{
+    background-image:  url("/images/Renaissance/md-bg.png");
+    background-size: 100%;
+}
+
+.offcanvas #metadata-style{
+    background: transparent;
+}
+
+.offcanvas .offcanvas-header h5{
+    text-transform: uppercase;
+    font-size: 4vh;
+}
+
+.offcanvas-body .accordion-button{
+    font-size: 3vh !important;
+}
+
 #metadata-style .card-body{
     background-image: none;
 }
@@ -557,7 +578,7 @@ img{
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 40%,  rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.2) 100%) ;
     padding: 3rem 0.2rem 1rem 0.2rem!important;
     font-size: 5vh !important;
-    letter-spacing: 0.7rem !important;
+    letter-spacing: 0.8rem !important;
     color: #707070;
 }
 
@@ -566,15 +587,13 @@ img{
     color: #888888;
 }
 
-
-/*EXPAND COLUMN - READING MODE*/
+/*EXPAND COLUMNS - READING MODE*/
 body, 
 .all-articles:hover .larger .card-header, 
 .all-articles:hover .larger .card-body, 
 .all-articles:hover .larger .subtitle,
 .all-articles:hover .larger .infoButton,
 .all-articles:hover .larger .info,
-.all-articles:hover .larger .accordion-item,
 .all-articles:hover .larger .accordion-header,
 .all-articles:hover .larger ::-webkit-scrollbar-track,
 .all-articles:hover .larger .accordion-body{
@@ -582,14 +601,34 @@ body,
 }
 
 .all-articles .larger:hover .card-header, 
-.all-articles .larger:hover .card-body, 
 .all-articles .larger:hover .infoButton,
 .all-articles .larger:hover .info,
-.all-articles .larger:hover .accordion-item,
-.all-articles .larger:hover .accordion-header,
 .all-articles .larger:hover ::-webkit-scrollbar-track,
 .all-articles .larger:hover .accordion-body{
     background: unset;
+}
+
+.all-articles .larger:hover .spec{
+    font-size: 5vh;
+}
+
+.all-articles .larger:hover .accordion-body,
+.all-articles .larger:hover .card-body,
+.all-articles .larger:hover .card-body:hover{
+    background-image: url("/images/Renaissance/bg-body.png");
+    background-size: 80vh !important;
+    background-position: top;
+}
+
+.all-articles .larger:hover .accordion-body{
+    background-position: bottom;
+}
+
+.all-articles .larger:hover .accordion-header,
+.all-articles .larger:hover .accordion-header:hover,
+.all-articles .larger:hover .accordion-item,
+.all-articles .larger:hover .accordion-item:hover{
+    background-color: #F2F2F2 !important;
 }
 
 .all-articles:hover .larger {
@@ -599,6 +638,7 @@ body,
 .all-articles .larger:hover {
     opacity: 1;
 }
+
 
   /* questo lo avevo fatto io per il comportamento responsive dei bottoni che compaiono */ 
 @media only screen and (min-width: 992px) {
@@ -785,7 +825,6 @@ body,
   }
 
   .col-lg-4 .card-subtitle{
-      font-size: 2.5vh;
       letter-spacing: 0.1rem;
   }
 
@@ -943,19 +982,24 @@ body,
   }
   .issue-fem #rl1, .issue-fem #rr1{
     width: 45%;
-    height: 32vh; 
-}
+    height: 38vh !important;
+  }
 
-.issue-fem #rl2, .issue-fem #rr2{
-    width: 45%;
+  .issue-fem #rl2, .issue-fem #rr2{
+    width: 35% !important;
     height: 40vh; 
-}
+  }
 }
 
 @media (max-width: 992px){
   .card-title{
-      font-size: 6vh !important;
+      font-size: 5vh !important;
       padding: 2rem 8rem 0 8rem!important;
+  }
+
+  .navbar-nav{
+      margin-left: unset;
+      text-align: left;
   }
 
   .card-header{
@@ -985,13 +1029,13 @@ body,
   }
 
   .card-body p{
-      font-size: 4vh !important;
+      font-size: 3vh !important;
       padding: 0 4rem 0 4rem;
   }
 
   .card-subtitle{
-      font-size: 4vh;
-      padding: 3rem 10rem 3rem 10rem!important;
+      font-size: 3vh;
+      padding: 2rem 6rem 2rem 6rem!important;
       text-align: center;
   }
 
@@ -1010,16 +1054,25 @@ body,
 
 @media (max-width: 768px){
   .card-title{
-      font-size: 6vh !important;
+      font-size: 5vh !important;
       padding: 1rem 4rem 1rem 4rem!important;
   }
 }
-
-.all-articles .larger:hover .spec{
-    font-size: 5vh !important;
-}
 .all-articles .larger:hover #article-long-title{
     font-size: 5vh;
+}
+
+.card-title::first-line{
+    font-size: 4vh !important;
+    letter-spacing: 0.2rem;
+}
+
+.spec{
+    font-size: 3.5vh;
+}
+
+.card-body p{
+    padding: 1rem;
 }
 
 .all-articles .larger:hover .issue-fem #rl1,
@@ -1043,3 +1096,11 @@ body,
     align-items:center;
     justify-content:center;
 }
+
+
+@media (max-width: 768px){
+    .card-title{
+        font-size: 5vh !important;
+        padding: 1rem 4rem 1rem 4rem!important;
+    }
+  }
