@@ -16,7 +16,7 @@ a {
     color: #0096b1;
 }
   
-a:hover, #discl {
+a:hover {
     color: #ccf5ff !important;
 }
 
