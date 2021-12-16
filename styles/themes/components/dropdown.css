@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: intro;
-    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+    src: url("/typetravel/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
 }
 
 @font-face {
     font-family: "vcr";
-    src: url("/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
+    src: url("/typetravel/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
 }
 
 @font-face {
     font-family: secession;
-    src: url("/styles/fonts/secession/Secession.otf");
+    src: url("/typetravel/styles/fonts/secession/Secession.otf");
 }
 
 @font-face {
     font-family: "Bembo";
-    src: url("/styles/fonts/Bembo.ttf")
+    src: url("/typetravel/styles/fonts/Bembo.ttf")
   }
 
 
@@ -53,7 +53,7 @@
 .fab-container #enable-eighty:hover, .dropdown-menu #enable-eighty:hover{
     font-family: "vcr", monospace;
     text-transform: uppercase;
-    background-image: url(/images/1980s/vhs-navb.png);
+    background-image: url("/typetravel/images/1980s/vhs-navb.png");
     background-size: 8vh;
     background-position: bottom;
     color: white  !important;
@@ -65,7 +65,7 @@
 .fab-container #enable-secession:hover, .dropdown-menu #enable-secession:hover{
     font-family: "secession", Verdana;
     text-transform: uppercase;
-    background-image: url(/images/art-nouveau/fourth-bg.png);
+    background-image: url("/typetravel/images/art-nouveau/fourth-bg.png");
     background-position: right bottom;
     background-size: 40vh;
     color: black !important;
@@ -94,7 +94,7 @@
 }
 .fab-container #enable-renaissance:hover, .dropdown-menu #enable-renaissance:hover{
     font-family: "Bembo", "IM Fell English SC", garamond, serif;
-    background-image:  url(/images/Renaissance/md-bg.png);
+    background-image:  url("/typetravel/images/Renaissance/md-bg.png");
     background-position: top left;
     background-size: 20vh;
     color: white !important;

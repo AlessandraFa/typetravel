@@ -1,7 +1,7 @@
-@import "styles/themes/components/scrollbar.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/themes/components/fab.css";
-@import "style/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/scrollbar.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/themes/components/fab.css";
+@import "/typetravel/style/themes/components/dropdown.css";
 
 
 .content{
@@ -198,7 +198,7 @@ img{
 .try-style#enable-renaissance:hover{
     -webkit-background-clip: text !important;
     background-clip: text !important;
-    background-image: linear-gradient(rgba(0,0,0,0.1)0%,rgba(0,0,0,0.1)100%),url(/images/Renaissance/nav-decor.png);
+    background-image: linear-gradient(rgba(0,0,0,0.1)0%,rgba(0,0,0,0.1)100%),url("/typetravel/images/Renaissance/nav-decor.png");
     background-size: 20vh;
     -webkit-text-fill-color: transparent;
     background-position: bottom;
@@ -214,7 +214,7 @@ img{
 .try-style#enable-secession:hover{
     -webkit-background-clip: text !important;
     background-clip: text !important;
-    background-image: url(/images/art-nouveau/four-bg.png);
+    background-image: url("/typetravel/images/art-nouveau/four-bg.png");
     background-size: 40vh;
     -webkit-text-fill-color: transparent;
     background-position: bottom;
@@ -229,7 +229,7 @@ img{
 .try-style#enable-eighty:hover{
     -webkit-background-clip: text !important;
     background-clip: text !important;
-    background-image: url(/images/1980s/vhs-nav.png);
+    background-image: url("/typetravel/images/1980s/vhs-nav.png");
     background-size: 2vh;
     -webkit-text-fill-color: transparent;
     background-position: bottom;

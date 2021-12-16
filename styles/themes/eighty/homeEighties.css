@@ -1,26 +1,26 @@
-@import "styles/themes/components/dropdown.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/home.css";
+@import "/typetravel/styles/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/home.css";
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 @font-face {
     font-family: "vcr";
-    src: url("/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
+    src: url("/typetravel/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
 }
 
 @font-face{
     font-family: "special";
-    src: url("/styles/fonts/johnny-fever.regular.otf")
+    src: url("/typetravel/styles/fonts/johnny-fever.regular.otf")
 }
 
 body{
-    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%), url(/images/1980s/gltch.gif) !important;
+    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%), url("/typetravel/images/1980s/gltch.gif") !important;
     font-family: vcr, vt323, monospace;
-    cursor: url("/images/icons/curs.png"), auto !important;
+    cursor: url("/typetravel/images/icons/curs.png"), auto !important;
 }
 
 .btn:hover, a:hover, .fab:hover, .sub-button:hover, .fadedbox:hover, button:hover{
-    cursor: url("/images/icons/pointer.png"), auto !important;
+    cursor: url("/typetravel/images/icons/pointer.png"), auto !important;
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -61,7 +61,7 @@ code{
 }
 
 #capT{
-    background-image: url(/images/icons/t-1980s.svg);
+    background-image: url("/typetravel/images/icons/t-1980s.svg");
     background-size: 5.5vh !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -92,7 +92,7 @@ code{
 }
 
 .dropdown-menu{
-    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%),  url(/images/1980s/gltch.gif) !important;
+    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%),  url("/typetravel/images/1980s/gltch.gif") !important;
 }
 
 .nav-link .active .dropdown-menu{
@@ -110,7 +110,7 @@ code{
 }
 
 .modal-header, .modal-footer{
-    background-image: url(/images/1980s/vhs-navb.png);
+    background-image: url("/typetravel/images/1980s/vhs-navb.png");
     background-size: 12vh;
     background-position: bottom;
     border: none;
@@ -131,7 +131,7 @@ code{
 }
 
 .modal-body{
-    background-image: linear-gradient(to bottom, rgba(30, 19, 49, 0.2) 0%, rgba(34, 33, 36, 0.2)100%), url(/images/1980s/gltch.gif);
+    background-image: linear-gradient(to bottom, rgba(30, 19, 49, 0.2) 0%, rgba(34, 33, 36, 0.2)100%), url("/typetravel/images/1980s/gltch.gif");
     color: white;
     font-size: 2.2vh;
     padding: 1rem;
@@ -155,7 +155,7 @@ code{
 
 #icon{
     padding: 10vh;
-    background-image: url("/images/icons/start-80.svg");
+    background-image: url("/typetravel/images/icons/start-80.svg");
     background-size: 16vh;
     margin: 1rem;
     background-repeat: no-repeat;
@@ -166,7 +166,7 @@ code{
 }
 
 #icon:hover{
-    background-image: url("/images/icons/start-80-hov.svg");
+    background-image: url("/typetravel/images/icons/start-80-hov.svg");
     background-color: transparent !important;
 }
 
@@ -175,7 +175,7 @@ code{
 }
 
 #first{
-    background: url(/images/1980s/gltch.gif) !important;
+    background: url("/typetravel/images/1980s/gltch.gif") !important;
     text-transform: uppercase;
     margin-bottom: 0 !important;
 }
@@ -192,7 +192,7 @@ code{
 }
 
 #ttlframe{
-    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%), url(/images/1980s/grid2.png);
+    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%), url("/typetravel/images/1980s/grid2.png");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -205,7 +205,7 @@ code{
     font-size: 22vh;
     -webkit-background-clip: text !important;
     background-clip: text !important;
-    background-image: url(/images/1980s/vhs-navb.png);
+    background-image: url("/typetravel/images/1980s/vhs-navb.png");
     background-size: 20vh;
     -webkit-text-fill-color: transparent;
     background-position: bottom;
@@ -233,13 +233,13 @@ code{
 
 /*SECOND*/
 #second{
-    background-image:linear-gradient(to bottom, rgba(23, 30, 116, 1) 0%,rgba(23,30,116,0.9) 30%, rgba(20,29,122,0.8)80%, rgba(26, 12, 71, 0.8)100%),url(/images/1980s/b1.gif);
+    background-image:linear-gradient(to bottom, rgba(23, 30, 116, 1) 0%,rgba(23,30,116,0.9) 30%, rgba(20,29,122,0.8)80%, rgba(26, 12, 71, 0.8)100%),url("/typetravel/images/1980s/b1.gif");
     background-size: 50vh;
     background-position: center;
 }
 
 #gosecond{
-    background-image: linear-gradient(to bottom, rgb(36, 29, 54) 0%, rgb(29, 23, 93) 50%, rgba(23, 30, 116, 1) 100%),url(/images/1980s/b1.gif);
+    background-image: linear-gradient(to bottom, rgb(36, 29, 54) 0%, rgb(29, 23, 93) 50%, rgba(23, 30, 116, 1) 100%),url("/typetravel/images/1980s/b1.gif");
     background-size: 50vh;
     background-position: top;
     height: 15vh;
@@ -302,22 +302,22 @@ code{
 
 
 #play-1980s{
-    background-image: url(/images/1980s/play.png);
+    background-image: url("/typetravel/images/1980s/play.png");
 }
 
 #rec-1980s{
-    background-image: url(/images/1980s/rec.png);
+    background-image: url("/typetravel/images/1980s/rec.png");
 }
 
 /*THIRD*/
 #third{
-    background-image:linear-gradient(to bottom, rgba(26, 12, 71, 0.8) 0%, rgba(26, 12, 71, 0.8) 20%, rgba(18, 18, 105, 0.5) 80%, rgba(8, 8, 54, 0.8) 100%),url(/images/1980s/b1.gif);
+    background-image:linear-gradient(to bottom, rgba(26, 12, 71, 0.8) 0%, rgba(26, 12, 71, 0.8) 20%, rgba(18, 18, 105, 0.5) 80%, rgba(8, 8, 54, 0.8) 100%),url("/typetravel/images/1980s/b1.gif");
     background-size: 50vh;
     background-position: bottom center;
 }
 
 #gothird{
-    background-image: linear-gradient(to bottom, rgba(26, 12, 71, 0.8) 0%, rgba(26, 12, 71, 0.8) 50%, rgba(26, 12, 71, 0.8) 90%, rgba(26, 12, 71, 0.8) 100%), url(/images/1980s/b1.gif);
+    background-image: linear-gradient(to bottom, rgba(26, 12, 71, 0.8) 0%, rgba(26, 12, 71, 0.8) 50%, rgba(26, 12, 71, 0.8) 90%, rgba(26, 12, 71, 0.8) 100%), url("/typetravel/images/1980s/b1.gif");
     background-size: 50;
     height: 15vh;
     background-position: top center;
@@ -334,7 +334,7 @@ code{
 }
 
 #third h2::after{
-    background-image: url(/images/1980s/play.png) !important;
+    background-image: url("/typetravel/images/1980s/play.png") !important;
     height: auto;
     width: 40px;
     background-size: 8vh;
@@ -374,7 +374,7 @@ code{
 }
 
 #card-secession .card-body{
-    background-image: url(/images/icons/anouv-w.png);
+    background-image: url("/typetravel/images/icons/anouv-w.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 60vh !important;
@@ -412,11 +412,11 @@ code{
 
 /*FOURTH*/
 #fourth{
-    background-image:linear-gradient(to bottom, rgba(15, 3, 31, 0.8) 0%, rgba(15, 3, 31, 0.8)80%, rgba(9, 3, 17, 1) 100%),url(/images/1980s/b1.gif);
+    background-image:linear-gradient(to bottom, rgba(15, 3, 31, 0.8) 0%, rgba(15, 3, 31, 0.8)80%, rgba(9, 3, 17, 1) 100%),url("/typetravel/images/1980s/b1.gif");
 }
 
 #gofourth{
-    background-image:linear-gradient(to bottom, rgba(8, 8, 54, 0.8) 0%, rgba(15, 3, 31, 0.8) 100%),url(/images/1980s/b1.gif);
+    background-image:linear-gradient(to bottom, rgba(8, 8, 54, 0.8) 0%, rgba(15, 3, 31, 0.8) 100%),url("/typetravel/images/1980s/b1.gif");
 }
 
 #fourth h2{
@@ -598,25 +598,25 @@ footer a{
 }
 
 ::-webkit-scrollbar-button:vertical:increment{
-    background-image: url(/images/1980s/scroll-down.png);
+    background-image: url("/typetravel/images/1980s/scroll-down.png");
     background-size: 2.8vh;  
     background-repeat: no-repeat;
     background-position: center;
 }
 
 ::-webkit-scrollbar-button:vertical:increment:active{
-    background-image: url(/images/1980s/down-click.png);
+    background-image: url("/typetravel/images/1980s/down-click.png");
 }
 
 ::-webkit-scrollbar-button:vertical:decrement{
-    background-image: url(/images/1980s/scroll-up.png);
+    background-image: url("/typetravel/images/1980s/scroll-up.png");
     background-size: 2.8vh;  
     background-repeat: no-repeat;
     background-position: center;
 }
 
 ::-webkit-scrollbar-button:vertical:decrement:active{
-    background-image: url(/images/1980s/up-click.png);
+    background-image: url("/typetravel/images/1980s/up-click.png");
 }
 
 /*FAB CONTAINER*/
@@ -1194,7 +1194,7 @@ footer a{
 
 @media (max-width: 992px){
     .navbar, #navbarNavDropdown{
-        background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%),  url(/images/1980s/gltch.gif) !important;
+        background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(85, 85, 85, 0.2)90%, rgba(43, 41, 65, 0.5)95%, rgb(36, 29, 54) 100%),  url("/typetravel/images/1980s/gltch.gif") !important;
     }
 }
 @media (min-width: 992px) and (max-width: 1200px){

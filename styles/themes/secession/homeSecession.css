@@ -1,16 +1,16 @@
-@import "styles/themes/components/dropdown.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/home.css";
+@import "/typetravel/styles/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/home.css";
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
 
 @font-face {
-    font-family: secession;
-    src: url("/styles/fonts/secession/Secession.otf");
+    font-family: "secession";
+    src: url("/typetravel/styles/fonts/secession/Secession.otf");
 }
 
 @font-face {
     font-family: "golden type";
-    src: url("/styles/fonts/goldentypeitcstd.otf");
+    src: url("/typetravel/styles/fonts/goldentypeitcstd.otf");
 }
 
 /*BODY*/
@@ -83,7 +83,7 @@ code{
 }
 
 #capT{
-    background-image: url("/images/icons/T-artnouveau.svg");
+    background-image: url("/typetravel/images/icons/T-artnouveau.svg");
     background-size: 5vh !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -195,7 +195,7 @@ code{
 }
 
 #first-left{
-    background: url("/images/art-nouveau/first-left.png") !important;
+    background: url("/typetravel/images/art-nouveau/first-left.png") !important;
     background-position: center left;
     background-size: 28vh !important;
     background-repeat: no-repeat !important;    
@@ -204,7 +204,7 @@ code{
 }
 
 #first-right{
-    background: url("/images/art-nouveau/first-right.png") !important;
+    background: url("/typetravel/images/art-nouveau/first-right.png") !important;
     background-position: top right !important;
     background-size: 27.3vh !important;
     background-repeat: no-repeat !important;
@@ -212,7 +212,7 @@ code{
 }
 
 #ttlframe{
-    background: url("/images/art-nouveau/first-center-bg.png") !important;
+    background: url("/typetravel/images/art-nouveau/first-center-bg.png") !important;
     padding-bottom: 6rem;
     background-size: 120vh !important;
     background-repeat: no-repeat !important;
@@ -240,7 +240,7 @@ code{
 
 #icon{
     padding: 8vh;
-    background-image: url("/images/icons/start-an.svg");
+    background-image: url("/typetravel/images/icons/start-an.svg");
     background-size: 14vh;
     margin: 1rem;
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@ code{
 }
 
 #icon:hover{
-    background-image: url("/images/icons/start-an-hov.svg");
+    background-image: url("/typetravel/images/icons/start-an-hov.svg");
     background-color: transparent !important;
 }
 
@@ -272,7 +272,7 @@ h2{
 
 /*SECOND*/
 #second{
-    background:url("/images/art-nouveau/second-bg.png");
+    background:url("/typetravel/images/art-nouveau/second-bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 180vh !important;
@@ -303,13 +303,13 @@ h2{
 
 /*THIRD*/
 #third, #gothird{
-    background: linear-gradient(rgba(223, 216, 203,0.9)0%, rgba(223, 216, 203,0.9)100%), url("/images/art-nouveau/art-an.png") !important;
+    background: linear-gradient(rgba(223, 216, 203,0.9)0%, rgba(223, 216, 203,0.9)100%), url("/typetravel/images/art-nouveau/art-an.png") !important;
     background-size: 30vh !important;
     background-position: bottom;
 }
 
 #third h2{
-    background: url("/images/art-nouveau/third-dec.png") !important;
+    background: url("/typetravel/images/art-nouveau/third-dec.png") !important;
     font-size: 8vh;
     padding-bottom: 3rem;
     padding-top: 2.5rem;
@@ -337,7 +337,7 @@ h2{
 
 /*FOURTH*/
 #fourth{
-    background: url("/images/art-nouveau/four-bg.png") !important;
+    background: url("/typetravel/images/art-nouveau/four-bg.png") !important;
     background-repeat: no-repeat;
     background-size: 80vh !important;
     background-position: top center;
@@ -346,7 +346,7 @@ h2{
 }
 
 #gofourth{
-    background: url("/images/art-nouveau/four-bg.png") !important;
+    background: url("/typetravel/images/art-nouveau/four-bg.png") !important;
     background-color: #F9D1C7 !important;
     background-size: 70vh !important;
     background-position: bottom left !important;
@@ -359,7 +359,7 @@ h2{
     padding-top: 2.5rem;
     background-size: 80vh !important;
     background-position: top center !important;
-    background-image: url("/images/art-nouveau/third-deco.png") !important;    background-repeat: no-repeat;
+    background-image: url("/typetravel/images/art-nouveau/third-deco.png") !important;    background-repeat: no-repeat;
     background-position: center bottom !important;
 }
 
@@ -435,14 +435,14 @@ footer p{
 }
 
 #footer-right{
-    background-image: url("/images/art-nouveau/footer-right.png");
+    background-image: url("/typetravel/images/art-nouveau/footer-right.png");
     background-size: 25vh;
     background-repeat: no-repeat;
     background-position: right center;
 }
 
 #footer-left{
-    background-image: url("/images/art-nouveau/footer-left.png");
+    background-image: url("/typetravel/images/art-nouveau/footer-left.png");
     background-size:25vh;
     background-repeat: no-repeat;
     background-position: left center;
@@ -954,7 +954,7 @@ footer p{
         background-color: #FFFFF5 !important;
     }
     #first{
-        background: linear-gradient(to bottom, rgba(255,255,245, 0.9)0%, rgba(255,255,245, 0.9)100%), url("/images/art-nouveau/art-an.png") !important;
+        background: linear-gradient(to bottom, rgba(255,255,245, 0.9)0%, rgba(255,255,245, 0.9)100%), url("/typetravel/images/art-nouveau/art-an.png") !important;
         background-size: 30vh;
         background-position: bottom;
         }

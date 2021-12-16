@@ -1,4 +1,4 @@
-@import "styles/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/dropdown.css";
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+English+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Forum&display=swap');
@@ -7,27 +7,27 @@
 
 @font-face {
     font-family: intro;
-    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+    src: url("/typetravel/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
 }
 
 @font-face {
     font-family: "vcr";
-    src: url("/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
+    src: url("/typetravel/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
 }
 
 @font-face{
     font-family: "special";
-    src: url("/styles/fonts/johnny-fever.regular.otf")
+    src: url("/typetravel/styles/fonts/johnny-fever.regular.otf")
 }
 
 @font-face {
     font-family: "secession";
-    src: url("/styles/fonts/secession/Secession.otf");
+    src: url("/typetravel/styles/fonts/secession/Secession.otf");
 }
 
 @font-face {
     font-family: "Bembo";
-    src: url("/styles/fonts/Bembo.ttf")
+    src: url("/typetravel/styles/fonts/Bembo.ttf")
 }
 
 /*BODY*/
@@ -182,7 +182,7 @@ p {
 }
 
 #card-1980s{
-    background-image:url(/images/1980s/grid-c.png);
+    background-image:url("/typetravel/images/1980s/grid-c.png");
     background-size: 100vh;
     background-position: bottom center;
     color: white;
@@ -340,14 +340,14 @@ p {
 }
 
 #card-iss1{
-    background-image: url(/images/examples/arch-issue.png);
+    background-image: url("/typetravel/images/examples/arch-issue.png");
     background-size: cover;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
 #card-iss2{
-    background-image: url(/images/examples/fem-issue.png);
+    background-image: url("/typetravel/images/examples/fem-issue.png");
     margin-right: 2rem;
     background-size: cover;
     margin-left: auto !important;
@@ -473,47 +473,47 @@ p {
 }
 
 .fab-content{
-    background-image: url(/images/icons/fb-white.png);
+    background-image: url("/typetravel/images/icons/fb-white.png");
     background-size: 8vh;
     background-repeat: no-repeat;
     background-position: center center !important;
 }
 
 .sub-button:nth-child(2){
-    background: url(/images/icons/ren-white.png);
+    background: url("/typetravel/images/icons/ren-white.png");
     background-size: 8vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(3){
-    background: url(/images/icons/anouv-w.png);
+    background: url("/typetravel/images/icons/anouv-w.png");
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(4){
-    background: url(/images/icons/tv-card.png);
+    background: url("/typetravel/images/icons/tv-card.png");
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(5){
-    background: url(/images/icons/future.png);
+    background: url("/typetravel/images/icons/future.png");
     background-size: 7vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .fab-container #enable-future:hover{
-    background: url(/images/Future/g25.gif) !important;
+    background: url("/typetravel/images/Future/g25.gif") !important;
     background-size: 12vh !important;
 }
 
 .sub-button:nth-child(6){
-    background: url(/images/icons/default-icon.png);
+    background: url("/typetravel/images/icons/default-icon.png");
     background-size: 5vh !important;
     background-repeat: no-repeat;
     background-position: center;

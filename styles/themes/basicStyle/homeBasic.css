@@ -1,6 +1,6 @@
-@import "styles/themes/components/dropdown.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/home.css";
+@import "/typetravel/styles/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/home.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
 
@@ -97,7 +97,7 @@ code{
 }
 
 #capT{
-  background-image: url(/images/icons/T-future-light.svg);
+  background-image: url("/typetravel/images/icons/T-future-light.svg");
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -151,7 +151,7 @@ code{
 }
 
 #T-main{
-    background-image: url(/images/icon.png);
+    background-image: url("/typetravel/images/icon.png");
     background-size: 18vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -175,7 +175,7 @@ code{
 
 #icon{
     padding: 10vh;
-    background-image: url("/images/icons/start.svg");
+    background-image: url("/typetravel/images/icons/start.svg");
     background-size: 15vh;
     margin: 1rem;
     background-repeat: no-repeat;
@@ -185,7 +185,7 @@ code{
 }
 
 #icon:hover{
-    background-image: url("/images/icons/start-hov.svg");
+    background-image: url("/typetravel/images/icons/start-hov.svg");
     background-color: transparent !important;
 }
 

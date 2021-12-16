@@ -80,42 +80,42 @@
 }
 
 .fab-content{
-    background-image: url(/images/icons/fb-white.png);
+    background-image: url("/typetravel/images/icons/fb-white.png");
     background-size: 8vh;
     background-repeat: no-repeat;
     background-position: center center !important;
 }
 
 .sub-button:nth-child(2){
-    background: url(/images/icons/ren-white.png);
+    background: url("/typetravel/images/icons/ren-white.png");
     background-size: 8vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(3){
-    background: url(/images/icons/anouv-w.png);
+    background: url("/typetravel/images/icons/anouv-w.png");
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(4){
-    background: url(/images/icons/tv-card.png);
+    background: url("/typetravel/images/icons/tv-card.png");
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sub-button:nth-child(5){
-    background: url(/images/icons/future.png);
+    background: url("/typetravel/images/icons/future.png");
     background-size: 7vh;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .fab-container #enable-future:hover{
-    background: url(/images/Future/g25.gif) !important;
+    background: url("/typetravel/images/Future/g25.gif") !important;
     background-size: 10vh !important;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .sub-button:nth-child(6){
-    background: url(/images/icons/default-icon.png);
+    background: url("/typetravel/images/icons/default-icon.png");
     background-size: 5vh !important;
     background-repeat: no-repeat;
     background-position: center;
