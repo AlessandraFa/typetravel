@@ -1,6 +1,6 @@
-@import url(/styles/themes/components/fab.css);
-@import url(/styles/themes/components/sizingNavbar.css);
-@import url(/styles/documentation.css);
+@import "styles/themes/components/fab.css";
+@import "styles/themes/components/sizingNavbar.css";
+@import "styles/documentation.css";
 
 @font-face {
     font-family: "Bembo";

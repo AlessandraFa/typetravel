@@ -1,6 +1,6 @@
-@import "/styles/themes/components/dropdown.css";
-@import "/styles/themes/components/sizingNavbar.css";
-@import url("/styles/themes/components/fab.css");
+@import "styles/themes/components/dropdown.css";
+@import "styles/themes/components/sizingNavbar.css";
+@import "styles/themes/components/fab.css";
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 @font-face {

@@ -1,6 +1,6 @@
-@import "/styles/themes/components/dropdown.css";
-@import "/styles/themes/components/sizingNavbar.css";
-@import "/styles/home.css";
+@import "styles/themes/components/dropdown.css";
+@import "styles/themes/components/sizingNavbar.css";
+@import "styles/home.css";
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=IM+Fell+English+SC&display=swap');
 
 @font-face {

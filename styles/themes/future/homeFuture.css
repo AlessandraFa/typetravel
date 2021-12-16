@@ -1,5 +1,5 @@
-@import "/styles/themes/components/dropdown.css";
-@import "/styles/home.css";
+@import "styles/themes/components/dropdown.css";
+@import "styles/home.css";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
 
 @font-face {

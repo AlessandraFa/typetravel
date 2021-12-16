@@ -1,7 +1,7 @@
-@import url("./themes/components/scrollbar.css");
-@import url("./themes/components/sizingNavbar.css");
-@import url("./themes/components/fab.css");
-@import url("./themes/components/dropdown.css");
+@import "styles/themes/components/scrollbar.css";
+@import "styles/themes/components/sizingNavbar.css";
+@import "styles/themes/components/fab.css";
+@import "style/themes/components/dropdown.css";
 
 
 .content{
