@@ -175,7 +175,7 @@ h2,h3,h4,h5,h6{
     background-color: transparent;
 }
 h3{
-    font-size: 4vh;
+    font-size: 6vh;
 }
 
 h5{
@@ -289,4 +289,18 @@ h5{
 
 .sub-button:hover{
     background-color: #272727 !important;
+}
+
+
+.sections li a{
+    text-transform: uppercase;
+    font-family: "intro", monospace;
+}
+
+.link-section h6{
+    font-size: 4vh;
+}
+
+.link-section{
+    text-decoration: none;
 }

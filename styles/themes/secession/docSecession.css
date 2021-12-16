@@ -152,6 +152,10 @@ h6{
     font-size: 4vh;
 }
 
+.link-section{
+    text-decoration: none !important;
+}
+
 /*SIDE MENU*/
 
 .content #text-start{

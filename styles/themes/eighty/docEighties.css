@@ -164,22 +164,50 @@ code{
     background-image: none;
 }
 
+#navbar-documentation .navbar-brand:hover{
+    color: white !important; 
+}
+
+.nav-pills .nav-link:hover{
+    color: #d47e1c !important;
+    text-shadow: 4px -4px 10px #91387a,-4px 4px 10px #3d10b9;
+}
+
 #main-background p{
     font-size: 2.5vh !important;
     text-shadow: 4px -4px 10px #d8d8d8,-4px 4px 10px #bebebe;
 }
 
-h2, h3, h4, h5, h6{
+h2, h3, h4, h5{
     text-transform: uppercase;
     text-shadow: 4px -4px 10px #d8d8d8,-4px 4px 10px #bebebe;
 }
 
 h3{
-    font-size: 4vh;
+    font-size: 6vh;
+    color: #CD3C37;
+    text-shadow: 4px -4px 10px #91387a,-4px 4px 10px #3d10b9;
 }
 
 h5{
     font-size: 3vh;
+    color: #d47e1c;
+    text-shadow: 4px -4px 10px #91387a,-4px 4px 10px #3d10b9;
+}
+
+h6{
+    font-size: 4vh;
+    text-shadow: 4px -4px 10px #91387a,-4px 4px 10px #3d10b9;
+}
+
+.img-txt b{
+    color: #CD3C37;
+    text-shadow: 4px -4px 10px #91387a,-4px 4px 10px #3d10b9;
+    text-transform: uppercase;
+}
+
+.link-section{
+    text-decoration: none;
 }
 
 #main-background{

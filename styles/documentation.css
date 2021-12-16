@@ -130,6 +130,11 @@ h5{
     font-size: 5vh !important;
 }
 
+h6{
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
 .img-div{
     display: block;
     margin-left: auto;
@@ -267,7 +272,6 @@ img{
 .color-80 p, .color-80 .color-square:first-of-type{
     margin-left: 2rem;
 }
-
 
 
 @media (max-width: 1200px){
