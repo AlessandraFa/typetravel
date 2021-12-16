@@ -16,7 +16,7 @@
     <button class="navigation-responsive-button"  onclick="responsiveNavigation(this.id)" id="prev-article-1" style="left: 30px;">Prev</button>
     <button class="navigation-responsive-button" onclick="responsiveNavigation(this.id)" id="next-article-3" style="right: 120px;">Next</button>
     <button class="navigation-responsive-button"  onclick="responsiveNavigation(this.id)" id="prev-article-2" style="left: 30px;">Prev</button>
-    <button class="navigation-responsive-button" onclick="responsiveNavigation(this.id)" id="next-article-2" style="right: 30px;">Next</button>
+    <button class="navigation-responsive-button" onclick="responsiveNavigation(this.id)" id="next-article-2" style="right: 25vw">Next</button>
    
     <!-- MODALS -->
 
@@ -82,13 +82,14 @@
             <div class="offcanvas-body" id="metadata-style">
              <!-- accordion start -->
              <div class="accordion accordion-flush" id="accordionFlushOffCanvas">
+              
               <div class="accordion-item">
                 <h2 class="accordion-header" id="off-flush-headingOne">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#off-flush-collapseOne" aria-expanded="false" aria-controls="off-flush-collapseOne">
-                      Tracking Historical Representations of the Female Nude
+                      The fine line between art and pornography
                   </button>
                 </h2>
-                <div id="off-flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="off-flush-headingOne" data-bs-parent="#accordionFlushOffCanvas">
+                <div id="off-flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="off-flush-headingTwo" data-bs-parent="#accordionFlushOffCanvas">
                   <div class="accordion-body">
                       <!-- nested nav tab start -->
                       <ul class="nav nav-tabs justify-content-center" id="article-1-tab-offcanvas" role="tablist">
@@ -106,62 +107,60 @@
                             </li>
                         </ul>
                         <div class="tab-content  text-center" id="myTabContent-offcanvas">
-                          <div class="tab-pane fade show active" id="article-1-people-offcanvas" role="tabpanel" aria-labelledby="home-tab"><ul>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Adam and Eve: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Alexander the Great: 2 <span></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Edgar Degas: 6 <span></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Jacques Louis David: 1 <span></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Jean-Auguste Dominique Ingres: 7 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Jean-Léon Gérôme: 3 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Kenneth Clark: 3 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Leonardo da Vinci: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Paul Cézanne: 3 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Praxiteles: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Sandro Botticelli: 2 </span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">TJ Clark: 3 </span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Thomas Couture: 3 </span></li>
-                            <li><span onclick="highlightData(1, this)" class="people-nav">Édouard Manet: 5 </span></li>
-                          </ul></div>
+                          <div class="tab-pane fade show active" id="article-1-people-offcanvas" role="tabpanel" aria-labelledby="home-tab">
+                            <li><span onclick="highlightData(1, this)" class="people-nav">ArtActivistBarbie: 8 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Arthur Hacker: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Benvenuto Cellini: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Deborah de Robertis: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Diego Velázquez: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Eric Gill: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Fra Beecher: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Francisco Goya: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Guerrilla Girls: 4 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Gustav Klimt: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Gustave Courbet: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Hans Maes: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Harvey Weinstein: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Jeffrey Epstein: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">John William Waterhouse: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Mary Beard: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Mary Richardson: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Sarah Williamson: 7 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Sonia Boyce: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Wright Barker: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="people-nav">Édouard Manet: 3 <span ></span></span></li>
+                          </div>
                           <div class="tab-pane fade" id="article-1-places-offcanvas" role="tabpanel" aria-labelledby="profile-tab">
-                            <li><span onclick="highlightData(1, this)" class="places-nav">Africa: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="places-nav">Egypt: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="places-nav">France: 8 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="places-nav">Greece: 11 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="places-nav">Indochina: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="places-nav">Italy: 5 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="places-nav">Louvre: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Iowa: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">London’s National Gallery: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Manchester: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Musée d’Orsay: 2 <span ></span></span></li>
                             <li><span onclick="highlightData(1, this)" class="places-nav">Paris: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="places-nav">Rome: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">Pompeii: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">UK: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="places-nav">US: 1 <span ></span></span></li>
                           </div>
                           <div class="tab-pane fade" id="article-1-artworks-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Apollo Belvedere: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Birth of Venus: 5 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Canova’s Perseus: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Knidian Aphrodite: 8 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">La Grande Odalisque: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Mattei Athena: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Olympia: 10 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Pompeii Venus: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Bathers: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Decadence of the Romans: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Slave Market: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Tub: 3 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Turkish Bath: 4 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Circe: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Hylas and the Nymphs: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Le Déjeuner sur l’Herbe: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Naked Maja: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Olympia: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">Rokeby Venus: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Origin of the World: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="artworks-nav">The Syrinx: 1 <span ></span></span></li>
                           </div>
                           <div class="tab-pane fade" id="article-1-events-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
-                            <li><span onclick="highlightData(1, this)" class="events-nav">French Revolution: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="events-nav">Industrial Revolution: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(1, this)" class="events-nav">Peace of Lodi: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(1, this)" class="events-nav">Black Lives Matter: 1 <span ></span></span></li>
                           </div>
                         </div>
-                    <!-- nested nav tab start -->
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="off-flush-headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#off-flush-collapseTwo" aria-expanded="false" aria-controls="off-flush-collapseTwo">
-                      The fine line between art and pornography
+                      Tracking Historical Representations of the Female Nude
                   </button>
                 </h2>
                 <div id="off-flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="off-flush-headingTwo" data-bs-parent="#accordionFlushOffCanvas">
@@ -182,53 +181,55 @@
                             </li>
                         </ul>
                         <div class="tab-content  text-center" id="myTabContent-offcanvas">
-                          <div class="tab-pane fade show active" id="article-2-people-offcanvas" role="tabpanel" aria-labelledby="home-tab">
-                            <li><span onclick="highlightData(2, this)" class="people-nav">ArtActivistBarbie: 8 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Arthur Hacker: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Benvenuto Cellini: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Deborah de Robertis: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Diego Velázquez: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Eric Gill: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Fra Beecher: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Francisco Goya: 3 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Guerrilla Girls: 4 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Gustav Klimt: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Gustave Courbet: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Hans Maes: 3 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Harvey Weinstein: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Jeffrey Epstein: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">John William Waterhouse: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Mary Beard: 5 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Mary Richardson: 3 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Sarah Williamson: 7 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Sonia Boyce: 5 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Wright Barker: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="people-nav">Édouard Manet: 3 <span ></span></span></li>
-                          </div>
+                          <div class="tab-pane fade show active" id="article-2-people-offcanvas" role="tabpanel" aria-labelledby="home-tab"><ul>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Adam and Eve: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Alexander the Great: 2 <span></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Edgar Degas: 6 <span></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Jacques Louis David: 1 <span></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Jean-Auguste Dominique Ingres: 7 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Jean-Léon Gérôme: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Kenneth Clark: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Leonardo da Vinci: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Paul Cézanne: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Praxiteles: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Sandro Botticelli: 2 </span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">TJ Clark: 3 </span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Thomas Couture: 3 </span></li>
+                            <li><span onclick="highlightData(2, this)" class="people-nav">Édouard Manet: 5 </span></li>
+                          </ul></div>
                           <div class="tab-pane fade" id="article-2-places-offcanvas" role="tabpanel" aria-labelledby="profile-tab">
-                            <li><span onclick="highlightData(2, this)" class="places-nav">Iowa: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="places-nav">London’s National Gallery: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="places-nav">Manchester: 5 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="places-nav">Musée d’Orsay: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Africa: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Egypt: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">France: 8 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Greece: 11 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Indochina: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Italy: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Louvre: 1 <span ></span></span></li>
                             <li><span onclick="highlightData(2, this)" class="places-nav">Paris: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="places-nav">Pompeii: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="places-nav">UK: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="places-nav">US: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="places-nav">Rome: 1 <span ></span></span></li>
                           </div>
                           <div class="tab-pane fade" id="article-2-artworks-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
-                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Circe: 3 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Hylas and the Nymphs: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Le Déjeuner sur l’Herbe: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Naked Maja: 3 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Olympia: 1 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Rokeby Venus: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="artworks-nav">The Origin of the World: 2 <span ></span></span></li>
-                            <li><span onclick="highlightData(2, this)" class="artworks-nav">The Syrinx: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Apollo Belvedere: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Birth of Venus: 5 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Canova’s Perseus: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Knidian Aphrodite: 8 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">La Grande Odalisque: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Mattei Athena: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Olympia: 10 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">Pompeii Venus: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">The Bathers: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">The Decadence of the Romans: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">The Slave Market: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">The Tub: 3 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="artworks-nav">The Turkish Bath: 4 <span ></span></span></li>
                           </div>
                           <div class="tab-pane fade" id="article-2-events-offcanvas" role="tabpanel" aria-labelledby="contact-tab">
-                            <li><span onclick="highlightData(2, this)" class="events-nav">Black Lives Matter: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="events-nav">French Revolution: 2 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="events-nav">Industrial Revolution: 1 <span ></span></span></li>
+                            <li><span onclick="highlightData(2, this)" class="events-nav">Peace of Lodi: 1 <span ></span></span></li>
                           </div>
                         </div>
+                    <!-- nested nav tab start -->
                   </div>
                 </div>
               </div>
@@ -376,7 +377,7 @@
 
   <!-- article2-->
   
-  <div class="col-lg-3 col-md-12 p-0" id="article-2">
+  <div class="col-lg-3 col-md-12 p-0" id="article-1">
     <div class="card">
       
       <div class="card-header">
@@ -386,14 +387,14 @@
         <div class="deco" id="deco3"></div>
       </div>
         
-      <div class="accordion accordion-flush" id="accordionArt2">
+      <div class="accordion accordion-flush" id="accordionArt1">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="stayOpen-headingTwo">
-            <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseTwo" aria-expanded="true" aria-controls="stayOpen-collapseTwo">
+          <h2 class="accordion-header" id="stayOpen-headingOne">
+            <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseOne" aria-expanded="true" aria-controls="stayOpen-collapseOne">
               Article information:
             </button>
           </h2>
-          <div id="stayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingTwo">
+          <div id="stayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingOne">
             <div class="accordion-body">
                 <div class="info">
                   <p class="byline">By <a href="https://www.elizabethenfield.com/" target="_blank">Lizzie Enfield</a><span class="publicationDate">, 18th September 2020</span></p>
@@ -535,9 +536,9 @@
      <!-- card end  -->
     </div>
   </div>
-  <!-- article2 end -->
-  <!-- article1 -->
-  <div class="col-lg-3 col-md-12 p-0" id="article-1">
+  <!-- article1 end -->
+  <!-- article2 -->
+  <div class="col-lg-3 col-md-12 p-0" id="article-2">
     <div class="card">
       <div class="card-header">
         <h5 class="card-title p-3 block-effect" id="article-long-title">
@@ -545,14 +546,14 @@
         </h5>
         <div class="deco" id="deco1"></div>
       </div>
-        <div class="accordion accordion-flush" id="accordionArt1">
+        <div class="accordion accordion-flush" id="accordionArt2">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="stayOpen-headingOne">
-              <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseOne" aria-expanded="true" aria-controls="stayOpen-collapseOne">
+            <h2 class="accordion-header" id="stayOpen-headingTwo">
+              <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#stayOpen-collapseTwo" aria-expanded="true" aria-controls="stayOpen-collapseTwo">
                   Articles information:  
               </button>
             </h2>
-            <div id="stayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingOne">
+            <div id="stayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="stayOpen-headingTwo">
               <div class="accordion-body">
                   <div class="info">
                     <p class="byline">By <a href="https://www.architectmagazine.com/author/ned-cramer" target="_blank">Richard K. Yu
@@ -984,80 +985,6 @@
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                   <!-- nested nav tab start -->
-                  <ul class="nav nav-tabs justify-content-center" id="article-2-tab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="article-2-people-tab" data-bs-toggle="tab" data-bs-target="#article-2-people" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="article-2-places-tab" data-bs-toggle="tab" data-bs-target="#article-2-places" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="article-2-artworks-tab" data-bs-toggle="tab" data-bs-target="#article-2-artworks" type="button" role="tab" aria-controls="contact" aria-selected="false">Artworks</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="article-2-events-tab" data-bs-toggle="tab" data-bs-target="#article-2-events" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content  text-center" id="myTabContent">
-                      <div class="tab-pane fade show active" id="article-2-people" role="tabpanel" aria-labelledby="home-tab">
-                        <li><span onclick="highlightData(2, this)" class="people-nav">ArtActivistBarbie: 8 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Arthur Hacker: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Benvenuto Cellini: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Deborah de Robertis: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Diego Velázquez: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Eric Gill: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Fra Beecher: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Francisco Goya: 3 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Guerrilla Girls: 4 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Gustav Klimt: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Gustave Courbet: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Hans Maes: 3 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Harvey Weinstein: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Jeffrey Epstein: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">John William Waterhouse: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Mary Beard: 5 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Mary Richardson: 3 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Sarah Williamson: 7 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Sonia Boyce: 5 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Wright Barker: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="people-nav">Édouard Manet: 3 <span ></span></span></li>
-                      </div>
-                      <div class="tab-pane fade" id="article-2-places" role="tabpanel" aria-labelledby="profile-tab">
-                        <li><span onclick="highlightData(2, this)" class="places-nav">Iowa: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="places-nav">London’s National Gallery: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="places-nav">Manchester: 5 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="places-nav">Musée d’Orsay: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="places-nav">Paris: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="places-nav">Pompeii: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="places-nav">UK: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="places-nav">US: 1 <span ></span></span></li>
-                      </div>
-                      <div class="tab-pane fade" id="article-2-artworks" role="tabpanel" aria-labelledby="contact-tab">
-                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Circe: 3 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Hylas and the Nymphs: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Le Déjeuner sur l’Herbe: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Naked Maja: 3 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Olympia: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Rokeby Venus: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="artworks-nav">The Origin of the World: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(2, this)" class="artworks-nav">The Syrinx: 1 <span ></span></span></li>
-                      </div>
-                      <div class="tab-pane fade" id="article-2-events" role="tabpanel" aria-labelledby="contact-tab">
-                        <li><span onclick="highlightData(2, this)" class="events-nav">Black Lives Matter: 1 <span ></span></span></li>
-                      </div>
-                    </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Tracking Historical Representations of the Female Nude
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                  <!-- nested nav tab start -->
                   <ul class="nav nav-tabs justify-content-center" id="article-1-tab" role="tablist">
                       <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="article-1-people-tab" data-bs-toggle="tab" data-bs-target="#article-1-people" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
@@ -1073,52 +1000,126 @@
                         </li>
                     </ul>
                     <div class="tab-content  text-center" id="myTabContent">
-                      <div class="tab-pane fade show active" id="article-1-people" role="tabpanel" aria-labelledby="home-tab"><ul>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Adam and Eve: 1 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Alexander the Great: 2 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Edgar Degas: 6 <span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Jacques Louis David: 1 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Jean-Auguste Dominique Ingres: 7 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Jean-Léon Gérôme: 3 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Kenneth Clark: 3 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Leonardo da Vinci: 1 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Paul Cézanne: 3 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Praxiteles: 2 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Sandro Botticelli: 2 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">TJ Clark: 3 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Thomas Couture: 3 <span></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="people-nav">Édouard Manet: 5 <span></span></span></li>
-                      </ul></div>
+                      <div class="tab-pane fade show active" id="article-1-people" role="tabpanel" aria-labelledby="home-tab">
+                        <li><span onclick="highlightData(1, this)" class="people-nav">ArtActivistBarbie: 8 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Arthur Hacker: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Benvenuto Cellini: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Deborah de Robertis: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Diego Velázquez: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Eric Gill: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Fra Beecher: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Francisco Goya: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Guerrilla Girls: 4 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Gustav Klimt: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Gustave Courbet: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Hans Maes: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Harvey Weinstein: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Jeffrey Epstein: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">John William Waterhouse: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Mary Beard: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Mary Richardson: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Sarah Williamson: 7 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Sonia Boyce: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Wright Barker: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="people-nav">Édouard Manet: 3 <span ></span></span></li>
+                      </div>
                       <div class="tab-pane fade" id="article-1-places" role="tabpanel" aria-labelledby="profile-tab">
-                        <li><span onclick="highlightData(1, this)" class="places-nav">Africa: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="places-nav">Egypt: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="places-nav">France: 8 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="places-nav">Greece: 11 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="places-nav">Indochina: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="places-nav">Italy: 5 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="places-nav">Louvre: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Iowa: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">London’s National Gallery: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Manchester: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Musée d’Orsay: 2 <span ></span></span></li>
                         <li><span onclick="highlightData(1, this)" class="places-nav">Paris: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="places-nav">Rome: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">Pompeii: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">UK: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="places-nav">US: 1 <span ></span></span></li>
                       </div>
                       <div class="tab-pane fade" id="article-1-artworks" role="tabpanel" aria-labelledby="contact-tab">
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Apollo Belvedere: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Birth of Venus: 5 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Canova’s Perseus: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Knidian Aphrodite: 8 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">La Grande Odalisque: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Mattei Athena: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Olympia: 10 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Pompeii Venus: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Bathers: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Decadence of the Romans: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Slave Market: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Tub: 3 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Turkish Bath: 4 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Circe: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Hylas and the Nymphs: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Le Déjeuner sur l’Herbe: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Naked Maja: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Olympia: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">Rokeby Venus: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Origin of the World: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="artworks-nav">The Syrinx: 1 <span ></span></span></li>
                       </div>
                       <div class="tab-pane fade" id="article-1-events" role="tabpanel" aria-labelledby="contact-tab">
-                        <li><span onclick="highlightData(1, this)" class="events-nav">French Revolution: 2 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="events-nav">Industrial Revolution: 1 <span ></span></span></li>
-                        <li><span onclick="highlightData(1, this)" class="events-nav">Peace of Lodi: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(1, this)" class="events-nav">Black Lives Matter: 1 <span ></span></span></li>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Tracking Historical Representations of the Female Nude
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                  <!-- nested nav tab start -->
+                  <ul class="nav nav-tabs justify-content-center" id="article-2-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="article-2-people-tab" data-bs-toggle="tab" data-bs-target="#article-2-people" type="button" role="tab" aria-controls="home" aria-selected="true">People</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-2-places-tab" data-bs-toggle="tab" data-bs-target="#article-2-places" type="button" role="tab" aria-controls="profile" aria-selected="false">Places</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="article-2-artworks-tab" data-bs-toggle="tab" data-bs-target="#article-2-artworks" type="button" role="tab" aria-controls="contact" aria-selected="false">Artworks</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="article-2-events-tab" data-bs-toggle="tab" data-bs-target="#article-2-events" type="button" role="tab" aria-controls="contact" aria-selected="false">Events</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content  text-center" id="myTabContent">
+                      <div class="tab-pane fade show active" id="article-2-people" role="tabpanel" aria-labelledby="home-tab"><ul>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Adam and Eve: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Alexander the Great: 2 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Edgar Degas: 6 <span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Jacques Louis David: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Jean-Auguste Dominique Ingres: 7 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Jean-Léon Gérôme: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Kenneth Clark: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Leonardo da Vinci: 1 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Paul Cézanne: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Praxiteles: 2 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Sandro Botticelli: 2 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">TJ Clark: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Thomas Couture: 3 <span></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="people-nav">Édouard Manet: 5 <span></span></span></li>
+                      </ul></div>
+                      <div class="tab-pane fade" id="article-2-places" role="tabpanel" aria-labelledby="profile-tab">
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Africa: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Egypt: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">France: 8 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Greece: 11 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Indochina: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Italy: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Louvre: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Paris: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="places-nav">Rome: 1 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-artworks" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Apollo Belvedere: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Birth of Venus: 5 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Canova’s Perseus: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Knidian Aphrodite: 8 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">La Grande Odalisque: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Mattei Athena: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Olympia: 10 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">Pompeii Venus: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">The Bathers: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">The Decadence of the Romans: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">The Slave Market: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">The Tub: 3 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="artworks-nav">The Turkish Bath: 4 <span ></span></span></li>
+                      </div>
+                      <div class="tab-pane fade" id="article-2-events" role="tabpanel" aria-labelledby="contact-tab">
+                        <li><span onclick="highlightData(2, this)" class="events-nav">French Revolution: 2 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="events-nav">Industrial Revolution: 1 <span ></span></span></li>
+                        <li><span onclick="highlightData(2, this)" class="events-nav">Peace of Lodi: 1 <span ></span></span></li>
                       </div>
                     </div>
                 <!-- nested nav tab start -->
