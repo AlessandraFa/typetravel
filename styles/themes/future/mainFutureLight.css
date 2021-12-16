@@ -5,17 +5,17 @@
 
 @font-face {
     font-family: future;
-    src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
+    src: url("styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
 }
 
 @font-face {
     font-family: f1bold;
-    src: url("/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
+    src: url("styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
 }
 
 @font-face {
     font-family: intro;
-    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+    src: url("styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
 }
 
 /*BODY*/
