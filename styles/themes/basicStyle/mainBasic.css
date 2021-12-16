@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap');
 
 
+
 /*BODY*/
 body{
   font-family: "cousine", Courier, monospace;
@@ -429,12 +430,7 @@ img{
   .card {
       height: 100vh;
   }
-  #next-article-3, #prev-article-1, #prev-article-2 {
-      display: none;
-  }
-  #next-article-2 {
-      display: block;
-  }
+  
 }
 
 @media(min-width: 1400px){

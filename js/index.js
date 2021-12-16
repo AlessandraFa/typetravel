@@ -1,12 +1,71 @@
 
-// var buttonNext2 = document.querySelector("#next-article-2");
-// var buttonNext3 = document.querySelector("#next-article-3");
-// var buttonPrev1 = document.querySelector("#prev-article-1");
-// var buttonPrev2 = document.querySelector("#prev-article-2");
+var buttonNext2 = document.querySelector("#next-article-2");
+var buttonNext3 = document.querySelector("#next-article-3");
+var buttonPrev1 = document.querySelector("#prev-article-1");
+var buttonPrev2 = document.querySelector("#prev-article-2");
+var art1 = document.querySelector("#article-1");
+var art2 = document.querySelector("#article-2");
+var art3 = document.querySelector("#article-3");
 
-// var article1 = document.querySelector("#article-1");
-// var article2 = document.querySelector("#article-2");
-// var article3 = document.querySelector("#article-3");
+// var visualizedRespArt = "article-1";
+
+// function responsiveNavigation(id) {
+//     let arrAction = id.split("-");
+//     let action = arrAction[0];
+//     let articleId = arrAction[1] +"-"+ arrAction[2];
+//     switch (articleId) {
+//         case "article-1":
+//             art1.classList.remove("d-none");
+//             art2.classList.add("d-none");
+//             buttonNext2.classList.remove("d-none");
+//             buttonPrev1.classList.add("d-none");
+//             buttonNext3.classList.add("d-none");
+//             visualizedRespArt = articleId;
+//             break;
+//         case "article-2":
+//             art2.classList.remove("d-none");
+//             buttonNext3.classList.remove("d-none");
+//             buttonPrev1.classList.remove("d-none");
+//             if (action === "prev") {
+//                 art3.classList.add("d-none");
+//                 buttonPrev2.classList.add("d-none");
+//             } else {
+//                 art1.classList.add("d-none");
+//                 buttonNext2.classList.add("d-none");
+//             }
+//             visualizedRespArt = articleId;
+//             break;
+//         case "article-3":
+//             art3.classList.remove("d-none");
+//             art2.classList.add("d-none");
+//             buttonPrev2.classList.remove("d-none");
+//             buttonNext3.classList.add("d-none");
+//             visualizedRespArt = articleId;
+//             break;
+//     }
+// }
+
+// window.setInterval(() => {
+//     if (window.innerWidth >= 992) {
+//         buttonPrev1.classList.add("d-none");
+//         buttonPrev2.classList.add("d-none");
+//         buttonNext3.classList.add("d-none");
+//         buttonNext2.classList.add("d-none");
+//     } else {
+//         switch (visualizedRespArt) {
+//             case "article-1":
+//                 buttonNext2.classList.remove("d-none");
+//                 break;
+//             case "article-2":
+//                 buttonNext3.classList.remove("d-none");
+//                 buttonPrev1.classList.remove("d-none");
+//                 break;
+//             case "article-3":
+//                 buttonPrev2.classList.remove("d-none");
+//         }
+        
+//     }
+// }, 1000);
 
 
 // change the theme
