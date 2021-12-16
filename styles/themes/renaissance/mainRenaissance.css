@@ -240,6 +240,21 @@ body{
 
 #article-long-title{
     font-size: 4.5vh;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    letter-spacing: 0.2rem;
+}
+
+#article-long-title #spec{
+    font-size: 4.5vh !important;
+}
+
+.issue-female-body #article-3 .spec{
+    font-size: 5vh;
+}
+
+.issue-female-body #article-1 .spec{
+    font-size: 4vh;
 }
 
 .card-subtitle{
@@ -286,7 +301,7 @@ body{
     text-transform: uppercase;
 }
 
-.issue-female-body #article-2 .card-body p:first-of-type:first-line{
+.issue-female-body #article-1 .card-body p:first-of-type:first-line{
     text-transform: uppercase;
 }
 
@@ -322,7 +337,7 @@ body{
 }
 
 /*DECORATED INITIALS FEMALE BODY ISSUE*/
-.issue-female-body #article-2 .card-body p:first-of-type:first-letter{
+.issue-female-body #article-1 .card-body p:first-of-type:first-letter{
     font-size: 0;
     background-image: url("/images/Renaissance/initials/initial-a.webp");
     padding: 6.5vh;
@@ -332,7 +347,7 @@ body{
     float: left;
 }
 
-.issue-female-body #article-1 .card-body p:nth-of-type(2):first-letter{
+.issue-female-body #article-2 .card-body p:nth-of-type(2):first-letter{
     font-size: 0;
     background-image: url("/images/Renaissance/initials/initial-f.webp");
     padding: 6.5vh;
@@ -872,6 +887,21 @@ body,
 }
 }
 
+@media (min-width: 1200px){
+    #avoid-break{
+        font-size: 3.7vh;
+        letter-spacing: 0rem;
+    }
+}
+
+@media (min-width: 1400px){
+    #avoid-break{
+        font-size: 4.2vh;
+        letter-spacing: 0.1rem;
+    }
+}
+
+
 @media (min-width: 992px) and (max-width: 1200px){
   .nav-link{
       padding-left: 0 !important;
@@ -1067,9 +1097,6 @@ body,
     letter-spacing: 0.2rem;
 }
 
-.spec{
-    font-size: 3.5vh;
-}
 
 .all-articles .larger:hover .issue-fem #rl1,
 .all-articles .larger:hover .issue-fem #rr1,
