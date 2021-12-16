@@ -3,20 +3,20 @@ function changeTheme(id) {
   const theme = document.getElementsByTagName('link')[1];
   switch (id) {
       case "enable-renaissance":
-          theme.href = "../styles/themes/renaissance/mainRenaissance.css";
+          theme.href = "/typetravel/styles/themes/renaissance/mainRenaissance.css";
           break;
       case "enable-default":
-          theme.href = "../styles/themes/basicStyle/mainBasic.css";
+          theme.href = "/typetravel/styles/themes/basicStyle/mainBasic.css";
           break;
       case "enable-secession":
-          theme.href = "../styles/themes/secession/mainSecession.css";
+          theme.href = "/typetravel/styles/themes/secession/mainSecession.css";
           break;
       case "enable-eighty":
-          theme.href = "../styles/themes/eighty/mainEighty.css";
+          theme.href = "/typetravel/styles/themes/eighty/mainEighty.css";
           break;
       case "enable-future":
 
-          theme.href = "../styles/themes/future/mainFuture.css";
+          theme.href = "/typetravel/styles/themes/future/mainFuture.css";
           break;
   }
 }
@@ -46,19 +46,19 @@ function changeThemeHome(id) {
     const theme = document.getElementsByTagName('link')[1];
     switch (id) {
         case "enable-renaissance":
-            theme.href = "../styles/themes/renaissance/docRenaissance.css";
+            theme.href = "/typetravel/styles/themes/renaissance/docRenaissance.css";
             break;
         case "enable-default":
-            theme.href = "../styles/themes/basicStyle/docBasic.css";
+            theme.href = "/typetravel/styles/themes/basicStyle/docBasic.css";
             break;
         case "enable-secession":
-            theme.href = "../styles/themes/secession/docSecession.css";
+            theme.href = "/typetravel/styles/themes/secession/docSecession.css";
             break;
         case "enable-eighty":
-            theme.href = "../styles/themes/eighty/docEighties.css";
+            theme.href = "/typetravel/styles/themes/eighty/docEighties.css";
             break;
         case "enable-future":
-            theme.href = "../styles/themes/future/docFuture.css";
+            theme.href = "/typetravel/styles/themes/future/docFuture.css";
             break;
     }
   }
@@ -67,19 +67,19 @@ function changeThemeHome(id) {
     const theme = document.getElementsByTagName('link')[1];
     switch (id) {
         case "enable-renaissance":
-            theme.href = "../styles/themes/renaissance/aboutRenaissance.css";
+            theme.href = "/typetravel/styles/themes/renaissance/aboutRenaissance.css";
             break;
         case "enable-default":
-            theme.href = "../styles/themes/basicStyle/aboutBasic.css";
+            theme.href = "/typetravel/styles/themes/basicStyle/aboutBasic.css";
             break;
         case "enable-secession":
-            theme.href = "../styles/themes/secession/aboutSecession.css";
+            theme.href = "/typetravel/styles/themes/secession/aboutSecession.css";
             break;
         case "enable-eighty":
-            theme.href = "../styles/themes/eighty/aboutEighties.css";
+            theme.href = "/typetravel/styles/themes/eighty/aboutEighties.css";
             break;
         case "enable-future":
-            theme.href = "../styles/themes/future/aboutFuture.css";
+            theme.href = "/typetravel/styles/themes/future/aboutFuture.css";
             break;
     }
   }
@@ -88,10 +88,10 @@ function changeModeFuture(id){
   const theme = document.getElementsByTagName('link')[1];
   switch (id) {
       case "enable-futuredark":
-        theme.href = "../styles/themes/future/mainFuture.css";
+        theme.href = "/typetravel/styles/themes/future/mainFuture.css";
         break;
       case "enable-futurelight":
-        theme.href = "../styles/themes/future/mainFutureLight.css";
+        theme.href = "/typetravel/styles/themes/future/mainFutureLight.css";
         break;
   }
 }
@@ -100,10 +100,10 @@ function changeModeFutureDoc(id){
     const theme = document.getElementsByTagName('link')[1];
     switch (id) {
         case "enable-futuredark":
-          theme.href = "../styles/themes/future/docFuture.css";
+          theme.href = "/typetravel/styles/themes/future/docFuture.css";
           break;
         case "enable-futurelight":
-          theme.href = "../styles/themes/future/docFutureLight.css";
+          theme.href = "/typetravel/styles/themes/future/docFutureLight.css";
           break;
     }
   }
@@ -148,6 +148,3 @@ function addClass(element) {
     }  
 }
 
-// responsive buttons
-
-var articleShowed = "1";
