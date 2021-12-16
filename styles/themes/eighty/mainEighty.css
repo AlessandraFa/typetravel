@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: "vcr";
-    src: url("/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
+    src: url("styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
 }
 
 @font-face{
     font-family: "special";
-    src: url("/styles/fonts/johnny-fever.regular.otf")
+    src: url("styles/fonts/johnny-fever.regular.otf")
 }
 
 /*BODY*/

@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: "secession";
-    src: url(/styles/fonts/secession/Secession.otf);
+    src: url("styles/fonts/secession/Secession.otf");
 }
 
 @font-face {
     font-family: "golden type";
-    src: url(/styles/fonts/goldentypeitcstd.otf);
+    src: url("styles/fonts/goldentypeitcstd.otf");
 }
 
 /*BODY*/
