@@ -230,7 +230,7 @@ code{
     padding-right: 0.6rem;
 }
 
-.issue-female-body #article-2 .card-body p:first-of-type:first-letter{
+.issue-female-body #article-1 .card-body p:first-of-type:first-letter{
     font-size: 350%;
     line-height: 110%;
     float: left;
@@ -238,7 +238,7 @@ code{
     padding-right: 0.6rem;
 }
 
-.issue-female-body #article-2  .card-body p:nth-of-type(2):first-letter{
+.issue-female-body #article-1  .card-body p:nth-of-type(2):first-letter{
     font-size: 100%;
     line-height: 100%;
     float: unset;
