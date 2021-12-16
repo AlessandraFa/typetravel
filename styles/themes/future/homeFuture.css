@@ -477,6 +477,14 @@ footer p, .contacts, #discl, #cp{
         margin: 0 !important;
     }
 }
+@media(max-width: 992px){
+    #navbarNavDropdown{
+        background-color: black !important;
+    }
+    .navbar-toggler-icon{
+        background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+}
 
 @media (max-width: 1200px){
     .dropdown-item, .dropdown-menu{

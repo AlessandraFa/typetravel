@@ -954,7 +954,7 @@ footer p{
         background-color: #FFFFF5 !important;
     }
     #first{
-        background: linear-gradient(to bottom, rgba(255,255,245, 0.9)0%, rgba(255,255,245, 0.9)100%), url("/images/art-nouveau/art-an.png");
+        background: linear-gradient(to bottom, rgba(255,255,245, 0.9)0%, rgba(255,255,245, 0.9)100%), url("/images/art-nouveau/art-an.png") !important;
         background-size: 30vh;
         background-position: bottom;
         }

@@ -409,21 +409,6 @@ img:before{
     background-color: black !important;
 }
 
-/*ANIMATIONS*/
-.navigation-responsive-button {
-    position: fixed; 
-    bottom: 20px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: rgb(141, 206, 236); 
-    color: rgb(0, 0, 0); 
-    cursor: pointer; 
-    padding: 15px; 
-    border-radius: 10px; 
-    font-size: 18px; 
-}
-
 /*FAB*/
 .fab-content, .fab-shadow, .sub-button, .fab{
     background-color: black !important;
@@ -565,13 +550,6 @@ body,
     background-color: white;
 }
 }
-
-  /* questo lo avevo fatto io per il comportamento responsive dei bottoni che compaiono */ 
-@media only screen and (min-width: 992px) {
-    .navigation-responsive-button {
-        display: none;
-    }
-  }
   
 @media only screen and (max-width: 992px) {
     .card {
@@ -595,4 +573,15 @@ body,
         padding: 1em !important;
         font-size: 30pt;
     }
+    .responsive-link-scroll{
+        text-transform: uppercase;
+        font-size: 2.5vh;
+        padding: 1rem;
+      }
+      .info{
+          line-height: 1.5rem;
+      }
+      .info a{
+        text-decoration: none !important;
+      }
 }  

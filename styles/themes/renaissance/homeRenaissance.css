@@ -1095,6 +1095,7 @@ footer p{
 
     #navbarNavDropdown{
         border: 2px solid #949494;
+        background: #E9E9E9 !important;
         border-top: none;
         margin: 0;
     }

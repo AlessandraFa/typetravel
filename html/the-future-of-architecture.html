@@ -16,11 +16,6 @@
     <link rel="icon" href="/images/icons/t-t.svg"></link>
   </head>
   <body>
-    <button class="navigation-responsive-button d-none"  onclick="responsiveNavigation(this.id)" id="prev-article-1" style="left: 30px;">Prev</button>
-    <button class="navigation-responsive-button d-none" onclick="responsiveNavigation(this.id)" id="next-article-3" style="right: 120px;">Next</button>
-    <button class="navigation-responsive-button d-none"  onclick="responsiveNavigation(this.id)" id="prev-article-2" style="left: 30px;">Prev</button>
-    <button class="navigation-responsive-button d-none" onclick="responsiveNavigation(this.id)" id="next-article-2" style="right: 30px;">Next</button>
-   
     <!-- MODALS -->
 
         <!-- disclaimer start -->
@@ -476,7 +471,7 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                       <button class="accordion-button infoButton" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                          Article information:  
+                        Article information:
                       </button>
                     </h2>
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
@@ -484,6 +479,7 @@
                           <div class="info">
                               <p class="byline">By <a href="https://www.architectmagazine.com/author/ned-cramer" target="_blank">Ned Cramer</a><span class="publicationDate">, 04 Oct 2017</span></p>
                               <p class="sourceLine">Source: <a href="https://www.architectmagazine.com/design/editorial/the-climate-is-changing-so-must-architecture_o" target="_blank">Architect Magazine</a></p>
+                              <a href="#article-2"><span class="responsive-link-scroll" id="resp-next-1">Next</span></a>
                             </div>
                       </div>
                     </div>
@@ -628,7 +624,7 @@
 
 
           <!-- article-2 -->
-          <div class="col-lg-3 col-md-12 d-none d-lg-block p-0" id="article-2">
+          <div class="col-lg-3 col-md-12 p-0" id="article-2">
             <div class="card">
               <div class="card-header">
                 <h5 class="card-title p-3 block-effect"  id="title-bigger2">
@@ -648,7 +644,9 @@
                   <div class="accordion-body">
                       <div class="info">
                           <p class="byline">By <a href="https://www.theguardian.com/profile/jonathanwatts" target="_blank">Johnathan Watts</a><span class="publicationDate">, 25 Feb 2019</span></p>
-                            <p class="sourceLine">Source: <a href="https://www.theguardian.com/cities/2019/feb/25/concrete-the-most-destructive-material-on-earth" target="_blank">The Guardian</a></p>
+                          <p class="sourceLine">Source: <a href="https://www.theguardian.com/cities/2019/feb/25/concrete-the-most-destructive-material-on-earth" target="_blank">The Guardian</a></p>
+                          <a href="#article-1"><span class="responsive-link-scroll" id="resp-prev-2">Prev</span></a>
+                          <a href="#article-3"><span class="responsive-link-scroll" id="resp-next-2">Next</span></a>
                       </div>
                   </div>
                 </div>
@@ -822,7 +820,7 @@
           <!-- article 2 end -->
 
           <!-- article 3 -->
-          <div class="col-lg-3 col-md-12 d-none d-lg-block p-0" id="article-3">
+          <div class="col-lg-3 col-md-12 p-0" id="article-3">
             <div class="card"  >
               
               <div class="card-header">
@@ -844,6 +842,7 @@
                           <div class="info">
                               <p class="byline">By <a href="https://twitter.com/colindickey" target="_blank">Colin Dickey</a><span class="publicationDate">, Apr 2017</span></p>
                               <p class="sourceLine">Source: <a href="https://longreads.com/2017/04/03/building-in-the-shadow-of-our-own-destruction/" target="_blank">LONGREADS</a></p>
+                              <a href="#article-2"><span class="responsive-link-scroll" id="resp-prev-3" >Prev</span></a>
                             </div>
                       </div>
                     </div>
@@ -939,7 +938,7 @@
           </div>
 
          <!-- METADATA VIEWER START -->
-         <div id="metadata" class="col-md-3 d-none d-lg-block p-0 m-0 overflow-auto">
+         <div id="metadata" class="col-md-3 p-0 m-0 d-none d-lg-block overflow-auto">
           <div class="card" id="metadata-style">
             <h5 class="card-title p-3">About the articles</h5>
             <div class="card-body overflow-auto p-0">

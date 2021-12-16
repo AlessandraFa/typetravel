@@ -463,29 +463,6 @@ img{
     background-size: 3vh !important;
 }
 
-/*RESPONSIVE BUTTON*/
-.navigation-responsive-button {
-    position: fixed; 
-    bottom: 3vh; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    text-transform: uppercase;
-    background-color: #CF7248; 
-    color: black; 
-    cursor: pointer; 
-    padding: 0.7rem; 
-    border-radius: 10px; 
-    font-size: 2.5vh; 
-    font-family: "secession", "amarante", Georgia, serif;
-    letter-spacing: 0.2em;
-}
-
-.navigation-responsive-button:hover{
-    background-color: #3d3d3d; 
-    color: #ecd2a7;
-} 
-
 /*EXPAND COLUMN - READING MODE*/
 
 body,
@@ -551,13 +528,6 @@ body,
     align-items:center;
     justify-content:center;
 }
-
-/* questo lo avevo fatto io per il comportamento responsive dei bottoni che compaiono */ 
-@media only screen and (min-width: 992px) {
-    .navigation-responsive-button {
-        display: none;
-    }
-}
   
 @media only screen and (max-width: 992px) {
     .card {
@@ -568,6 +538,20 @@ body,
     }
     #next-article-2 {
         display: block;
+    }
+    .card {
+        height: 100vh;
+    }
+    .responsive-link-scroll{
+      text-transform: uppercase;
+      font-size: 3vh;
+      padding: 1rem;
+    }
+    .info{
+        line-height: 1rem;
+    }
+    .info a{
+      text-decoration: none !important;
     }
 }
 

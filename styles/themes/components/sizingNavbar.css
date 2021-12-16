@@ -96,5 +96,9 @@ li.nav-item, a.nav-link {
     padding: 1rem;
 }
 
-
+@media (min-width: 992px) {
+    .responsive-link-scroll {
+      display: none;
+    }
+}
   

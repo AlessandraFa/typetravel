@@ -13,11 +13,6 @@
    
   </head>
   <body>
-    <button class="navigation-responsive-button"  onclick="responsiveNavigation(this.id)" id="prev-article-1" style="left: 30px;">Prev</button>
-    <button class="navigation-responsive-button" onclick="responsiveNavigation(this.id)" id="next-article-3" style="right: 120px;">Next</button>
-    <button class="navigation-responsive-button"  onclick="responsiveNavigation(this.id)" id="prev-article-2" style="left: 30px;">Prev</button>
-    <button class="navigation-responsive-button" onclick="responsiveNavigation(this.id)" id="next-article-2" style="right: 25vw">Next</button>
-   
     <!-- MODALS -->
 
         <!-- disclaimer start -->
@@ -399,6 +394,7 @@
                 <div class="info">
                   <p class="byline">By <a href="https://www.elizabethenfield.com/" target="_blank">Lizzie Enfield</a><span class="publicationDate">, 18th September 2020</span></p>
                   <p class="sourceLine">Source: <a href="https://www.bbc.com/culture/article/20200917-the-fine-line-between-art-and-pornography" target="_blank">BBC Culture</a></p>
+                  <a href="#article-2"><span class="responsive-link-scroll" id="resp-next-1">Next</span></a>
                 </div>
             </div>
           </div>
@@ -538,7 +534,7 @@
   </div>
   <!-- article1 end -->
   <!-- article2 -->
-  <div class="col-lg-3 col-md-12 d-none d-lg-block p-0" id="article-2">
+  <div class="col-lg-3 col-md-12 p-0" id="article-2">
     <div class="card">
       <div class="card-header">
         <h5 class="card-title p-3 block-effect" id="article-long-title">
@@ -560,6 +556,7 @@
                       </a><span class="publicationDate">,
                         December 26, 2017</span></p>
                     <p class="sourceLine">Source: <a href="https://medium.com/@richardkyu/tracking-the-historical-representation-of-the-female-nude-2d1d7fe1d1d" target="_blank">Medium.com</a></p>
+                    <a href="#article-1"><span class="responsive-link-scroll" id="resp-prev-2">Prev</span></a><a href="#article-3"><span class="responsive-link-scroll" id="resp-next-2">Next</span></a>
                   </div>
               </div>
             </div>
@@ -790,7 +787,7 @@
   </div>
 <!-- article3 -->
 
-<div class="col-lg-3 col-md-12 d-none d-lg-block p-0" id="article-3">
+<div class="col-lg-3 col-md-12 p-0" id="article-3">
     <div class="card"  >
       <div class="card-header">
         <h5 class="card-title p-3" id="title-bigger3">
@@ -810,6 +807,7 @@
                   <div class="info">
                       <p class="byline">By <a href="https://muckrack.com/julia-fiore" target="_blank">Julia Fiore</a><span class="publicationDate">, mag 17, 2019 5:29pm</span></p>
                       <p class="sourceLine">Source: <a href="https://www.artsy.net/article/artsy-editorial-taboo-history-womens-body-hair-art" target="_blank">Artsy</a></p>
+                      <a href="#article-2"><span class="responsive-link-scroll" id="resp-prev-3">Prev</span></a>
                   </div>
               </div>
             </div>
@@ -969,7 +967,7 @@
 
   <!-- metadata viewer start -->
  
-  <div id="metadata" class="col-md-3 d-none d-lg-block p-0 m-0 overflow-auto">
+  <div id="metadata" class="col-md-3 p-0 m-0 d-none d-lg-block overflow-auto">
     <div class="card" id="metadata-style">
       <h5 class="card-title p-3">About the articles</h5>
       <div class="card-body overflow-auto p-0">
