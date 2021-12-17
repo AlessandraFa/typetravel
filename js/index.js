@@ -108,21 +108,6 @@ function changeModeFutureDoc(id){
     }
   }
 
-function artNouveauPrev() {
-    const splash = document.querySelector('.splash');
-
-}
-
-function renaissancePrev() {
-    const splash = document.querySelector('.splash');
-
-}
-
-function eightyPrev() {
-    const splash = document.querySelector('.splash');
-
-}
-
 
 function addClass(element) {
     if (element.innerHTML == "Read Better") {
