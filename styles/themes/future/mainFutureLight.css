@@ -1,21 +1,21 @@
-@import "styles/themes/components/dropdown.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/themes/components/fab.css";
+@import "/typetravel/styles/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/themes/components/fab.css";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
 
 @font-face {
     font-family: future;
-    src: url("styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
+    src: url("/typetravel/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
 }
 
 @font-face {
     font-family: f1bold;
-    src: url("styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
+    src: url("/typetravel/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
 }
 
 @font-face {
     font-family: intro;
-    src: url("styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+    src: url("/typetravel/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
 }
 
 /*BODY*/
@@ -45,7 +45,7 @@ code{
 }
 
 .btn-lmode{
-    background-image: url(/images/Future/darkmode.png) !important;
+    background-image: url("/typetravel/images/Future/darkmode.png") !important;
     background-size: 10vh;
     background-color: white;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@ code{
 }
 
 .btn-lmode:hover{
-    background-image: url(/images/Future/darkmode1.png) !important;
+    background-image: url("/typetravel/images/Future/darkmode1.png") !important;
     background-size: 10vh;
     background-color: white;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@ code{
 }
 
 #capT{
-    background-image: url(/images/icons/T-future-light.svg);
+    background-image: url("/typetravel/images/icons/T-future-light.svg");
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center;

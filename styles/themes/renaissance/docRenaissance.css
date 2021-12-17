@@ -1,15 +1,15 @@
-@import "styles/themes/components/fab.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/documentation.css";
+@import "/typetravel/styles/themes/components/fab.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/documentation.css";
 
 @font-face {
     font-family: "Bembo";
-    src: url("/styles/fonts/Bembo.ttf");
+    src: url("/typetravel/styles/fonts/Bembo.ttf");
   }
   
 @font-face {
     font-family: "Bembo-italic";
-    src: url("/styles/fonts/BemboStd-SemiboldItalic.otf");
+    src: url("/typetravel/styles/fonts/BemboStd-SemiboldItalic.otf");
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -53,7 +53,7 @@ button{
 .navbar{
     letter-spacing: 0.1rem;
     background-color: #c0c0c0 !important;
-    background-image: url("/images/Renaissance/nav-decor.png");
+    background-image: url("/typetravel/images/Renaissance/nav-decor.png");
     background-size: 40vh;
     background-position: bottom;
 }
@@ -66,7 +66,7 @@ button{
 }
 
 #capT{
-  background-image: url("/images/icons/t-renaissance.svg");
+  background-image: url("/typetravel/images/icons/t-renaissance.svg");
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -147,7 +147,7 @@ button{
 }
 
 .content #text-start{
-    background-image:  url("/images/Renaissance/md-bg.png");
+    background-image:  url("/typetravel/images/Renaissance/md-bg.png");
     background-color: #DEDEDE;
     background-size: 55vh;
     background-position: top left;
@@ -190,7 +190,7 @@ h6{
     color: black !important;
 }
 #main-background{
-    background-image: linear-gradient(rgba(122,122,122,0.2)0%, rgba(122,122,122,0.2)100%), url("/images/Renaissance/main-bg.png");
+    background-image: linear-gradient(rgba(122,122,122,0.2)0%, rgba(122,122,122,0.2)100%), url("/typetravel/images/Renaissance/main-bg.png");
     background-size:100vh;
     background-position: top;
 }
@@ -224,7 +224,7 @@ h6{
 #logo-docu{
     padding: 5vh;
     height: 12vh;
-    background-image: url("/images/icons/t-renaissance.svg");
+    background-image: url("/typetravel/images/icons/t-renaissance.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -232,7 +232,7 @@ h6{
 #metadata-docu{
     height: 500px;
     width: 500px;
-    background-image: url("/images/Documentation/metadata-docu-ren.png");
+    background-image: url("/typetravel/images/Documentation/metadata-docu-ren.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -241,7 +241,7 @@ h6{
 #large-docu{
     height: 500px;
     width: 800px;
-    background-image: url("/images/Documentation/large-renaissance.png");
+    background-image: url("/typetravel/images/Documentation/large-renaissance.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -253,7 +253,7 @@ h6{
 #fab-docu{
     height: 400px;
     width: 180px;
-    background-image: url("/images/Documentation/fab-renaissance.png");
+    background-image: url("/typetravel/images/Documentation/fab-renaissance.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;

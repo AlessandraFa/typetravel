@@ -1,23 +1,23 @@
-@import "styles/themes/components/fab.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/documentation.css";
+@import "/typetravel/styles/themes/components/fab.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/documentation.css";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
 
 @font-face {
     font-family: future;
-    src: url("/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
+    src: url("/typetravel/styles/fonts/despairs-font/Despairs-X3Wxo.ttf");
 }
 @font-face {
     font-family: f1;
-    src: url("/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
+    src: url("/typetravel/styles/fonts/josefin-sans/JosefinSans-Light.ttf");
 }
 @font-face {
     font-family: f1bold;
-    src: url("/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
+    src: url("/typetravel/styles/fonts/josefin-sans/JosefinSans-SemiBold.ttf");
 }
 @font-face {
     font-family: intro;
-    src: url("/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
+    src: url("/typetravel/styles/fonts/rocket-wildness-font/Rocketwildness-7BB8R.ttf");
 }
 
 body{
@@ -68,7 +68,7 @@ code{
 }
 
 #capT{
-    background-image: url(/images/icons/T-future-dark.svg);
+    background-image: url("/typetravel/images/icons/T-future-dark.svg");
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -202,7 +202,7 @@ h5{
 }
 
 .btn-dmode{
-    background-image: url(/images/Future/lightmode.png) !important;
+    background-image: url("/typetravel/images/Future/lightmode.png") !important;
     background-size: 10vh;
     background-color: rgb(0, 0, 0) !important;
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@ h5{
 }
 
 .btn-dmode:hover{
-    background-image: url(/images/Future/lightmode1.png) !important;
+    background-image: url("/typetravel/images/Future/lightmode1.png") !important;
     background-size: 10vh;
     background-color: rgb(0, 0, 0);
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@ h5{
 #logo-docu{
     padding: 5vh;
     height: 12vh;
-    background-image: url("/images/icons/T-future-dark.svg");
+    background-image: url("/typetravel/images/icons/T-future-dark.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -250,7 +250,7 @@ h5{
 #metadata-docu{
     height: 500px;
     width: 500px;
-    background-image: url("/images/Documentation/metadata-docu-futdark.png");
+    background-image: url("/typetravel/images/Documentation/metadata-docu-futdark.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -259,7 +259,7 @@ h5{
 #large-docu{
     height: 500px;
     width: 800px;
-    background-image: url("/images/Documentation/large-future.png");
+    background-image: url("/typetravel/images/Documentation/large-future.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -270,7 +270,7 @@ h5{
 #fab-docu{
     height: 400px;
     width: 180px;
-    background-image: url("/images/Documentation/fab-futdark.png");
+    background-image: url("/typetravel/images/Documentation/fab-futdark.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;

@@ -1,17 +1,17 @@
-@import "styles/themes/components/fab.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/documentation.css";
+@import "/typetravel/styles/themes/components/fab.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/documentation.css";
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Forum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
 
 @font-face {
     font-family: "secession";
-    src: url("/styles/fonts/secession/Secession.otf");
+    src: url("/typetravel/styles/fonts/secession/Secession.otf");
 }
 
 @font-face {
     font-family: "golden type";
-    src: url("/styles/fonts/goldentypeitcstd.otf");
+    src: url("/typetravel/styles/fonts/goldentypeitcstd.otf");
 }
 
 /*BODY*/
@@ -69,7 +69,7 @@ code{
 }
 
 #capT{
-    background-image: url("/images/icons/T-artnouveau.svg");
+    background-image: url("/typetravel/images/icons/T-artnouveau.svg");
     background-size: 5vh !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -159,7 +159,7 @@ h6{
 /*SIDE MENU*/
 
 .content #text-start{
-    background-image: url("/images/art-nouveau/metadata-bg.png") !important;
+    background-image: url("/typetravel/images/art-nouveau/metadata-bg.png") !important;
     background-size:27%;
     background-repeat: no-repeat ;
     background-position: left bottom;
@@ -193,7 +193,7 @@ h3, button{
 }
 
 #main-background{
-    background: linear-gradient(to bottom, rgba(250,242,230, 0.9)0%, rgba(250,242,230, 0.9)100%), url("/images/art-nouveau/art-an.png");
+    background: linear-gradient(to bottom, rgba(250,242,230, 0.9)0%, rgba(250,242,230, 0.9)100%), url("/typetravel/images/art-nouveau/art-an.png");
     background-size: 20vh;
     font-size: 2.8vh;
     line-height: 1;
@@ -209,7 +209,7 @@ h3, button{
 #logo-docu{
     padding: 5vh;
     height: 12vh;
-    background-image: url("/images/icons/T-artnouveau.svg");
+    background-image: url("/typetravel/images/icons/T-artnouveau.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -217,7 +217,7 @@ h3, button{
 #metadata-docu{
     height: 500px;
     width: 500px;
-    background-image: url("/images/Documentation/metadata-docu-sec.png");
+    background-image: url("/typetravel/images/Documentation/metadata-docu-sec.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -226,7 +226,7 @@ h3, button{
 #large-docu{
     height: 500px;
     width: 800px;
-    background-image: url("/images/Documentation/large-secession.png");
+    background-image: url("/typetravel/images/Documentation/large-secession.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -238,7 +238,7 @@ h3, button{
 #fab-docu{
     height: 400px;
     width: 180px;
-    background-image: url("/images/Documentation/fab-secession.png");
+    background-image: url("/typetravel/images/Documentation/fab-secession.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;

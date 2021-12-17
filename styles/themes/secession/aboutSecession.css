@@ -1,17 +1,17 @@
-@import "styles/themes/components/fab.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/documentation.css";
+@import "/typetravel/styles/themes/components/fab.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/documentation.css";
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Forum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
 
 @font-face {
     font-family: "secession";
-    src: url("/styles/fonts/secession/Secession.otf");
+    src: url("/typetravel/styles/fonts/secession/Secession.otf");
 }
 
 @font-face {
     font-family: "golden type";
-    src: url("/styles/fonts/goldentypeitcstd.otf");
+    src: url("/typetravel/styles/fonts/goldentypeitcstd.otf");
 }
 
 /*BODY*/
@@ -76,7 +76,7 @@ code{
 }
 
 #capT{
-    background-image: url("/images/icons/T-artnouveau.svg");
+    background-image: url("/typetravel/images/icons/T-artnouveau.svg");
     background-size: 5vh !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -139,20 +139,20 @@ code{
 .about-content{
     text-align: center;
     text-transform: uppercase;
-    background-image: url("/images/art-nouveau/bg1.jpg");
+    background-image: url("/typetravel/images/art-nouveau/bg1.jpg");
     background-position: left bottom !important;
 }
 
 .deco{
     height: 4vh;
-    background-image: url("/images/art-nouveau/deco-artn.png") !important;
+    background-image: url("/typetravel/images/art-nouveau/deco-artn.png") !important;
     background-size: 50vh;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 h2{
-    background-image: url("/images/art-nouveau/third-deco.png");
+    background-image: url("/typetravel/images/art-nouveau/third-deco.png");
     background-size: 45%;
     padding: 5rem;
     background-position: bottom;
@@ -166,7 +166,7 @@ h2{
 
 .about-us{
     min-height: 65vh !important;
-    background-image: url("/images/art-nouveau/bg1.jpg");
+    background-image: url("/typetravel/images/art-nouveau/bg1.jpg");
     background-position: left top !important;
 }
 

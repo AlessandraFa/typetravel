@@ -1,17 +1,17 @@
-@import "styles/themes/components/dropdown.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/themes/components/fab.css";
+@import "/typetravel/styles/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/themes/components/fab.css";
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Forum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
 
 @font-face {
     font-family: "secession";
-    src: url("styles/fonts/secession/Secession.otf");
+    src: url("/typetravel/styles/fonts/secession/Secession.otf");
 }
 
 @font-face {
     font-family: "golden type";
-    src: url("styles/fonts/goldentypeitcstd.otf");
+    src: url("/typetravel/styles/fonts/goldentypeitcstd.otf");
 }
 
 /*BODY*/
@@ -75,7 +75,7 @@ code{
 }
 
 #capT{
-    background-image: url("/images/icons/T-artnouveau.svg");
+    background-image: url("/typetravel/images/icons/T-artnouveau.svg");
     background-size: 5vh !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -191,7 +191,7 @@ code{
 }
 
 .deco{
-    background-image: url("/images/art-nouveau/under-title.png");
+    background-image: url("/typetravel/images/art-nouveau/under-title.png");
     background-size: 35vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -199,7 +199,7 @@ code{
 }
 
 .card-body{   
-    background: linear-gradient(to bottom, rgba(250,242,230, 0.9)0%, rgba(250,242,230, 0.9)100%), url("/images/art-nouveau/art-an.png");
+    background: linear-gradient(to bottom, rgba(250,242,230, 0.9)0%, rgba(250,242,230, 0.9)100%), url("/typetravel/images/art-nouveau/art-an.png");
     background-position: left top;
     text-align: justify;
     background-size: 70%;
@@ -318,7 +318,7 @@ img{
 
 /* METADATA*/
 #metadata-style{
-    background-image: url("/images/art-nouveau/metadata-bg.png");
+    background-image: url("/typetravel/images/art-nouveau/metadata-bg.png");
     background-size:100%;
     height: 92vh;
     background-position: bottom center;
@@ -497,7 +497,7 @@ body,
 
 .all-articles .larger:hover .card-body,
 .all-articles .larger:hover .card-body:hover{
-    background: linear-gradient(to bottom, rgba(250,242,230, 0.9)0%, rgba(250,242,230, 0.9)100%), url("/images/art-nouveau/art-an.png") !important;
+    background: linear-gradient(to bottom, rgba(250,242,230, 0.9)0%, rgba(250,242,230, 0.9)100%), url("/typetravel/images/art-nouveau/art-an.png") !important;
     background-position: left top !important;
     background-size: 70% !important;
 }

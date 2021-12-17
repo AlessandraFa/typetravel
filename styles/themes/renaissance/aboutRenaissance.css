@@ -1,10 +1,10 @@
-@import "styles/themes/components/fab.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/documentation.css";
+@import "/typetravel/styles/themes/components/fab.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/documentation.css";
 
 @font-face {
     font-family: "Bembo";
-    src: url("/styles/fonts/Bembo.ttf");
+    src: url("/typetravel/styles/fonts/Bembo.ttf");
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -38,7 +38,7 @@ body{
     overflow: hidden;
     line-height: 1;
     color: #474747;
-    background-image: url("/images/Renaissance/grot-first2.png");
+    background-image: url("/typetravel/images/Renaissance/grot-first2.png");
     background-size: cover;
     overflow: scroll;
 }
@@ -59,7 +59,7 @@ body{
 }
 
 #capT{
-  background-image: url("/images/icons/t-renaissance.svg");
+  background-image: url("/typetravel/images/icons/t-renaissance.svg");
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;

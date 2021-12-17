@@ -1,23 +1,23 @@
-@import "styles/themes/components/fab.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/documentation.css";
+@import "/typetravel/styles/themes/components/fab.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/documentation.css";
 
 @font-face {
     font-family: "vcr";
-    src: url("/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
+    src: url("/typetravel/styles/fonts/vcr-osd-mono/VCR_OSD_MONO.ttf")
 }
 
 @font-face{
     font-family: "special";
-    src: url("/styles/fonts/johnny-fever.regular.otf")
+    src: url("/typetravel/styles/fonts/johnny-fever.regular.otf")
 }
 
 body{
     font-family: vcr;
-    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(129, 129, 129, 0.2)100%), url(/images/1980s/gltch.gif) !important;
+    background-image: linear-gradient(to bottom, rgb(129, 129, 129,0.2) 0%, rgba(129, 129, 129, 0.2)100%), url("/typetravel/images/1980s/gltch.gif") !important;
     color: white;
     background-size: 80vh;
-    cursor: url("/images/icons/curs.png"), auto !important;
+    cursor: url("/typetravel/images/icons/curs.png"), auto !important;
 }
 
 button{
@@ -25,7 +25,7 @@ button{
 }
 
 .btn:hover, a:hover, .fab:hover, .sub-button:hover, .fadedbox:hover, button:hover,#info-disclaimer:hover, #info-btn:hover{
-    cursor: url("/images/icons/pointer.png"), pointer !important;
+    cursor: url("/typetravel/images/icons/pointer.png"), pointer !important;
 }
 .scrollspy{
     height: 85vh;
@@ -51,7 +51,7 @@ code{
 
 /*NAVBAR*/
 .navbar{
-    background-image: url(/images/1980s/vhs-navb.png);
+    background-image: url("/typetravel/images/1980s/vhs-navb.png");
     background-size: 12vh;
     background-position: bottom;
 }
@@ -70,7 +70,7 @@ code{
 }
 
 #capT{
-    background-image: url(/images/icons/t-1980s.svg);
+    background-image: url("/typetravel/images/icons/t-1980s.svg");
     background-size: 5.5vh !important;
     background-repeat: no-repeat;
     background-position: center;
@@ -99,7 +99,7 @@ code{
 }
 
 .dropdown-menu{
-    background-image: url(/images/1980s/vhs-navb.png);
+    background-image: url("/typetravel/images/1980s/vhs-navb.png");
     background-size: 15vh;
     background-position: top;
     padding-top: 0 !important;
@@ -119,7 +119,7 @@ code{
 
 
 .modal-header, .modal-footer{
-    background-image: url(/images/1980s/vhs-navb.png);
+    background-image: url("/typetravel/images/1980s/vhs-navb.png");
     background-size: 12vh;
     background-position: bottom;
     border: none;
@@ -140,7 +140,7 @@ code{
 }
 
 .modal-body{
-    background-image: linear-gradient(to bottom, rgba(30, 19, 49, 0.2) 0%, rgba(34, 33, 36, 0.2)100%), url(/images/1980s/gltch.gif);
+    background-image: linear-gradient(to bottom, rgba(30, 19, 49, 0.2) 0%, rgba(34, 33, 36, 0.2)100%), url("/typetravel/images/1980s/gltch.gif");
     color: white;
     font-size: 2.2vh;
     padding: 1rem;
@@ -211,14 +211,14 @@ h6{
 }
 
 #main-background{
-    background-image: url(/images/1980s/grid-vhs.png);
+    background-image: url("/typetravel/images/1980s/grid-vhs.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200vh;
 }
 
 #menu-card{
-    background-image: url(/images/1980s/grid-vhs.png);
+    background-image: url("/typetravel/images/1980s/grid-vhs.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size:  200vh;
@@ -251,7 +251,7 @@ h6{
 #logo-docu{
     padding: 5vh;
     height: 12vh;
-    background-image: url("/images/icons/t-1980s.svg");
+    background-image: url("/typetravel/images/icons/t-1980s.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -259,7 +259,7 @@ h6{
 #metadata-docu{
     height: 500px;
     width: 500px;
-    background-image: url("/images/Documentation/metadata-docu-1980s.png");
+    background-image: url("/typetravel/images/Documentation/metadata-docu-1980s.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -268,7 +268,7 @@ h6{
 #large-docu{
     height: 500px;
     width: 800px;
-    background-image: url("/images/Documentation/large-1980s.jpg");
+    background-image: url("/typetravel/images/Documentation/large-1980s.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -280,7 +280,7 @@ h6{
 #fab-docu{
     height: 400px;
     width: 180px;
-    background-image: url("/images/Documentation/fab-1980s.png");
+    background-image: url("/typetravel/images/Documentation/fab-1980s.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -340,25 +340,25 @@ h6{
 }
 
 ::-webkit-scrollbar-button:vertical:increment{
-    background-image: url(/images/1980s/scroll-down.png);
+    background-image: url("/typetravel/images/1980s/scroll-down.png");
     background-size: 2.3vh;  
     background-repeat: no-repeat;
     background-position: center;
 }
 
 ::-webkit-scrollbar-button:vertical:increment:active{
-    background-image: url(/images/1980s/down-click.png);
+    background-image: url("/typetravel/images/1980s/down-click.png");
 }
 
 ::-webkit-scrollbar-button:vertical:decrement{
-    background-image: url(/images/1980s/scroll-up.png);
+    background-image: url("/typetravel/images/1980s/scroll-up.png");
     background-size: 2.3vh;  
     background-repeat: no-repeat;
     background-position: center;
 }
 
 ::-webkit-scrollbar-button:vertical:decrement:active{
-    background-image: url(/images/1980s/up-click.png);
+    background-image: url("/typetravel/images/1980s/up-click.png");
 }
 
 .btn-lmode, .btn-dmode{

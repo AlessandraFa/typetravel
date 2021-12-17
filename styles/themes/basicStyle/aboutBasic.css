@@ -1,7 +1,7 @@
-@import "styles/themes/components/dropdown.css";
-@import "styles/themes/components/sizingNavbar.css";
-@import "styles/themes/components/fab.css";
-@import "styles/documentation.css";
+@import "/typetravel/styles/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/themes/components/fab.css";
+@import "/typetravel/styles/documentation.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cousine&family=Roboto+Mono&family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
@@ -81,7 +81,7 @@ li .nav-item, a.nav-link{
 }
 
 #capT{
-  background-image: url(/images/icons/T-future-light.svg);
+  background-image: url("/typetravel/images/icons/T-future-light.svg");
   background-size: 5vh;
   background-repeat: no-repeat;
   background-position: center;

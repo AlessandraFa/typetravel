@@ -1,16 +1,16 @@
-@import "/styles/themes/components/dropdown.css";
-@import "/styles/themes/components/sizingNavbar.css";
-@import "/styles/themes/components/fab.css";
+@import "/typetravel/styles/themes/components/dropdown.css";
+@import "/typetravel/styles/themes/components/sizingNavbar.css";
+@import "/typetravel/styles/themes/components/fab.css";
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 @font-face {
   font-family: "Bembo";
-  src: url("/styles/fonts/Bembo.ttf");
+  src: url("/typetravel/styles/fonts/Bembo.ttf");
 }
 
 @font-face {
     font-family: "Bembo-italic";
-    src: url("/styles/fonts/BemboStd-SemiboldItalic.otf");
+    src: url("/typetravel/styles/fonts/BemboStd-SemiboldItalic.otf");
 }
 
 /*LINKS, SELECTION, CODE*/
@@ -53,7 +53,7 @@ body{
 .navbar{
     letter-spacing: 0.1rem;
     background-color: #c0c0c0 !important;
-    background-image: url("/images/Renaissance/nav-decor.png");
+    background-image: url("/typetravel/images/Renaissance/nav-decor.png");
     background-size: 40vh;
     background-position: bottom;
 }
@@ -66,7 +66,7 @@ body{
 }
 
 #capT{
-    background-image: url("/images/icons/t-renaissance.svg");
+    background-image: url("/typetravel/images/icons/t-renaissance.svg");
     background-size: 5vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -289,7 +289,7 @@ body{
 .card-body{
     overflow-y: auto;
     color: #424242;
-    background-image: url("/images/Renaissance/bg-body.png");
+    background-image: url("/typetravel/images/Renaissance/bg-body.png");
     background-size: 100%;
     background-position: top;
     font-size: 2.8vh;
@@ -308,7 +308,7 @@ body{
 /*DECORATED INITIALS ARCHITECTURE ISSUE*/
 .issue-architecture #article-1 .card-body p:nth-of-type(2):first-letter{
     font-size: 0;
-    background-image: url("/images/Renaissance/initials/initial-c.webp");
+    background-image: url("/typetravel/images/Renaissance/initials/initial-c.webp");
     padding: 6.5vh;
     background-size: 12vh;
     background-repeat: no-repeat;
@@ -318,7 +318,7 @@ body{
 
 .issue-architecture #article-2 .card-body p:nth-of-type(2):first-letter{
     font-size: 0;
-    background-image: url("/images/Renaissance/initials/initial-i.webp");
+    background-image: url("/typetravel/images/Renaissance/initials/initial-i.webp");
     padding: 6.5vh;
     background-size: 12vh;
     background-repeat: no-repeat;
@@ -328,7 +328,7 @@ body{
 
 .issue-architecture #article-3 .card-body p:nth-of-type(2):first-letter{
     font-size: 0;
-    background-image: url("/images/Renaissance/initials/initial-i.webp");
+    background-image: url("/typetravel/images/Renaissance/initials/initial-i.webp");
     padding: 6.5vh;
     background-size: 12vh;
     background-repeat: no-repeat;
@@ -339,7 +339,7 @@ body{
 /*DECORATED INITIALS FEMALE BODY ISSUE*/
 .issue-female-body #article-1 .card-body p:first-of-type:first-letter{
     font-size: 0;
-    background-image: url("/images/Renaissance/initials/initial-a.webp");
+    background-image: url("/typetravel/images/Renaissance/initials/initial-a.webp");
     padding: 6.5vh;
     background-size: 12vh;
     background-repeat: no-repeat;
@@ -349,7 +349,7 @@ body{
 
 .issue-female-body #article-2 .card-body p:nth-of-type(2):first-letter{
     font-size: 0;
-    background-image: url("/images/Renaissance/initials/initial-f.webp");
+    background-image: url("/typetravel/images/Renaissance/initials/initial-f.webp");
     padding: 6.5vh;
     background-size: 12vh;
     background-repeat: no-repeat;
@@ -359,7 +359,7 @@ body{
 
 .issue-female-body #article-3 .card-body p:nth-of-type(2):first-letter{
     font-size: 0;
-    background-image: url("/images/Renaissance/initials/initial-l.webp");
+    background-image: url("/typetravel/images/Renaissance/initials/initial-l.webp");
     padding: 6.5vh;
     background-size: 12vh;
     background-repeat: no-repeat;
@@ -372,7 +372,7 @@ body{
 }
 
 .accordion-body{
-    background-image: url("/images/Renaissance/bg-body.png");
+    background-image: url("/typetravel/images/Renaissance/bg-body.png");
     background-size: 100%;
     background-position: bottom;
     text-align: justify !important;
@@ -446,7 +446,7 @@ img{
 }
 
 .imag{
-    background: linear-gradient(rgba(242,242,242,0.2)0%,rgba(242,242,242,0.2) 100%),url("/images/Renaissance/rsdec.png");
+    background: linear-gradient(rgba(242,242,242,0.2)0%,rgba(242,242,242,0.2) 100%),url("/typetravel/images/Renaissance/rsdec.png");
     background-size: 100%;
     background-position: center bottom;
     padding-bottom: 1rem;
@@ -544,7 +544,7 @@ img{
 }
 
 #metadata-style{
-    background-image:  url("/images/Renaissance/md-bg.png");
+    background-image:  url("/typetravel/images/Renaissance/md-bg.png");
     background-color: #DEDEDE;
     background-size: 95%;
     background-position: top left;
@@ -553,7 +553,7 @@ img{
 }
 
 .offcanvas#metadata{
-    background-image:  url("/images/Renaissance/md-bg.png");
+    background-image:  url("/typetravel/images/Renaissance/md-bg.png");
     background-size: 100%;
 }
 
@@ -615,7 +615,7 @@ body,
 .all-articles .larger:hover .accordion-body,
 .all-articles .larger:hover .card-body,
 .all-articles .larger:hover .card-body:hover{
-    background-image: url("/images/Renaissance/bg-body.png");
+    background-image: url("/typetravel/images/Renaissance/bg-body.png");
     background-size: 80vh !important;
     background-position: top;
 }
