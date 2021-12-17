@@ -25,19 +25,19 @@ function changeThemeHome(id) {
     const theme = document.getElementsByTagName('link')[1];
     switch (id) {
         case "enable-renaissance":
-            theme.href = "styles/themes/renaissance/homeRenaissance.css";
+            theme.href = "/typetravel/styles/themes/renaissance/homeRenaissance.css";
             break;
         case "enable-default":
-            theme.href = "styles/themes/basicStyle/homeBasic.css";
+            theme.href = "/typetravel/styles/themes/basicStyle/homeBasic.css";
             break;
         case "enable-secession":
-            theme.href = "styles/themes/secession/homeSecession.css";
+            theme.href = "/typetravel/styles/themes/secession/homeSecession.css";
             break;
         case "enable-eighty":
-            theme.href = "styles/themes/eighty/homeEighties.css";
+            theme.href = "/typetravel/styles/themes/eighty/homeEighties.css";
             break;
         case "enable-future":
-            theme.href = "styles/themes/future/homeFuture.css";
+            theme.href = "/typetravel/styles/themes/future/homeFuture.css";
             break;
     }
   }
