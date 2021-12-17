@@ -11,9 +11,9 @@ window.setInterval(() => {
         strDynamicTitle.style.textShadow= "unset";
     } else {
         strDynamicTitle.textContent = strings[currentWord];
-        strDynamicTitle.style.color= "var(--time-color)";
-        strDynamicTitle.style.transition= "var(--time-transition)";
-        strDynamicTitle.style.textShadow= "var(--time-shadow)";
+        strDynamicTitle.style.color = "var(--time-color)";
+        strDynamicTitle.style.transition = "var(--time-transition)";
+        strDynamicTitle.style.textShadow = "var(--time-shadow)";
     }
 }, 2000);
 

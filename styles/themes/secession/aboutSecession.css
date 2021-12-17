@@ -139,7 +139,7 @@ code{
 .about-content{
     text-align: center;
     text-transform: uppercase;
-    background-image: url("/typetravel/images/art-nouveau/bg1.jpg");
+    /* background-image: url("/typetravel/images/art-nouveau/bg1.jpg"); */
     background-position: left bottom !important;
 }
 
