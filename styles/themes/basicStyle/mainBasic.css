@@ -421,7 +421,7 @@ img{
 
 @media(min-width: 1400px){
   .card-header{
-      min-height: 23vh;
+      min-height: 25vh;
   }
   .card-title{
       font-size: 4vh;
